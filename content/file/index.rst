@@ -185,16 +185,72 @@ Apps
 Data
 ----
 
-* `Koura 1 <{filename}koura-1.rst>`_
-* `Koura 2 <{filename}koura-2.rst>`_
-* `Koura 3 <{filename}koura-3.rst>`_
-* `Magnets Data <{filename}magnets-data.rst>`_
-* `Num0 data <{filename}num0-data.rst>`_
-* `Sezaki <{filename}sezaki.rst>`_
+.. container:: gallery-small
+
+   .. figure:: {static}puzzle-game/icon.png
+      :alt: Koura 1 icon
+      :target: {filename}koura-1.rst
+      :width: 64
+
+      `Koura 1 <{filename}koura-1.rst>`_
+
+   .. figure:: {static}puzzle-game/icon.png
+      :alt: Koura 2 icon
+      :target: {filename}koura-2.rst
+      :width: 64
+
+      `Koura 2 <{filename}koura-2.rst>`_
+
+   .. figure:: {static}puzzle-game/icon.png
+      :alt: Koura 3 icon
+      :target: {filename}koura-3.rst
+      :width: 64
+
+      `Koura 3 <{filename}koura-3.rst>`_
+
+   .. figure:: {static}magnets/icon.png
+      :alt: Magnets Data icon
+      :target: {filename}magnets-data.rst
+      :width: 64
+
+      `Magnets Data <{filename}magnets-data.rst>`_
+
+   .. figure:: {static}watch-and-timer/icon.png
+      :alt: Num0 Data icon
+      :target: {filename}num0-data.rst
+      :width: 64
+
+      `Num0 Data <{filename}num0-data.rst>`_
+
+   .. figure:: {static}mogutte-nanbo/icon.png
+      :alt: Sezaki icon
+      :target: {filename}sezaki.rst
+      :width: 64
+
+      `Sezaki <{filename}sezaki.rst>`_
 
 Tools
 -----
 
-* `Char-Dump <{filename}char-dump.rst>`_
-* `Delete All <{filename}delete-all.rst>`_
-* `SRAM Get & Clear <{filename}sram-get-and-clear.rst>`_
+.. container:: gallery-small
+
+   .. figure:: {static}icon/card0.png
+      :alt: Char-Dump icon
+      :target: {filename}char-dump.rst
+      :width: 64
+
+      `Char-Dump <{filename}char-dump.rst>`_
+
+   .. figure:: {static}icon/card0.png
+      :alt: Delete All icon
+      :target: {filename}delete-all.rst
+      :width: 64
+
+      `Delete All <{filename}delete-all.rst>`_
+
+   .. figure:: {static}sram-get-and-clear/icon.png
+      :alt: SRAM Get & Clear icon
+      :target: {filename}sram-get-and-clear.rst
+      :width: 64
+
+      `SRAM Get & Clear <{filename}sram-get-and-clear.rst>`_

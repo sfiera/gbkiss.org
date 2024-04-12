@@ -229,7 +229,7 @@ Data
 
       `Mail <{filename}mail.rst>`_
 
-   .. figure:: {static}watch-and-timer/icon.png
+   .. figure:: {static}icon/tokei.png
       :alt: Num0 Data icon
       :target: {filename}num0-data.rst
       :width: 64

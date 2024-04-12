@@ -16,4 +16,25 @@ Calculator
 * Size: 5 Blocks
 * Source: |mini-kissmon|
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}calculator/title.png
+      :alt: Calculator title screen
+      :align: left
+      :width: 160
+      :height: 144
+
+      Title screen
+
+   .. figure:: {static}calculator/app.png
+      :alt: Calculator usage
+      :align: left
+      :width: 160
+      :height: 144
+
+      Usage
+
 .. include:: ../../epilog.rsti

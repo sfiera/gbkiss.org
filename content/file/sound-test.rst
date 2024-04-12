@@ -16,4 +16,25 @@ Sound Test
 * Size: 4 Blocks
 * Source: |mini-kissmon|
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}sound-test/title.png
+      :alt: Sound Test title screen
+      :align: left
+      :width: 160
+      :height: 144
+
+      Title Screen
+
+   .. figure:: {static}sound-test/app.png
+      :alt: Sound Test usage
+      :align: left
+      :width: 160
+      :height: 144
+
+      Usage
+
 .. include:: ../../epilog.rsti

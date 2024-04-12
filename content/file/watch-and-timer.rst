@@ -16,4 +16,25 @@ Watch & Timer
 * Size: 9 Blocks
 * Source: |mini-kissmon|
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}watch-and-timer/title.png
+      :alt: Watch & Timer title screen
+      :align: left
+      :width: 160
+      :height: 144
+
+      Title Screen
+
+   .. figure:: {static}watch-and-timer/app.png
+      :alt: Watch & Timer usage
+      :align: left
+      :width: 160
+      :height: 144
+
+      Usage
+
 .. include:: ../../epilog.rsti

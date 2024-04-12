@@ -16,4 +16,23 @@ Kiss-Mon
 * Size: 23 Blocks
 * Source: |mini-kissmon|
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}kiss-mon/title.png
+      :alt: Kiss-Mon title screen
+      :width: 160
+      :height: 144
+
+      Title screen
+
+   .. figure:: {static}kiss-mon/game.png
+      :alt: Kiss-Mon gameplay
+      :width: 160
+      :height: 144
+
+      Gameplay
+
 .. include:: ../../epilog.rsti

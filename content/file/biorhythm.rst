@@ -16,4 +16,25 @@ Biorhythm
 * Size: 20 Blocks
 * Source: |mini-kissmon|
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}biorhythm/title.png
+      :alt: Biorhythm title screen
+      :align: left
+      :width: 160
+      :height: 144
+
+      Title screen
+
+   .. figure:: {static}biorhythm/app.png
+      :alt: Biorhythm usage
+      :align: left
+      :width: 160
+      :height: 144
+
+      Usage
+
 .. include:: ../../epilog.rsti

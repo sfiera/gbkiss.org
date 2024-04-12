@@ -16,6 +16,27 @@ Binary
 * Size: 32 Blocks
 * Source: |mini-binary|
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}binary/title.png
+      :alt: Binary title screen
+      :align: left
+      :width: 160
+      :height: 144
+
+      Title screen
+
+   .. figure:: {static}binary/game.png
+      :alt: Binary gameplay
+      :align: left
+      :width: 160
+      :height: 144
+
+      Gameplay
+
 Trivia
 ------
 

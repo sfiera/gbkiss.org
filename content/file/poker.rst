@@ -16,4 +16,23 @@ Poker
 * Size: 21 Blocks
 * Source: |mini-cannon|
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}poker/title.png
+      :alt: Poker title screen
+      :width: 160
+      :height: 144
+
+      Title screen
+
+   .. figure:: {static}poker/game.png
+      :alt: Poker gameplay
+      :width: 160
+      :height: 144
+
+      Gameplay
+
 .. include:: ../../epilog.rsti

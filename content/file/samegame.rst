@@ -16,6 +16,25 @@ SameGame
 * Size: 9 Blocks
 * Source: |mini-default|
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}samegame/title.png
+      :alt: SameGame title screen
+      :width: 160
+      :height: 144
+
+      Title screen
+
+   .. figure:: {static}samegame/game.png
+      :alt: SameGame gameplay
+      :width: 160
+      :height: 144
+
+      Gameplay
+
 Trivia
 ------
 

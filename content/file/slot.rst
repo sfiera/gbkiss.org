@@ -16,4 +16,20 @@ Slot
 * Size: 13 Blocks
 * Source: |mini-cannon|
 
+.. container:: gallery
+
+   .. figure:: {static}slot/title.png
+      :alt: Slot title screen
+      :width: 160
+      :height: 144
+
+      Title screen
+
+   .. figure:: {static}slot/game.png
+      :alt: Slot gameplay
+      :width: 160
+      :height: 144
+
+      Gameplay
+
 .. include:: ../../epilog.rsti

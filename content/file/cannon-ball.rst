@@ -12,9 +12,28 @@ Cannon Ball
    :height: 120
 
 * Original Title: CANNON BALL
-* Alternate Title: キャノンボール (“Cannonball”)
+* Alternate Title: キャノンボール (“Cannon Ball”)
 * Size: 27 Blocks
 * Source: |mini-cannon|
+
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}cannon-ball/title.png
+      :alt: Cannon Ball title screen
+      :width: 160
+      :height: 144
+
+      Title screen
+
+   .. figure:: {static}cannon-ball/game.png
+      :alt: Cannon Ball gameplay
+      :width: 160
+      :height: 144
+
+      Gameplay
 
 Trivia
 ------

@@ -82,11 +82,11 @@ footer {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .gallery-small {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     font-size: 90%;
 }

@@ -17,9 +17,9 @@ body {
   display: block;
 }
 
-a:link    { color: blue; text-decoration: none;      }
-a:hover   { color: blue; text-decoration: underline; }
-a:visited { color: blue;                             }
+a:link    { color: #215ED9; text-decoration: none;      }
+a:hover   { color: #215ED9; text-decoration: underline; }
+a:visited { color: #215ED9;                             }
 
 h1 a,
 h2 a,

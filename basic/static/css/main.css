@@ -46,6 +46,11 @@ ul ul, ul ol, ol ul, ol ol {
     margin: 0;
 }
 
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+
 #menu li {
     display: inline;
 }

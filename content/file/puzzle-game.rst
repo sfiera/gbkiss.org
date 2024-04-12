@@ -23,6 +23,25 @@ Two gameplay modes are provided:
 * 15-puzzle
 * Panel de Pon (Lights Out)
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}puzzle-game/title.png
+      :alt: Puzzle Game title screen
+      :width: 160
+      :height: 144
+
+      Title screen
+
+   .. figure:: {static}puzzle-game/game.png
+      :alt: Puzzle Game gameplay
+      :width: 160
+      :height: 144
+
+      Gameplay
+
 Illustrations
 -------------
 

@@ -16,4 +16,25 @@ Blackjack
 * Size: 21 Blocks
 * Source: |mini-binary|
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}blackjack/title.png
+      :alt: Blackjack title screen
+      :align: left
+      :width: 160
+      :height: 144
+
+      Title screen
+
+   .. figure:: {static}blackjack/game.png
+      :alt: Blackjack gameplay
+      :align: left
+      :width: 160
+      :height: 144
+
+      Gameplay
+
 .. include:: ../../epilog.rsti

@@ -3,12 +3,14 @@ GBKiss Mini Games
 
 :lang: en
 :slug: cart/akaj
+:tags: cart
 
 * Release Date: 1997-12-??
 * Product Code: DMG-AKAJ-JPN
-* Mapper: HuC-1
+* Mapper_: HuC-1
 * ROM Size: 2Mbit (256KiB)
 * RAM Size: 256Kbit (32KiB)
+* Blocks_: 128 (32KiB)
 
 The table of contents for the “Famitsu Bros” 1997/12 issue says:
 
@@ -145,3 +147,5 @@ Sources
 
 * `CaH4e3 (Санчез)’s GB Cheats <https://cah4e3.shedevr.org.ru/gb_cheats.php#329>`_
 * `Bomberman CM Caravan <https://web.archive.org/web/19980209204638/http://www.hudson.co.jp/cm_cvan/cmcvan.html>`_ (Archived 1998-02-09)
+
+.. include:: ../../epilog.rsti

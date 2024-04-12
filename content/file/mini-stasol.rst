@@ -1,0 +1,22 @@
+Mini Stasol
+===========
+
+:lang: en
+:slug: file/mini-stasol
+:tags: game
+
+.. figure:: {static}icon/simula1.png
+   :alt: Unknown icon
+   :align: left
+   :width: 160
+   :height: 120
+
+* Size: Unknown
+* Source: Unknown
+
+Known only from `Gamer’s House`_ (芸魔の館). Appears to have been distributed with `GBKiss Link`_ on an included floppy disk.
+
+.. _Gamer’s House: https://www.asahi-net.or.jp/~ua4s-njm/gb_soft/gkiss04.html
+.. _GBKiss Link: {filename}/link.rst
+
+.. include:: ../../epilog.rsti

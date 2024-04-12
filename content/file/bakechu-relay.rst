@@ -1,0 +1,42 @@
+Bakechu Relay
+=============
+
+:lang: en
+:slug: file/bakechu-relay
+:tags: game, mini-kissmon
+
+.. figure:: {static}bakechu-relay/icon.png
+   :alt: Bakechu Relay icon
+   :align: left
+   :width: 160
+   :height: 120
+
+* Original Title: バケちゅリレー
+* Size: 13 Blocks
+* Source: |mini-kissmon|
+
+Images
+------
+
+.. figure:: {static}bakechu-relay/title.png
+   :alt: Bakechu Relay title screen
+   :align: left
+   :width: 160
+   :height: 144
+
+   Title screen
+
+.. figure:: {static}bakechu-relay/game.png
+   :alt: Bakechu Relay gameplay
+   :align: left
+   :width: 160
+   :height: 144
+
+   Gameplay
+
+Trivia
+------
+
+The title of this game is a pun on “バケツリレー” (“Bucket Relay”), with the “tsu” swapped for “chu”, a mouse sound (compare Pikachu, ChuChu Rocket).
+
+.. include:: ../../epilog.rsti

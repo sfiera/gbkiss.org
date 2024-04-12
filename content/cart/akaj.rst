@@ -10,7 +10,7 @@ GBKiss Mini Games
 * ROM Size: 2Mbit (256KiB)
 * RAM Size: 256Kbit (32KiB)
 
-The “Famitsu Bros” table of contents says:
+The table of contents for the “Famitsu Bros” 1997/12 issue says:
 
     いますぐゲームショップでミニゲームゲット
     

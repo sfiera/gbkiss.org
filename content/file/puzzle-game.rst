@@ -28,30 +28,30 @@ Illustrations
 
 The default illustration depicts a grid of numbers from 1 to 15. Three additional illustrations are included in the |mini-gamedata|.
 
-..  list-table::
+.. container:: gallery
 
-    * * ..  figure:: {static}puzzle-game/numbers.png
-            :alt: Default illustration
-            :width: 128
+   ..  figure:: {static}puzzle-game/numbers.png
+       :alt: Default illustration
+       :width: 128
 
-            Default
+       Default
 
-      * ..  figure:: {static}puzzle-game/koura1.png
-            :alt: Koura 1 Illustration
-            :width: 128
+   ..  figure:: {static}puzzle-game/koura1.png
+       :alt: Koura 1 Illustration
+       :width: 128
 
-            `KOURA1 <{filename}koura-1.rst>`_
+       `KOURA1 <{filename}koura-1.rst>`_
 
-    * * ..  figure:: {static}puzzle-game/koura2.png
-            :alt: Koura 2 Illustration
-            :width: 128
+   ..  figure:: {static}puzzle-game/koura2.png
+       :alt: Koura 2 Illustration
+       :width: 128
 
-            `KOURA2 <{filename}koura-2.rst>`_
+       `KOURA2 <{filename}koura-2.rst>`_
 
-      * ..  figure:: {static}puzzle-game/koura3.png
-            :alt: Koura 3 Illustration
-            :width: 128
+   ..  figure:: {static}puzzle-game/koura3.png
+       :alt: Koura 3 Illustration
+       :width: 128
 
-            `KOURA3 <{filename}koura-3.rst>`_
+       `KOURA3 <{filename}koura-3.rst>`_
 
 .. include:: ../../epilog.rsti

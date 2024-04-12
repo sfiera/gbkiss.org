@@ -76,12 +76,17 @@ footer {
     border-radius: 2px;
     padding: 0.5em;
     margin: 0.5em;
+    text-align: center;
+    font-size: 90%;
 }
 
-.figure.align-left {
-    float: left;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
 }
 
-.figure.align-right {
-    float: right;
+.gallery-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    font-size: 90%;
 }

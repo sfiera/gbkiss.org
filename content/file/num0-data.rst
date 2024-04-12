@@ -7,7 +7,6 @@ Num0 Data
 
 .. figure:: {static}icon/tokei.png
    :alt: Num0 Data icon
-   :align: left
    :width: 160
    :height: 120
 

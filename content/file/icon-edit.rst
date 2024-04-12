@@ -7,7 +7,6 @@ Icon-Edit
 
 .. figure:: {static}icon/edit.png
    :alt: Icon-Edit icon
-   :align: left
    :width: 160
    :height: 120
 
@@ -23,7 +22,6 @@ Images
 
    .. figure:: {static}icon/menu.png
       :alt: Icon-Edit menu
-      :align: left
       :width: 160
       :height: 144
 
@@ -31,7 +29,6 @@ Images
 
    .. figure:: {static}icon/app.png
       :alt: Icon-Edit usage
-      :align: left
       :width: 160
       :height: 144
 

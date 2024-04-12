@@ -7,7 +7,6 @@ Kiss Mail
 
 .. figure:: {static}icon/letter.png
    :alt: Kiss-Mail icon
-   :align: left
    :width: 160
    :height: 120
 
@@ -22,7 +21,6 @@ Images
 
    .. figure:: {static}kiss-mail/menu.png
       :alt: Kiss Mail menu
-      :align: left
       :width: 160
       :height: 144
 
@@ -30,7 +28,6 @@ Images
 
    .. figure:: {static}kiss-mail/app.png
       :alt: Kiss Mail usage
-      :align: left
       :width: 160
       :height: 144
 

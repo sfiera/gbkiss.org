@@ -7,7 +7,6 @@ Binary
 
 .. figure:: {static}binary/icon.png
    :alt: Binary icon
-   :align: left
    :width: 160
    :height: 120
 
@@ -23,7 +22,6 @@ Images
 
    .. figure:: {static}binary/title.png
       :alt: Binary title screen
-      :align: left
       :width: 160
       :height: 144
 
@@ -31,7 +29,6 @@ Images
 
    .. figure:: {static}binary/game.png
       :alt: Binary gameplay
-      :align: left
       :width: 160
       :height: 144
 

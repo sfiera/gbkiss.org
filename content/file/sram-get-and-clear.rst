@@ -7,7 +7,6 @@ SRAM Get & Clear
 
 .. figure:: {static}sram-get-and-clear/icon.png
    :alt: SRAM Get & Clear icon
-   :align: left
    :width: 160
    :height: 120
 

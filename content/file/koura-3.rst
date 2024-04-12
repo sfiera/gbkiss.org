@@ -7,7 +7,6 @@ Koura 3
 
 .. figure:: {static}puzzle-game/icon.png
    :alt: Koura 3 icon
-   :align: left
    :width: 160
    :height: 120
 

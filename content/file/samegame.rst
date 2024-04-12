@@ -7,7 +7,6 @@ SameGame
 
 .. figure:: {static}samegame/icon.png
    :alt: SameGame icon
-   :align: left
    :width: 160
    :height: 120
 

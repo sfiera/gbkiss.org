@@ -7,7 +7,6 @@ Icon-Send
 
 .. figure:: {static}icon/send.png
    :alt: Icon-Send icon
-   :align: left
    :width: 160
    :height: 120
 

@@ -7,7 +7,6 @@ Kiss-Mon
 
 .. figure:: {static}kiss-mon/icon.png
    :alt: Kiss-Mon icon
-   :align: left
    :width: 160
    :height: 120
 

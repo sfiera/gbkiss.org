@@ -7,7 +7,6 @@ Slot
 
 .. figure:: {static}slot/icon.png
    :alt: Slot icon
-   :align: left
    :width: 160
    :height: 120
 

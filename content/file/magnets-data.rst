@@ -7,7 +7,6 @@ Magnets Data
 
 .. figure:: {static}magnets/icon.png
    :alt: Magnets icon
-   :align: left
    :width: 160
    :height: 120
 

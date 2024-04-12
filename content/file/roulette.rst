@@ -7,7 +7,6 @@ Roulette
 
 .. figure:: {static}roulette/icon.png
    :alt: Roulette icon
-   :align: left
    :width: 160
    :height: 120
 

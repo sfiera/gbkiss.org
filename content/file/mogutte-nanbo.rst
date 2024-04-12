@@ -7,7 +7,6 @@ Mogutte Nanbo
 
 .. figure:: {static}mogutte-nanbo/icon.png
    :alt: Mogutte Nanbo icon
-   :align: left
    :width: 160
    :height: 120
 

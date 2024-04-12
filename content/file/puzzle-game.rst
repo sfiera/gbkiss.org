@@ -7,7 +7,6 @@ Puzzle Game
 
 .. figure:: {static}puzzle-game/icon.png
    :alt: Puzzle Game icon
-   :align: left
    :width: 160
    :height: 120
 

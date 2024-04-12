@@ -7,7 +7,6 @@ Drive
 
 .. figure:: {static}drive/icon.png
    :alt: Drive icon
-   :align: left
    :width: 160
    :height: 120
 

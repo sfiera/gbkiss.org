@@ -187,6 +187,13 @@ Data
 
 .. container:: gallery-small
 
+   .. figure:: {static}icon/icon.png
+      :alt: Icon icon
+      :target: {filename}icon.rst
+      :width: 64
+
+      `Icon <{filename}icon.rst>`_
+
    .. figure:: {static}puzzle-game/icon.png
       :alt: Koura 1 icon
       :target: {filename}koura-1.rst
@@ -214,6 +221,13 @@ Data
       :width: 64
 
       `Magnets Data <{filename}magnets-data.rst>`_
+
+   .. figure:: {static}icon/mail.png
+      :alt: Mail icon
+      :target: {filename}mail.rst
+      :width: 64
+
+      `Mail <{filename}mail.rst>`_
 
    .. figure:: {static}watch-and-timer/icon.png
       :alt: Num0 Data icon

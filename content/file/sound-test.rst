@@ -1,0 +1,19 @@
+Sound Test
+==========
+
+:lang: en
+:slug: file/sound-test
+:tags: app, mini-kissmon
+
+.. figure:: {static}icon/cat.png
+   :alt: Sound Test icon
+   :align: left
+   :width: 160
+   :height: 120
+
+* Original Title: サウンド　テスト
+* Alternate Title: サウンド ルーム (“Sound Room”)
+* Size: 4 Blocks
+* Source: |mini-kissmon|
+
+.. include:: ../../epilog.rsti

@@ -1,0 +1,8 @@
+{% extends "!simple/base.html" %}
+
+{%- block head %}
+{{ super() }}
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/rdark.css" />
+	  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" />
+</head>
+{% endblock -%}

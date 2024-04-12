@@ -1,0 +1,19 @@
+Sezaki
+======
+
+:lang: en
+:slug: file/sezaki
+:tags: data, mini-gamedata
+
+.. figure:: {static}mogutte-nanbo/icon.png
+   :alt: Sezaki icon
+   :align: left
+   :width: 160
+   :height: 120
+
+* Original Title: SEZAKI
+* Alternate Title: もぐってナンボ データ (“Mogutte Nanbo Data”)
+* Size: 7 Blocks
+* Source: |mini-gamedata|
+
+.. include:: ../../epilog.rsti

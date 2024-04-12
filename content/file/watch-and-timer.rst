@@ -7,7 +7,6 @@ Watch & Timer
 
 .. figure:: {static}icon/tokei.png
    :alt: Watch & Timer icon
-   :align: left
    :width: 160
    :height: 120
 
@@ -23,7 +22,6 @@ Images
 
    .. figure:: {static}watch-and-timer/title.png
       :alt: Watch & Timer title screen
-      :align: left
       :width: 160
       :height: 144
 
@@ -31,7 +29,6 @@ Images
 
    .. figure:: {static}watch-and-timer/app.png
       :alt: Watch & Timer usage
-      :align: left
       :width: 160
       :height: 144
 

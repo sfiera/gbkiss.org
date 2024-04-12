@@ -7,7 +7,6 @@ Cannon Ball
 
 .. figure:: {static}cannon-ball/icon.png
    :alt: Cannon Ball icon
-   :align: left
    :width: 160
    :height: 120
 

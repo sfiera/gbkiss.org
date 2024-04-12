@@ -7,7 +7,6 @@ Biorhythm
 
 .. figure:: {static}biorhythm/icon.png
    :alt: Biorhythm icon
-   :align: left
    :width: 160
    :height: 120
 
@@ -23,7 +22,6 @@ Images
 
    .. figure:: {static}biorhythm/title.png
       :alt: Biorhythm title screen
-      :align: left
       :width: 160
       :height: 144
 
@@ -31,7 +29,6 @@ Images
 
    .. figure:: {static}biorhythm/app.png
       :alt: Biorhythm usage
-      :align: left
       :width: 160
       :height: 144
 

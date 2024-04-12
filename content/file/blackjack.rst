@@ -7,7 +7,6 @@ Blackjack
 
 .. figure:: {static}icon/card0.png
    :alt: Blackjack icon
-   :align: left
    :width: 160
    :height: 120
 
@@ -23,7 +22,6 @@ Images
 
    .. figure:: {static}blackjack/title.png
       :alt: Blackjack title screen
-      :align: left
       :width: 160
       :height: 144
 
@@ -31,7 +29,6 @@ Images
 
    .. figure:: {static}blackjack/game.png
       :alt: Blackjack gameplay
-      :align: left
       :width: 160
       :height: 144
 

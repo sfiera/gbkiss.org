@@ -7,7 +7,6 @@ Shot
 
 .. figure:: {static}icon/gun.png
    :alt: Shot icon
-   :align: left
    :width: 160
    :height: 120
 

@@ -7,7 +7,6 @@ Sezaki
 
 .. figure:: {static}mogutte-nanbo/icon.png
    :alt: Sezaki icon
-   :align: left
    :width: 160
    :height: 120
 

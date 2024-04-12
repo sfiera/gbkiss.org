@@ -7,7 +7,6 @@ Bakechu Relay
 
 .. figure:: {static}bakechu-relay/icon.png
    :alt: Bakechu Relay icon
-   :align: left
    :width: 160
    :height: 120
 
@@ -22,7 +21,6 @@ Images
 
    .. figure:: {static}bakechu-relay/title.png
       :alt: Bakechu Relay title screen
-      :align: left
       :width: 160
       :height: 144
 
@@ -30,7 +28,6 @@ Images
 
    .. figure:: {static}bakechu-relay/game.png
       :alt: Bakechu Relay gameplay
-      :align: left
       :width: 160
       :height: 144
 

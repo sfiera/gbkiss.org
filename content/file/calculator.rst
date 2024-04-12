@@ -7,7 +7,6 @@ Calculator
 
 .. figure:: {static}icon/dentaku.png
    :alt: Calculator icon
-   :align: left
    :width: 160
    :height: 120
 
@@ -23,7 +22,6 @@ Images
 
    .. figure:: {static}calculator/title.png
       :alt: Calculator title screen
-      :align: left
       :width: 160
       :height: 144
 
@@ -31,7 +29,6 @@ Images
 
    .. figure:: {static}calculator/app.png
       :alt: Calculator usage
-      :align: left
       :width: 160
       :height: 144
 

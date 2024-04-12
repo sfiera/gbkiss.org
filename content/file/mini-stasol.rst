@@ -7,7 +7,6 @@ Mini Stasol
 
 .. figure:: {static}icon/simula1.png
    :alt: Unknown icon
-   :align: left
    :width: 160
    :height: 120
 

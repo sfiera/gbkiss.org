@@ -7,7 +7,6 @@ Sound Test
 
 .. figure:: {static}icon/cat.png
    :alt: Sound Test icon
-   :align: left
    :width: 160
    :height: 120
 
@@ -23,7 +22,6 @@ Images
 
    .. figure:: {static}sound-test/title.png
       :alt: Sound Test title screen
-      :align: left
       :width: 160
       :height: 144
 
@@ -31,7 +29,6 @@ Images
 
    .. figure:: {static}sound-test/app.png
       :alt: Sound Test usage
-      :align: left
       :width: 160
       :height: 144
 

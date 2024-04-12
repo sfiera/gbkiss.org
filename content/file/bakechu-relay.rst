@@ -18,21 +18,23 @@ Bakechu Relay
 Images
 ------
 
-.. figure:: {static}bakechu-relay/title.png
-   :alt: Bakechu Relay title screen
-   :align: left
-   :width: 160
-   :height: 144
+.. container:: gallery
 
-   Title screen
+   .. figure:: {static}bakechu-relay/title.png
+      :alt: Bakechu Relay title screen
+      :align: left
+      :width: 160
+      :height: 144
 
-.. figure:: {static}bakechu-relay/game.png
-   :alt: Bakechu Relay gameplay
-   :align: left
-   :width: 160
-   :height: 144
+      Title screen
 
-   Gameplay
+   .. figure:: {static}bakechu-relay/game.png
+      :alt: Bakechu Relay gameplay
+      :align: left
+      :width: 160
+      :height: 144
+
+      Gameplay
 
 Trivia
 ------

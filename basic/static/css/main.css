@@ -74,8 +74,8 @@ footer {
 .figure {
     border: thin solid #555;
     border-radius: 2px;
-    padding: 0.5em;
-    margin: 0.5em;
+    padding: 0.25em;
+    margin: 0.25em;
     text-align: center;
     font-size: 90%;
 }

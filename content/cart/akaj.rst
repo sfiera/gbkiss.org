@@ -31,7 +31,7 @@ By default, one of three games will be randomly unlocked: Drive, Mogutte Nanbo, 
 Initially, the available options are password entry and `キャラバンバージョン 5ゲーム <#default>`_ (“Caravan Version: 5 Games”). There are five passwords which will unlock additional menu options:
 
 * KISSMON: `キスモン&バケちゅリレーほか4 <#kissmon>`_ (“Kiss-Mon & Bakechu Relay + 4”)
-* CANNON: `15パズル&キャノン ほか4こ <#cannon>`_ (“15-Puzzle & Cannon + 4”)
+* CANNON: `15パズル&キャノン ほか4こ <#cannon>`_ (“15 Puzzle & Cannon + 4”)
 * BINARY: `バイナリーランド&BJほか2こ <#binary>`_ (“Binary Land & Blackjack + 2”)
 * GAMEDATA: `ミニゲームがぞういれかえデータ <#gamedata>`_ (“Mini Game Image Replacement Data”)
 * KISSTOOL: `GB KISS TOOLS <#kisstool>`_

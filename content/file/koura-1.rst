@@ -11,7 +11,7 @@ Koura 1
    :height: 120
 
 * Original Title: KOURA1
-* Alternate Title: 15パズル データ1 (“15-Puzzle Data 1”)
+* Alternate Title: 15パズル データ1 (“15 Puzzle Data 1”)
 * Size: 6 Blocks
 * Source: |mini-gamedata|
 

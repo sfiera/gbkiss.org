@@ -11,7 +11,7 @@ Koura 2
    :height: 120
 
 * Original Title: KOURA2
-* Alternate Title: 15パズル データ1 (“15-Puzzle Data 2”)
+* Alternate Title: 15パズル データ1 (“15 Puzzle Data 2”)
 * Size: 7 Blocks
 * Source: |mini-gamedata|
 

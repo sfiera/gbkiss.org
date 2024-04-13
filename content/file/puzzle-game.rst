@@ -11,7 +11,7 @@ Puzzle Game
    :height: 120
 
 * Alternate Title: 15パズル&パネルでポン (“15 Puzzle & Panel de Pon”)
-* Size: 20 Blocks
+* Size: 20 Blocks_
 * Type: |circle|
 * Author: TARKUN
 * Source: |mini-cannon|

@@ -86,7 +86,7 @@ Games
 
       `Magnets <{filename}magnets.rst>`_
 
-   .. figure:: {static}icon/simula1.png
+   .. figure:: {static}main/empty.png
       :alt: Mini Stasol icon
       :target: {filename}mini-stasol.rst
       :width: 64
@@ -299,7 +299,7 @@ In the GBKiss menu, players can select files with the D-Pad and A. There are six
 
 The Start button immediately goes to the Send screen. B exits GBKiss. Holding down Select while using the D-Pad enables fast scrolling.
 
-The GBKiss menu has slots for 120 files, but due to limited blocks_ it is not possible to store that many files on most cartridges_.
+The GBKiss menu has slots for 120 files, but due to block_ size limits it is not possible to store that many files on most cartridges_.
 
 .. _cartridges: {filename}/cart/index.rst
 

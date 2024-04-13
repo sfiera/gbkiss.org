@@ -12,7 +12,7 @@ Num0 Data
 
 * Original Title: NUM0_DATA
 * Alternate Title: ストップウォッチすうじデータ (“Stopwatch Digit Data”)
-* Size: 4 Blocks
+* Size: 4 Blocks_
 * Type: |triangle|
 * Author: *Anonymous*
 * Source: |mini-gamedata|

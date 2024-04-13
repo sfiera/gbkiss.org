@@ -11,7 +11,7 @@ Bakechu Relay
    :height: 120
 
 * Original Title: バケちゅリレー
-* Size: 13 Blocks
+* Size: 13 Blocks_
 * Type: |circle|
 * Author: TOBI
 * Source: |mini-kissmon|

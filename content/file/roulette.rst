@@ -11,7 +11,7 @@ Roulette
    :height: 120
 
 * Original Title: ルーレット
-* Size: 21 Blocks
+* Size: 21 Blocks_
 * Type: |circle|
 * Author: つもり (“Tsumori”)
 * Source: |mini-binary|

@@ -11,7 +11,7 @@ Delete All
    :height: 120
 
 * Original Title: DEL_ALL
-* Size: 1 Block
+* Size: 1 Block_
 * Type: |circle|
 * Author: *Anonymous*
 * Source: |mini-kisstool|

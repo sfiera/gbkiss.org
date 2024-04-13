@@ -11,7 +11,7 @@ Kiss Mail
    :height: 120
 
 * Original Title: KISS MAIL
-* Size: 1 Block
+* Size: 1 Block_
 * Type: |bullseye|
 * Author: *Anonymous*
 * Source: built-in
@@ -28,7 +28,7 @@ Images
 
       Menu
 
-   .. figure:: {static}kiss-mail/app.png
+   .. figure:: {static}kiss-mail/mail.png
       :alt: Kiss Mail usage
       :width: 160
       :height: 144

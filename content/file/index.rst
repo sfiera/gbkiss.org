@@ -4,8 +4,17 @@ Files
 :lang: en
 :slug: file
 
+GBKiss content is stored in files. Players can run software_ files directly, and can open data_ files with software. The GBKiss menu_ has options for running, organizing, and exchanging files. Each file occupies some number of storage blocks_ in cartridge RAM (CRAM).
+
+.. _blocks: {filename}/tech/blocks.rst
+
+Software
+--------
+
+Software files are marked with a doubled circle (◎) for the built-in `Kiss Mail`_ app, or a circle (○) or diamond (◇) for installable software (difference unclear).
+
 Games
------
+~~~~~
 
 .. container:: gallery-small
 
@@ -129,7 +138,7 @@ Games
       `Worm <{filename}worm.rst>`_
 
 Apps
-----
+~~~~
 
 .. container:: gallery-small
 
@@ -182,8 +191,36 @@ Apps
 
       `Watch & Timer <{filename}watch-and-timer.rst>`_
 
+Tools
+~~~~~
+
+.. container:: gallery-small
+
+   .. figure:: {static}icon/card0.png
+      :alt: Char-Dump icon
+      :target: {filename}char-dump.rst
+      :width: 64
+
+      `Char-Dump <{filename}char-dump.rst>`_
+
+   .. figure:: {static}icon/card0.png
+      :alt: Delete All icon
+      :target: {filename}delete-all.rst
+      :width: 64
+
+      `Delete All <{filename}delete-all.rst>`_
+
+   .. figure:: {static}sram-get-and-clear/icon.png
+      :alt: SRAM Get & Clear icon
+      :target: {filename}sram-get-and-clear.rst
+      :width: 64
+
+      `SRAM Get & Clear <{filename}sram-get-and-clear.rst>`_
+
 Data
 ----
+
+Data files are marked with a triangle (△). If the associated software_ is installed, they use the software’s icon; otherwise they use the SIMULA1 icon from `Icon-Send`_. The exception is Icon_ files, which always use their own icon.
 
 .. container:: gallery-small
 
@@ -243,28 +280,51 @@ Data
 
       `Sezaki <{filename}sezaki.rst>`_
 
-Tools
------
+Menu
+----
 
-.. container:: gallery-small
+In the GBKiss menu, players can select files with the D-Pad and A. There are six options in the menu:
 
-   .. figure:: {static}icon/card0.png
-      :alt: Char-Dump icon
-      :target: {filename}char-dump.rst
-      :width: 64
+*  実行 (“Run”): execute software, or open data in the associated software
+*  情報 (“Info”): show information about file
+*  整理 (“Organize”): move file to a different position in the menu
+*  送信 (“Send”): initiate sending the file to another cartridge
+*  受信 (“Receive”): initiate receiving a file from another cartridge
+*  削除 (“Delete”): delete the file
 
-      `Char-Dump <{filename}char-dump.rst>`_
+The Start button immediately goes to the Send screen. B exits GBKiss. Holding down Select while using the D-Pad enables fast scrolling.
 
-   .. figure:: {static}icon/card0.png
-      :alt: Delete All icon
-      :target: {filename}delete-all.rst
-      :width: 64
+The GBKiss menu has slots for 120 files, but due to limited blocks_ it is not possible to store that many files on most cartridges_.
 
-      `Delete All <{filename}delete-all.rst>`_
+.. _cartridges: {filename}/cart/index.rst
 
-   .. figure:: {static}sram-get-and-clear/icon.png
-      :alt: SRAM Get & Clear icon
-      :target: {filename}sram-get-and-clear.rst
-      :width: 64
+Images
+------
 
-      `SRAM Get & Clear <{filename}sram-get-and-clear.rst>`_
+.. container:: gallery
+
+   .. figure:: {static}main/menu.png
+      :alt: GBKiss menu
+
+      GBKiss menu with 2 files
+
+   .. figure:: {static}main/broken.png
+      :alt: Broken link
+
+      Broken link: data without app
+
+   .. figure:: {static}main/info.png
+      :alt: Software info screen
+
+      Software info screen
+
+   .. figure:: {static}main/send.png
+      :alt: Start send screen
+
+      Start send screen
+
+   .. figure:: {static}main/fail.png
+      :alt: Send fail screen
+
+      Send fail screen
+

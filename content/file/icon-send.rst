@@ -15,6 +15,35 @@ Icon-Send
 * Size: 23 Blocks
 * Source: |mini-cannon|
 
+Description
+-----------
+
+Upon execution, adds 42 icon_ files to storage. Each takes up 1 Block_, and if there are less than 42 blocks free, it adds as many as possible and then stops.
+
+Some of the icons are used for other apps and games:
+
+* SIMULA1: data files whose game/app is not installed
+* LETTER: `Kiss Mail`_
+* MAIL: Mail_
+* DENTAKU: Calculator_
+* TOKEI, `Watch & Timer`_
+* CARD0: Blackjack_, Poker_, Char-Dump_, `Delete All`_
+* GUN: Shot_
+
+Others may represent planned apps, draft graphics, or simply be intended as artwork.
+
+.. _Icon: {filename}icon.rst
+.. _Block: {filename}/tech/blocks.rst
+.. _Kiss Mail: {filename}kiss-mail.rst
+.. _Mail: {filename}mail.rst
+.. _Calculator: {filename}calculator.rst
+.. _Watch & Timer: {filename}watch-and-timer.rst
+.. _Blackjack: {filename}blackjack.rst
+.. _Poker: {filename}poker.rst
+.. _Char-Dump: {filename}char-dump.rst
+.. _Delete All: {filename}delete-all.rst
+.. _Shot: {filename}shot.rst
+
 Contents
 --------
 

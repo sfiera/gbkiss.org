@@ -22,6 +22,7 @@ STATIC_PATHS      = [""]
 STATIC_URL        = "{path}"
 STATIC_SAVE_AS    = "{path}"
 
+DIRECT_TEMPLATES = []
 ARTICLE_PATHS     = []
 
 # Blogroll

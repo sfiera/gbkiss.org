@@ -51,10 +51,6 @@ blockquote {
     font-style: italic;
 }
 
-#menu li {
-    display: inline;
-}
-
 #post-list {
     margin-bottom: 1em;
     margin-top: 1em;

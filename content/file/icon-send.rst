@@ -22,9 +22,9 @@ Description
 
 Upon execution, adds 42 icon_ files to storage. Each takes up 1 Block_, and if there are less than 42 blocks free, it adds as many as possible and then stops.
 
-Some of the icons are used for other apps and games:
+Some of the icons are used for other software_:
 
-* SIMULA1: data files whose game/app is not installed
+* SIMULA1: data_ files whose software is not installed
 * LETTER: `Kiss Mail`_
 * MAIL: Mail_
 * DENTAKU: Calculator_
@@ -32,9 +32,11 @@ Some of the icons are used for other apps and games:
 * CARD0: Blackjack_, Poker_, Char-Dump_, `Delete All`_
 * GUN: Shot_
 
-Others may represent planned apps, draft graphics, or simply be intended as artwork.
+Others may represent planned software, draft graphics, or simply be intended as artwork.
 
 .. _Icon: {filename}icon.rst
+.. _data: {filename}index.rst#data
+.. _software: {filename}index.rst#software
 .. _Block: {filename}/tech/blocks.rst
 .. _Kiss Mail: {filename}kiss-mail.rst
 .. _Mail: {filename}mail.rst

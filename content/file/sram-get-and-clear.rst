@@ -11,7 +11,7 @@ SRAM Get & Clear
    :height: 120
 
 * Original Title: SRAM GET&CLR
-* Size: 5 Blocks
+* Size: 5 Blocks_
 * Type: |circle|
 * Author: Y.MOTOSAKO
 * Source: |mini-kisstool|

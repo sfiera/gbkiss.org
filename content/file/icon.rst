@@ -10,7 +10,7 @@ Icon
    :width: 160
    :height: 120
 
-* Size: 1 Block
+* Size: 1 Block_
 * Type: |triangle|
 * Author: *GBKiss user*
 * Source: Icon-Edit_, Icon-Send_

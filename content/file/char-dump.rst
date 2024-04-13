@@ -11,7 +11,7 @@ Char-Dump
    :height: 120
 
 * Original Title: CHAR-DUMP
-* Size: 2 Blocks
+* Size: 2 Blocks_
 * Type: |circle|
 * Author: *Anonymous*
 * Source: |mini-kisstool|

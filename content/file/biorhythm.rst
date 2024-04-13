@@ -12,7 +12,7 @@ Biorhythm
 
 * Original Title: BIORYTHM
 * Alternate Title: バイオリズム (“Biorhythm”)
-* Size: 20 Blocks
+* Size: 20 Blocks_
 * Type: |diamond|
 * Author: KEI KONDOH
 * Source: |mini-kissmon|

@@ -11,7 +11,7 @@ Mogutte Nanbo
    :height: 120
 
 * Original Title: もぐってナンボ
-* Size: 31 Blocks
+* Size: 31 Blocks_
 * Type: |diamond|
 * Author: TEAMMOGURA
 * Source: |mini-default|

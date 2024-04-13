@@ -12,7 +12,7 @@ Koura 2
 
 * Original Title: KOURA2
 * Alternate Title: 15パズル データ1 (“15 Puzzle Data 2”)
-* Size: 7 Blocks
+* Size: 7 Blocks_
 * Type: |triangle|
 * Author: NONCHAN
 * Source: |mini-gamedata|

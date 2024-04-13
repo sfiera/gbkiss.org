@@ -100,7 +100,7 @@ The CANNON group contains `Cannon Ball`_ and 3 other games, along with an icon e
 BINARY
 ~~~~~~
 
-The BINARY group contains a demake of Binary Land long with 3 other games.
+The BINARY group contains a demake of Binary Land along with 3 other games.
 
 * Worm_ (WORM)
 * Binary_ (バイナリーランド)

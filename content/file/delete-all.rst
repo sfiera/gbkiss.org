@@ -14,4 +14,11 @@ Delete All
 * Size: 1 Block
 * Source: |mini-kisstool|
 
+Description
+-----------
+
+Upon execution, immediately deletes all files in GBKiss without confirmation.
+
+Dangerous! Don’t install this unless you plan to use it.
+
 .. include:: ../../epilog.rsti

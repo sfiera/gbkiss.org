@@ -15,3 +15,5 @@
 
 .. _Mapper: {filename}/tech/mapper.rst
 .. _Blocks: {filename}/tech/blocks.rst
+
+.. role:: button

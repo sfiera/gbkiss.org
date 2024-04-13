@@ -11,7 +11,7 @@ Koura 3
    :height: 120
 
 * Original Title: KOURA3
-* Alternate Title: 15パズル データ1 (“15-Puzzle Data 3”)
+* Alternate Title: 15パズル データ1 (“15 Puzzle Data 3”)
 * Size: 6 Blocks
 * Source: |mini-gamedata|
 

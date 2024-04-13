@@ -1,5 +1,5 @@
 AUTHOR = 'sfiera'
-SITENAME = 'GBKiss'
+SITENAME = 'GBKiss.org'
 SITEURL = ''
 
 PATH = 'content'
@@ -38,7 +38,6 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = False
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
-    ("GBKiss",      "/"),
     ("Files",       "/file"),
     ("Cartridges",  "/cart"),
     ("GBKiss Link", "/link"),

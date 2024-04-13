@@ -20,7 +20,7 @@ Icon-Send
 Description
 -----------
 
-Upon execution, adds 42 icon_ files to storage. Each takes up 1 Block_, and if there are less than 42 blocks free, it adds as many as possible and then stops.
+Upon execution, adds 42 icon_ files to storage. Each takes up 1 Block_, and if there are less than 42 blocks free, it adds as many as possible and then stops. Authorship is credited to the current GBKiss player.
 
 Some of the icons are used for other software_:
 

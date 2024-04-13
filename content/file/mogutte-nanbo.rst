@@ -12,6 +12,8 @@ Mogutte Nanbo
 
 * Original Title: もぐってナンボ
 * Size: 31 Blocks
+* Type: |diamond|
+* Author: TEAMMOGURA
 * Source: |mini-default|
 
 Description

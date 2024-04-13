@@ -13,6 +13,8 @@ Poker
 * Original Title: POKER
 * Alternate Title: ポーカー (“Poker”)
 * Size: 21 Blocks
+* Type: |circle|
+* Author: S.KIMURA
 * Source: |mini-cannon|
 
 Images

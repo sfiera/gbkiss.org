@@ -12,6 +12,8 @@ Kiss Mail
 
 * Original Title: KISS MAIL
 * Size: 1 Block
+* Type: |bullseye|
+* Author: *Anonymous*
 * Source: built-in
 
 Images

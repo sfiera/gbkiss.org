@@ -12,6 +12,8 @@ Delete All
 
 * Original Title: DEL_ALL
 * Size: 1 Block
+* Type: |circle|
+* Author: *Anonymous*
 * Source: |mini-kisstool|
 
 Description

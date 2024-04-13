@@ -12,6 +12,8 @@ Puzzle Game
 
 * Alternate Title: 15パズル&パネルでポン (“15 Puzzle & Panel de Pon”)
 * Size: 20 Blocks
+* Type: |circle|
+* Author: TARKUN
 * Source: |mini-cannon|
 
 Gameplay

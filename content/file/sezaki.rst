@@ -13,6 +13,8 @@ Sezaki
 * Original Title: SEZAKI
 * Alternate Title: もぐってナンボ データ (“Mogutte Nanbo Data”)
 * Size: 7 Blocks
+* Type: |triangle|
+* Author: SEZAKI
 * Source: |mini-gamedata|
 
 .. include:: ../../epilog.rsti

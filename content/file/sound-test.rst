@@ -13,6 +13,8 @@ Sound Test
 * Original Title: サウンド　テスト
 * Alternate Title: サウンド ルーム (“Sound Room”)
 * Size: 4 Blocks
+* Type: |circle|
+* Author: *Anonymous*
 * Source: |mini-kissmon|
 
 Images

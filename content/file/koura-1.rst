@@ -13,6 +13,8 @@ Koura 1
 * Original Title: KOURA1
 * Alternate Title: 15パズル データ1 (“15 Puzzle Data 1”)
 * Size: 6 Blocks
+* Type: |triangle|
+* Author: NONCHAN
 * Source: |mini-gamedata|
 
 .. image:: {static}puzzle-game/koura1.png

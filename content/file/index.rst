@@ -13,6 +13,18 @@ Software
 
 Software files are marked with a doubled circle (◎) for the built-in `Kiss Mail`_ app, or a circle (○) or diamond (◇) for installable software (difference unclear).
 
+Special
+~~~~~~~
+
+.. container:: gallery-small
+
+   .. figure:: {static}icon/letter.png
+      :alt: Kiss Mail icon
+      :target: {filename}kiss-mail.rst
+      :width: 64
+
+      `Kiss Mail <{filename}kiss-mail.rst>`_
+
 Games
 ~~~~~
 
@@ -169,13 +181,6 @@ Apps
       :width: 64
 
       `Icon-Send <{filename}icon-send.rst>`_
-
-   .. figure:: {static}icon/letter.png
-      :alt: Kiss Mail icon
-      :target: {filename}kiss-mail.rst
-      :width: 64
-
-      `Kiss Mail <{filename}kiss-mail.rst>`_
 
    .. figure:: {static}icon/cat.png
       :alt: Sound Test icon

@@ -17,3 +17,8 @@
 .. _Blocks: {filename}/tech/blocks.rst
 
 .. role:: button
+
+.. |bullseye| replace:: ◎
+.. |circle| replace:: ○
+.. |diamond| replace:: ◇
+.. |triangle| replace:: △

@@ -13,6 +13,8 @@ Shot
 * Original Title: SHOT
 * Alternate Title: SHOOTING MASTER
 * Size: 2 Blocks
+* Type: |circle|
+* Author: TOBI
 * Source: |mini-default|
 
 Images

@@ -11,6 +11,8 @@ Icon
    :height: 120
 
 * Size: 1 Block
+* Type: |triangle|
+* Author: *GBKiss user*
 * Source: Icon-Edit_, Icon-Send_
 
 .. _Icon-Edit: {filename}icon-edit.rst

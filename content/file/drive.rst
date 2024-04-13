@@ -13,6 +13,8 @@ Drive
 * Original Title: DRIVE
 * Alternate Title: ジャカジャカジャンプでポン (“Jaka-Jaka-Jump de Pon”)
 * Size: 20 Blocks
+* Type: |circle|
+* Author: T.OHNISHI
 * Source: |mini-default|
 
 Images

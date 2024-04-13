@@ -12,6 +12,8 @@ Char-Dump
 
 * Original Title: CHAR-DUMP
 * Size: 2 Blocks
+* Type: |circle|
+* Author: *Anonymous*
 * Source: |mini-kisstool|
 
 .. include:: ../../epilog.rsti

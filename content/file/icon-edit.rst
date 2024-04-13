@@ -13,6 +13,8 @@ Icon-Edit
 * Original Title: ICON-EDIT
 * Alternate Title: アイコン エディター (“Icon Editor”)
 * Size: 23 Blocks
+* Type: |circle|
+* Author: TOBI
 * Source: |mini-cannon|
 
 Images

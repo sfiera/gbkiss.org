@@ -13,6 +13,8 @@ Binary
 * Original Title: BINARY
 * Alternate Title: バイナリーランド (“Binary Land”)
 * Size: 32 Blocks
+* Type: |diamond|
+* Author: T.OHNISHI
 * Source: |mini-binary|
 
 Images

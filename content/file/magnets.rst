@@ -13,6 +13,8 @@ Magnets
 * Original Title: MAGNETS
 * Alternate Title: がんばれマグネッツMAIN (“Ganbare Magnets MAIN”)
 * Size: 30 Blocks
+* Type: |diamond|
+* Author: <TEAM MAG>
 * Source: |mini-default|
 
 Images

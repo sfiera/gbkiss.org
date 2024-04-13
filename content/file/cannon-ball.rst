@@ -13,6 +13,8 @@ Cannon Ball
 * Original Title: CANNON BALL
 * Alternate Title: キャノンボール (“Cannon Ball”)
 * Size: 27 Blocks
+* Type: |circle|
+* Author: GBKISS LAB
 * Source: |mini-cannon|
 
 Images

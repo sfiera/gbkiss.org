@@ -13,6 +13,8 @@ Icon-Send
 * Original Title: ICON-SEND
 * Alternate Title: アイコンデータしゅう (“Icon Data Whoosh”)
 * Size: 23 Blocks
+* Type: |circle|
+* Author: *Anonymous*
 * Source: |mini-cannon|
 
 Description

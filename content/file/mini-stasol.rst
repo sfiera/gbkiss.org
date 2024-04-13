@@ -11,6 +11,8 @@ Mini Stasol
    :height: 120
 
 * Size: Unknown
+* Type: Unknown
+* Author: Unknown
 * Source: Unknown
 
 Known only from `Gamer’s House`_ (芸魔の館). Appears to have been distributed with `GBKiss Link`_ on an included floppy disk.

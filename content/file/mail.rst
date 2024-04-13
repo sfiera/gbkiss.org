@@ -11,6 +11,8 @@ Mail
    :height: 120
 
 * Size: 1 Block
+* Type: |triangle|
+* Author: *GBKiss user*
 * Source: `Kiss Mail`_
 
 .. _Kiss Mail: {filename}kiss-mail.rst

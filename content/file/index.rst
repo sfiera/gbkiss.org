@@ -11,7 +11,7 @@ GBKiss content is stored in files. Players can run software_ files directly, and
 Software
 --------
 
-Software files are marked with a doubled circle (◎) for the built-in `Kiss Mail`_ app, or a circle (○) or diamond (◇) for installable software (difference unclear).
+Software files are marked with a doubled circle (|bullseye|) for the built-in `Kiss Mail`_ app, or a circle (|circle|) or diamond (|diamond|) for installable software (difference unclear).
 
 Special
 ~~~~~~~
@@ -225,7 +225,7 @@ Tools
 Data
 ----
 
-Data files are marked with a triangle (△). If the associated software_ is installed, they use the software’s icon; otherwise they use the SIMULA1 icon from `Icon-Send`_. The exception is Icon_ files, which always use their own icon.
+Data files are marked with a triangle (|triangle|). If the associated software_ is installed, they use the software’s icon; otherwise they use the SIMULA1 icon from `Icon-Send`_. The exception is Icon_ files, which always use their own icon.
 
 .. container:: gallery-small
 
@@ -333,3 +333,4 @@ Images
 
       Send fail screen
 
+.. include:: ../../epilog.rsti

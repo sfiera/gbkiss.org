@@ -44,7 +44,7 @@ Images
 Illustrations
 -------------
 
-The default illustration depicts a grid of numbers from 1 to 15. Three additional illustrations are included in the |mini-gamedata|.
+The default illustration depicts a grid of numbers from 1 to 15. Three additional illustrations are included in `GBKiss Mini Games`_.
 
 .. container:: gallery
 

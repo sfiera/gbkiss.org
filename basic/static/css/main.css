@@ -37,7 +37,7 @@ header h1 {
     margin: 0;
 }
 
-p, ul, ol, .gallery, .gallery-small {
+p, ul, ol, table, .gallery, .gallery-small {
     margin: 0.5em 0 0 0;
     line-height: 1.25em;
 }
@@ -85,4 +85,18 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     font-size: 90%;
+}
+
+table.encoding {
+    border: thin solid #555;
+    border-radius: 2px;
+}
+
+table.encoding td, table.encoding th {
+    border: 0;
+    text-align: center;
+}
+
+td.stub {
+   text-align: right;
 }

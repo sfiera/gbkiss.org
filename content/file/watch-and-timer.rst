@@ -14,7 +14,7 @@ Watch & Timer
 * Alternate Title: ストップウォッチ&タイマー (“Stopwatch & Timer”)
 * Size: 9 Blocks_
 * Type: |circle|
-* Author: Y.MOTOSAKO
+* Author: |author-y-motosako|_
 * Source: |mini-kissmon|
 
 Images

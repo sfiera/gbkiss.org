@@ -13,7 +13,7 @@ SRAM Get & Clear
 * Original Title: SRAM GET&CLR
 * Size: 5 Blocks_
 * Type: |circle|
-* Author: Y.MOTOSAKO
+* Author: |author-y-motosako|_
 * Source: |mini-kisstool|
 
 .. include:: ../../epilog.rsti

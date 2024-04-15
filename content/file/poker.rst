@@ -14,7 +14,7 @@ Poker
 * Alternate Title: ポーカー (“Poker”)
 * Size: 21 Blocks_
 * Type: |circle|
-* Author: S.KIMURA
+* Author: |author-s-kimura|_
 * Source: |mini-cannon|
 
 Images

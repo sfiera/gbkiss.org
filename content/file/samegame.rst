@@ -14,7 +14,7 @@ SameGame
 * Alternate Title: SAMEGAME KISS
 * Size: 9 Blocks_
 * Type: |circle|
-* Author: TOBI
+* Author: |author-tobi|_
 * Source: |mini-default|
 
 Images

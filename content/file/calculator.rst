@@ -14,7 +14,7 @@ Calculator
 * Alternate Title: かんい でんたく (“Simple Calculator”)
 * Size: 5 Blocks_
 * Type: |circle|
-* Author: Y.MOTOSAKO
+* Author: |author-y-motosako|_
 * Source: |mini-kissmon|
 
 Images

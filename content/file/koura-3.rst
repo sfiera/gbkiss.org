@@ -14,7 +14,7 @@ Koura 3
 * Alternate Title: 15パズル データ1 (“15 Puzzle Data 3”)
 * Size: 6 Blocks_
 * Type: |triangle|
-* Author: NONCHAN
+* Author: |author-nonchan|_
 * Source: |mini-gamedata|
 
 .. image:: {static}puzzle-game/koura3.png

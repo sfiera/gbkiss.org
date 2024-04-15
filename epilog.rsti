@@ -23,3 +23,22 @@
 .. |circle| replace:: ○
 .. |diamond| replace:: ◇
 .. |triangle| replace:: △
+
+.. |author-tobi| replace:: TOBI
+.. _author-tobi: {filename}/hudson.rst#tobi
+.. |author-y-motosako| replace:: Y.MOTOSAKO
+.. _author-y-motosako: {filename}/hudson.rst#y-motosako
+.. |author-kei-kondoh| replace:: KEI KONDOH
+.. _author-kei-kondoh: {filename}/hudson.rst#kei-kondoh
+.. |author-tarkun| replace:: TARKUN
+.. _author-tarkun: {filename}/hudson.rst#tarkun
+.. |author-t-ohnishi| replace:: T.OHNISHI
+.. _author-t-ohnishi: {filename}/hudson.rst#t-ohnishi
+.. |author-tsumori| replace:: つもり
+.. _author-tsumori: {filename}/hudson.rst#tsumori
+.. |author-s-kimura| replace:: S.KIMURA
+.. _author-s-kimura: {filename}/hudson.rst#s-kimura
+.. |author-nonchan| replace:: NONCHAN
+.. _author-nonchan: {filename}/hudson.rst#nonchan
+.. |author-sezaki| replace:: SEZAKI
+.. _author-sezaki: {filename}/hudson.rst#sezaki

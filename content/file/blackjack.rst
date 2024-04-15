@@ -14,7 +14,7 @@ Blackjack
 * Alternate Title: ブラックジャック (“Blackjack”)
 * Size: 13 Blocks_
 * Type: |circle|
-* Author: TARKUN
+* Author: |author-tarkun|_
 * Source: |mini-binary|
 
 Images

@@ -13,7 +13,7 @@ Roulette
 * Original Title: ルーレット
 * Size: 21 Blocks_
 * Type: |circle|
-* Author: つもり (“Tsumori”)
+* Author: |author-tsumori|_ (“Tsumori”)
 * Source: |mini-binary|
 
 Images

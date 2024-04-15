@@ -13,7 +13,7 @@ Bakechu Relay
 * Original Title: バケちゅリレー
 * Size: 13 Blocks_
 * Type: |circle|
-* Author: TOBI
+* Author: |author-tobi|_
 * Source: |mini-kissmon|
 
 Images

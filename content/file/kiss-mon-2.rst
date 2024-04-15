@@ -13,7 +13,7 @@ Kiss-Mon 2
 * Original Title: KISS-MON2
 * Size: 28 Blocks_
 * Type: |diamond|
-* Author: TOBI
+* Author: |author-tobi|_
 * Source: `Pocket Bomberman <{filename}/cart/apoj.rst>`_
 
 .. include:: ../../epilog.rsti

@@ -14,7 +14,7 @@ Kiss-Mon
 * Alternate Title: KISS MONSTER
 * Size: 23 Blocks_
 * Type: |circle|
-* Author: TOBI
+* Author: |author-tobi|_
 * Source: |mini-kissmon|
 
 Images

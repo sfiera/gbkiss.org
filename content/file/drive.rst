@@ -14,7 +14,7 @@ Drive
 * Alternate Title: ジャカジャカジャンプでポン (“Jaka-Jaka-Jump de Pon”)
 * Size: 20 Blocks_
 * Type: |circle|
-* Author: T.OHNISHI
+* Author: |author-t-ohnishi|_
 * Source: |mini-default|
 
 Images

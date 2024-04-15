@@ -14,7 +14,7 @@ Slot
 * Alternate Title: スロット マシン (“Slot Machine”)
 * Size: 13 Blocks_
 * Type: |circle|
-* Author: Y.MOTOSAKO
+* Author: |author-y-motosako|_
 * Source: |mini-cannon|
 
 .. container:: gallery

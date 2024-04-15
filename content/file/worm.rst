@@ -13,7 +13,7 @@ Worm
 * Original Title: WORM
 * Size: 8 Blocks_
 * Type: |diamond|
-* Author: KEI.KONDOH
+* Author: KEI KONDOH
 * Source: |mini-binary|
 
 Description

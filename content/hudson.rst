@@ -32,6 +32,8 @@ Likely Yoshio Motosako.
 KEI KONDOH
 ~~~~~~~~~~
 
+Likely Kei Kondo.
+
 * `Biorhythm <{filename}/file/biorhythm.rst>`_
 * `Worm <{filename}/file/worm.rst>`_
 
@@ -68,7 +70,7 @@ Identity unknown.
 NONCHAN
 ~~~~~~~
 
-Identity unknown.
+Possibly Kazuhiko Nonaka.
 
 * `Koura 1 <{filename}/file/koura-1.rst>`_
 * `Koura 2 <{filename}/file/koura-3.rst>`_

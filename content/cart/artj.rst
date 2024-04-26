@@ -15,4 +15,4 @@ Robot Ponkottsu Taikenban
 
 This is a demo version of Robot Ponkottsu. 500 copies were distributed as a prize. The cartridge has never been dumped.
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

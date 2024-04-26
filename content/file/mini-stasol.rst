@@ -20,4 +20,4 @@ Known only from `Gamer’s House`_ (芸魔の館). Appears to have been distribu
 .. _Gamer’s House: https://www.asahi-net.or.jp/~ua4s-njm/gb_soft/gkiss04.html
 .. _GBKiss Link: {filename}/link.rst
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

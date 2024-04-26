@@ -23,4 +23,4 @@ Upon execution, immediately deletes all files in GBKiss without confirmation.
 
 Dangerous! Don’t install this unless you plan to use it.
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

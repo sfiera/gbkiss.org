@@ -40,4 +40,4 @@ Trivia
 
 The title of this game is a pun on “バケツリレー” (“Bucket Relay”), with the “tsu” swapped for “chu”, a mouse sound (compare Pikachu, ChuChu Rocket).
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

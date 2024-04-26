@@ -13,4 +13,4 @@ Super B-Daman Fighting Phoenix
 * RAM Size: 256Kbit (32KiB)
 * Blocks_:
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

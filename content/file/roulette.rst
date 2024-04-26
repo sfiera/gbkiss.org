@@ -35,4 +35,4 @@ Images
 
       Gameplay
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

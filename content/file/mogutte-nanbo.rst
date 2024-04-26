@@ -73,4 +73,4 @@ Images
 
 .. _Sezaki: {filename}sezaki.rst
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

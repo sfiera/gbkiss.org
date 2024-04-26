@@ -16,4 +16,4 @@ SRAM Get & Clear
 * Author: |author-y-motosako|_
 * Source: |mini-kisstool|
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

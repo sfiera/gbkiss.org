@@ -22,4 +22,4 @@ Koura 3
    :width: 128
    :height: 128
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

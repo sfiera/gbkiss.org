@@ -42,4 +42,4 @@ These games use the infrared-capable HuC-3 mapper, but have a PCB without infrar
 
 * Pocket Family GB2 [CGB-HF2J-JPN]
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

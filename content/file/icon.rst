@@ -18,4 +18,4 @@ Icon
 .. _Icon-Edit: {filename}icon-edit.rst
 .. _Icon-Send: {filename}icon-send.rst
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

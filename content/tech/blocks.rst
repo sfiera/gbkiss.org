@@ -14,4 +14,4 @@ The last block of storage is attributed to the `Kiss Mail`_ app. It includes the
 
 .. _Kiss Mail: {filename}/file/kiss-mail.rst
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

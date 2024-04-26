@@ -26,4 +26,4 @@ Sources
 * https://web.archive.org/web/20000618073336/http://www.hudson.co.jp/SLG/soft/necgb.html
 * https://web.archive.org/web/19990429113503/http://www.hudson.co.jp/SLG/down.html
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

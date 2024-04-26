@@ -333,4 +333,4 @@ Images
 
       Send fail screen
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

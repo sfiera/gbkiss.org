@@ -16,4 +16,4 @@ Char-Dump
 * Author: *Anonymous*
 * Source: |mini-kisstool|
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

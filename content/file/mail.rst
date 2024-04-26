@@ -17,4 +17,4 @@ Mail
 
 .. _Kiss Mail: {filename}kiss-mail.rst
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

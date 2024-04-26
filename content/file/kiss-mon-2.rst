@@ -16,4 +16,4 @@ Kiss-Mon 2
 * Author: |author-tobi|_
 * Source: `Pocket Bomberman <{filename}/cart/apoj.rst>`_
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

@@ -33,4 +33,4 @@ Slot
 
       Gameplay
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

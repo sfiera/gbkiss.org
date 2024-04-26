@@ -35,4 +35,4 @@ Images
 
       Usage
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

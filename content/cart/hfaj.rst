@@ -18,4 +18,4 @@ Sources
 
 * https://web.archive.org/web/19981202205132/http://www.hudson.co.jp/new/family/date.html
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

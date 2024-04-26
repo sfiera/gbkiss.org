@@ -17,4 +17,4 @@ Sezaki
 * Author: |author-sezaki|_
 * Source: |mini-gamedata|
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

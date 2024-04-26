@@ -305,4 +305,4 @@ Contents
 
        CURSORS
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

@@ -42,4 +42,4 @@ Trivia
 SameGame was originally released in 1985 under the name “Chain Shot!”. Hudson later published
 versions for Super Famicom and Game Boy under the SameGame (鮫亀) name.
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

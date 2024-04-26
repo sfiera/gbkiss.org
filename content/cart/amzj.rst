@@ -13,4 +13,4 @@ Dai-Kaiju Monogatari The Miracle of the Zone
 * RAM Size: 256Kbit (32KiB)
 * Blocks_:
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

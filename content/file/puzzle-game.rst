@@ -93,4 +93,4 @@ The default illustration depicts a grid of numbers from 1 to 15, as is common fo
 
        `KOURA3 <{filename}koura-3.rst>`_
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

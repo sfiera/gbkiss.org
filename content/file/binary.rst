@@ -44,4 +44,4 @@ Hudson released the original game `Binary Land`_ in 1983 and ported it to severa
 .. _Binary Land: https://en.wikipedia.org/wiki/Binary_Land
 .. _Famicom: https://en.wikipedia.org/wiki/Nintendo_Entertainment_System
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

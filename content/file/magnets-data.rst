@@ -17,4 +17,4 @@ Magnets Data
 * Author: <TEAM MAG>
 * Source: |mini-default|
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

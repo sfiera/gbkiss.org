@@ -29,6 +29,7 @@ MENUITEMS = [
 ]
 
 
+IGNORE_FILES = [".*", "*.rsti"]
 LINKS = []
 SOCIAL = []
 FEED_ALL_ATOM = None

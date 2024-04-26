@@ -42,4 +42,4 @@ Trivia
 Hudson first released Cannon Ball for MSX in 1983. It was also released for ZX Spectrum under the
 name Bubble Buster.
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

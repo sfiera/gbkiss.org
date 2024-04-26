@@ -148,4 +148,4 @@ Sources
 * `CaH4e3 (Санчез)’s GB Cheats <https://cah4e3.shedevr.org.ru/gb_cheats.php#329>`_
 * `Bomberman CM Caravan <https://web.archive.org/web/19980209204638/http://www.hudson.co.jp/cm_cvan/cmcvan.html>`_ (Archived 1998-02-09)
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

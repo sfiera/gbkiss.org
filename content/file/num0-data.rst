@@ -17,4 +17,4 @@ Num0 Data
 * Author: *Anonymous*
 * Source: |mini-gamedata|
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

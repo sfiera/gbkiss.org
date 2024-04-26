@@ -13,4 +13,4 @@ Robot Ponkottsu Moon Version
 * RAM Size: 256Mbit (32KiB)
 * Blocks_:
 
-.. include:: ../../epilog.rsti
+.. include:: ../epilog.rsti

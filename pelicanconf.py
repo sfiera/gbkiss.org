@@ -4,7 +4,7 @@ SITEURL = ''
 
 PATH = 'content'
 
-THEME = 'basic'
+THEME = 'theme'
 
 TIMEZONE = 'Asia/Tokyo'
 

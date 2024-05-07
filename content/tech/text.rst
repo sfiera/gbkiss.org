@@ -8,5 +8,8 @@ Text
 Encoding
 --------
 
-.. figure:: encoding.svg
-   :alt: Text encoding table
+.. figure:: text/plain.svg
+   :alt: Plain text encoding table
+
+.. figure:: text/rich.svg
+   :alt: Rich text encoding table

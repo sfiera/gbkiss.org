@@ -12,7 +12,7 @@ Slot
 
 * Original Title: SLOT
 * Alternate Title: スロット マシン (“Slot Machine”)
-* Size: 13 Blocks_
+* Size: 13 Blocks_ (3077 bytes)
 * Type: |circle|
 * Author: |author-y-motosako|_
 * Source: |mini-cannon|

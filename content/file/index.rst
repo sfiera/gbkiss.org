@@ -6,8 +6,6 @@ Files
 
 GBKiss content is stored in files. Players can run software_ files directly, and can open data_ files with software. The GBKiss menu_ has options for running, organizing, and exchanging files. Each file occupies some number of storage blocks_ in cartridge RAM (CRAM).
 
-.. _blocks: {filename}/tech/blocks.rst
-
 Software
 --------
 

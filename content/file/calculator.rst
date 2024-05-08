@@ -12,7 +12,7 @@ Calculator
 
 * Original Title: DEN TAKU
 * Alternate Title: かんい でんたく (“Simple Calculator”)
-* Size: 5 Blocks_
+* Size: 5 Blocks_ (1148 bytes)
 * Type: |circle|
 * Author: |author-y-motosako|_
 * Source: |mini-kissmon|

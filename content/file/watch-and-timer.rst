@@ -12,7 +12,7 @@ Watch & Timer
 
 * Original Title: WATCH&TIMER
 * Alternate Title: ストップウォッチ&タイマー (“Stopwatch & Timer”)
-* Size: 9 Blocks_
+* Size: 9 Blocks_ (2055 bytes)
 * Type: |circle|
 * Author: |author-y-motosako|_
 * Source: |mini-kissmon|

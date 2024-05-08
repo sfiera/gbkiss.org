@@ -11,7 +11,7 @@ Worm
    :height: 120
 
 * Original Title: WORM
-* Size: 8 Blocks_
+* Size: 8 Blocks_ (1816 bytes)
 * Type: |diamond|
 * Author: |author-kei-kondoh|_
 * Source: |mini-binary|

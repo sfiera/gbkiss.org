@@ -12,7 +12,7 @@ SameGame
 
 * Original Title: SAMEGAME
 * Alternate Title: SAMEGAME KISS
-* Size: 9 Blocks_
+* Size: 9 Blocks_ (2242 bytes)
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-default|

@@ -12,7 +12,7 @@ Blackjack
 
 * Original Title: BLACK JACK
 * Alternate Title: ブラックジャック (“Blackjack”)
-* Size: 13 Blocks_
+* Size: 13 Blocks_ (3119 bytes)
 * Type: |circle|
 * Author: |author-tarkun|_
 * Source: |mini-binary|

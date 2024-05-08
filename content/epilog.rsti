@@ -14,8 +14,8 @@
 .. _kisstool password: {filename}/cart/akaj.rst#kisstool
 
 .. _Mapper: {filename}/tech/mapper.rst
-.. _Block: {filename}/tech/blocks.rst
-.. _Blocks: {filename}/tech/blocks.rst
+.. _Block: {filename}/tech/storage.rst#blocks
+.. _Blocks: {filename}/tech/storage.rst#blocks
 
 .. role:: button
 

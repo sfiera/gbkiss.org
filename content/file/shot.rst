@@ -12,7 +12,7 @@ Shot
 
 * Original Title: SHOT
 * Alternate Title: SHOOTING MASTER
-* Size: 2 Blocks_
+* Size: 2 Blocks_ (507 bytes)
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-default|

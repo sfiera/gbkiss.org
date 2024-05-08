@@ -12,7 +12,7 @@ Sezaki
 
 * Original Title: SEZAKI
 * Alternate Title: もぐってナンボ データ (“Mogutte Nanbo Data”)
-* Size: 7 Blocks_
+* Size: 7 Blocks_ (1641 bytes)
 * Type: |triangle|
 * Author: |author-sezaki|_
 * Source: |mini-gamedata|

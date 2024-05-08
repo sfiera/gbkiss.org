@@ -12,7 +12,7 @@ Icon-Send
 
 * Original Title: ICON-SEND
 * Alternate Title: アイコンデータしゅう (“Icon Data Whoosh”)
-* Size: 23 Blocks_
+* Size: 23 Blocks_ (5776 bytes)
 * Type: |circle|
 * Author: *Anonymous*
 * Source: |mini-cannon|
@@ -37,7 +37,6 @@ Others may represent planned software, draft graphics, or simply be intended as 
 .. _Icon: {filename}icon.rst
 .. _data: {filename}index.rst#data
 .. _software: {filename}index.rst#software
-.. _Block: {filename}/tech/blocks.rst
 .. _Kiss Mail: {filename}kiss-mail.rst
 .. _Mail: {filename}mail.rst
 .. _Calculator: {filename}calculator.rst

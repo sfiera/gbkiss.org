@@ -11,7 +11,7 @@ Kiss Mail
    :height: 120
 
 * Original Title: KISS MAIL
-* Size: 1 Block_
+* Size: 1 Block_ (0 bytes)
 * Type: |bullseye|
 * Author: *Anonymous*
 * Source: built-in

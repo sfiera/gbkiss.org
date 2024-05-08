@@ -12,7 +12,7 @@ Drive
 
 * Original Title: DRIVE
 * Alternate Title: ジャカジャカジャンプでポン (“Jaka-Jaka-Jump de Pon”)
-* Size: 20 Blocks_
+* Size: 20 Blocks_ (5072 bytes)
 * Type: |circle|
 * Author: |author-t-ohnishi|_
 * Source: |mini-default|

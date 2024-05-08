@@ -12,7 +12,7 @@ Magnets Data
 
 * Original Title: MAGNETS DATA
 * Alternate Title: がんばれマグネッツDATA (“Ganbare Magnets DATA”)
-* Size: 25 Blocks_
+* Size: 25 Blocks_ (6215 bytes)
 * Type: |triangle|
 * Author: <TEAM MAG>
 * Source: |mini-default|

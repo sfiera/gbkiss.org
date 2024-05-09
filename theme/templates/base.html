@@ -1,8 +1,28 @@
-{% extends "!simple/base.html" %}
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+  <head>
+    <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Pelican" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
+  </head>
 
-{%- block head %}
-{{ super() }}
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/rdark.css" />
-	  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" />
-</head>
-{% endblock -%}
+  <body>
+    <header>
+      <hgroup><h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>{% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}</hgroup>
+      <nav><ul>
+        {% for title, link in MENUITEMS %}
+        <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+      </ul></nav>
+    </header>
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+    <footer>
+      <a href="http://github.com/sfiera/gbkiss.org/blob/main/content/{{ page.relative_source_path }}">Source</a>
+    </footer>
+  </body>
+</html>

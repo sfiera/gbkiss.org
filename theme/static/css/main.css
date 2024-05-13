@@ -37,9 +37,13 @@ header h1 {
     margin: 0;
 }
 
-p, ul, ol, table, .gallery, .gallery-small {
+p, ul, ol, table, pre, .gallery, .gallery-small {
     margin: 0.5em 0 0 0;
     line-height: 1.25em;
+}
+
+pre {
+    padding-left: 40px;
 }
 
 ul ul, ul ol, ol ul, ol ol {
@@ -54,11 +58,6 @@ blockquote {
 #post-list {
     margin-bottom: 1em;
     margin-top: 1em;
-}
-
-pre {
-    margin: 2em 1em 2em 4em;
-    white-space: pre-wrap;
 }
 
 footer {

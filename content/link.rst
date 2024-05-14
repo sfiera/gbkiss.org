@@ -9,7 +9,7 @@ GBKiss Link
 * Release Price: ¥4,980
 * Platform: Windows 95
 
-Sold as a package containing the modem and two floppies: one with the modem driver and one with 29 software files for transfer.
+Sold as a package containing the modem and one floppy disk, containing the driver software and 29 software files for transfer.
 
 Sources
 -------

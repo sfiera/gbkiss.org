@@ -54,7 +54,7 @@ Rich Text
 
    Rich text encoding table
 
-The rich text encoding supports the printable character set as the plain text encoding, mostly in the same locations as `JIS X 0201`_, but makes the following changes to make room for control characters:
+The rich text encoding supports the same printable character set as the plain text encoding, mostly in the same locations as `JIS X 0201`_, but makes the following changes to make room for control characters:
 
 *  Hiragana and Katakana are encoded together, and a control character (``$0E``/``$0F``) switches between sets.
 *  Diacritics (dakuten/handakuten) are separate bytes which modify the preceding kana.

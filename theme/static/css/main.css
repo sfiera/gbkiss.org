@@ -1,6 +1,5 @@
 html {
-    background: hsl(0, 0%, 70%);
-    image-rendering: pixelated;
+  background: hsl(0, 0%, 70%);
 }
 
 body {
@@ -17,9 +16,9 @@ body {
   display: block;
 }
 
-a:link    { color: hsl(220, 75%, 50%); text-decoration: none;      }
-a:hover   { color: hsl(220, 75%, 50%); text-decoration: underline; }
-a:visited { color: hsl(220, 75%, 50%);                             }
+a:link, a:hover, a:visited { color: hsl(220, 75%, 50%); }
+a:link    { text-decoration: none;      }
+a:hover   { text-decoration: underline; }
 
 h1 a,
 h2 a,
@@ -37,22 +36,34 @@ header h1 {
     margin: 0;
 }
 
-p, ul, ol, table, pre, .gallery, .gallery-small {
+p, ul, ol, table, .line, .gallery, .gallery-small {
     margin: 0.5em 0 0 0;
     line-height: 1.25em;
 }
 
-pre {
-    padding-left: 40px;
+pre, blockquote {
+    margin: 0.5em 0 0 40px;
+    padding: 1em;
+    line-height: 1.25em;
+    border: thin solid hsl(0, 0%, 40%);
+    border-radius: 5px;
+    background: hsl(0, 0%, 95%);
 }
 
 ul ul, ul ol, ol ul, ol ol {
     margin: 0;
 }
 
-blockquote {
-    margin: 1em;
-    font-style: italic;
+table, tr, td, th {
+    border: thin solid hsl(0, 0%, 40%);
+    border-collapse: collapse;
+    padding: 0.25em;
+    background: hsl(0, 0%, 100%);
+}
+
+th {
+    background: hsl(0, 0%, 80%);
+    font-weight: normal;
 }
 
 #post-list {
@@ -64,6 +75,10 @@ footer {
     clear: both;
     padding: 2em 0 0 0;
     font-size: 90%;
+}
+
+img[src$=".png"] {
+    image-rendering: pixelated;
 }
 
 .figure {

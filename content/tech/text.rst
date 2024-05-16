@@ -26,7 +26,7 @@ The plain text encoding is mostly a superset of the printable ranges of ASCII_ a
 .. _ASCII: https://en.wikipedia.org/wiki/ASCII
 .. _JIS X 0201: https://en.wikipedia.org/wiki/JIS_X_0201
 
-*  ASCII’s curly braces (``{}``) are omitted.
+*  ASCII’s curly braces and tilde (``{}~``) are omitted.
 *  JIS X 0201’s separate punctuation (``、。・``) is omitted.
 *  Hiragana is encoded separately from katakana.
 *  Precomposed kana + diacritics (dakuten/handakuten) are encoded as single bytes.

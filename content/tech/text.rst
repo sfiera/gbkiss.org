@@ -8,6 +8,12 @@ Text
 Encoding
 --------
 
+.. figure:: text/font.png
+   :alt: GBKiss font
+   :width: 256px
+
+   GBKiss font
+
 GBKiss stores text in one of two encodings:
 
 *  A “`plain text`_” encoding, with 1 byte for every glyph

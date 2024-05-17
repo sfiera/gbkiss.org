@@ -9,37 +9,42 @@ GBKiss Cartridges
 
 These games support GBKiss functionality:
 
-*   `Super B-Daman Fighting Phoenix <{filename}abdj.rst>`_
-*   `GBKiss Mini Games`_
-*   `Dai-Kaiju Monogatari The Miracle of the Zone <{filename}amzj.rst>`_
-*   `Nectaris GB <{filename}an5j.rst>`_
-*   `Pocket Bomberman <{filename}apoj.rst>`_
-*   Robot Ponkottsu
+*  `Super B-Daman Fighting Phoenix <{filename}abdj.rst>`_
+*  `GBKiss Mini Games`_
+*  `Dai-Kaiju Monogatari The Miracle of the Zone <{filename}amzj.rst>`_
+*  `Nectaris GB <{filename}an5j.rst>`_
+*  `Pocket Bomberman <{filename}apoj.rst>`_
+*  Robot Poncots
 
-    *   `Taikenban <{filename}artj.rst>`_ (Demo)
-    *   `Sun Version <{filename}hrej.rst>`_
-    *   `Star Version <{filename}hrcj.rst>`_
-    *   `Moon Version <{filename}h3uj.rst>`_
-    *   `Comic BomBom Special Version <{filename}h5uj.rst>`_
+   *  `Taikenban <{filename}artj.rst>`_ (Demo)
+   *  `Sun Version <{filename}hrej.rst>`_
+   *  `Star Version <{filename}hrcj.rst>`_
+   *  `Moon Version <{filename}h3uj.rst>`_
+   *  `Comic BomBom Special Version <{filename}h5uj.rst>`_
 
-*   `Pocket Family GB <{filename}hfaj.rst>`_
+*  `Pocket Family GB <{filename}hfaj.rst>`_
 
 Unsupported Cartridges
 ----------------------
 
-These games were released internationally with GBKiss functionality removed:
+Several games were released using modified software or hardware that omits GBKiss functionality:
 
-* Pocket Bomberman (B/W, Europe) [DMG-AKOP-EUR]
-* Pocket Bomberman (Color, International) [DMG-AKQE-USA, DMG-AKQP-EUR]
-* Robopon Sun Version (USA) [DMG-HREE-USA]
+*  2 international releases without infrared connectivity:
 
-These games use the HuC-1 mapper and have infrared connectivity but no GBKiss support:
+   *  Pocket Bomberman (B/W, Europe) [DMG-AKOP-EUR]
+   *  Pocket Bomberman (Color, International) [DMG-AKQE-USA, DMG-AKQP-EUR]
 
-* Chosoku Spinner [DMG-AYYJ-JPN]
-* Pokémon Card GB (Japan) [DMG-ACXJ-JPN]
+*  2 Japanese releases with HuC-1 infrared connectivity but no GBKiss support:
 
-These games use the infrared-capable HuC-3 mapper, but have a PCB without infrared connectivity:
+   *  Chosoku Spinner [DMG-AYYJ-JPN]
+   *  Pokémon Card GB (Japan) [DMG-ACXJ-JPN]
 
-* Pocket Family GB2 [CGB-HF2J-JPN]
+*  1 international release with HuC-3 infrared connectivity but no GBKiss support:
+
+   *  Robopon Sun Version (USA) [DMG-HREE-USA]
+
+*  1 Japanese release with the HuC-3 mapper but no infrared connectivity in the cartridge:
+
+   *  Pocket Family GB2 [CGB-HF2J-JPN]
 
 .. include:: ../epilog.rsti

@@ -16,6 +16,7 @@ Kiss-Mon
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-kissmon|
+* Creator Code: ``$6e`` (Kiss-Mon)
 
 Images
 ------

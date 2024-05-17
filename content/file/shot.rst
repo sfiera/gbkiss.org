@@ -16,6 +16,7 @@ Shot
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-default|
+* Creator Code: ``$68`` (Shot)
 
 Images
 ------

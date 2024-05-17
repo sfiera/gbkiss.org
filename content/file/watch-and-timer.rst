@@ -16,6 +16,7 @@ Watch & Timer
 * Type: |circle|
 * Author: |author-y-motosako|_
 * Source: |mini-kissmon|
+* Creator Code: ``$6a`` (Watch & Timer)
 
 Images
 ------

@@ -16,6 +16,7 @@ Biorhythm
 * Type: |diamond|
 * Author: |author-kei-kondoh|_
 * Source: |mini-kissmon|
+* Creator Code: ``$00`` (none)
 
 Images
 ------

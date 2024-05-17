@@ -16,6 +16,7 @@ Cannon Ball
 * Type: |circle|
 * Author: GBKISS LAB
 * Source: |mini-cannon|
+* Creator Code: ``$6d`` (Cannon Ball)
 
 Images
 ------

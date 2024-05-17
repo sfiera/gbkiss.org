@@ -16,5 +16,8 @@ Sezaki
 * Type: |triangle|
 * Author: |author-sezaki|_
 * Source: |mini-gamedata|
+* Creator Code: ``$65`` (`Mogutte Nanbo`_)
+
+.. _Mogutte Nanbo: {filename}mogutte-nanbo.rst
 
 .. include:: ../epilog.rsti

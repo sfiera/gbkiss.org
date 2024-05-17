@@ -16,6 +16,7 @@ Poker
 * Type: |circle|
 * Author: |author-s-kimura|_
 * Source: |mini-cannon|
+* Creator Code: ``$43`` (Cards)
 
 Images
 ------

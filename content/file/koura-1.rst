@@ -16,6 +16,9 @@ Koura 1
 * Type: |triangle|
 * Author: |author-nonchan|_
 * Source: |mini-gamedata|
+* Creator Code: ``$64`` (`Puzzle Game`_)
+
+.. _Puzzle Game: {filename}puzzle-game.rst
 
 .. image:: {static}puzzle-game/koura1.png
    :alt: Koura 1 illustration

@@ -16,5 +16,8 @@ Magnets Data
 * Type: |triangle|
 * Author: <TEAM MAG>
 * Source: |mini-default|
+* Creator Code: ``$66`` (Magnets_)
+
+.. _Magnets: {filename}magnets.rst
 
 .. include:: ../epilog.rsti

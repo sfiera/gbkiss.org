@@ -16,6 +16,7 @@ Blackjack
 * Type: |circle|
 * Author: |author-tarkun|_
 * Source: |mini-binary|
+* Creator Code: ``$43`` (Cards)
 
 Images
 ------

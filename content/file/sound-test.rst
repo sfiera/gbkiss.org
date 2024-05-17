@@ -16,6 +16,7 @@ Sound Test
 * Type: |circle|
 * Author: *Anonymous*
 * Source: |mini-kissmon|
+* Creator Code: ``$05`` (Sound Test)
 
 Images
 ------

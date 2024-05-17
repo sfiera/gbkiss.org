@@ -16,6 +16,9 @@ Koura 2
 * Type: |triangle|
 * Author: |author-nonchan|_
 * Source: |mini-gamedata|
+* Creator Code: ``$64`` (`Puzzle Game`_)
+
+.. _Puzzle Game: {filename}puzzle-game.rst
 
 .. image:: {static}puzzle-game/koura2.png
    :alt: Koura 2 illustration

@@ -15,6 +15,7 @@ Roulette
 * Type: |circle|
 * Author: |author-tsumori|_ (“Tsumori”)
 * Source: |mini-binary|
+* Creator Code: ``$72`` (Roulette)
 
 Images
 ------

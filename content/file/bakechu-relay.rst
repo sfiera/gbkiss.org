@@ -15,6 +15,7 @@ Bakechu Relay
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-kissmon|
+* Creator Code: ``$70`` (Bakechu Relay)
 
 Images
 ------

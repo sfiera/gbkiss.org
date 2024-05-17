@@ -90,6 +90,10 @@ img[src$=".png"] {
     font-size: 90%;
 }
 
+.figure img, .figure object {
+    max-width: 100%;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

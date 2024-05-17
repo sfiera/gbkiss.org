@@ -82,7 +82,7 @@ img[src$=".png"] {
 }
 
 .figure {
-    border: thin solid hsl(0, 0, 40%);
+    border: thin solid hsl(0, 0%, 40%);
     border-radius: 2px;
     padding: 0.25em;
     margin: 0.25em;
@@ -99,16 +99,6 @@ img[src$=".png"] {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     font-size: 90%;
-}
-
-table.encoding {
-    border: thin solid hsl(0, 0, 40%);
-    border-radius: 2px;
-}
-
-table.encoding td, table.encoding th {
-    border: 0;
-    text-align: center;
 }
 
 td.stub {

@@ -16,6 +16,7 @@ Slot
 * Type: |circle|
 * Author: |author-y-motosako|_
 * Source: |mini-cannon|
+* Creator Code: ``$6c`` (Slot)
 
 .. container:: gallery
 

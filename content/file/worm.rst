@@ -15,6 +15,7 @@ Worm
 * Type: |diamond|
 * Author: |author-kei-kondoh|_
 * Source: |mini-binary|
+* Creator Code: ``$00`` (none)
 
 Description
 -----------

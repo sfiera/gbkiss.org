@@ -15,5 +15,6 @@ Kiss-Mon 2
 * Type: |diamond|
 * Author: |author-tobi|_
 * Source: `Pocket Bomberman <{filename}/cart/apoj.rst>`_
+* Creator Code: ``$6e`` (Kiss-Mon)
 
 .. include:: ../epilog.rsti

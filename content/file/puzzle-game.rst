@@ -15,6 +15,7 @@ Puzzle Game
 * Type: |circle|
 * Author: |author-tarkun|_
 * Source: |mini-cannon|
+* Creator Code: ``$64`` (Puzzle Game)
 
 Gameplay
 --------

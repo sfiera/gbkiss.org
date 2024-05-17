@@ -16,5 +16,8 @@ Num0 Data
 * Type: |triangle|
 * Author: *Anonymous*
 * Source: |mini-gamedata|
+* Creator Code: ``$6a`` (`Watch & Timer`_)
+
+.. _Watch & Timer: {filename}watch-and-timer.rst
 
 .. include:: ../epilog.rsti

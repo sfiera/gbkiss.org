@@ -16,6 +16,7 @@ Calculator
 * Type: |circle|
 * Author: |author-y-motosako|_
 * Source: |mini-kissmon|
+* Creator Code: ``$04`` (Calculator)
 
 Images
 ------

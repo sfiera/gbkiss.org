@@ -15,5 +15,6 @@ SRAM Get & Clear
 * Type: |circle|
 * Author: |author-y-motosako|_
 * Source: |mini-kisstool|
+* Creator Code: ``$00`` (none)
 
 .. include:: ../epilog.rsti

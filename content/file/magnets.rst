@@ -16,6 +16,7 @@ Magnets
 * Type: |diamond|
 * Author: <TEAM MAG>
 * Source: |mini-default|
+* Creator Code: ``$66`` (Magnets)
 
 Images
 ------

@@ -16,6 +16,7 @@ Binary
 * Type: |diamond|
 * Author: |author-t-ohnishi|_
 * Source: |mini-binary|
+* Creator Code: ``$71`` (Binary)
 
 Images
 ------

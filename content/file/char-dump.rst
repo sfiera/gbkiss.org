@@ -15,5 +15,6 @@ Char-Dump
 * Type: |circle|
 * Author: *Anonymous*
 * Source: |mini-kisstool|
+* Creator Code: ``$43`` (Cards)
 
 .. include:: ../epilog.rsti

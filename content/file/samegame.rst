@@ -16,6 +16,7 @@ SameGame
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-default|
+* Creator Code: ``$67`` (SameGame)
 
 Images
 ------

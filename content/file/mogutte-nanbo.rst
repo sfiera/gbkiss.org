@@ -15,6 +15,7 @@ Mogutte Nanbo
 * Type: |diamond|
 * Author: TEAMMOGURA
 * Source: |mini-default|
+* Creator Code: ``$65`` (Mogutte Nanbo)
 
 Description
 -----------

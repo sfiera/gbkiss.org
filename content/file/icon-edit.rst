@@ -16,6 +16,7 @@ Icon-Edit
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-cannon|
+* Creator Code: ``$03`` (Icon-Edit)
 
 Images
 ------

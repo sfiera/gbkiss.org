@@ -9,7 +9,7 @@ GBKiss content is stored in files. Players can run software_ files directly, and
 Software
 --------
 
-Software files are marked with a doubled circle (|bullseye|) for the built-in `Kiss Mail`_ app, or a circle (|circle|) or diamond (|diamond|) for installable software (difference unclear).
+Software files are marked with a doubled circle (|bullseye|) for the built-in `Kiss Mail`_ app, or a circle (|circle|) or diamond (|diamond|) for installable software. Diamond-type software must be installed in specific slots, so there is a limit on the number of diamond-type files installed separate from the space required.
 
 Special
 ~~~~~~~

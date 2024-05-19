@@ -17,6 +17,7 @@ Koura 2
 * Author: |author-nonchan|_
 * Source: |mini-gamedata|
 * Creator Code: ``$64`` (`Puzzle Game`_)
+* File: `koura-2.gbk <{static}puzzle-game/koura-2.gbk>`_
 
 .. _Puzzle Game: {filename}puzzle-game.rst
 

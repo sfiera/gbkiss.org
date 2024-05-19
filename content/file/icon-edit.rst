@@ -17,6 +17,7 @@ Icon-Edit
 * Author: |author-tobi|_
 * Source: |mini-cannon|
 * Creator Code: ``$03`` (Icon-Edit)
+* File: `icon-edit.gbk <{static}icon/icon-edit.gbk>`_
 
 Images
 ------

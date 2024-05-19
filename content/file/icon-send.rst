@@ -17,6 +17,7 @@ Icon-Send
 * Author: *Anonymous*
 * Source: |mini-cannon|
 * Creator Code: ``$00`` (none)
+* File: `icon-send.gbk <{static}icon/icon-send.gbk>`_
 
 Description
 -----------

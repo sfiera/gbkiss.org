@@ -16,6 +16,7 @@ Worm
 * Author: |author-kei-kondoh|_
 * Source: |mini-binary|
 * Creator Code: ``$00`` (none)
+* File: `worm.gbk <{static}worm/worm.gbk>`_
 
 Description
 -----------

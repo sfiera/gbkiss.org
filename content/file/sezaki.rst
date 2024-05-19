@@ -17,6 +17,7 @@ Sezaki
 * Author: |author-sezaki|_
 * Source: |mini-gamedata|
 * Creator Code: ``$65`` (`Mogutte Nanbo`_)
+* File: `sezaki.gbk <{static}mogutte-nanbo/sezaki.gbk>`_
 
 .. _Mogutte Nanbo: {filename}mogutte-nanbo.rst
 

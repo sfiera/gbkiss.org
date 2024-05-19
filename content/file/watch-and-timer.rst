@@ -17,6 +17,7 @@ Watch & Timer
 * Author: |author-y-motosako|_
 * Source: |mini-kissmon|
 * Creator Code: ``$6a`` (Watch & Timer)
+* File: `watch-and-timer.gbk <{static}watch-and-timer/watch-and-timer.gbk>`_
 
 Images
 ------

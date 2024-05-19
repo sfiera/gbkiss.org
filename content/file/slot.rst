@@ -19,6 +19,9 @@ Slot
 * Creator Code: ``$6c`` (Slot)
 * File: `slot.gbk <{static}slot/slot.gbk>`_
 
+Images
+------
+
 .. container:: gallery
 
    .. figure:: {static}slot/title.png

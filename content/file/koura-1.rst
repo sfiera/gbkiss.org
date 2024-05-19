@@ -21,9 +21,4 @@ Koura 1
 
 .. _Puzzle Game: {filename}puzzle-game.rst
 
-.. image:: {static}puzzle-game/koura1.png
-   :alt: Koura 1 illustration
-   :width: 128
-   :height: 128
-
 .. include:: ../epilog.rsti

@@ -17,6 +17,7 @@ Magnets Data
 * Author: <TEAM MAG>
 * Source: |mini-default|
 * Creator Code: ``$66`` (Magnets_)
+* File: `magnets-data.gbk <{static}magnets/magnets-data.gbk>`_
 
 .. _Magnets: {filename}magnets.rst
 

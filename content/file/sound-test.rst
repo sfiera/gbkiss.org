@@ -17,6 +17,7 @@ Sound Test
 * Author: *Anonymous*
 * Source: |mini-kissmon|
 * Creator Code: ``$05`` (Sound Test)
+* File: `sound-test.gbk <{static}sound-test/sound-test.gbk>`_
 
 Images
 ------

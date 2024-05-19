@@ -17,6 +17,7 @@ Shot
 * Author: |author-tobi|_
 * Source: |mini-default|
 * Creator Code: ``$68`` (Shot)
+* File: `shot.gbk <{static}shot/shot.gbk>`_
 
 Images
 ------

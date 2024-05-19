@@ -16,5 +16,6 @@ Char-Dump
 * Author: *Anonymous*
 * Source: |mini-kisstool|
 * Creator Code: ``$43`` (Cards)
+* File: `char-dump.gbk <{static}char-dump/char-dump.gbk>`_
 
 .. include:: ../epilog.rsti

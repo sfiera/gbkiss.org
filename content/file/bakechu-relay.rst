@@ -16,6 +16,7 @@ Bakechu Relay
 * Author: |author-tobi|_
 * Source: |mini-kissmon|
 * Creator Code: ``$70`` (Bakechu Relay)
+* File: `bakechu-relay.gbk <{static}bakechu-relay/bakechu-relay.gbk>`_
 
 Images
 ------

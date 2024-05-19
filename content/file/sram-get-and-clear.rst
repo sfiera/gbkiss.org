@@ -16,5 +16,6 @@ SRAM Get & Clear
 * Author: |author-y-motosako|_
 * Source: |mini-kisstool|
 * Creator Code: ``$00`` (none)
+* File: `sram-get-and-clear.gbk <{static}sram-get-and-clear/sram-get-and-clear.gbk>`_
 
 .. include:: ../epilog.rsti

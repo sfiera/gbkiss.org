@@ -17,6 +17,7 @@ Kiss-Mon
 * Author: |author-tobi|_
 * Source: |mini-kissmon|
 * Creator Code: ``$6e`` (Kiss-Mon)
+* File: `kiss-mon.gbk <{static}kiss-mon/kiss-mon.gbk>`_
 
 Images
 ------

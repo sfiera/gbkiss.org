@@ -17,6 +17,7 @@ Poker
 * Author: |author-s-kimura|_
 * Source: |mini-cannon|
 * Creator Code: ``$43`` (Cards)
+* File: `poker.gbk <{static}poker/poker.gbk>`_
 
 Images
 ------

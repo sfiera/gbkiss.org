@@ -17,6 +17,7 @@ SameGame
 * Author: |author-tobi|_
 * Source: |mini-default|
 * Creator Code: ``$67`` (SameGame)
+* File: `samegame.gbk <{static}samegame/samegame.gbk>`_
 
 Images
 ------

@@ -16,6 +16,7 @@ Mogutte Nanbo
 * Author: TEAMMOGURA
 * Source: |mini-default|
 * Creator Code: ``$65`` (Mogutte Nanbo)
+* File: `mogutte-nanbo.gbk <{static}mogutte-nanbo/mogutte-nanbo.gbk>`_
 
 Description
 -----------

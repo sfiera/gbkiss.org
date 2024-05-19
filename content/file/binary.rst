@@ -17,6 +17,7 @@ Binary
 * Author: |author-t-ohnishi|_
 * Source: |mini-binary|
 * Creator Code: ``$71`` (Binary)
+* File: `binary.gbk <{static}binary/binary.gbk>`_
 
 Images
 ------

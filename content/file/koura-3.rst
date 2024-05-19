@@ -21,9 +21,4 @@ Koura 3
 
 .. _Puzzle Game: {filename}puzzle-game.rst
 
-.. image:: {static}puzzle-game/koura3.png
-   :alt: Koura 3 illustration
-   :width: 128
-   :height: 128
-
 .. include:: ../epilog.rsti

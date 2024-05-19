@@ -21,9 +21,4 @@ Koura 2
 
 .. _Puzzle Game: {filename}puzzle-game.rst
 
-.. image:: {static}puzzle-game/koura2.png
-   :alt: Koura 2 illustration
-   :width: 128
-   :height: 128
-
 .. include:: ../epilog.rsti

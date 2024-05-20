@@ -5,6 +5,9 @@ Dai-Kaiju Monogatari The Miracle of the Zone
 :slug: cart/amzj
 :tags: cart
 
+.. figure:: {static}amzj/sgb.png
+   :alt: Dai-Kaiju Monogatari The Miracle of the Zone title screen
+
 * Original Title: 大貝獣物語 ザ・ミラクル オブ ザ・ゾーン
 * Release Date: 1998-03-05
 * Product Code: DMG-AMZJ-JPN

@@ -5,6 +5,9 @@ Super B-Daman Fighting Phoenix
 :slug: cart/abdj
 :tags: cart
 
+.. figure:: {static}abdj/sgb.png
+   :alt: Super B-Daman Fighting Phoenix title screen
+
 * Original Title: スーパービーダマン ファイティングフェニックス
 * Release Date: 1997-07-11
 * Product Code: DMG-ABDJ-JPN

@@ -1,5 +1,5 @@
-Robot Ponkottsu Comic BomBom Special Version
-============================================
+Robot Poncots Comic BomBom Special Version
+==========================================
 
 :lang: en
 :slug: cart/h5uj

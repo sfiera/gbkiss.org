@@ -1,5 +1,5 @@
-Robot Ponkottsu Sun Version
-===========================
+Robot Poncots Sun Version
+=========================
 
 :lang: en
 :slug: cart/hrej

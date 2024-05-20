@@ -1,5 +1,5 @@
-Robot Ponkottsu Taikenban
-=========================
+Robot Poncots Taikenban
+=======================
 
 :lang: en
 :slug: cart/artj

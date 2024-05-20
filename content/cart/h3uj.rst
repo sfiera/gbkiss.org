@@ -1,9 +1,12 @@
-Robot Ponkottsu Moon Version
-============================
+Robot Poncots Moon Version
+==========================
 
 :lang: en
 :slug: cart/h3uj
 :tags: cart
+
+.. figure:: {static}h3uj/sgb.png
+   :alt: Robot Poncots Moon Version title screen
 
 * Original Title: ロボットポンコッツ ムーンバージョン
 * Release Date: 1999-12-24

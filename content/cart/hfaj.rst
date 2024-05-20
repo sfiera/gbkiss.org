@@ -5,6 +5,9 @@ Pocket Family GB
 :slug: cart/hfaj
 :tags: cart
 
+.. figure:: {static}hfaj/sgb.png
+   :alt: Pocket Family title screen
+
 * Original Title: ポケットファミリーGB
 * Release Date: 1998-08-09
 * Product Code: DMG-HFAJ-JPN

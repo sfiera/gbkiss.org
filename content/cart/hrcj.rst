@@ -1,9 +1,12 @@
-Robot Ponkottsu Star Version
-============================
+Robot Poncots Star Version
+==========================
 
 :lang: en
 :slug: cart/hrcj
 :tags: cart
+
+.. figure:: {static}hrcj/sgb.png
+   :alt: Robot Poncots Star Version title screen
 
 * Original Title: ロボットポンコッツ スターバージョン
 * Release Date: 1998-12-04

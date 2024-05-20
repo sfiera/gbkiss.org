@@ -5,6 +5,9 @@ Nectaris GB
 :slug: cart/an5j
 :tags: cart
 
+.. figure:: {static}an5j/sgb.png
+   :alt: Nectaris GB title screen
+
 * Original Title: ネクタリスGB
 * Release Date: 1998-02-27
 * Product Code: DMG-AN5J-JPN

@@ -5,6 +5,9 @@ Pocket Bomberman
 :slug: cart/apoj
 :tags: cart
 
+.. figure:: {static}apoj/sgb.png
+   :alt: Pocket Bomberman title screen
+
 * Original Title: ポケットボンバーマン
 * Release Date: 1997-12-12
 * Product Code: DMG-APOJ-JPN

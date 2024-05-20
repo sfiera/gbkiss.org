@@ -23,10 +23,12 @@
       {% endblock %}
     </main>
     <footer>
-      ©{{ NOW | strftime("%Y") }} GBKiss.org
-      (<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>).
-      Powered by <a href="https://getpelican.com/">Pelican</a>.
-      <a href="http://github.com/sfiera/gbkiss.org/blob/main/content/{{ page.relative_source_path }}">Page source</a>.
+      <p>
+        ©{{ NOW | strftime("%Y") }} GBKiss.org
+        (<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>).
+        Powered by <a href="https://getpelican.com/">Pelican</a>.
+        <a href="http://github.com/sfiera/gbkiss.org/blob/main/content/{{ page.relative_source_path }}">Page source</a>.
+      </p>
     </footer>
   </body>
 </html>

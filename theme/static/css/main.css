@@ -12,7 +12,7 @@ body > * {
   padding: 1em;
   margin: 1em auto;
   border: thin solid hsl(0, 0%, 40%);
-  border-radius: 5px;
+  border-radius: 0.25em;
   display: block;
 }
 
@@ -43,11 +43,11 @@ p, ul, ol, table, .line, .gallery, .gallery-small {
 }
 
 pre, blockquote {
-    margin: 0.5em 0 0 40px;
+    margin: 0.5em 0 0 2.5em;
     padding: 1em;
     line-height: 1.25em;
     border: thin solid hsl(0, 0%, 40%);
-    border-radius: 5px;
+    border-radius: 0.25em;
     background: hsl(0, 0%, 95%);
 }
 
@@ -74,6 +74,10 @@ th {
 
 footer {
     clear: both;
+}
+
+footer p {
+    margin: 0;
     font-size: 90%;
 }
 
@@ -83,7 +87,7 @@ img[src$=".png"] {
 
 .figure {
     border: thin solid hsl(0, 0%, 40%);
-    border-radius: 2px;
+    border-radius: 0.125em;
     padding: 0.25em;
     margin: 0.25em;
     text-align: center;
@@ -96,12 +100,12 @@ img[src$=".png"] {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
 }
 
 .gallery-small {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
     font-size: 90%;
 }
 

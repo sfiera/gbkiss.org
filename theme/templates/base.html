@@ -23,7 +23,10 @@
       {% endblock %}
     </main>
     <footer>
-      <a href="http://github.com/sfiera/gbkiss.org/blob/main/content/{{ page.relative_source_path }}">Source</a>
+      ©{{ NOW | strftime("%Y") }} GBKiss.org
+      (<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>).
+      Powered by <a href="https://getpelican.com/">Pelican</a>.
+      <a href="http://github.com/sfiera/gbkiss.org/blob/main/content/{{ page.relative_source_path }}">Page source</a>.
     </footer>
   </body>
 </html>

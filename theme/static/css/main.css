@@ -1,5 +1,6 @@
 body {
   background: hsl(0, 0%, 70%);
+  margin: 1em;
 }
 
 body > * {
@@ -7,7 +8,6 @@ body > * {
   font-size: 100%;
   background-color: hsl(0, 0%, 100%);
   color: hsl(0, 0%, 10%);
-  width: 80%;
   max-width: 50em;
   padding: 1em;
   margin: 1em auto;

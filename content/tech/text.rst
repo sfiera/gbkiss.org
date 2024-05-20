@@ -39,7 +39,9 @@ The plain text encoding is mostly a superset of the printable ranges of ASCII_ a
 
 In order to keep the hiragana and katakana blocks contiguous, the lowercase ASCII block is relocated to the first 32 values, where control characters would normally reside.
 
-For example, the sentence 「これは　テストです。」 (10 glyphs) would be encoded as the following 10-byte string::
+For example, the sentence 「これは　テストです。」 (10 glyphs) would be encoded as the following 10-byte string:
+
+.. code-block:: ca65
 
    $6A ; こ
    $8A ; れ
@@ -65,7 +67,9 @@ The rich text encoding supports the same printable character set as the plain te
 *  Hiragana and Katakana are encoded together, and a control character (``$0E``/``$0F``) switches between sets.
 *  Diacritics (dakuten/handakuten) are separate bytes which modify the preceding kana.
 
-For example, the sentence 「これは　テストです。」 (10 glyphs) would be encoded as the following 15-byte string::
+For example, the sentence 「これは　テストです。」 (10 glyphs) would be encoded as the following 15-byte string:
+
+.. code-block:: ca65
 
    $0F ; (hiragana)
    $BA ; コ

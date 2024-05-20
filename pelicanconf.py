@@ -1,3 +1,5 @@
+import datetime
+
 AUTHOR = 'sfiera'
 SITENAME = 'GBKiss.org'
 SITEURL = ''
@@ -37,3 +39,5 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+NOW = datetime.datetime.now()

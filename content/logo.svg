@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <path d="M20,0 A20,20 0,0,0 0,20 V236 A20,20 0,0,0 20,256 H236 A20,20 0,0,0 256,236 V20 A20,20 0,0,0 236,0 z" style="fill: #0f22ad"/>
+  <g style="fill: none; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round">
+    <g style="stroke: white">
+      <path d="M80,106 A26,26 0,0,0 106,80"/>
+      <path d="M80,130 A50,50 0,0,0 130,80"/>
+      <path d="M80,154 A74,74 0,0,0 154,80"/>
+      <path d="M21,59 L54,92 L92,54 L59,21 z"/>
+      <path d="M-3,28 L6,18"/>
+      <path d="M50,-7 L112,54 L54,112 L-7,50"/>
+      <path d="M18,6 L28,-3"/>
+    </g>
+    <g style="stroke: #ffdc0d">
+      <path d="M176,150 A26,26 0,0,0 150,176"/>
+      <path d="M176,126 A50,50 0,0,0 126,176"/>
+      <path d="M176,102 A74,74 0,0,0 102,176"/>
+      <path d="M235,197 L202,164 L164,202 L197,235 z"/>
+      <path d="M260,228 L250,238"/>
+      <path d="M206,264 L144,202 L202,144 L264,206"/>
+      <path d="M238,250 L228,260"/>
+    </g>
+  </g>
+  <g style="fill: white">
+    <ellipse cx="14" cy="30" rx="6" ry="6"/>
+    <ellipse cx="8" cy="44" rx="6" ry="6"/>
+    <path d="M45,1 L51,7 L47,11 L51,15 L45,21 L41,17 L37,21 L31,15 L35,11 L31,7 L37,1 L41,5 L45,1 z"/>
+  </g>
+  <g style="fill: #ffdc0d">
+    <ellipse cx="242" cy="226" rx="6" ry="6"/>
+    <ellipse cx="248" cy="212" rx="6" ry="6"/>
+    <path d="M211,255 L205,249 L209,245 L205,241 L211,235 L215,239 L219,235 L225,241 L221,245 L225,249 L219,255 L215,251 L211,255 z"/>
+  </g>
+</svg>

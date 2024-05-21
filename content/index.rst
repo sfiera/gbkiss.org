@@ -4,6 +4,9 @@ GBKiss
 :lang: en
 :slug: index
 
+.. figure:: {static}logo.svg
+   :alt: GBKiss logo
+
 What is GBKiss?
 ---------------
 

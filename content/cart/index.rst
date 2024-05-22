@@ -64,13 +64,13 @@ Robot Poncots
 
       `Sun Version <{filename}hrej.rst>`_
 
-   .. figure:: {static}hrcj/mgb.png
+   .. figure:: {static}hrcj/gbc.png
       :alt: Robot Poncots Star Version title screen
       :target: {filename}hrcj.rst
 
       `Star Version <{filename}hrcj.rst>`_
 
-   .. figure:: {static}h3uj/mgb.png
+   .. figure:: {static}h3uj/gbc.png
       :alt: Robot Poncots Moon Version title screen
       :target: {filename}h3uj.rst
 

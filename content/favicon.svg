@@ -3,15 +3,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
   <rect width="120" height="120" style="fill: #0f22ad"/>
   <g style="fill: none; stroke-width: 10; stroke-linecap: round">
-    <g style="stroke: white">
-      <path d="M12,38 A26,26 0,0,0 38,12"/>
-      <path d="M12,62 A50,50 0,0,0 62,12"/>
-      <path d="M12,86 A74,74 0,0,0 86,12"/>
-    </g>
-    <g style="stroke: #ffdc0d">
-      <path d="M108,82 A26,26 0,0,0 82,108"/>
-      <path d="M108,58 A50,50 0,0,0 58,108"/>
-      <path d="M108,34 A74,74 0,0,0 34,108"/>
-    </g>
+    <path d="M12,38A26,26 0,0,0 38,12M12,62A50,50 0,0,0 62,12M12,86A74,74 0,0,0 86,12" style="stroke: white"/>
+    <path d="M108,82A26,26 0,0,0 82,108M108,58A50,50 0,0,0 58,108M108,34A74,74 0,0,0 34,108" style="stroke: #ffdc0d"/>
   </g>
 </svg>

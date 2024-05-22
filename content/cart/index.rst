@@ -53,12 +53,6 @@ Robot Poncots
 .. container:: gallery
 
    .. figure:: {static}akaj/mgb.png
-      :alt: Robot Poncots Taikenban title screen
-      :target: {filename}artj.rst
-
-      `Taikenban <{filename}artj.rst>`_ (Demo)
-
-   .. figure:: {static}akaj/mgb.png
       :alt: Robot Poncots Sun Version title screen
       :target: {filename}hrej.rst
 
@@ -76,11 +70,17 @@ Robot Poncots
 
       `Moon Version <{filename}h3uj.rst>`_
 
-   .. figure:: {static}akaj/mgb.png
+   .. figure:: {static}h5uj/gbc.png
       :alt: Robot Poncots Comic BomBom Special Version title screen
       :target: {filename}h5uj.rst
 
       `Comic BomBom Special Version <{filename}h5uj.rst>`_
+
+   .. figure:: {static}akaj/mgb.png
+      :alt: Robot Poncots Taikenban title screen
+      :target: {filename}artj.rst
+
+      `Taikenban <{filename}artj.rst>`_ (Demo)
 
 Unsupported Cartridges
 ----------------------

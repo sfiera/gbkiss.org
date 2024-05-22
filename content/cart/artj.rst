@@ -13,6 +13,6 @@ Robot Poncots Taikenban
 * RAM Size: Unknown
 * Blocks_:
 
-This is a demo version of Robot Ponkottsu. 500 copies were distributed as a prize. The cartridge has never been dumped.
+This is a demo version of Robot Poncots. 500 copies were distributed as a prize. The cartridge has never been dumped.
 
 .. include:: ../epilog.rsti

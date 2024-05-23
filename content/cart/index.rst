@@ -7,7 +7,7 @@ Cartridges
 GBKiss Cartridges
 -----------------
 
-These games support GBKiss functionality:
+GBKiss is supported in five games for the original Game Boy, all four Japanese `Robot Poncots`_ games for Game Boy Color, the `Robot Poncots Demo <{filename}artj.rst>`_, and the `GBKiss Mini Games`_ distribution software.
 
 .. container:: gallery
 
@@ -15,37 +15,37 @@ These games support GBKiss functionality:
       :alt: Super B-Daman Fighting Phoenix title screen
       :target: {filename}abdj.rst
 
-      `Super B-Daman Fighting Phoenix <{filename}abdj.rst>`_
-
-   .. figure:: {static}akaj/mgb.png
-      :alt: GBKiss Mini Games title screen
-      :target: {filename}akaj.rst
-
-      `GBKiss Mini Games`_
-
-   .. figure:: {static}amzj/mgb.png
-      :alt: Dai-Kaiju Monogatari The Miracle of the Zone title screen
-      :target: {filename}amzj.rst
-
-      `Dai-Kaiju Monogatari The Miracle of the Zone <{filename}amzj.rst>`_
-
-   .. figure:: {static}an5j/mgb.png
-      :alt: Nectaris GB title screen
-      :target: {filename}an5j.rst
-
-      `Nectaris GB <{filename}an5j.rst>`_
+      `Super B-Daman Fighting Phoenix <{filename}abdj.rst>`_ (Jul 1997)
 
    .. figure:: {static}apoj/mgb.png
       :alt: Pocket Bomberman title screen
       :target: {filename}apoj.rst
 
-      `Pocket Bomberman <{filename}apoj.rst>`_
+      `Pocket Bomberman <{filename}apoj.rst>`_ (Dec 1997)
+
+   .. figure:: {static}akaj/mgb.png
+      :alt: GBKiss Mini Games title screen
+      :target: {filename}akaj.rst
+
+      `GBKiss Mini Games`_ (Dec 1997)
+
+   .. figure:: {static}an5j/mgb.png
+      :alt: Nectaris GB title screen
+      :target: {filename}an5j.rst
+
+      `Nectaris GB <{filename}an5j.rst>`_ (Feb 1998)
+
+   .. figure:: {static}amzj/mgb.png
+      :alt: Dai-Kaiju Monogatari The Miracle of the Zone title screen
+      :target: {filename}amzj.rst
+
+      `Dai-Kaiju Monogatari The Miracle of the Zone <{filename}amzj.rst>`_ (Mar 1998)
 
    .. figure:: {static}hfaj/mgb.png
       :alt: Pocket Family GB title screen
       :target: {filename}hfaj.rst
 
-      `Pocket Family GB <{filename}hfaj.rst>`_
+      `Pocket Family GB <{filename}hfaj.rst>`_ (Aug 1998)
 
 Robot Poncots
 ~~~~~~~~~~~~~
@@ -56,25 +56,25 @@ Robot Poncots
       :alt: Robot Poncots Sun Version title screen
       :target: {filename}hrej.rst
 
-      `Sun Version <{filename}hrej.rst>`_
+      `Sun Version <{filename}hrej.rst>`_ (Dec 1998)
 
    .. figure:: {static}hrcj/gbc.png
       :alt: Robot Poncots Star Version title screen
       :target: {filename}hrcj.rst
 
-      `Star Version <{filename}hrcj.rst>`_
+      `Star Version <{filename}hrcj.rst>`_ (Dec 1998)
 
    .. figure:: {static}h3uj/gbc.png
       :alt: Robot Poncots Moon Version title screen
       :target: {filename}h3uj.rst
 
-      `Moon Version <{filename}h3uj.rst>`_
+      `Moon Version <{filename}h3uj.rst>`_ (Dec 1999)
 
    .. figure:: {static}h5uj/gbc.png
       :alt: Robot Poncots Comic BomBom Special Version title screen
       :target: {filename}h5uj.rst
 
-      `Comic BomBom Special Version <{filename}h5uj.rst>`_
+      `Comic BomBom Special Version <{filename}h5uj.rst>`_ (Dec 1999)
 
    .. figure:: {static}akaj/mgb.png
       :alt: Robot Poncots Taikenban title screen

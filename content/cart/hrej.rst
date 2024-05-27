@@ -5,6 +5,9 @@ Robot Poncots Sun Version
 :slug: cart/hrej
 :tags: cart
 
+.. figure:: {static}hrej/sgb.png
+   :alt: Robot Poncots Sun Version title screen
+
 * Original Title: ロボットポンコッツ サンバージョン
 * Release Date: 1998-12-04
 * Product Code: DMG-HREJ-JPN

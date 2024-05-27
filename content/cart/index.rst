@@ -52,7 +52,7 @@ Robot Poncots
 
 .. container:: gallery
 
-   .. figure:: {static}akaj/mgb.png
+   .. figure:: {static}hrej/gbc.png
       :alt: Robot Poncots Sun Version title screen
       :target: {filename}hrej.rst
 

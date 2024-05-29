@@ -49,6 +49,7 @@
   color: hsl(0, 0%, 10%);
 }
 
+.highlight .kt, /* Keyword.Type */
 .highlight .m, /* Literal.Number */
 .highlight .mf, /* Literal.Number.Float */
 .highlight .mh, /* Literal.Number.Hex */
@@ -74,7 +75,6 @@
 .highlight .go { color: #add8e6; font-weight: bold; background-color: #4d4d4d } /* Generic.Output */
 .highlight .gu { color: #cd5c5c} /* Generic.Subheading */
 .highlight .gt { color: #c0c0c0; font-weight: bold; background-color: #c00000 } /* Generic.Traceback */
-.highlight .kt { color: #bdb76b} /* Keyword.Type */
 .highlight .no { color: #ffa0a0} /* Name.Constant */
 .highlight .ni { color: #ffdead} /* Name.Entity */
 .highlight .nv { color: #98fb98} /* Name.Variable */

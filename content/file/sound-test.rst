@@ -19,6 +19,43 @@ Sound Test
 * Creator Code: ``$05`` (Sound Test)
 * File: `sound-test.gbk <{static}sound-test/sound-test.gbk>`_
 
+Description
+-----------
+
+Sound Test plays back music and sound effects. Different music and sound is available depending on the cartridge: on a `Pocket Bomberman`_ cartridge it plays Bomberman music; on a `Nectaris GB`_ cartridge it plays Nectaris music. In addition, there are some common sound effects available across different cartridges.
+
+.. _Pocket Bomberman: {filename}/cart/apoj.rst
+.. _Nectaris GB: {filename}/cart/an5j.rst
+
+There are six options:
+
+*  MUSIC No.: chooses a music track from the cartridge. Press A to play music.
+*  EFECT No.: chooses a sound effect from the cartridge. Press A to play sound.
+*  OffChannel_: turns off one or more of the Game Boy’s 4 sound channels. Press A to change setting.
+*  VOLUME: sets the global volume. Press A to change setting.
+*  M_PAUSE: pauses music. Press A to pause or unpause.
+*  VsyncTimer: unknown.
+
+Below the menu, the current music state and sound effect state (play or stop) is shown.
+
+OffChannel
+~~~~~~~~~~
+
+The OffChannel setting is interpreted as a binary bitfield, with channels 1 (pulse), 2 (pulse), 3 (wave), and 4 (noise) corresponding to 1, 2, 4, and 8, respectively. These channels often correspond to melody, harmony, bass, and percussion. For example:
+
+*  To hear all tracks, set to 0.
+*  To disable percussion, set to 8 to turn off channel 4.
+*  To hear only harmony, set to 13 (1 + 4 + 8) to turn off channels 1, 3, and 4.
+
+Other Software
+~~~~~~~~~~~~~~
+
+If music is playing when Sound Test exits, it will continue playing in the menu and in other software that allows it to continue. The following is an incomplete list of software that supports this:
+
+*  `Kiss Mail <{filename}kiss-mail.rst>`_
+*  `Puzzle Game <{filename}puzzle-game.rst>`_
+*  `Calculator <{filename}calculator.rst>`_
+
 Images
 ------
 

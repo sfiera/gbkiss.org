@@ -19,6 +19,15 @@ Magnets
 * Creator Code: ``$66`` (Magnets)
 * File: `magnets.gbk <{static}magnets/magnets.gbk>`_
 
+Trivia
+------
+
+Taken together with the required `Magnets Data`_, Magnets consumes more space than any other GBKiss software, at 13778 total bytes. Individually, Magnets is the third largest file, after Binary_ and `Mogutte Nanbo`_.
+
+.. _Magnets Data: {filename}magnets-data.rst
+.. _Binary: {filename}binary.rst
+.. _Mogutte Nanbo: {filename}mogutte-nanbo.rst
+
 Images
 ------
 

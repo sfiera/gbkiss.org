@@ -11,7 +11,7 @@ Kiss-Mon 2
    :height: 120
 
 * Original Title: KISS-MON2
-* Size: 28 Blocks_
+* Size: 28 Blocks_ (7096 bytes)
 * Type: |diamond|
 * Author: |author-tobi|_
 * Source: `Pocket Bomberman <{filename}/cart/apoj.rst>`_

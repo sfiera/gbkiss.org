@@ -16,6 +16,21 @@ Pocket Family GB
 * RAM Size: 256Kbit (32KiB)
 * Blocks_:
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}hfaj/mgb.png
+      :alt: Title screen
+
+      Title screen
+
+   .. figure:: {static}hfaj/main-menu.png
+      :alt: Main menu
+
+      Main menu
+
 Sources
 -------
 

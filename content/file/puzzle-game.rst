@@ -73,25 +73,28 @@ The default illustration depicts a grid of numbers from 1 to 15, as is common fo
 
    ..  figure:: {static}puzzle-game/numbers.png
        :alt: Default illustration
-       :width: 128
+       :width: 96
 
        Default
 
    ..  figure:: {static}puzzle-game/koura1.png
        :alt: Koura 1 Illustration
-       :width: 128
+       :target: {filename}koura-1.rst
+       :width: 96
 
        `KOURA1 <{filename}koura-1.rst>`_
 
    ..  figure:: {static}puzzle-game/koura2.png
        :alt: Koura 2 Illustration
-       :width: 128
+       :target: {filename}koura-2.rst
+       :width: 96
 
        `KOURA2 <{filename}koura-2.rst>`_
 
    ..  figure:: {static}puzzle-game/koura3.png
        :alt: Koura 3 Illustration
-       :width: 128
+       :target: {filename}koura-3.rst
+       :width: 96
 
        `KOURA3 <{filename}koura-3.rst>`_
 

@@ -14,6 +14,6 @@ Robot Poncots Sun Version
 * Mapper_: HuC-3
 * ROM Size: 8Mbit (1MiB)
 * RAM Size: 256Mbit (32KiB)
-* Blocks_:
+* Storage_: $21f0 (8688 bytes)
 
 .. include:: ../epilog.rsti

@@ -10,7 +10,7 @@ GBKiss Mini Games
 * Mapper_: HuC-1
 * ROM Size: 2Mbit (256KiB)
 * RAM Size: 256Kbit (32KiB)
-* Blocks_: 128 (32KiB)
+* Storage_: $7f00 (32512 bytes)
 
 The table of contents for the “Famitsu Bros” 1997/12 issue says:
 

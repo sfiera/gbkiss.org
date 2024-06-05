@@ -14,7 +14,7 @@ Pocket Bomberman
 * Mapper_: HuC-1
 * ROM Size: 4Mbit (256KiB)
 * RAM Size: 256Kbit (32KiB)
-* Blocks_:
+* Storage_: $7f00 (32512 bytes)
 
 Trivia
 ------

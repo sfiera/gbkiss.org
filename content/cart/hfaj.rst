@@ -14,7 +14,7 @@ Pocket Family GB
 * Mapper_: HuC-3
 * ROM Size: 4Mbit (512KiB)
 * RAM Size: 256Kbit (32KiB)
-* Blocks_:
+* Storage_: $3f80 (16256 bytes)
 
 Images
 ------

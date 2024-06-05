@@ -14,6 +14,6 @@ Dai-Kaiju Monogatari The Miracle of the Zone
 * Mapper_: HuC-1
 * ROM Size: 4Mbit (256KiB)
 * RAM Size: 256Kbit (32KiB)
-* Blocks_:
+* Storage_: $7980 (31104 bytes)
 
 .. include:: ../epilog.rsti

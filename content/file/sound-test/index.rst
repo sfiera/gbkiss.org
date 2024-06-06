@@ -41,7 +41,14 @@ Below the menu, the current music state and sound effect state (play or stop) is
 OffChannel
 ~~~~~~~~~~
 
-The OffChannel setting is interpreted as a binary bitfield, with channels 1 (pulse), 2 (pulse), 3 (wave), and 4 (noise) corresponding to 1, 2, 4, and 8, respectively. These channels often correspond to melody, harmony, bass, and percussion. For example:
+The OffChannel setting is interpreted as a binary bitfield, with 4 flags:
+
+*  1: pulse channel 1; often melody
+*  2: pulse channel 2; often harmony
+*  4: wave channel 3; often bass
+*  8: noise channel 4; often percussion
+
+For example:
 
 *  To hear all tracks, set to 0.
 *  To disable percussion, set to 8 to turn off channel 4.

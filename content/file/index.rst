@@ -18,10 +18,10 @@ Special
 
    .. figure:: {static}icon/letter.png
       :alt: Kiss Mail icon
-      :target: {filename}kiss-mail.rst
+      :target: {filename}kiss-mail/index.rst
       :width: 64
 
-      `Kiss Mail <{filename}kiss-mail.rst>`_
+      `Kiss Mail <{filename}kiss-mail/index.rst>`_
 
 Games
 ~~~~~
@@ -29,123 +29,123 @@ Games
 .. container:: gallery-small
 
    .. figure:: {static}bakechu-relay/icon.png
-      :target: {filename}bakechu-relay.rst
+      :target: {filename}bakechu-relay/index.rst
       :alt: Bakechu Relay icon
       :width: 64
 
-      `Bakechu Relay <{filename}bakechu-relay.rst>`_
+      `Bakechu Relay <{filename}bakechu-relay/index.rst>`_
 
    .. figure:: {static}binary/icon.png
       :alt: Binary icon
-      :target: {filename}binary.rst
+      :target: {filename}binary/index.rst
       :width: 64
 
-      `Binary <{filename}binary.rst>`_
+      `Binary <{filename}binary/index.rst>`_
 
    .. figure:: {static}icon/card0.png
       :alt: Blackjack icon
-      :target: {filename}blackjack.rst
+      :target: {filename}blackjack/index.rst
       :width: 64
 
-      `Blackjack <{filename}blackjack.rst>`_
+      `Blackjack <{filename}blackjack/index.rst>`_
 
    .. figure:: {static}cannon-ball/icon.png
       :alt: Cannon Ball icon
-      :target: {filename}cannon-ball.rst
+      :target: {filename}cannon-ball/index.rst
       :width: 64
 
-      `Cannon Ball <{filename}cannon-ball.rst>`_
+      `Cannon Ball <{filename}cannon-ball/index.rst>`_
 
    .. figure:: {static}drive/icon.png
       :alt: Drive icon
-      :target: {filename}drive.rst
+      :target: {filename}drive/index.rst
       :width: 64
 
-      `Drive <{filename}drive.rst>`_
+      `Drive <{filename}drive/index.rst>`_
 
    .. figure:: {static}kiss-mon/icon.png
       :alt: Kiss-Mon icon
-      :target: {filename}kiss-mon.rst
+      :target: {filename}kiss-mon/index.rst
       :width: 64
 
-      `Kiss-Mon <{filename}kiss-mon.rst>`_
+      `Kiss-Mon <{filename}kiss-mon/index.rst>`_
 
    .. figure:: {static}kiss-mon-2/icon.png
       :alt: Kiss-Mon-2 icon
-      :target: {filename}kiss-mon-2.rst
+      :target: {filename}kiss-mon-2/index.rst
       :width: 64
 
-      `Kiss-Mon 2 <{filename}kiss-mon-2.rst>`_
+      `Kiss-Mon 2 <{filename}kiss-mon-2/index.rst>`_
 
    .. figure:: {static}magnets/icon.png
       :alt: Magnets icon
-      :target: {filename}magnets.rst
+      :target: {filename}magnets/index.rst
       :width: 64
 
-      `Magnets <{filename}magnets.rst>`_
+      `Magnets <{filename}magnets/index.rst>`_
 
    .. figure:: {static}main/empty.png
       :alt: Mini Stasol icon
-      :target: {filename}mini-stasol.rst
+      :target: {filename}mini-stasol/index.rst
       :width: 64
 
-      `Mini Stasol <{filename}mini-stasol.rst>`_
+      `Mini Stasol <{filename}mini-stasol/index.rst>`_
 
    .. figure:: {static}mogutte-nanbo/icon.png
       :alt: Mogutte Nanbo icon
-      :target: {filename}mogutte-nanbo.rst
+      :target: {filename}mogutte-nanbo/index.rst
       :width: 64
 
-      `Mogutte Nanbo <{filename}mogutte-nanbo.rst>`_
+      `Mogutte Nanbo <{filename}mogutte-nanbo/index.rst>`_
 
    .. figure:: {static}icon/card0.png
       :alt: Poker icon
-      :target: {filename}poker.rst
+      :target: {filename}poker/index.rst
       :width: 64
 
-      `Poker <{filename}poker.rst>`_
+      `Poker <{filename}poker/index.rst>`_
 
    .. figure:: {static}puzzle-game/icon.png
       :alt: Puzzle Game icon
-      :target: {filename}puzzle-game.rst
+      :target: {filename}puzzle-game/index.rst
       :width: 64
 
-      `Puzzle Game <{filename}puzzle-game.rst>`_
+      `Puzzle Game <{filename}puzzle-game/index.rst>`_
 
    .. figure:: {static}roulette/icon.png
       :alt: Roulette icon
-      :target: {filename}roulette.rst
+      :target: {filename}roulette/index.rst
       :width: 64
 
-      `Roulette <{filename}roulette.rst>`_
+      `Roulette <{filename}roulette/index.rst>`_
 
    .. figure:: {static}samegame/icon.png
       :alt: SameGame icon
-      :target: {filename}samegame.rst
+      :target: {filename}samegame/index.rst
       :width: 64
 
-      `SameGame <{filename}samegame.rst>`_
+      `SameGame <{filename}samegame/index.rst>`_
 
    .. figure:: {static}icon/gun.png
       :alt: Shot icon
-      :target: {filename}shot.rst
+      :target: {filename}shot/index.rst
       :width: 64
 
-      `Shot <{filename}shot.rst>`_
+      `Shot <{filename}shot/index.rst>`_
 
    .. figure:: {static}slot/icon.png
       :alt: Slot icon
-      :target: {filename}slot.rst
+      :target: {filename}slot/index.rst
       :width: 64
 
-      `Slot <{filename}slot.rst>`_
+      `Slot <{filename}slot/index.rst>`_
 
    .. figure:: {static}worm/icon.png
       :alt: Worm icon
-      :target: {filename}worm.rst
+      :target: {filename}worm/index.rst
       :width: 64
 
-      `Worm <{filename}worm.rst>`_
+      `Worm <{filename}worm/index.rst>`_
 
 Apps
 ~~~~
@@ -154,45 +154,45 @@ Apps
 
    .. figure:: {static}biorhythm/icon.png
       :alt: Biorhythm icon
-      :target: {filename}biorhythm.rst
+      :target: {filename}biorhythm/index.rst
       :width: 64
 
-      `Biorhythm <{filename}biorhythm.rst>`_
+      `Biorhythm <{filename}biorhythm/index.rst>`_
 
    .. figure:: {static}icon/dentaku.png
       :alt: Calculator icon
-      :target: {filename}calculator.rst
+      :target: {filename}calculator/index.rst
       :width: 64
 
-      `Calculator <{filename}calculator.rst>`_
+      `Calculator <{filename}calculator/index.rst>`_
 
    .. figure:: {static}icon/edit.png
       :alt: Icon-Edit icon
-      :target: {filename}icon-edit.rst
+      :target: {filename}icon/edit.rst
       :width: 64
 
-      `Icon-Edit <{filename}icon-edit.rst>`_
+      `Icon-Edit <{filename}icon/edit.rst>`_
 
    .. figure:: {static}icon/send.png
       :alt: Icon-Send icon
-      :target: {filename}icon-send.rst
+      :target: {filename}icon/send.rst
       :width: 64
 
-      `Icon-Send <{filename}icon-send.rst>`_
+      `Icon-Send <{filename}icon/send.rst>`_
 
    .. figure:: {static}icon/cat.png
       :alt: Sound Test icon
-      :target: {filename}sound-test.rst
+      :target: {filename}sound-test/index.rst
       :width: 64
 
-      `Sound Test <{filename}sound-test.rst>`_
+      `Sound Test <{filename}sound-test/index.rst>`_
 
    .. figure:: {static}icon/tokei.png
       :alt: Watch & Timer icon
-      :target: {filename}watch-and-timer.rst
+      :target: {filename}watch-and-timer/index.rst
       :width: 64
 
-      `Watch & Timer <{filename}watch-and-timer.rst>`_
+      `Watch & Timer <{filename}watch-and-timer/index.rst>`_
 
 Tools
 ~~~~~
@@ -201,24 +201,24 @@ Tools
 
    .. figure:: {static}icon/card0.png
       :alt: Char-Dump icon
-      :target: {filename}char-dump.rst
+      :target: {filename}char-dump/index.rst
       :width: 64
 
-      `Char-Dump <{filename}char-dump.rst>`_
+      `Char-Dump <{filename}char-dump/index.rst>`_
 
    .. figure:: {static}icon/card0.png
       :alt: Delete All icon
-      :target: {filename}delete-all.rst
+      :target: {filename}delete-all/index.rst
       :width: 64
 
-      `Delete All <{filename}delete-all.rst>`_
+      `Delete All <{filename}delete-all/index.rst>`_
 
    .. figure:: {static}sram-get-and-clear/icon.png
       :alt: SRAM Get & Clear icon
-      :target: {filename}sram-get-and-clear.rst
+      :target: {filename}sram-get-and-clear/index.rst
       :width: 64
 
-      `SRAM Get & Clear <{filename}sram-get-and-clear.rst>`_
+      `SRAM Get & Clear <{filename}sram-get-and-clear/index.rst>`_
 
 Data
 ----
@@ -229,59 +229,59 @@ Data files are marked with a triangle (|triangle|). If the associated software_ 
 
    .. figure:: {static}icon/icon.png
       :alt: Icon icon
-      :target: {filename}icon.rst
+      :target: {filename}icon/index.rst
       :width: 64
 
-      `Icon <{filename}icon.rst>`_
+      `Icon <{filename}icon/index.rst>`_
 
    .. figure:: {static}puzzle-game/icon.png
       :alt: Koura 1 icon
-      :target: {filename}koura-1.rst
+      :target: {filename}puzzle-game/koura-1.rst
       :width: 64
 
-      `Koura 1 <{filename}koura-1.rst>`_
+      `Koura 1 <{filename}puzzle-game/koura-1.rst>`_
 
    .. figure:: {static}puzzle-game/icon.png
       :alt: Koura 2 icon
-      :target: {filename}koura-2.rst
+      :target: {filename}puzzle-game/koura-2.rst
       :width: 64
 
-      `Koura 2 <{filename}koura-2.rst>`_
+      `Koura 2 <{filename}puzzle-game/koura-2.rst>`_
 
    .. figure:: {static}puzzle-game/icon.png
       :alt: Koura 3 icon
-      :target: {filename}koura-3.rst
+      :target: {filename}puzzle-game/koura-3.rst
       :width: 64
 
-      `Koura 3 <{filename}koura-3.rst>`_
+      `Koura 3 <{filename}puzzle-game/koura-3.rst>`_
 
    .. figure:: {static}magnets/icon.png
       :alt: Magnets Data icon
-      :target: {filename}magnets-data.rst
+      :target: {filename}magnets/data.rst
       :width: 64
 
-      `Magnets Data <{filename}magnets-data.rst>`_
+      `Magnets Data <{filename}magnets/data.rst>`_
 
    .. figure:: {static}icon/mail.png
       :alt: Mail icon
-      :target: {filename}mail.rst
+      :target: {filename}mail/index.rst
       :width: 64
 
-      `Mail <{filename}mail.rst>`_
+      `Mail <{filename}mail/index.rst>`_
 
    .. figure:: {static}icon/tokei.png
       :alt: Num0 Data icon
-      :target: {filename}num0-data.rst
+      :target: {filename}watch-and-timer/num0-data.rst
       :width: 64
 
-      `Num0 Data <{filename}num0-data.rst>`_
+      `Num0 Data <{filename}watch-and-timer/num0-data.rst>`_
 
    .. figure:: {static}mogutte-nanbo/icon.png
       :alt: Sezaki icon
-      :target: {filename}sezaki.rst
+      :target: {filename}mogutte-nanbo/sezaki.rst
       :width: 64
 
-      `Sezaki <{filename}sezaki.rst>`_
+      `Sezaki <{filename}mogutte-nanbo/sezaki.rst>`_
 
 Menu
 ----

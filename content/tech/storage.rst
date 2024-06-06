@@ -90,6 +90,6 @@ The second-to-last region of the last bank contains the file table, addressing a
 *  1 byte: ``$00`` for stored files, or ``$FF`` for `Kiss Mail`_
 *  1 byte: file creator code
 
-.. _Kiss Mail: {filename}/file/kiss-mail.rst
+.. _Kiss Mail: {filename}/file/kiss-mail/index.rst
 
 .. include:: ../epilog.rsti

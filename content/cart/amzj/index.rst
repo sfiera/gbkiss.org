@@ -5,7 +5,7 @@ Dai-Kaiju Monogatari The Miracle of the Zone
 :slug: cart/amzj
 :tags: cart
 
-.. figure:: {static}amzj/sgb.png
+.. figure:: {static}sgb.png
    :alt: Dai-Kaiju Monogatari The Miracle of the Zone title screen
 
 * Original Title: 大貝獣物語 ザ・ミラクル オブ ザ・ゾーン
@@ -16,4 +16,4 @@ Dai-Kaiju Monogatari The Miracle of the Zone
 * RAM Size: 256Kbit (32KiB)
 * Storage_: $7980 (31104 bytes)
 
-.. include:: ../epilog.rsti
+.. include:: ../../epilog.rsti

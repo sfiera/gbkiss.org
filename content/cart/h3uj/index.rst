@@ -5,7 +5,7 @@ Robot Poncots Moon Version
 :slug: cart/h3uj
 :tags: cart
 
-.. figure:: {static}h3uj/sgb.png
+.. figure:: {static}sgb.png
    :alt: Robot Poncots Moon Version title screen
 
 * Original Title: ロボットポンコッツ ムーンバージョン
@@ -16,4 +16,4 @@ Robot Poncots Moon Version
 * RAM Size: 256Mbit (32KiB)
 * Storage_: $21f0 (8688 bytes)
 
-.. include:: ../epilog.rsti
+.. include:: ../../epilog.rsti

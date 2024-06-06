@@ -5,7 +5,7 @@ Robot Poncots Comic BomBom Special Version
 :slug: cart/h5uj
 :tags: cart
 
-.. figure:: {static}h5uj/sgb.png
+.. figure:: {static}sgb.png
    :alt: Robot Poncots Comic BomBom Special Version title screen
 
 * Original Title: ロボットポンコッツ コミックボンボン スペシャルバージョン
@@ -16,4 +16,4 @@ Robot Poncots Comic BomBom Special Version
 * RAM Size: 256Mbit (32KiB)
 * Storage_: $21f0 (8688 bytes)
 
-.. include:: ../epilog.rsti
+.. include:: ../../epilog.rsti

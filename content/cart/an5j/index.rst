@@ -5,7 +5,7 @@ Nectaris GB
 :slug: cart/an5j
 :tags: cart
 
-.. figure:: {static}an5j/sgb.png
+.. figure:: {static}sgb.png
    :alt: Nectaris GB title screen
 
 * Original Title: ネクタリスGB
@@ -21,17 +21,17 @@ Images
 
 .. container:: gallery
 
-   .. figure:: {static}an5j/mgb.png
+   .. figure:: {static}mgb.png
       :alt: Title screen
 
       Title screen
 
-   .. figure:: {static}an5j/main-menu.png
+   .. figure:: {static}main-menu.png
       :alt: Main menu
 
       Main menu
 
-   .. figure:: {static}an5j/kiss-menu.png
+   .. figure:: {static}kiss-menu.png
       :alt: GBKiss menu
 
       GBKiss menu
@@ -49,4 +49,4 @@ Sources
 * https://web.archive.org/web/20000618073336/http://www.hudson.co.jp/SLG/soft/necgb.html
 * https://web.archive.org/web/19990429113503/http://www.hudson.co.jp/SLG/down.html
 
-.. include:: ../epilog.rsti
+.. include:: ../../epilog.rsti

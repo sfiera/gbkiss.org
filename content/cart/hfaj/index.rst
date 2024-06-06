@@ -5,7 +5,7 @@ Pocket Family GB
 :slug: cart/hfaj
 :tags: cart
 
-.. figure:: {static}hfaj/sgb.png
+.. figure:: {static}sgb.png
    :alt: Pocket Family title screen
 
 * Original Title: ポケットファミリーGB
@@ -21,12 +21,12 @@ Images
 
 .. container:: gallery
 
-   .. figure:: {static}hfaj/mgb.png
+   .. figure:: {static}mgb.png
       :alt: Title screen
 
       Title screen
 
-   .. figure:: {static}hfaj/main-menu.png
+   .. figure:: {static}main-menu.png
       :alt: Main menu
 
       Main menu
@@ -36,4 +36,4 @@ Sources
 
 * https://web.archive.org/web/19981202205132/http://www.hudson.co.jp/new/family/date.html
 
-.. include:: ../epilog.rsti
+.. include:: ../../epilog.rsti

@@ -5,7 +5,7 @@ Pocket Bomberman
 :slug: cart/apoj
 :tags: cart
 
-.. figure:: {static}apoj/sgb.png
+.. figure:: {static}sgb.png
    :alt: Pocket Bomberman title screen
 
 * Original Title: ポケットボンバーマン
@@ -21,4 +21,4 @@ Trivia
 
 Pocket Bomberman was re-released internationally in two different versions: first, as a Europe-only monochrome version [DMG-AKOP-EUR], and second, as a launch title for the Game Boy Color in the USA [DMG-AKQE-USA] and Europe [DMG-AKQP-EUR]. Neither version has infrared connectivity or features GBKiss support.
 
-.. include:: ../epilog.rsti
+.. include:: ../../epilog.rsti

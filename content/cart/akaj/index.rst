@@ -71,7 +71,7 @@ The KISSMON group contains Kiss-Mon_, `Bakechu Relay`_, and four apps. An improv
 
 .. _Kiss-Mon: {filename}/file/kiss-mon.rst
 .. _Kiss-Mon-2: {filename}/file/kiss-mon-2.rst
-.. _Pocket Bomberman: {filename}apoj.rst
+.. _Pocket Bomberman: {filename}/cart/apoj/index.rst
 .. _Watch & Timer: {filename}/file/watch-and-timer.rst
 .. _Calculator: {filename}/file/calculator.rst
 .. _Biorhythm: {filename}/file/biorhythm.rst
@@ -148,4 +148,4 @@ Sources
 * `CaH4e3 (Санчез)’s GB Cheats <https://cah4e3.shedevr.org.ru/gb_cheats.php#329>`_
 * `Bomberman CM Caravan <https://web.archive.org/web/19980209204638/http://www.hudson.co.jp/cm_cvan/cmcvan.html>`_ (Archived 1998-02-09)
 
-.. include:: ../epilog.rsti
+.. include:: ../../epilog.rsti

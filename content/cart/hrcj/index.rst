@@ -5,7 +5,7 @@ Robot Poncots Star Version
 :slug: cart/hrcj
 :tags: cart
 
-.. figure:: {static}hrcj/sgb.png
+.. figure:: {static}sgb.png
    :alt: Robot Poncots Star Version title screen
 
 * Original Title: ロボットポンコッツ スターバージョン
@@ -16,4 +16,4 @@ Robot Poncots Star Version
 * RAM Size: 256Mbit (32KiB)
 * Storage_: $21f0 (8688 bytes)
 
-.. include:: ../epilog.rsti
+.. include:: ../../epilog.rsti

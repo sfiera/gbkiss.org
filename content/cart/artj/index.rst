@@ -50,4 +50,4 @@ The August 1998 edition of Comic BomBom included a “Robopon Newsletter” supp
 
    〈うら〉
 
-.. include:: ../epilog.rsti
+.. include:: ../../epilog.rsti

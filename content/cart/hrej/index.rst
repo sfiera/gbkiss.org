@@ -5,7 +5,7 @@ Robot Poncots Sun Version
 :slug: cart/hrej
 :tags: cart
 
-.. figure:: {static}hrej/sgb.png
+.. figure:: {static}sgb.png
    :alt: Robot Poncots Sun Version title screen
 
 * Original Title: ロボットポンコッツ サンバージョン
@@ -16,4 +16,4 @@ Robot Poncots Sun Version
 * RAM Size: 256Mbit (32KiB)
 * Storage_: $21f0 (8688 bytes)
 
-.. include:: ../epilog.rsti
+.. include:: ../../epilog.rsti

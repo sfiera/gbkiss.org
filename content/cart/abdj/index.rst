@@ -5,7 +5,7 @@ Super B-Daman Fighting Phoenix
 :slug: cart/abdj
 :tags: cart
 
-.. figure:: {static}abdj/sgb.png
+.. figure:: {static}sgb.png
    :alt: Super B-Daman Fighting Phoenix title screen
 
 * Original Title: スーパービーダマン ファイティングフェニックス
@@ -16,4 +16,4 @@ Super B-Daman Fighting Phoenix
 * RAM Size: 256Kbit (32KiB)
 * Storage_: $7c00 (31744 bytes)
 
-.. include:: ../epilog.rsti
+.. include:: ../../epilog.rsti

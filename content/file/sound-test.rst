@@ -24,8 +24,8 @@ Description
 
 Sound Test plays back music and sound effects. Different music and sound is available depending on the cartridge: on a `Pocket Bomberman`_ cartridge it plays Bomberman music; on a `Nectaris GB`_ cartridge it plays Nectaris music. In addition, there are some common sound effects available across different cartridges.
 
-.. _Pocket Bomberman: {filename}/cart/apoj.rst
-.. _Nectaris GB: {filename}/cart/an5j.rst
+.. _Pocket Bomberman: {filename}/cart/apoj/index.rst
+.. _Nectaris GB: {filename}/cart/an5j/index.rst
 
 There are six options:
 

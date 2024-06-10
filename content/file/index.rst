@@ -166,6 +166,13 @@ Apps
 
       `Calculator <{filename}calculator/index.rst>`_
 
+   .. figure:: {static}family-shot/icon.png
+      :alt: Family Shot icon
+      :target: {filename}family-shot/index.rst
+      :width: 64
+
+      `Family Shot <{filename}family-shot/index.rst>`_
+
    .. figure:: {static}icon/edit.png
       :alt: Icon-Edit icon
       :target: {filename}icon/edit.rst
@@ -268,6 +275,13 @@ Data files are marked with a triangle (|triangle|). If the associated software_ 
       :width: 64
 
       `Mail <{filename}mail/index.rst>`_
+
+   .. figure:: {static}icon/simula1.png
+      :alt: Saita Saita icon
+      :target: {filename}saita/index.rst
+      :width: 64
+
+      `Saita Saita <{filename}saita/index.rst>`_
 
    .. figure:: {static}icon/tokei.png
       :alt: Num0 Data icon

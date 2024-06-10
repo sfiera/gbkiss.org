@@ -1,14 +1,14 @@
 import datetime
 
-AUTHOR = 'sfiera'
-SITENAME = 'GBKiss.org'
-SITEURL = ''
+AUTHOR = "sfiera"
+SITENAME = "GBKiss.org"
+SITEURL = ""
 
-PATH = 'content'
+PATH = "content"
 
-THEME = 'theme'
+THEME = "theme"
 
-TIMEZONE = 'Asia/Tokyo'
+TIMEZONE = "Asia/Tokyo"
 
 PAGE_PATHS        = [""]
 PAGE_URL          = "{slug}"

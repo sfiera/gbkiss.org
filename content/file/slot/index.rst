@@ -17,7 +17,7 @@ Slot
 * Author: |author-y-motosako|_
 * Source: |mini-cannon|
 * Creator Code: ``$6c`` (Slot)
-* File: `slot.gbk <{static}slot.gbk>`_
+* File: `slot.gbf <{static}slot.gbf>`_
 
 Images
 ------

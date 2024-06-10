@@ -16,7 +16,7 @@ Puzzle Game
 * Author: |author-tarkun|_
 * Source: |mini-cannon|
 * Creator Code: ``$64`` (Puzzle Game)
-* File: `puzzle-game.gbk <{static}puzzle-game.gbk>`_
+* File: `puzzle-game.gbf <{static}puzzle-game.gbf>`_
 
 Gameplay
 --------

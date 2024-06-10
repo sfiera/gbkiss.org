@@ -17,7 +17,7 @@ Drive
 * Author: |author-t-ohnishi|_
 * Source: |mini-default|
 * Creator Code: ``$69`` (Drive)
-* File: `drive.gbk <{static}drive.gbk>`_
+* File: `drive.gbf <{static}drive.gbf>`_
 
 Images
 ------

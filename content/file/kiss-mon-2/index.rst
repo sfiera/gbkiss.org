@@ -16,7 +16,7 @@ Kiss-Mon 2
 * Author: |author-tobi|_
 * Source: `Pocket Bomberman <{filename}/cart/apoj/index.rst>`_
 * Creator Code: ``$6e`` (Kiss-Mon)
-* File: `kiss-mon-2.gbk <{static}kiss-mon-2.gbk>`_
+* File: `kiss-mon-2.gbf <{static}kiss-mon-2.gbf>`_
 
 Images
 ------

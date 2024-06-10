@@ -17,7 +17,7 @@ Magnets
 * Author: <TEAM MAG>
 * Source: |mini-default|
 * Creator Code: ``$66`` (Magnets)
-* File: `magnets.gbk <{static}magnets.gbk>`_
+* File: `magnets.gbf <{static}magnets.gbf>`_
 
 Trivia
 ------

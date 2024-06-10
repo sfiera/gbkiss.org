@@ -17,7 +17,7 @@ Koura 3
 * Author: |author-nonchan|_
 * Source: |mini-gamedata|
 * Creator Code: ``$64`` (`Puzzle Game`_)
-* File: `koura-3.gbk <{static}koura-3.gbk>`_
+* File: `koura-3.gbf <{static}koura-3.gbf>`_
 
 .. _Puzzle Game: {filename}index.rst
 

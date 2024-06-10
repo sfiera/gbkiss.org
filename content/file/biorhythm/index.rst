@@ -17,7 +17,7 @@ Biorhythm
 * Author: |author-kei-kondoh|_
 * Source: |mini-kissmon|
 * Creator Code: ``$00`` (none)
-* File: `biorhythm.gbk <{static}biorhythm.gbk>`_
+* File: `biorhythm.gbf <{static}biorhythm.gbf>`_
 
 Images
 ------

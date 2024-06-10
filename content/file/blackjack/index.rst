@@ -17,7 +17,7 @@ Blackjack
 * Author: |author-tarkun|_
 * Source: |mini-binary|
 * Creator Code: ``$43`` (Cards)
-* File: `blackjack.gbk <{static}blackjack.gbk>`_
+* File: `blackjack.gbf <{static}blackjack.gbf>`_
 
 Images
 ------

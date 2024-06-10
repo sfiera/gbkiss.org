@@ -16,7 +16,7 @@ Delete All
 * Author: *Anonymous*
 * Source: |mini-kisstool|
 * Creator Code: ``$43`` (Cards)
-* File: `delete-all.gbk <{static}delete-all.gbk>`_
+* File: `delete-all.gbf <{static}delete-all.gbf>`_
 
 Description
 -----------

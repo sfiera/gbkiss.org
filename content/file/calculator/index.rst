@@ -17,7 +17,7 @@ Calculator
 * Author: |author-y-motosako|_
 * Source: |mini-kissmon|
 * Creator Code: ``$04`` (Calculator)
-* File: `calculator.gbk <{static}calculator.gbk>`_
+* File: `calculator.gbf <{static}calculator.gbf>`_
 
 Images
 ------

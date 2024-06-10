@@ -17,7 +17,7 @@ Cannon Ball
 * Author: GBKISS LAB
 * Source: |mini-cannon|
 * Creator Code: ``$6d`` (Cannon Ball)
-* File: `cannon-ball.gbk <{static}cannon-ball.gbk>`_
+* File: `cannon-ball.gbf <{static}cannon-ball.gbf>`_
 
 Images
 ------

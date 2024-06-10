@@ -16,7 +16,7 @@ Roulette
 * Author: |author-tsumori|_ (“Tsumori”)
 * Source: |mini-binary|
 * Creator Code: ``$72`` (Roulette)
-* File: `roulette.gbk <{static}roulette.gbk>`_
+* File: `roulette.gbf <{static}roulette.gbf>`_
 
 Images
 ------

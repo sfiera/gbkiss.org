@@ -17,7 +17,7 @@ Num0 Data
 * Author: *Anonymous*
 * Source: |mini-gamedata|
 * Creator Code: ``$6a`` (`Watch & Timer`_)
-* File: `num0-data.gbk <{static}num0-data.gbk>`_
+* File: `num0-data.gbf <{static}num0-data.gbf>`_
 
 .. _Watch & Timer: {filename}index.rst
 

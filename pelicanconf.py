@@ -10,23 +10,23 @@ THEME = "theme"
 
 TIMEZONE = "Asia/Tokyo"
 
-PAGE_PATHS        = [""]
-PAGE_URL          = "{slug}"
-PAGE_SAVE_AS      = PAGE_URL + ".html"
+PAGE_PATHS = [""]
+PAGE_URL = "{slug}"
+PAGE_SAVE_AS = PAGE_URL + ".html"
 
-STATIC_PATHS      = [""]
-STATIC_URL        = "{path}"
-STATIC_SAVE_AS    = "{path}"
+STATIC_PATHS = [""]
+STATIC_URL = "{path}"
+STATIC_SAVE_AS = "{path}"
 
 DIRECT_TEMPLATES = []
-ARTICLE_PATHS     = []
+ARTICLE_PATHS = []
 
 DEFAULT_PAGINATION = False
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
-    ("Files",       "/file"),
-    ("Cartridges",  "/cart"),
-    ("Technology",  "/tech"),
+    ("Files", "/file"),
+    ("Cartridges", "/cart"),
+    ("Technology", "/tech"),
     ("GBKiss Link", "/link"),
 ]
 

@@ -15,7 +15,7 @@ Drive
 * Size: 20 Blocks_ (5072 bytes)
 * Type: |circle|
 * Author: |author-t-ohnishi|_
-* Source: |mini-default|
+* Source: |mini-default|, |gbkiss-link|
 * Creator Code: ``$69`` (Drive)
 * File: `drive.gbf <{static}drive.gbf>`_
 

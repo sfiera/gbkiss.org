@@ -14,7 +14,7 @@ Kiss-Mon 2
 * Size: 28 Blocks_ (7096 bytes)
 * Type: |diamond|
 * Author: |author-tobi|_
-* Source: `Pocket Bomberman <{filename}/cart/apoj/index.rst>`_
+* Source: `Pocket Bomberman <{filename}/cart/apoj/index.rst>`_, |gbkiss-link|
 * Creator Code: ``$6e`` (Kiss-Mon)
 * File: `kiss-mon-2.gbf <{static}kiss-mon-2.gbf>`_
 

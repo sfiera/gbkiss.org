@@ -15,7 +15,7 @@ Biorhythm
 * Size: 20 Blocks_ (4888 bytes)
 * Type: |diamond|
 * Author: |author-kei-kondoh|_
-* Source: |mini-kissmon|
+* Source: |mini-kissmon|, |gbkiss-link|
 * Creator Code: ``$00`` (none)
 * File: `biorhythm.gbf <{static}biorhythm.gbf>`_
 

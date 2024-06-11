@@ -14,7 +14,7 @@ Roulette
 * Size: 21 Blocks_ (5217 bytes)
 * Type: |circle|
 * Author: |author-tsumori|_ (“Tsumori”)
-* Source: |mini-binary|
+* Source: |mini-binary|, |gbkiss-link|
 * Creator Code: ``$72`` (Roulette)
 * File: `roulette.gbf <{static}roulette.gbf>`_
 

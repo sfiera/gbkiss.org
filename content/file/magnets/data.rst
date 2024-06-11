@@ -15,7 +15,7 @@ Magnets Data
 * Size: 25 Blocks_ (6215 bytes)
 * Type: |triangle|
 * Author: <TEAM MAG>
-* Source: |mini-default|
+* Source: |mini-default|, |gbkiss-link|
 * Creator Code: ``$66`` (Magnets_)
 * File: `magnets-data.gbf <{static}magnets-data.gbf>`_
 

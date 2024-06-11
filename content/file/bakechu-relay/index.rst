@@ -14,7 +14,7 @@ Bakechu Relay
 * Size: 13 Blocks_ (3142 bytes)
 * Type: |circle|
 * Author: |author-tobi|_
-* Source: |mini-kissmon|
+* Source: |mini-kissmon|, |gbkiss-link|
 * Creator Code: ``$70`` (Bakechu Relay)
 * File: `bakechu-relay.gbf <{static}bakechu-relay.gbf>`_
 

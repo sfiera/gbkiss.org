@@ -15,7 +15,7 @@ Num0 Data
 * Size: 4 Blocks_ (770 bytes)
 * Type: |triangle|
 * Author: *Anonymous*
-* Source: |mini-gamedata|
+* Source: |mini-gamedata|, |gbkiss-link|
 * Creator Code: ``$6a`` (`Watch & Timer`_)
 * File: `num0-data.gbf <{static}num0-data.gbf>`_
 

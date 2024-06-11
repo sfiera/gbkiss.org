@@ -42,7 +42,8 @@ The file content decodes to the following
    06                          ; alarm title length: 6 bytes
    6b62706b6270                ; alarm title: さいたさいた
    32                          ; pattern length: 50 bytes
-   40f7a7                      ; unknown pattern start
+   40f7                        ; unknown pattern start
+   a7                          ; set middle octave
    3133358331333583            ; c d e r c d e r
    3835333133353383            ; g e d c d e d r
    3133358331333583            ; c d e r c d e r

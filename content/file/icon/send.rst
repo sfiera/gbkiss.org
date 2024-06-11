@@ -15,7 +15,7 @@ Icon-Send
 * Size: 23 Blocks_ (5776 bytes)
 * Type: |circle|
 * Author: *Anonymous*
-* Source: |mini-cannon|
+* Source: |mini-cannon|, |gbkiss-link|
 * Creator Code: ``$00`` (none)
 * File: `icon-send.gbf <{static}icon-send.gbf>`_
 

@@ -15,7 +15,7 @@ Sound Test
 * Size: 4 Blocks_ (876 bytes)
 * Type: |circle|
 * Author: *Anonymous*
-* Source: |mini-kissmon|
+* Source: |mini-kissmon|, |gbkiss-link|
 * Creator Code: ``$05`` (Sound Test)
 * File: `sound-test.gbf <{static}sound-test.gbf>`_
 

@@ -15,7 +15,7 @@ Slot
 * Size: 13 Blocks_ (3077 bytes)
 * Type: |circle|
 * Author: |author-y-motosako|_
-* Source: |mini-cannon|
+* Source: |mini-cannon|, |gbkiss-link|
 * Creator Code: ``$6c`` (Slot)
 * File: `slot.gbf <{static}slot.gbf>`_
 

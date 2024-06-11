@@ -15,7 +15,7 @@ Blackjack
 * Size: 13 Blocks_ (3119 bytes)
 * Type: |circle|
 * Author: |author-tarkun|_
-* Source: |mini-binary|
+* Source: |mini-binary|, |gbkiss-link|
 * Creator Code: ``$43`` (Cards)
 * File: `blackjack.gbf <{static}blackjack.gbf>`_
 

@@ -14,7 +14,7 @@ Puzzle Game
 * Size: 20 Blocks_ (5061 bytes)
 * Type: |circle|
 * Author: |author-tarkun|_
-* Source: |mini-cannon|
+* Source: |mini-cannon|, |gbkiss-link|
 * Creator Code: ``$64`` (Puzzle Game)
 * File: `puzzle-game.gbf <{static}puzzle-game.gbf>`_
 

@@ -15,7 +15,7 @@ Binary
 * Size: 32 Blocks_ (8179 bytes)
 * Type: |diamond|
 * Author: |author-t-ohnishi|_
-* Source: |mini-binary|
+* Source: |mini-binary|, |gbkiss-link|
 * Creator Code: ``$71`` (Binary)
 * File: `binary.gbf <{static}binary.gbf>`_
 

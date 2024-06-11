@@ -15,7 +15,7 @@ Magnets
 * Size: 30 Blocks_ (7563 bytes)
 * Type: |diamond|
 * Author: <TEAM MAG>
-* Source: |mini-default|
+* Source: |mini-default|, |gbkiss-link|
 * Creator Code: ``$66`` (Magnets)
 * File: `magnets.gbf <{static}magnets.gbf>`_
 

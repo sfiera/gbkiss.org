@@ -15,7 +15,7 @@ Kiss-Mon
 * Size: 23 Blocks_ (5647 bytes)
 * Type: |circle|
 * Author: |author-tobi|_
-* Source: |mini-kissmon|
+* Source: |mini-kissmon|, |gbkiss-link|
 * Creator Code: ``$6e`` (Kiss-Mon)
 * File: `kiss-mon.gbf <{static}kiss-mon.gbf>`_
 

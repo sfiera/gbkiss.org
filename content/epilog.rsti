@@ -4,6 +4,7 @@
 .. |mini-binary| replace:: `GBKiss Mini Games`_ (`BINARY password`_)
 .. |mini-gamedata| replace:: `GBKiss Mini Games`_ (`GAMEDATA password`_)
 .. |mini-kisstool| replace:: `GBKiss Mini Games`_ (`KISSTOOL password`_)
+.. |gbkiss-link| replace:: `GBKISS LINK`_
 
 .. _GBKiss Mini Games: {filename}/cart/akaj/index.rst
 .. _no password: {filename}/cart/akaj/index.rst#default
@@ -12,6 +13,7 @@
 .. _binary password: {filename}/cart/akaj/index.rst#binary
 .. _gamedata password: {filename}/cart/akaj/index.rst#gamedata
 .. _kisstool password: {filename}/cart/akaj/index.rst#kisstool
+.. _GBKISS LINK: {filename}/link/index.rst
 
 .. _Mapper: {filename}/tech/mapper.rst
 .. _Storage: {filename}/tech/storage.rst

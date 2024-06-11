@@ -150,36 +150,36 @@ Images
 
 .. container:: gallery
 
-   .. figure:: {static}link/contents.jpg
-      :target: {static}link/contents.jpg
+   .. figure:: {static}contents.jpg
+      :target: {static}contents.jpg
       :alt: GBKiss Link contents
       :width: 100%
 
       GBKiss Link contents
 
-   .. figure:: {static}link/modem.jpg
-      :target: {static}link/modem.jpg
+   .. figure:: {static}modem.jpg
+      :target: {static}modem.jpg
       :alt: GBKiss Link modem
       :width: 100%
 
       GBKiss Link modem
 
-   .. figure:: {static}link/bottom.jpg
-      :target: {static}link/bottom.jpg
+   .. figure:: {static}bottom.jpg
+      :target: {static}bottom.jpg
       :alt: GBKiss Link modem underside
       :width: 100%
 
       GBKiss Link modem underside
 
-   .. figure:: {static}link/floppy.jpg
-      :target: {static}link/floppy.jpg
+   .. figure:: {static}floppy.jpg
+      :target: {static}floppy.jpg
       :alt: GBKiss Link driver and software floppy
       :width: 100%
 
       GBKiss Link driver and software floppy
 
-   .. figure:: {static}link/manual.jpg
-      :target: {static}link/manual.jpg
+   .. figure:: {static}manual.jpg
+      :target: {static}manual.jpg
       :alt: GBKiss Link manual
       :width: 100%
 

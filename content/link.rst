@@ -11,6 +11,42 @@ GBKiss Link
 
 Sold as a package containing the modem and one floppy disk, containing the driver software and 29 software files for transfer.
 
+Contents
+--------
+
+The included files appear to have been the following:
+
+1.  Baketu.gbf: `Bakechu Relay <{filename}/file/bakechu-relay/index.rst>`_
+2.  Biorythm.gbf: `Biorhythm <{filename}/file/biorhythm/index.rst>`_
+3.  Bj.gbf: `Blackjack <{filename}/file/blackjack/index.rst>`_
+4.  Bland.gbf: `Binary <{filename}/file/binary/index.rst>`_
+5.  Cannon.gbf: `Cannon Ball <{filename}/file/cannon-ball/index.rst>`_
+6.  Dentaku.gbf: `Calculator <{filename}/file/calculator/index.rst>`_
+7.  Drive.gbf: `Drive <{filename}/file/drive/index.rst>`_
+8.  Iconedit.gbf: `Icon-Edit <{filename}/file/icon/edit.rst>`_
+9.  Iconsend.gbf: `Icon-Send <{filename}/file/icon/send.rst>`_
+10. Kissmon.gbf: `Kiss-Mon <{filename}/file/kiss-mon/index.rst>`_
+11. Kissmon2.gbf: `Kiss-Mon 2 <{filename}/file/kiss-mon-2/index.rst>`_
+12. Koura1.gbf: `Koura 1 <{filename}/file/puzzle-game/koura-1.rst>`_
+13. Koura2.gbf: `Koura 2 <{filename}/file/puzzle-game/koura-2.rst>`_
+14. Koura3.gbf: `Koura 3 <{filename}/file/puzzle-game/koura-3.rst>`_
+15. Mag_data.gbf: `Magnets Data <{filename}/file/magnets/data.rst>`_
+16. Magnets.gbf: `Magnets <{filename}/file/magnets/index.rst>`_
+17. Mogura.gbf: `Mogutte Nanbo <{filename}/file/mogutte-nanbo/index.rst>`_
+18. Poker.gbf: `Poker <{filename}/file/poker/index.rst>`_
+19. Puzzle.gbf: `Puzzle Game <{filename}/file/puzzle-game/index.rst>`_
+20. Roulette.gbf: `Roulette <{filename}/file/roulette/index.rst>`_
+21. Samegame.gbf: `SameGame <{filename}/file/samegame/index.rst>`_
+22. Sezaki.gbf: `Sezaki <{filename}/file/mogutte-nanbo/sezaki.rst>`_
+23. Shot.gbf: `Shot <{filename}/file/shot/index.rst>`_
+24. Slot.gbf: `Slot <{filename}/file/slot/index.rst>`_
+25. Soldier.gbf: `Mini Stasol <{filename}/file/mini-stasol/index.rst>`_
+26. Soundtst.gbf: `Sound Test <{filename}/file/sound-test/index.rst>`_
+27. Sw_data.gbf: `Num0 Data <{filename}/file/watch-and-timer/num0-data.rst>`_
+28. Sw_timer.gbf: `Watch & Timer <{filename}/file/watch-and-timer/index.rst>`_
+29. Worm.gbf: `Worm <{filename}/file/worm/index.rst>`_
+
+
 Manual
 ------
 
@@ -155,3 +191,4 @@ Sources
 *  `Hudson Soft—GB Kiss Link <https://web.archive.org/web/20021227013419/http://www.hudson.co.jp/corp/news/bn1998/gbkl.html>`_ (Archived 2002-12-27)
 *  `Image Gallery: GB Kiss Link <https://web.archive.org/web/20170702232245/http://blogs.yahoo.co.jp/ymatsuba2000/GALLERY/show_image.html?id=37185854&no=0>`_ (Archived 2017-07-02)
 *  `GBKISS LINK on Yahoo Auctions, sold 2023-09-02 for ¥100 <https://web.archive.org/web/20240514083933/https://aucview.aucfan.com/yahoo/t1104230296/>`_ (Archived 2024-05-14)
+*  `Takeshi’s diary <https://web.archive.org/web/20010308214429/http://www.teria.com/~takesi/machine/gameboy/gameboy>`_ (Archived 2001-05-02)

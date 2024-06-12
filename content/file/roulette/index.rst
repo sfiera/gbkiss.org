@@ -23,13 +23,6 @@ Images
 
 .. container:: gallery
 
-   .. figure:: {static}title.png
-      :alt: Roulette title screen
-      :width: 160
-      :height: 144
-
-      Title screen
-
    .. figure:: {static}game.png
       :alt: Roulette gameplay
       :width: 160

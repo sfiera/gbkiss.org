@@ -24,7 +24,7 @@ Kiss Mail composes mail_ messages that can be saved to files and transfered to a
 
 The menu has six options:
 
-*  つずける (“continue”): return to editor
+*  つづける (“continue”): return to editor
 *  セーブする (“save”): save current message to file
 *  そうしんする (“send”): send current message over infrared
 *  じゅしんする (“receive”): receive message over infrared

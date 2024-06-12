@@ -24,12 +24,12 @@ Images
 
 .. container:: gallery
 
-   .. figure:: {static}title.png
-      :alt: Drive title screen
+   .. figure:: {static}menu.png
+      :alt: Drive main menu
       :width: 160
       :height: 144
 
-      Title screen
+      Main menu
 
    .. figure:: {static}game.png
       :alt: Drive gameplay

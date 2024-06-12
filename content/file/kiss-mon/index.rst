@@ -24,18 +24,18 @@ Images
 
 .. container:: gallery
 
-   .. figure:: {static}title.png
+   .. figure:: {static}create.png
       :alt: Kiss-Mon title screen
       :width: 160
       :height: 144
 
-      Title screen
+      Monster naming
 
-   .. figure:: {static}game.png
-      :alt: Kiss-Mon gameplay
+   .. figure:: {static}main.png
+      :alt: Kiss-Mon main screen
       :width: 160
       :height: 144
 
-      Gameplay
+      Main screen
 
 .. include:: ../../epilog.rsti

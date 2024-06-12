@@ -17,6 +17,24 @@ Kiss Mail
 * Source: built-in
 * Creator Code: ``$01`` (Kiss Mail)
 
+Description
+-----------
+
+Kiss Mail composes mail_ messages that can be saved to files and transfered to and from other GBKiss cartridges. Each message may have a title and up to 8 16-characters lines.
+
+The menu has six options:
+
+*  つずける (“continue”): return to editor
+*  セーブする (“save”): save current message to file
+*  そうしんする (“send”): send current message over infrared
+*  じゅしんする (“receive”): receive message over infrared
+*  ポケベルにおくる (“send to pager”): play message as pager tones
+*  KISSメニューにもどる (“return to KISS menu”): exit app
+
+Saving the message requires that it have a title. If mail with the same title already exists, the app will ask for confirmation and overwrite it.
+
+.. _mail: {filename}/file/mail/index.rst
+
 Images
 ------
 

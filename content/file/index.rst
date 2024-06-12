@@ -6,10 +6,18 @@ Files
 
 GBKiss content is stored in files. Players can run software_ files directly, and can open data_ files with software. The GBKiss menu_ has options for running, organizing, and exchanging files. Each file occupies some number of storage blocks_ in cartridge RAM (CRAM).
 
+Files are marked with one of five symbols:
+
+*  |bullseye| (bullseye): the special_ built-in `Kiss Mail`_ app
+*  |circle| (circle): executable software_
+*  |diamond| (diamond): executable software_ with slot limitations
+*  |cross| (cross): software_ with unmet cartridge limitations
+*  |triangle| (triangle): data_ files
+
 Software
 --------
 
-Software files are marked with a doubled circle (|bullseye|) for the built-in `Kiss Mail`_ app, or a circle (|circle|) or diamond (|diamond|) for installable software. Diamond-type software must be installed in specific slots, so there is a limit on the number of diamond-type files installed separate from the space required.
+Software files are marked with |bullseye|, |circle|, or |diamond|. |diamond|-type software must be installed in specific slots, so there is a limit on the number of |diamond|-type files installed separate from the space required.
 
 Special
 ~~~~~~~
@@ -230,7 +238,7 @@ Tools
 Data
 ----
 
-Data files are marked with a triangle (|triangle|). If the associated software_ is installed, they use the software’s icon; otherwise they use the SIMULA1 icon from `Icon-Send`_. The exception is Icon_ files, which always use their own icon.
+Data files are marked with |triangle|. If the associated software_ is installed, they use the software’s icon; otherwise they use the SIMULA1 icon from `Icon-Send`_. The exception is Icon_ files, which always use their own icon.
 
 .. container:: gallery-small
 

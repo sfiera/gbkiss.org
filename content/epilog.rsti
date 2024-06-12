@@ -24,10 +24,11 @@
 
 .. role:: button
 
-.. |bullseye| replace:: ◎
-.. |circle| replace:: ○
-.. |diamond| replace:: ◇
-.. |triangle| replace:: △
+.. |bullseye| image:: {static}/file/main/bullseye.svg
+.. |circle| image:: {static}/file/main/circle.svg
+.. |diamond| image:: {static}/file/main/diamond.svg
+.. |triangle| image:: {static}/file/main/triangle.svg
+.. |cross| image:: {static}/file/main/cross.svg
 
 .. |author-tobi| replace:: TOBI
 .. _author-tobi: {filename}/hudson.rst#tobi

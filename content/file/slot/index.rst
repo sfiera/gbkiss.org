@@ -16,7 +16,7 @@ Slot
 * Type: |circle|
 * Author: |author-y-motosako|_
 * Source: |mini-cannon|, |gbkiss-link|
-* Creator Code: ``$6c`` (Slot)
+* `Creator Code`_: ``$6c`` (Slot)
 * File: `slot.gbf <{static}slot.gbf>`_
 
 Images

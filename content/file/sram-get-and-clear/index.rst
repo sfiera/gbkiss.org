@@ -15,7 +15,7 @@ SRAM Get & Clear
 * Type: |circle|
 * Author: |author-y-motosako|_
 * Source: |mini-kisstool|
-* Creator Code: ``$00`` (none)
+* `Creator Code`_: ``$00`` (none)
 * File: `sram-get-and-clear.gbf <{static}sram-get-and-clear.gbf>`_
 
 .. include:: ../../epilog.rsti

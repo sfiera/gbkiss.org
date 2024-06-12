@@ -15,7 +15,7 @@ Bakechu Relay
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-kissmon|, |gbkiss-link|
-* Creator Code: ``$70`` (Bakechu Relay)
+* `Creator Code`_: ``$70`` (Bakechu Relay)
 * File: `bakechu-relay.gbf <{static}bakechu-relay.gbf>`_
 
 Description

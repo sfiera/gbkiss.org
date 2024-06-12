@@ -16,7 +16,7 @@ Icon-Send
 * Type: |circle|
 * Author: *Anonymous*
 * Source: |mini-cannon|, |gbkiss-link|
-* Creator Code: ``$00`` (none)
+* `Creator Code`_: ``$00`` (none)
 * File: `icon-send.gbf <{static}icon-send.gbf>`_
 
 Description

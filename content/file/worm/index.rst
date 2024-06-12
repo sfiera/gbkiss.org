@@ -15,7 +15,7 @@ Worm
 * Type: |diamond|
 * Author: |author-kei-kondoh|_
 * Source: |mini-binary|, |gbkiss-link|
-* Creator Code: ``$00`` (none)
+* `Creator Code`_: ``$00`` (none)
 * File: `worm.gbf <{static}worm.gbf>`_
 
 Description

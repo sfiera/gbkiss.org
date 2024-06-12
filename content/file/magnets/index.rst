@@ -16,7 +16,7 @@ Magnets
 * Type: |diamond|
 * Author: <TEAM MAG>
 * Source: |mini-default|, |gbkiss-link|
-* Creator Code: ``$66`` (Magnets)
+* `Creator Code`_: ``$66`` (Magnets)
 * File: `magnets.gbf <{static}magnets.gbf>`_
 
 Trivia

@@ -19,6 +19,8 @@
 .. _Storage: {filename}/tech/storage.rst
 .. _Block: {filename}/tech/storage.rst#blocks
 .. _Blocks: {filename}/tech/storage.rst#blocks
+.. _Creator Code: {filename}/tech/metadata.rst#creator-code
+.. _Cartridge Code: {filename}/tech/metadata.rst#cartridge-code
 
 .. role:: button
 

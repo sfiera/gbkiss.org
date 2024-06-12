@@ -16,7 +16,7 @@ Num0 Data
 * Type: |triangle|
 * Author: *Anonymous*
 * Source: |mini-gamedata|, |gbkiss-link|
-* Creator Code: ``$6a`` (`Watch & Timer`_)
+* `Creator Code`_: ``$6a`` (`Watch & Timer`_)
 * File: `num0-data.gbf <{static}num0-data.gbf>`_
 
 .. _Watch & Timer: {filename}index.rst

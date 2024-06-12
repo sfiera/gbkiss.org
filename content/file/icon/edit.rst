@@ -16,7 +16,7 @@ Icon-Edit
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-cannon|, |gbkiss-link|
-* Creator Code: ``$03`` (Icon-Edit)
+* `Creator Code`_: ``$03`` (Icon-Edit)
 * File: `icon-edit.gbf <{static}icon-edit.gbf>`_
 
 Images

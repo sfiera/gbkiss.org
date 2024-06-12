@@ -19,6 +19,13 @@ Biorhythm
 * Creator Code: ``$00`` (none)
 * File: `biorhythm.gbf <{static}biorhythm.gbf>`_
 
+Description
+-----------
+
+Biorhythm is a calculator for `biorhythm theory`_, a pseudoscientific theory that supposes that a person’s physical, emotional, and intellectual ability fluctuates on 23-, 28-, and 33-day cycles. Given a person’s birth date and the current month, it calculates and displays these three cycles as sine waves labeled P, S, and I.
+
+.. _biorhythm theory: https://en.wikipedia.org/wiki/Biorhythm_(pseudoscience)
+
 Images
 ------
 

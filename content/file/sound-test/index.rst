@@ -16,7 +16,7 @@ Sound Test
 * Type: |circle|
 * Author: *Anonymous*
 * Source: |mini-kissmon|, |gbkiss-link|
-* Creator Code: ``$05`` (Sound Test)
+* `Creator Code`_: ``$05`` (Sound Test)
 * File: `sound-test.gbf <{static}sound-test.gbf>`_
 
 Description

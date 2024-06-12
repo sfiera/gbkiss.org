@@ -16,7 +16,7 @@ Koura 2
 * Type: |triangle|
 * Author: |author-nonchan|_
 * Source: |mini-gamedata|, |gbkiss-link|
-* Creator Code: ``$64`` (`Puzzle Game`_)
+* `Creator Code`_: ``$64`` (`Puzzle Game`_)
 * File: `koura-2.gbf <{static}koura-2.gbf>`_
 
 .. _Puzzle Game: {filename}index.rst

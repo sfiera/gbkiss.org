@@ -14,7 +14,7 @@ Mail
 * Type: |triangle|
 * Author: *GBKiss user*
 * Source: `Kiss Mail`_
-* Creator Code: ``$81`` (`Kiss Mail`_)
+* `Creator Code`_: ``$81`` (`Kiss Mail`_)
 
 .. _Kiss Mail: {filename}../kiss-mail/index.rst
 

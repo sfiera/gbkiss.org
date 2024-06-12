@@ -15,7 +15,7 @@ Mogutte Nanbo
 * Type: |diamond|
 * Author: TEAMMOGURA
 * Source: |mini-default|, |gbkiss-link|
-* Creator Code: ``$65`` (Mogutte Nanbo)
+* `Creator Code`_: ``$65`` (Mogutte Nanbo)
 * File: `mogutte-nanbo.gbf <{static}mogutte-nanbo.gbf>`_
 
 Description

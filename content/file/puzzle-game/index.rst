@@ -15,7 +15,7 @@ Puzzle Game
 * Type: |circle|
 * Author: |author-tarkun|_
 * Source: |mini-cannon|, |gbkiss-link|
-* Creator Code: ``$64`` (Puzzle Game)
+* `Creator Code`_: ``$64`` (Puzzle Game)
 * File: `puzzle-game.gbf <{static}puzzle-game.gbf>`_
 
 Gameplay

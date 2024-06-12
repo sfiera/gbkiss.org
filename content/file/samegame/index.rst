@@ -16,7 +16,7 @@ SameGame
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-default|, |gbkiss-link|
-* Creator Code: ``$67`` (SameGame)
+* `Creator Code`_: ``$67`` (SameGame)
 * File: `samegame.gbf <{static}samegame.gbf>`_
 
 Images

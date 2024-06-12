@@ -15,7 +15,7 @@ Delete All
 * Type: |circle|
 * Author: *Anonymous*
 * Source: |mini-kisstool|
-* Creator Code: ``$43`` (Cards)
+* `Creator Code`_: ``$43`` (Cards)
 * File: `delete-all.gbf <{static}delete-all.gbf>`_
 
 Description

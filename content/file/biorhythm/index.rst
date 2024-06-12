@@ -16,7 +16,7 @@ Biorhythm
 * Type: |diamond|
 * Author: |author-kei-kondoh|_
 * Source: |mini-kissmon|, |gbkiss-link|
-* Creator Code: ``$00`` (none)
+* `Creator Code`_: ``$00`` (none)
 * File: `biorhythm.gbf <{static}biorhythm.gbf>`_
 
 Description

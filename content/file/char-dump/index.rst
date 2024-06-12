@@ -15,7 +15,7 @@ Char-Dump
 * Type: |circle|
 * Author: *Anonymous*
 * Source: |mini-kisstool|
-* Creator Code: ``$43`` (Cards)
+* `Creator Code`_: ``$43`` (Cards)
 * File: `char-dump.gbf <{static}char-dump.gbf>`_
 
 .. include:: ../../epilog.rsti

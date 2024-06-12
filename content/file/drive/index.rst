@@ -16,7 +16,7 @@ Drive
 * Type: |circle|
 * Author: |author-t-ohnishi|_
 * Source: |mini-default|, |gbkiss-link|
-* Creator Code: ``$69`` (Drive)
+* `Creator Code`_: ``$69`` (Drive)
 * File: `drive.gbf <{static}drive.gbf>`_
 
 Images

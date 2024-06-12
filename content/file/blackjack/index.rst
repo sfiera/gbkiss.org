@@ -16,7 +16,7 @@ Blackjack
 * Type: |circle|
 * Author: |author-tarkun|_
 * Source: |mini-binary|, |gbkiss-link|
-* Creator Code: ``$43`` (Cards)
+* `Creator Code`_: ``$43`` (Cards)
 * File: `blackjack.gbf <{static}blackjack.gbf>`_
 
 Images

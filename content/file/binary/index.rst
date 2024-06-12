@@ -16,7 +16,7 @@ Binary
 * Type: |diamond|
 * Author: |author-t-ohnishi|_
 * Source: |mini-binary|, |gbkiss-link|
-* Creator Code: ``$71`` (Binary)
+* `Creator Code`_: ``$71`` (Binary)
 * File: `binary.gbf <{static}binary.gbf>`_
 
 Images

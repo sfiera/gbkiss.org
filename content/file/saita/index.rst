@@ -14,8 +14,8 @@ Saita Saita
 * Size: 1 Block_ (77 bytes)
 * Type: |triangle|
 * Author: (anonymous)
-* Source: Hudson website
-* Creator Code: ``$76``
+* Source: `Hudson website <https://web.archive.org/web/20021020134646/http://www.hudson.co.jp/gamenavi/gamedb/softinfo/family/date.html>`_
+* `Creator Code`_: ``$76``
 * File: `saita.gbf <{static}saita.gbf>`_
 
 Description

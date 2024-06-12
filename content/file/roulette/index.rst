@@ -15,7 +15,7 @@ Roulette
 * Type: |circle|
 * Author: |author-tsumori|_ (“Tsumori”)
 * Source: |mini-binary|, |gbkiss-link|
-* Creator Code: ``$72`` (Roulette)
+* `Creator Code`_: ``$72`` (Roulette)
 * File: `roulette.gbf <{static}roulette.gbf>`_
 
 Images

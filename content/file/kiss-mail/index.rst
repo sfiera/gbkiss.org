@@ -15,7 +15,7 @@ Kiss Mail
 * Type: |bullseye|
 * Author: *Anonymous*
 * Source: built-in
-* Creator Code: ``$01`` (Kiss Mail)
+* `Creator Code`_: ``$01`` (Kiss Mail)
 
 Description
 -----------

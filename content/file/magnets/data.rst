@@ -16,7 +16,7 @@ Magnets Data
 * Type: |triangle|
 * Author: <TEAM MAG>
 * Source: |mini-default|, |gbkiss-link|
-* Creator Code: ``$66`` (Magnets_)
+* `Creator Code`_: ``$66`` (Magnets_)
 * File: `magnets-data.gbf <{static}magnets-data.gbf>`_
 
 .. _Magnets: {filename}index.rst

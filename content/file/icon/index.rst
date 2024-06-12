@@ -14,7 +14,7 @@ Icon
 * Type: |triangle|
 * Author: *GBKiss user*
 * Source: Icon-Edit_, Icon-Send_
-* Creator Code: ``$83`` (Icon-Edit_)
+* `Creator Code`_: ``$83`` (Icon-Edit_)
 
 Trivia
 ------

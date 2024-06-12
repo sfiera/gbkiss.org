@@ -16,7 +16,7 @@ Sezaki
 * Type: |triangle|
 * Author: |author-sezaki|_
 * Source: |mini-gamedata|, |gbkiss-link|
-* Creator Code: ``$65`` (`Mogutte Nanbo`_)
+* `Creator Code`_: ``$65`` (`Mogutte Nanbo`_)
 * File: `sezaki.gbf <{static}sezaki.gbf>`_
 
 .. _Mogutte Nanbo: {filename}index.rst

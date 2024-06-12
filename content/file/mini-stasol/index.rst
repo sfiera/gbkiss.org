@@ -14,7 +14,7 @@ Mini Stasol
 * Type: Unknown
 * Author: Unknown
 * Source: |gbkiss-link|
-* Creator Code: Unknown
+* `Creator Code`_: Unknown
 
 Known only from `Gamer’s House`_ (芸魔の館). Appears to have been distributed with `GBKiss Link`_ on an included floppy disk.
 

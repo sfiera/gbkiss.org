@@ -16,7 +16,7 @@ Calculator
 * Type: |circle|
 * Author: |author-y-motosako|_
 * Source: |mini-kissmon|, |gbkiss-link|
-* Creator Code: ``$04`` (Calculator)
+* `Creator Code`_: ``$04`` (Calculator)
 * File: `calculator.gbf <{static}calculator.gbf>`_
 
 Images

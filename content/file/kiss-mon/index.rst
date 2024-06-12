@@ -16,7 +16,7 @@ Kiss-Mon
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-kissmon|, |gbkiss-link|
-* Creator Code: ``$6e`` (Kiss-Mon)
+* `Creator Code`_: ``$6e`` (Kiss-Mon)
 * File: `kiss-mon.gbf <{static}kiss-mon.gbf>`_
 
 Images

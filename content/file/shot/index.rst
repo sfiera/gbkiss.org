@@ -16,7 +16,7 @@ Shot
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-default|, |gbkiss-link|
-* Creator Code: ``$68`` (Shot)
+* `Creator Code`_: ``$68`` (Shot)
 * File: `shot.gbf <{static}shot.gbf>`_
 
 Images

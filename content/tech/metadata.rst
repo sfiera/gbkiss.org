@@ -77,7 +77,7 @@ Each cartridge that supports GBKiss has an associated code, located at address `
 * ``$08``: Robot Poncots `Sun <{filename}/cart/hrej/index.rst>`_, `Star <{filename}/cart/hrcj/index.rst>`_, `Moon <{filename}/cart/h3uj/index.rst>`_, and `Comic BomBom <{filename}/cart/h5uj/index.rst>`_
 * ``$fe``: `GBKiss Mini Games <{filename}/cart/akaj/index.rst>`_
 
-If a file’s cartridge code is non-zero, and the file is installed to a non-matching cartridge, it will display an X in the GBKiss menu, and will not execute.
+If a file’s cartridge code is non-zero, it is restricted to run only on matching cartridges. On a non-matching cartridge, the GBKiss menu will display the file type as |cross|, and will not execute it.
 
 Creator Code
 ------------

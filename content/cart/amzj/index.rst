@@ -15,5 +15,6 @@ Dai-Kaiju Monogatari The Miracle of the Zone
 * ROM Size: 4Mbit (256KiB)
 * RAM Size: 256Kbit (32KiB)
 * Storage_: $7980 (31104 bytes)
+* `Cartridge Code`_: ``$04``
 
 .. include:: ../../epilog.rsti

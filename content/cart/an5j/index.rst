@@ -15,6 +15,7 @@ Nectaris GB
 * ROM Size: 4Mbit (256KiB)
 * RAM Size: 256Kbit (32KiB)
 * Storage_: $3f80 (16256 bytes)
+* `Cartridge Code`_: ``$03``
 
 Images
 ------

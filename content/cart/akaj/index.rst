@@ -11,6 +11,7 @@ GBKiss Mini Games
 * ROM Size: 2Mbit (256KiB)
 * RAM Size: 256Kbit (32KiB)
 * Storage_: $7f00 (32512 bytes)
+* `Cartridge Code`_: ``$fe``
 
 The table of contents for the “Famitsu Bros” 1997/12 issue says:
 

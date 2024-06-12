@@ -15,6 +15,7 @@ Pocket Family GB
 * ROM Size: 4Mbit (512KiB)
 * RAM Size: 256Kbit (32KiB)
 * Storage_: $3f80 (16256 bytes)
+* `Cartridge Code`_: ``$06``
 
 Images
 ------

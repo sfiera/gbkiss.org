@@ -15,6 +15,7 @@ Pocket Bomberman
 * ROM Size: 4Mbit (256KiB)
 * RAM Size: 256Kbit (32KiB)
 * Storage_: $7f00 (32512 bytes)
+* `Cartridge Code`_: ``$02``
 
 Trivia
 ------

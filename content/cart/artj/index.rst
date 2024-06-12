@@ -12,6 +12,7 @@ Robot Poncots Taikenban
 * ROM Size: Unknown
 * RAM Size: Unknown
 * Storage_: Unknown
+* `Cartridge Code`_: Unknown
 
 This is a demo version of Robot Poncots. 500 copies were distributed as a prize. The cartridge has never been dumped.
 

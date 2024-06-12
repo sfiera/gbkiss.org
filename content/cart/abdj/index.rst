@@ -15,5 +15,6 @@ Super B-Daman Fighting Phoenix
 * ROM Size: 4Mbit (512KiB)
 * RAM Size: 256Kbit (32KiB)
 * Storage_: $7c00 (31744 bytes)
+* `Cartridge Code`_: ``$01``
 
 .. include:: ../../epilog.rsti

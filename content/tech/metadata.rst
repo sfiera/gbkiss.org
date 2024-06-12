@@ -65,7 +65,7 @@ Flags contains the union of zero or more flags:
 Cartridge Code
 --------------
 
-Each game that supports GBKiss has an associated code:
+Each cartridge that supports GBKiss has an associated code, located at address ``$00:$0014``:
 
 * ``$01``: `Super B-Daman Fighting Phoenix <{filename}/cart/abdj/index.rst>`_
 * ``$02``: `Pocket Bomberman <{filename}/cart/apoj/index.rst>`_
@@ -77,7 +77,7 @@ Each game that supports GBKiss has an associated code:
 * ``$08``: Robot Poncots `Sun <{filename}/cart/hrej/index.rst>`_, `Star <{filename}/cart/hrcj/index.rst>`_, `Moon <{filename}/cart/h3uj/index.rst>`_, and `Comic BomBom <{filename}/cart/h5uj/index.rst>`_
 * ``$fe``: `GBKiss Mini Games <{filename}/cart/akaj/index.rst>`_
 
-If a file’s cartridge code is non-zero, and it is installed to a non-matching cartridge, it will display an X in the GBKiss menu, and will not execute.
+If a file’s cartridge code is non-zero, and the file is installed to a non-matching cartridge, it will display an X in the GBKiss menu, and will not execute.
 
 Creator Code
 ------------

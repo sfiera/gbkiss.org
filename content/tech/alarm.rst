@@ -55,7 +55,8 @@ Pattern
 
 Patterns consist of:
 
-*  2 unidentified bytes (pitch? tempo?)
+*  1 unidentified bytes (always observed to be ``$40``)
+*  1 tempo command? (observed ``$Fx`` and ``$Cx``)
 *  1 transpose command (often ``$A7``)
 *  Body commands
 *  1 end pattern command (``$B0``)
@@ -102,7 +103,7 @@ The following commands are hypothesized:
      * End pattern
      * Always 0
 
-The pitch of each note is determined by adding the note’s pitch offset to the current transposition and interpreting it as a number of semitones. In the common transposition ``$A7``, pitch ``$1`` is C4. Thus, assuming both the transposition and offset are allowed to take the full range ``$0...F``, the total pitch range is E3 (0) to A♯5 (30).
+The pitch of each note is determined by adding the note’s pitch offset to twice the current transposition and interpreting it as a number of semitones. In the common transposition ``$A7``, pitch ``$1`` is C4. Thus, the total pitch range is A2 (0) to F♯6 (45). Alternately, to map to a MIDI pitch number, add 47 (A2).
 
 Some of the built-in tones, such as Alarm 2, demonstrate volume control.
 

@@ -14,9 +14,12 @@ Saita Saita
 * Size: 1 Block_ (77 bytes)
 * Type: |triangle|
 * Author: (anonymous)
-* Source: `Hudson website <https://web.archive.org/web/20021020134646/http://www.hudson.co.jp/gamenavi/gamedb/softinfo/family/date.html>`_
-* `Creator Code`_: ``$76``
+* Source: `Hudson website`_
+* `Creator Code`_: ``$76`` (`alarm tone`_)
 * File: `saita.gbf <{static}saita.gbf>`_
+
+.. _alarm tone: {filename}/tech/alarm.rst
+.. _Hudson website: https://web.archive.org/web/20021020134646/http://www.hudson.co.jp/gamenavi/gamedb/softinfo/family/date.html
 
 Description
 -----------
@@ -33,23 +36,19 @@ This is a traditional Japanese folk song. The lyrics are:
 Content
 -------
 
-The file content decodes to the following
+The file content decodes to the following in `ABC notation`_:
 
-.. code-block:: text
+.. code-block:: abc
 
-   4d0000000e76                ; file header
-   4d555349432e0fbbb2c0bbb2c0  ; file title: MUSIC.さいたさいた
-   06                          ; alarm title length: 6 bytes
-   6b62706b6270                ; alarm title: さいたさいた
-   32                          ; pattern length: 50 bytes
-   40f7                        ; unknown pattern start
-   a7                          ; set middle octave
-   3133358331333583            ; c d e r c d e r
-   3835333133353383            ; g e d c d e d r
-   3133358331333583            ; c d e r c d e r
-   3835333133353183            ; g e d c d e c r
-   383835383a3a3883            ; g g e g a a g r
-   353533335183                ; e e d d c2 r
-   b0                          ; unknown pattern end
+   X: 1
+   T: さいたさいた
+   K: C
+   L: 1/4
+   % 40 F7
+   C D E z | C D E z | G E D C | D E D z |
+   C D E z | C D E z | G E D C | D E C z |
+   G G E G | A A G z | E E D D | C2 z |]
+
+.. _ABC notation: https://abcnotation.com/
 
 .. include:: ../../epilog.rsti

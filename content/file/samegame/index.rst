@@ -41,7 +41,8 @@ Images
 Trivia
 ------
 
-SameGame was originally released in 1985 under the name “Chain Shot!”. Hudson later published
-versions for Super Famicom and Game Boy under the SameGame (鮫亀) name.
+SameGame was originally released under the name “`Chain Shot!`_” in 1985 by Kuniaki Moribe, credited as “Morisuke” in the SameGame title screen. Hudson later published versions for Super Famicom and Game Boy under the SameGame (鮫亀) name.
+
+.. _Chain Shot!: https://en.wikipedia.org/wiki/SameGame
 
 .. include:: ../../epilog.rsti

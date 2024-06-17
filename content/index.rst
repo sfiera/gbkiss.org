@@ -12,12 +12,12 @@ What is GBKiss?
 
 GBKiss is a platform developed by `Hudson Soft`_ and released in 1997 for the `Nintendo Game Boy`_. Supported cartridges_ can store files_ and transfer them wirelessly over infrared.
 
-Hudson developed a number of files for the platform and distributed them in a number ways:
+Hudson developed a number of files for GBKiss and distributed them via multiple channels:
 
 *  As built-in software (`Kiss-Mon 2`_) distributed with `Pocket Bomberman`_;
 *  Through a `promotional cartridge`_ in partnership with the Famitsu Bros gaming magazine;
 *  With the `GBKiss Link`_ infrared modem, bundled on an included floppy disk; and
-*  As downloads on the Hudson website for use with the GBKiss Link.
+*  As downloads on the Hudson website for use with the GBKiss Link modem.
 
 GBKiss was never released outside of Japan. It was supported only for a short time, and it is unclear how widely GBKiss software was ever distributed. This website serves to document and preserve it.
 

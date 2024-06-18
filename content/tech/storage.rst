@@ -88,9 +88,8 @@ The second-to-last region of the last bank contains the file table, addressing a
 
 *  2 bytes: file’s address in CRAM space, or ``$0000`` for absent files
 *  1 byte: file’s `cartridge code`_, or ``$FF`` for `Kiss Mail`_
-*  1 byte: file creator code
+*  1 byte: file `creator code`_
 
-.. _cartridge code: {filename}metadata.rst#cartridge-code
 .. _Kiss Mail: {filename}/file/kiss-mail/index.rst
 
 .. include:: ../epilog.rsti

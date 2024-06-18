@@ -143,6 +143,25 @@ The KISSTOOL group contains development tools related to the GBKiss menu itself.
 .. _Delete All: {filename}/file/delete-all/index.rst
 .. _Char-Dump: {filename}/file/char-dump/index.rst
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}menu.png
+      :alt: Password menu
+      :width: 160
+      :height: 144
+
+      Password menu
+
+   .. figure:: {static}send.png
+      :alt: Sending files to memory
+      :width: 160
+      :height: 144
+
+      Sending files to memory
+
 Sources
 -------
 

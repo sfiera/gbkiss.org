@@ -38,6 +38,13 @@ Images
 
       Gameplay
 
+   .. figure:: {static}config.png
+      :alt: Cannon Ball sound configuration
+      :width: 160
+      :height: 144
+
+      Sound configuration
+
 Trivia
 ------
 

@@ -21,7 +21,7 @@ Hudson developed a number of files for GBKiss and distributed them via multiple 
 
 GBKiss was never released outside of Japan. It was supported only for a short time, and it is unclear how widely GBKiss software was ever distributed. This website serves to document and preserve it.
 
-.. _Hudson Soft: {filename}/hudson.rst
+.. _Hudson Soft: {filename}/hudson/index.rst
 .. _Nintendo Game Boy: https://en.wikipedia.org/wiki/Game_Boy
 .. _cartridges: {filename}/cart/index.rst
 .. _files: {filename}/file/index.rst

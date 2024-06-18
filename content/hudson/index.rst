@@ -4,6 +4,9 @@ Hudson Soft
 :lang: en
 :slug: hudson
 
+.. figure:: {static}logo.png
+   :alt: Hudson logo
+
 Staff
 -----
 

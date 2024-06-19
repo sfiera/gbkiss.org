@@ -16,7 +16,7 @@ TOBI
 Likely Masahiro Tobita.
 
 * `Bakechu Relay <{filename}/file/bakechu-relay/index.rst>`_
-* `Icon-Edit <{filename}/file/icon/edit.rst>`_
+* `Icon-Edit <{filename}/file/icon-edit/index.rst>`_
 * `Kiss-Mon <{filename}/file/kiss-mon/index.rst>`_
 * `Kiss-Mon-2 <{filename}/file/kiss-mon-2/index.rst>`_
 * `SameGame <{filename}/file/samegame/index.rst>`_

@@ -2,15 +2,15 @@ Icon-Edit
 =========
 
 :lang: en
-:slug: file/icon/edit
+:slug: file/icon-edit
 :tags: app, mini-cannon
 
-.. figure:: {static}edit.png
+.. figure:: {static}icon.png
    :alt: Icon-Edit icon
    :width: 160
    :height: 120
 
-* Download: `icon-edit.gbf <{static}icon-edit.gbf>`_
+* Download: `iconedit.gbf <{static}iconedit.gbf>`_
 * Original Title: ICON-EDIT
 * Alternate Title: アイコン エディター (“Icon Editor”)
 * Size: 9 Blocks_ (2186 bytes)

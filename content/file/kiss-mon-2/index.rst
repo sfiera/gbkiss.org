@@ -10,7 +10,7 @@ Kiss-Mon 2
    :width: 160
    :height: 120
 
-* Download: `kiss-mon-2.gbf <{static}kiss-mon-2.gbf>`_
+* Download: `kissmon2.gbf <{static}kissmon2.gbf>`_
 * Original Title: KISS-MON2
 * Size: 28 Blocks_ (7096 bytes)
 * Type: |diamond|

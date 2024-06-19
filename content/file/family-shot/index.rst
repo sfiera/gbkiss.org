@@ -10,7 +10,7 @@ Family Shot
    :width: 160
    :height: 120
 
-* Download: `family-shot.gbf <{static}family-shot.gbf>`_
+* Download: `family_s.gbf <{static}family_s.gbf>`_
 * Original Title: もぐってナンボ
 * Size: 7 Blocks_ (1769 bytes)
 * Type: |circle|

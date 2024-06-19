@@ -10,7 +10,7 @@ Cannon Ball
    :width: 160
    :height: 120
 
-* Download: `cannon-ball.gbf <{static}cannon-ball.gbf>`_
+* Download: `cannon.gbf <{static}cannon.gbf>`_
 * Original Title: CANNON BALL
 * Alternate Title: キャノンボール (“Cannon Ball”)
 * Size: 27 Blocks_ (6732 bytes)

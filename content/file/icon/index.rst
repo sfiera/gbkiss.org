@@ -24,7 +24,7 @@ Icon files have no file content. All of their information resides within the `fi
 Icons are typically 1 block in size, and files with ASCII file names are always 1 block (maximum 254 bytes). Icons whose file names intermix katakana and hiragana or contain dakuten and handakuten can reach 256 bytes (2 blocks).
 
 .. _file metadata: {filename}/tech/metadata.rst
-.. _Icon-Edit: {filename}edit.rst
-.. _Icon-Send: {filename}send.rst
+.. _Icon-Edit: {filename}../icon-edit/index.rst
+.. _Icon-Send: {filename}../icon-send/index.rst
 
 .. include:: ../../epilog.rsti

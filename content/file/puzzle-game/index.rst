@@ -10,7 +10,7 @@ Puzzle Game
    :width: 160
    :height: 120
 
-* Download: `puzzle-game.gbf <{static}puzzle-game.gbf>`_
+* Download: `puzzle.gbf <{static}puzzle.gbf>`_
 * Alternate Title: 15パズル&パネルでポン (“15 Puzzle & Panel de Pon”)
 * Size: 20 Blocks_ (5061 bytes)
 * Type: |circle|

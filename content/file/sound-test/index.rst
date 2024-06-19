@@ -10,7 +10,7 @@ Sound Test
    :width: 160
    :height: 120
 
-* Download: `sound-test.gbf <{static}sound-test.gbf>`_
+* Download: `soundtst.gbf <{static}soundtst.gbf>`_
 * Original Title: サウンド　テスト
 * Alternate Title: サウンド ルーム (“Sound Room”)
 * Size: 4 Blocks_ (876 bytes)

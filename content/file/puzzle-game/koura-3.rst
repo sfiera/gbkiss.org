@@ -10,7 +10,7 @@ Koura 3
    :width: 160
    :height: 120
 
-* Download: `koura-3.gbf <{static}koura-3.gbf>`_
+* Download: `koura3.gbf <{static}koura3.gbf>`_
 * Original Title: KOURA3
 * Alternate Title: 15パズル データ1 (“15 Puzzle Data 3”)
 * Size: 6 Blocks_ (1469 bytes)

@@ -89,7 +89,7 @@ A file may have a creator code which associates it with other files. This code i
 The following creator codes are known:
 
 *  ``$01``: `Kiss Mail <{filename}/file/kiss-mail/index.rst>`_
-*  ``$03``: `Icon-Edit <{filename}/file/icon/edit.rst>`_
+*  ``$03``: `Icon-Edit <{filename}/file/icon-edit/index.rst>`_
 *  ``$04``: `Calculator <{filename}/file/calculator/index.rst>`_
 *  ``$05``: `Sound Test <{filename}/file/sound-test/index.rst>`_
 *  ``$43``: `Blackjack <{filename}/file/blackjack/index.rst>`_,

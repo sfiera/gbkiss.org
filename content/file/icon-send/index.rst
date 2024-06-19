@@ -2,15 +2,15 @@ Icon-Send
 =========
 
 :lang: en
-:slug: file/icon/send
+:slug: file/icon-send
 :tags: app, mini-cannon
 
-.. figure:: {static}send.png
+.. figure:: {static}icon.png
    :alt: Icon-Send icon
    :width: 160
    :height: 120
 
-* Download: `icon-send.gbf <{static}icon-send.gbf>`_
+* Download: `iconsend.gbf <{static}iconsend.gbf>`_
 * Original Title: ICON-SEND
 * Alternate Title: アイコンデータしゅう (“Icon Data Whoosh”)
 * Size: 23 Blocks_ (5776 bytes)
@@ -54,253 +54,253 @@ Contents
 
 .. container:: gallery-small
 
-   ..  figure:: {static}simula1.png
+   ..  figure:: {static}../icon/simula1.png
        :alt: SIMULA1 icon
        :width: 64
 
        SIMULA1
 
-   ..  figure:: {static}jyanken0.png
+   ..  figure:: {static}../icon/jyanken0.png
        :alt: JYANKEN0 icon
        :width: 64
 
        JYANKEN0 (“rock-paper-scissors”)
 
-   ..  figure:: {static}ie2.png
+   ..  figure:: {static}../icon/ie2.png
        :alt: IE2 icon
        :width: 64
 
        IE2 (“house”)
 
-   ..  figure:: {static}boad0.png
+   ..  figure:: {static}../icon/boad0.png
        :alt: BOAD0 icon
        :width: 64
 
        BOAD0 (“board game”)
 
-   ..  figure:: {static}hata.png
+   ..  figure:: {static}../icon/hata.png
        :alt: HATA icon
        :width: 64
 
        HATA (“flag”)
 
-   ..  figure:: {static}golf.png
+   ..  figure:: {static}../icon/golf.png
        :alt: GOLF icon
        :width: 64
 
        GOLF
 
-   ..  figure:: {static}hikou0.png
+   ..  figure:: {static}../icon/hikou0.png
        :alt: HIKOU0 icon
        :width: 64
 
        HIKOU0 (“fly”)
 
-   ..  figure:: {static}action1.png
+   ..  figure:: {static}../icon/action1.png
        :alt: ACTION1 icon
        :width: 64
 
        ACTION1
 
-   ..  figure:: {static}simula0.png
+   ..  figure:: {static}../icon/simula0.png
        :alt: SIMULA0 icon
        :width: 64
 
        SIMULA0
 
-   ..  figure:: {static}map.png
+   ..  figure:: {static}../icon/map.png
        :alt: MAP icon
        :width: 64
 
        MAP
 
-   ..  figure:: {static}card0.png
+   ..  figure:: {static}../icon/card0.png
        :alt: CARD0 icon
        :width: 64
 
        CARD0
 
-   ..  figure:: {static}cat.png
+   ..  figure:: {static}../icon/cat.png
        :alt: CAT icon
        :width: 64
 
        CAT
 
-   ..  figure:: {static}gun.png
+   ..  figure:: {static}../icon/gun.png
        :alt: GUN icon
        :width: 64
 
        GUN
 
-   ..  figure:: {static}action0.png
+   ..  figure:: {static}../icon/action0.png
        :alt: ACTION0 icon
        :width: 64
 
        ACTION0
 
-   ..  figure:: {static}puzzle0.png
+   ..  figure:: {static}../icon/puzzle0.png
        :alt: PUZZLE0 icon
        :width: 64
 
        PUZZLE0
 
-   ..  figure:: {static}ken0.png
+   ..  figure:: {static}../icon/ken0.png
        :alt: KEN0 icon
        :width: 64
 
        KEN0 (“sword”)
 
-   ..  figure:: {static}dog.png
+   ..  figure:: {static}../icon/dog.png
        :alt: DOG icon
        :width: 64
 
        DOG
 
-   ..  figure:: {static}tuki.png
+   ..  figure:: {static}../icon/tuki.png
        :alt: TUKI icon
        :width: 64
 
        TUKI (“moon”)
 
-   ..  figure:: {static}taiyo.png
+   ..  figure:: {static}../icon/taiyo.png
        :alt: TAIYO icon
        :width: 64
 
        TAIYO (“sun”)
 
-   ..  figure:: {static}address.png
+   ..  figure:: {static}../icon/address.png
        :alt: ADDRESS icon
        :width: 64
 
        ADDRESS
 
-   ..  figure:: {static}mail.png
+   ..  figure:: {static}../icon/mail.png
        :alt: MAIL icon
        :width: 64
 
        MAIL
 
-   ..  figure:: {static}letter2.png
+   ..  figure:: {static}../icon/letter2.png
        :alt: LETTER2 icon
        :width: 64
 
        LETTER2
 
-   ..  figure:: {static}dentaku.png
+   ..  figure:: {static}../icon/dentaku.png
        :alt: DENTAKU icon
        :width: 64
 
        DENTAKU (“calculator”)
 
-   ..  figure:: {static}letter1.png
+   ..  figure:: {static}../icon/letter1.png
        :alt: LETTER1 icon
        :width: 64
 
        LETTER1
 
-   ..  figure:: {static}king.png
+   ..  figure:: {static}../icon/king.png
        :alt: KING icon
        :width: 64
 
        KING
 
-   ..  figure:: {static}tokei.png
+   ..  figure:: {static}../icon/tokei.png
        :alt: TOKEI icon
        :width: 64
 
        TOKEI (“clock”)
 
-   ..  figure:: {static}ie.png
+   ..  figure:: {static}../icon/ie.png
        :alt: IE icon
        :width: 64
 
        IE (“house”)
 
-   ..  figure:: {static}letter.png
+   ..  figure:: {static}../icon/letter.png
        :alt: LETTER icon
        :width: 64
 
        LETTER
 
-   ..  figure:: {static}kaeru.png
+   ..  figure:: {static}../icon/kaeru.png
        :alt: KAERU icon
        :width: 64
 
        KAERU (“frog”)
 
-   ..  figure:: {static}fune.png
+   ..  figure:: {static}../icon/fune.png
        :alt: FUNE icon
        :width: 64
 
        FUNE (“boat”)
 
-   ..  figure:: {static}icon.png
+   ..  figure:: {static}../icon/icon.png
        :alt: ICON icon
        :width: 64
 
        ICON
 
-   ..  figure:: {static}sakana.png
+   ..  figure:: {static}../icon/sakana.png
        :alt: SAKANA icon
        :width: 64
 
        SAKANA (“fish”)
 
-   ..  figure:: {static}yakyu.png
+   ..  figure:: {static}../icon/yakyu.png
        :alt: YAKYU icon
        :width: 64
 
        YAKYU (“baseball”)
 
-   ..  figure:: {static}battle0.png
+   ..  figure:: {static}../icon/battle0.png
        :alt: BATTLE0 icon
        :width: 64
 
        BATTLE0
 
-   ..  figure:: {static}jisyaku.png
+   ..  figure:: {static}../icon/jisyaku.png
        :alt: JISYAKU icon
        :width: 64
 
        JISYAKU (“compass”)
 
-   ..  figure:: {static}oyaji.png
+   ..  figure:: {static}../icon/oyaji.png
        :alt: OYAJI icon
        :width: 64
 
        OYAJI (“old guy”)
 
-   ..  figure:: {static}hikou.png
+   ..  figure:: {static}../icon/hikou.png
        :alt: HIKOU icon
        :width: 64
 
        HIKOU (“fly”)
 
-   ..  figure:: {static}kaeru2.png
+   ..  figure:: {static}../icon/kaeru2.png
        :alt: KAERU2 icon
        :width: 64
 
        KAERU2 (“frog”)
 
-   ..  figure:: {static}heart.png
+   ..  figure:: {static}../icon/heart.png
        :alt: HEART icon
        :width: 64
 
        HEART
 
-   ..  figure:: {static}memo.png
+   ..  figure:: {static}../icon/memo.png
        :alt: MEMO icon
        :width: 64
 
        MEMO
 
-   ..  figure:: {static}puzzle1.png
+   ..  figure:: {static}../icon/puzzle1.png
        :alt: PUZZLE1 icon
        :width: 64
 
        PUZZLE1
 
-   ..  figure:: {static}cursors.png
+   ..  figure:: {static}../icon/cursors.png
        :alt: CURSORS icon
        :width: 64
 

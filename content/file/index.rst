@@ -190,19 +190,19 @@ Apps
 
       `Family Shot <{filename}family-shot/index.rst>`_
 
-   .. figure:: {static}icon/edit.png
+   .. figure:: {static}icon-edit/icon.png
       :alt: Icon-Edit icon
-      :target: {filename}icon/edit.rst
+      :target: {filename}icon-edit/index.rst
       :width: 64
 
-      `Icon-Edit <{filename}icon/edit.rst>`_
+      `Icon-Edit <{filename}icon-edit/index.rst>`_
 
-   .. figure:: {static}icon/send.png
+   .. figure:: {static}icon-send/icon.png
       :alt: Icon-Send icon
-      :target: {filename}icon/send.rst
+      :target: {filename}icon-send/index.rst
       :width: 64
 
-      `Icon-Send <{filename}icon/send.rst>`_
+      `Icon-Send <{filename}icon-send/index.rst>`_
 
    .. figure:: {static}icon/cat.png
       :alt: Sound Test icon

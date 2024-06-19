@@ -10,7 +10,7 @@ Char-Dump
    :width: 160
    :height: 120
 
-* Download: `char-dump.gbf <{static}char-dump.gbf>`_
+* Download: `chardump.gbf <{static}chardump.gbf>`_
 * Original Title: CHAR-DUMP
 * Size: 2 Blocks_ (281 bytes)
 * Type: |circle|

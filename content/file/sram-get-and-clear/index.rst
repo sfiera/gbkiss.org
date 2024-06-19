@@ -10,7 +10,7 @@ SRAM Get & Clear
    :width: 160
    :height: 120
 
-* Download: `sram-get-and-clear.gbf <{static}sram-get-and-clear.gbf>`_
+* Download: `sramtool.gbf <{static}sramtool.gbf>`_
 * Original Title: SRAM GET&CLR
 * Size: 5 Blocks_ (1075 bytes)
 * Type: |circle|

@@ -10,7 +10,7 @@ Watch & Timer
    :width: 160
    :height: 120
 
-* Download: `watch-and-timer.gbf <{static}watch-and-timer.gbf>`_
+* Download: `sw_timer.gbf <{static}sw_timer.gbf>`_
 * Original Title: WATCH&TIMER
 * Alternate Title: ストップウォッチ&タイマー (“Stopwatch & Timer”)
 * Size: 9 Blocks_ (2055 bytes)

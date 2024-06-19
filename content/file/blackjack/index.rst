@@ -10,7 +10,7 @@ Blackjack
    :width: 160
    :height: 120
 
-* Download: `blackjack.gbf <{static}blackjack.gbf>`_
+* Download: `bj.gbf <{static}bj.gbf>`_
 * Original Title: BLACK JACK
 * Alternate Title: ブラックジャック (“Blackjack”)
 * Size: 13 Blocks_ (3119 bytes)

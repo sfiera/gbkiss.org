@@ -5,7 +5,7 @@ Mini Stasol
 :slug: file/mini-stasol
 :tags: game
 
-.. figure:: {static}../main/empty.png
+.. figure:: {static}../menu/empty.png
    :alt: Unknown icon
    :width: 160
    :height: 120

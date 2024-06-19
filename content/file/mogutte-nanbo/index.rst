@@ -73,6 +73,13 @@ Images
 
       “Sezaki_” graphics
 
+   .. figure:: {static}info.png
+      :alt: File info
+      :width: 160
+      :height: 144
+
+      File info
+
 .. _Sezaki: {filename}sezaki.rst
 
 .. include:: ../../epilog.rsti

@@ -44,4 +44,11 @@ Images
 
       Main screen
 
+   .. figure:: {static}info.png
+      :alt: File info
+      :width: 160
+      :height: 144
+
+      File info
+
 .. include:: ../../epilog.rsti

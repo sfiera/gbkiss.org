@@ -21,4 +21,16 @@ Num0 Data
 
 .. _Watch & Timer: {filename}index.rst
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}num0-info.png
+      :alt: File info
+      :width: 160
+      :height: 144
+
+      File info
+
 .. include:: ../../epilog.rsti

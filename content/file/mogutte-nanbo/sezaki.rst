@@ -21,4 +21,16 @@ Sezaki
 
 .. _Mogutte Nanbo: {filename}index.rst
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}sezaki-info.png
+      :alt: Sezaki file info
+      :width: 160
+      :height: 144
+
+      Sezaki file info
+
 .. include:: ../../epilog.rsti

@@ -21,4 +21,16 @@ Magnets Data
 
 .. _Magnets: {filename}index.rst
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}data-info.png
+      :alt: File info
+      :width: 160
+      :height: 144
+
+      File info
+
 .. include:: ../../epilog.rsti

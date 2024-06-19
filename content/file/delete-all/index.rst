@@ -10,13 +10,13 @@ Delete All
    :width: 160
    :height: 120
 
+* Download: `delete-all.gbf <{static}delete-all.gbf>`_
 * Original Title: DEL_ALL
 * Size: 1 Block_ (31 bytes)
 * Type: |circle|
 * Author: *Anonymous*
 * Source: |mini-kisstool|
 * `Creator Code`_: ``$43`` (Cards)
-* File: `delete-all.gbf <{static}delete-all.gbf>`_
 
 Description
 -----------

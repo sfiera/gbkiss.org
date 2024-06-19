@@ -10,6 +10,7 @@ Magnets
    :width: 160
    :height: 120
 
+* Download: `magnets.gbf <{static}magnets.gbf>`_
 * Original Title: MAGNETS
 * Alternate Title: がんばれマグネッツMAIN (“Ganbare Magnets MAIN”)
 * Size: 30 Blocks_ (7563 bytes)
@@ -17,7 +18,6 @@ Magnets
 * Author: <TEAM MAG>
 * Source: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$66`` (Magnets)
-* File: `magnets.gbf <{static}magnets.gbf>`_
 
 Trivia
 ------

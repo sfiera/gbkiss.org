@@ -10,13 +10,13 @@ Bakechu Relay
    :width: 160
    :height: 120
 
+* Download: `bakechu-relay.gbf <{static}bakechu-relay.gbf>`_
 * Original Title: バケちゅリレー
 * Size: 13 Blocks_ (3142 bytes)
 * Type: |circle|
 * Author: |author-tobi|_
 * Source: |mini-kissmon|, |gbkiss-link|
 * `Creator Code`_: ``$70`` (Bakechu Relay)
-* File: `bakechu-relay.gbf <{static}bakechu-relay.gbf>`_
 
 Description
 -----------

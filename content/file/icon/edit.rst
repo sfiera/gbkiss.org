@@ -10,6 +10,7 @@ Icon-Edit
    :width: 160
    :height: 120
 
+* Download: `icon-edit.gbf <{static}icon-edit.gbf>`_
 * Original Title: ICON-EDIT
 * Alternate Title: アイコン エディター (“Icon Editor”)
 * Size: 9 Blocks_ (2186 bytes)
@@ -17,7 +18,6 @@ Icon-Edit
 * Author: |author-tobi|_
 * Source: |mini-cannon|, |gbkiss-link|
 * `Creator Code`_: ``$03`` (Icon-Edit)
-* File: `icon-edit.gbf <{static}icon-edit.gbf>`_
 
 Images
 ------

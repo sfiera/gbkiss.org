@@ -10,13 +10,13 @@ Mogutte Nanbo
    :width: 160
    :height: 120
 
+* Download: `mogutte-nanbo.gbf <{static}mogutte-nanbo.gbf>`_
 * Original Title: もぐってナンボ
 * Size: 31 Blocks_ (7894 bytes)
 * Type: |diamond|
 * Author: TEAMMOGURA
 * Source: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$65`` (Mogutte Nanbo)
-* File: `mogutte-nanbo.gbf <{static}mogutte-nanbo.gbf>`_
 
 Description
 -----------

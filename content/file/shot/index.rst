@@ -10,6 +10,7 @@ Shot
    :width: 160
    :height: 120
 
+* Download: `shot.gbf <{static}shot.gbf>`_
 * Original Title: SHOT
 * Alternate Title: SHOOTING MASTER
 * Size: 2 Blocks_ (507 bytes)
@@ -17,7 +18,6 @@ Shot
 * Author: |author-tobi|_
 * Source: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$68`` (Shot)
-* File: `shot.gbf <{static}shot.gbf>`_
 
 Images
 ------

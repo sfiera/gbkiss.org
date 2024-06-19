@@ -10,6 +10,7 @@ Magnets Data
    :width: 160
    :height: 120
 
+* Download: `magnets-data.gbf <{static}magnets-data.gbf>`_
 * Original Title: MAGNETS DATA
 * Alternate Title: がんばれマグネッツDATA (“Ganbare Magnets DATA”)
 * Size: 25 Blocks_ (6215 bytes)
@@ -17,7 +18,6 @@ Magnets Data
 * Author: <TEAM MAG>
 * Source: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$66`` (Magnets_)
-* File: `magnets-data.gbf <{static}magnets-data.gbf>`_
 
 .. _Magnets: {filename}index.rst
 

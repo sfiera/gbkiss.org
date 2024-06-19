@@ -10,6 +10,7 @@ Sezaki
    :width: 160
    :height: 120
 
+* Download: `sezaki.gbf <{static}sezaki.gbf>`_
 * Original Title: SEZAKI
 * Alternate Title: もぐってナンボ データ (“Mogutte Nanbo Data”)
 * Size: 7 Blocks_ (1641 bytes)
@@ -17,7 +18,6 @@ Sezaki
 * Author: |author-sezaki|_
 * Source: |mini-gamedata|, |gbkiss-link|
 * `Creator Code`_: ``$65`` (`Mogutte Nanbo`_)
-* File: `sezaki.gbf <{static}sezaki.gbf>`_
 
 .. _Mogutte Nanbo: {filename}index.rst
 

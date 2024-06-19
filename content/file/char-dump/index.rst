@@ -10,12 +10,12 @@ Char-Dump
    :width: 160
    :height: 120
 
+* Download: `char-dump.gbf <{static}char-dump.gbf>`_
 * Original Title: CHAR-DUMP
 * Size: 2 Blocks_ (281 bytes)
 * Type: |circle|
 * Author: *Anonymous*
 * Source: |mini-kisstool|
 * `Creator Code`_: ``$43`` (Cards)
-* File: `char-dump.gbf <{static}char-dump.gbf>`_
 
 .. include:: ../../epilog.rsti

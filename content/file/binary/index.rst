@@ -10,6 +10,7 @@ Binary
    :width: 160
    :height: 120
 
+* Download: `binary.gbf <{static}binary.gbf>`_
 * Original Title: BINARY
 * Alternate Title: バイナリーランド (“Binary Land”)
 * Size: 32 Blocks_ (8179 bytes)
@@ -17,7 +18,6 @@ Binary
 * Author: |author-t-ohnishi|_
 * Source: |mini-binary|, |gbkiss-link|
 * `Creator Code`_: ``$71`` (Binary)
-* File: `binary.gbf <{static}binary.gbf>`_
 
 Images
 ------

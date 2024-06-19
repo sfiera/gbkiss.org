@@ -10,13 +10,13 @@ Roulette
    :width: 160
    :height: 120
 
+* Download: `roulette.gbf <{static}roulette.gbf>`_
 * Original Title: ルーレット
 * Size: 21 Blocks_ (5217 bytes)
 * Type: |circle|
 * Author: |author-tsumori|_ (“Tsumori”)
 * Source: |mini-binary|, |gbkiss-link|
 * `Creator Code`_: ``$72`` (Roulette)
-* File: `roulette.gbf <{static}roulette.gbf>`_
 
 Images
 ------

@@ -10,6 +10,7 @@ Poker
    :width: 160
    :height: 120
 
+* Download: `poker.gbf <{static}poker.gbf>`_
 * Original Title: POKER
 * Alternate Title: ポーカー (“Poker”)
 * Size: 21 Blocks_ (5151 bytes)
@@ -17,7 +18,6 @@ Poker
 * Author: |author-s-kimura|_
 * Source: |mini-cannon|, |gbkiss-link|
 * `Creator Code`_: ``$43`` (Cards)
-* File: `poker.gbf <{static}poker.gbf>`_
 
 Images
 ------

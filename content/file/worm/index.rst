@@ -10,13 +10,13 @@ Worm
    :width: 160
    :height: 120
 
+* Download: `worm.gbf <{static}worm.gbf>`_
 * Original Title: WORM
 * Size: 8 Blocks_ (1816 bytes)
 * Type: |diamond|
 * Author: |author-kei-kondoh|_
 * Source: |mini-binary|, |gbkiss-link|
 * `Creator Code`_: ``$00`` (none)
-* File: `worm.gbf <{static}worm.gbf>`_
 
 Description
 -----------

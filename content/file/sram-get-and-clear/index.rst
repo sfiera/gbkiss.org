@@ -10,12 +10,12 @@ SRAM Get & Clear
    :width: 160
    :height: 120
 
+* Download: `sram-get-and-clear.gbf <{static}sram-get-and-clear.gbf>`_
 * Original Title: SRAM GET&CLR
 * Size: 5 Blocks_ (1075 bytes)
 * Type: |circle|
 * Author: |author-y-motosako|_
 * Source: |mini-kisstool|
 * `Creator Code`_: ``$00`` (none)
-* File: `sram-get-and-clear.gbf <{static}sram-get-and-clear.gbf>`_
 
 .. include:: ../../epilog.rsti

@@ -10,6 +10,7 @@ Biorhythm
    :width: 160
    :height: 120
 
+* Download: `biorhythm.gbf <{static}biorhythm.gbf>`_
 * Original Title: BIORYTHM
 * Alternate Title: バイオリズム (“Biorhythm”)
 * Size: 20 Blocks_ (4888 bytes)
@@ -17,7 +18,6 @@ Biorhythm
 * Author: |author-kei-kondoh|_
 * Source: |mini-kissmon|, |gbkiss-link|
 * `Creator Code`_: ``$00`` (none)
-* File: `biorhythm.gbf <{static}biorhythm.gbf>`_
 
 Description
 -----------

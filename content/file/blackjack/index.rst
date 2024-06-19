@@ -10,6 +10,7 @@ Blackjack
    :width: 160
    :height: 120
 
+* Download: `blackjack.gbf <{static}blackjack.gbf>`_
 * Original Title: BLACK JACK
 * Alternate Title: ブラックジャック (“Blackjack”)
 * Size: 13 Blocks_ (3119 bytes)
@@ -17,7 +18,6 @@ Blackjack
 * Author: |author-tarkun|_
 * Source: |mini-binary|, |gbkiss-link|
 * `Creator Code`_: ``$43`` (Cards)
-* File: `blackjack.gbf <{static}blackjack.gbf>`_
 
 Images
 ------

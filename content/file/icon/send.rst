@@ -10,6 +10,7 @@ Icon-Send
    :width: 160
    :height: 120
 
+* Download: `icon-send.gbf <{static}icon-send.gbf>`_
 * Original Title: ICON-SEND
 * Alternate Title: アイコンデータしゅう (“Icon Data Whoosh”)
 * Size: 23 Blocks_ (5776 bytes)
@@ -17,7 +18,6 @@ Icon-Send
 * Author: *Anonymous*
 * Source: |mini-cannon|, |gbkiss-link|
 * `Creator Code`_: ``$00`` (none)
-* File: `icon-send.gbf <{static}icon-send.gbf>`_
 
 Description
 -----------

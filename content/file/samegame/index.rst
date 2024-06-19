@@ -10,6 +10,7 @@ SameGame
    :width: 160
    :height: 120
 
+* Download: `samegame.gbf <{static}samegame.gbf>`_
 * Original Title: SAMEGAME
 * Alternate Title: SAMEGAME KISS
 * Size: 9 Blocks_ (2242 bytes)
@@ -17,7 +18,6 @@ SameGame
 * Author: |author-tobi|_
 * Source: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$67`` (SameGame)
-* File: `samegame.gbf <{static}samegame.gbf>`_
 
 Images
 ------

@@ -10,6 +10,7 @@ Koura 2
    :width: 160
    :height: 120
 
+* Download: `koura-2.gbf <{static}koura-2.gbf>`_
 * Original Title: KOURA2
 * Alternate Title: 15パズル データ1 (“15 Puzzle Data 2”)
 * Size: 7 Blocks_ (1551 bytes)
@@ -17,7 +18,6 @@ Koura 2
 * Author: |author-nonchan|_
 * Source: |mini-gamedata|, |gbkiss-link|
 * `Creator Code`_: ``$64`` (`Puzzle Game`_)
-* File: `koura-2.gbf <{static}koura-2.gbf>`_
 
 .. _Puzzle Game: {filename}index.rst
 

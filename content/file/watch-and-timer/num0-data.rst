@@ -10,6 +10,7 @@ Num0 Data
    :width: 160
    :height: 120
 
+* Download: `num0-data.gbf <{static}num0-data.gbf>`_
 * Original Title: NUM0_DATA
 * Alternate Title: ストップウォッチすうじデータ (“Stopwatch Digit Data”)
 * Size: 4 Blocks_ (770 bytes)
@@ -17,7 +18,6 @@ Num0 Data
 * Author: *Anonymous*
 * Source: |mini-gamedata|, |gbkiss-link|
 * `Creator Code`_: ``$6a`` (`Watch & Timer`_)
-* File: `num0-data.gbf <{static}num0-data.gbf>`_
 
 .. _Watch & Timer: {filename}index.rst
 

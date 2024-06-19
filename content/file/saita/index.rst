@@ -10,13 +10,13 @@ Saita Saita
    :width: 160
    :height: 120
 
+* Download: `saita.gbf <{static}saita.gbf>`_
 * Original Title: MUSIC.さいたさいた
 * Size: 1 Block_ (77 bytes)
 * Type: |triangle|
 * Author: (anonymous)
 * Source: `Hudson website`_
 * `Creator Code`_: ``$76`` (`alarm tone`_)
-* File: `saita.gbf <{static}saita.gbf>`_
 
 .. _alarm tone: {filename}/tech/alarm.rst
 .. _Hudson website: https://web.archive.org/web/20021020134646/http://www.hudson.co.jp/gamenavi/gamedb/softinfo/family/date.html

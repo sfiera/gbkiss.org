@@ -10,6 +10,7 @@ Slot
    :width: 160
    :height: 120
 
+* Download: `slot.gbf <{static}slot.gbf>`_
 * Original Title: SLOT
 * Alternate Title: スロット マシン (“Slot Machine”)
 * Size: 13 Blocks_ (3077 bytes)
@@ -17,7 +18,6 @@ Slot
 * Author: |author-y-motosako|_
 * Source: |mini-cannon|, |gbkiss-link|
 * `Creator Code`_: ``$6c`` (Slot)
-* File: `slot.gbf <{static}slot.gbf>`_
 
 Images
 ------

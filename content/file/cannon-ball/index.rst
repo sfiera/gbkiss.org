@@ -10,6 +10,7 @@ Cannon Ball
    :width: 160
    :height: 120
 
+* Download: `cannon-ball.gbf <{static}cannon-ball.gbf>`_
 * Original Title: CANNON BALL
 * Alternate Title: キャノンボール (“Cannon Ball”)
 * Size: 27 Blocks_ (6732 bytes)
@@ -17,7 +18,6 @@ Cannon Ball
 * Author: GBKISS LAB
 * Source: |mini-cannon|, |gbkiss-link|
 * `Creator Code`_: ``$6d`` (Cannon Ball)
-* File: `cannon-ball.gbf <{static}cannon-ball.gbf>`_
 
 Images
 ------

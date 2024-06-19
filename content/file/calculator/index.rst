@@ -10,6 +10,7 @@ Calculator
    :width: 160
    :height: 120
 
+* Download: `calculator.gbf <{static}calculator.gbf>`_
 * Original Title: DEN TAKU
 * Alternate Title: かんい でんたく (“Simple Calculator”)
 * Size: 5 Blocks_ (1148 bytes)
@@ -17,7 +18,6 @@ Calculator
 * Author: |author-y-motosako|_
 * Source: |mini-kissmon|, |gbkiss-link|
 * `Creator Code`_: ``$04`` (Calculator)
-* File: `calculator.gbf <{static}calculator.gbf>`_
 
 Images
 ------

@@ -10,6 +10,7 @@ Kiss-Mon
    :width: 160
    :height: 120
 
+* Download: `kiss-mon.gbf <{static}kiss-mon.gbf>`_
 * Original Title: KISS-MON
 * Alternate Title: KISS MONSTER
 * Size: 23 Blocks_ (5647 bytes)
@@ -17,7 +18,6 @@ Kiss-Mon
 * Author: |author-tobi|_
 * Source: |mini-kissmon|, |gbkiss-link|
 * `Creator Code`_: ``$6e`` (Kiss-Mon)
-* File: `kiss-mon.gbf <{static}kiss-mon.gbf>`_
 
 Images
 ------

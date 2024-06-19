@@ -10,6 +10,7 @@ Drive
    :width: 160
    :height: 120
 
+* Download: `drive.gbf <{static}drive.gbf>`_
 * Original Title: DRIVE
 * Alternate Title: ジャカジャカジャンプでポン (“Jaka-Jaka-Jump de Pon”)
 * Size: 20 Blocks_ (5072 bytes)
@@ -17,7 +18,6 @@ Drive
 * Author: |author-t-ohnishi|_
 * Source: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$69`` (Drive)
-* File: `drive.gbf <{static}drive.gbf>`_
 
 Images
 ------

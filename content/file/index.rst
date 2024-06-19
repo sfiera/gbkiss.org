@@ -92,7 +92,7 @@ Games
 
       `Magnets <{filename}magnets/index.rst>`_
 
-   .. figure:: {static}main/empty.png
+   .. figure:: {static}menu/empty.png
       :alt: Mini Stasol icon
       :target: {filename}mini-stasol/index.rst
       :width: 64
@@ -328,27 +328,27 @@ Images
 
 .. container:: gallery
 
-   .. figure:: {static}main/menu.png
+   .. figure:: {static}menu/menu.png
       :alt: GBKiss menu
 
       GBKiss menu with 2 files
 
-   .. figure:: {static}main/broken.png
+   .. figure:: {static}menu/broken.png
       :alt: Broken link
 
       Broken link: data without app
 
-   .. figure:: {static}main/info.png
+   .. figure:: {static}menu/info.png
       :alt: Software info screen
 
       Software info screen
 
-   .. figure:: {static}main/send.png
+   .. figure:: {static}menu/send.png
       :alt: Start send screen
 
       Start send screen
 
-   .. figure:: {static}main/fail.png
+   .. figure:: {static}menu/fail.png
       :alt: Send fail screen
 
       Send fail screen

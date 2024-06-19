@@ -25,6 +25,18 @@ Upon execution, immediately deletes all files in GBKiss without confirmation.
 
 Dangerous! Don’t install this unless you plan to use it.
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}info.png
+      :alt: File info
+      :width: 160
+      :height: 144
+
+      File info
+
 Trivia
 ------
 

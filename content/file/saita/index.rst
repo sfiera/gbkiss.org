@@ -51,4 +51,16 @@ The file content decodes to the following in `ABC notation`_:
 
 .. _ABC notation: https://abcnotation.com/
 
+Images
+------
+
+.. container:: gallery
+
+   .. figure:: {static}info.png
+      :alt: File info
+      :width: 160
+      :height: 144
+
+      File info
+
 .. include:: ../../epilog.rsti

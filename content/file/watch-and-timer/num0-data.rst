@@ -10,7 +10,7 @@ Num0 Data
    :width: 160
    :height: 120
 
-* Download: `num0-data.gbf <{static}num0-data.gbf>`_
+* Download: `sw_data.gbf <{static}sw_data.gbf>`_
 * Original Title: NUM0_DATA
 * Alternate Title: ストップウォッチすうじデータ (“Stopwatch Digit Data”)
 * Size: 4 Blocks_ (770 bytes)

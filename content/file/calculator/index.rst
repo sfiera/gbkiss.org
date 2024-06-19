@@ -10,7 +10,7 @@ Calculator
    :width: 160
    :height: 120
 
-* Download: `calculator.gbf <{static}calculator.gbf>`_
+* Download: `dentaku.gbf <{static}dentaku.gbf>`_
 * Original Title: DEN TAKU
 * Alternate Title: かんい でんたく (“Simple Calculator”)
 * Size: 5 Blocks_ (1148 bytes)

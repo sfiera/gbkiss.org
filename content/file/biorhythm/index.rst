@@ -10,7 +10,7 @@ Biorhythm
    :width: 160
    :height: 120
 
-* Download: `biorhythm.gbf <{static}biorhythm.gbf>`_
+* Download: `biorythm.gbf <{static}biorythm.gbf>`_
 * Original Title: BIORYTHM
 * Alternate Title: バイオリズム (“Biorhythm”)
 * Size: 20 Blocks_ (4888 bytes)

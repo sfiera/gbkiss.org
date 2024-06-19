@@ -10,7 +10,7 @@ Kiss-Mon
    :width: 160
    :height: 120
 
-* Download: `kiss-mon.gbf <{static}kiss-mon.gbf>`_
+* Download: `kissmon.gbf <{static}kissmon.gbf>`_
 * Original Title: KISS-MON
 * Alternate Title: KISS MONSTER
 * Size: 23 Blocks_ (5647 bytes)

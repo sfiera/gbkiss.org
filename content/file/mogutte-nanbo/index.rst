@@ -10,7 +10,7 @@ Mogutte Nanbo
    :width: 160
    :height: 120
 
-* Download: `mogutte-nanbo.gbf <{static}mogutte-nanbo.gbf>`_
+* Download: `mogura.gbf <{static}mogura.gbf>`_
 * Original Title: もぐってナンボ
 * Size: 31 Blocks_ (7894 bytes)
 * Type: |diamond|

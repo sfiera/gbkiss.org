@@ -10,7 +10,7 @@ Koura 2
    :width: 160
    :height: 120
 
-* Download: `koura-2.gbf <{static}koura-2.gbf>`_
+* Download: `koura2.gbf <{static}koura2.gbf>`_
 * Original Title: KOURA2
 * Alternate Title: 15パズル データ1 (“15 Puzzle Data 2”)
 * Size: 7 Blocks_ (1551 bytes)

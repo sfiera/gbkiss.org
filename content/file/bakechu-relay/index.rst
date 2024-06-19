@@ -10,7 +10,7 @@ Bakechu Relay
    :width: 160
    :height: 120
 
-* Download: `bakechu-relay.gbf <{static}bakechu-relay.gbf>`_
+* Download: `baketu.gbf <{static}baketu.gbf>`_
 * Original Title: バケちゅリレー
 * Size: 13 Blocks_ (3142 bytes)
 * Type: |circle|

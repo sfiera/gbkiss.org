@@ -10,7 +10,7 @@ Delete All
    :width: 160
    :height: 120
 
-* Download: `delete-all.gbf <{static}delete-all.gbf>`_
+* Download: `del_all.gbf <{static}del_all.gbf>`_
 * Original Title: DEL_ALL
 * Size: 1 Block_ (31 bytes)
 * Type: |circle|

@@ -10,7 +10,7 @@ Binary
    :width: 160
    :height: 120
 
-* Download: `binary.gbf <{static}binary.gbf>`_
+* Download: `bland.gbf <{static}bland.gbf>`_
 * Original Title: BINARY
 * Alternate Title: バイナリーランド (“Binary Land”)
 * Size: 32 Blocks_ (8179 bytes)

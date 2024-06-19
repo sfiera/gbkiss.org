@@ -91,8 +91,8 @@ The CANNON group contains `Cannon Ball`_ and 3 other games, along with an icon e
 * `Cannon Ball`_ (キャノンボール)
 * Poker_ (ポーカー)
 
-.. _Icon-Send: {filename}/file/icon/send.rst
-.. _Icon-Edit: {filename}/file/icon/edit.rst
+.. _Icon-Send: {filename}/file/icon-send/index.rst
+.. _Icon-Edit: {filename}/file/icon-edit/index.rst
 .. _Puzzle Game: {filename}/file/puzzle-game/index.rst
 .. _Slot: {filename}/file/slot/index.rst
 .. _Cannon Ball: {filename}/file/cannon-ball/index.rst

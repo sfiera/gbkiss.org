@@ -23,8 +23,8 @@ The included files appear to have been the following:
 5.  Cannon.gbf: `Cannon Ball <{filename}/file/cannon-ball/index.rst>`_
 6.  Dentaku.gbf: `Calculator <{filename}/file/calculator/index.rst>`_
 7.  Drive.gbf: `Drive <{filename}/file/drive/index.rst>`_
-8.  Iconedit.gbf: `Icon-Edit <{filename}/file/icon/edit.rst>`_
-9.  Iconsend.gbf: `Icon-Send <{filename}/file/icon/send.rst>`_
+8.  Iconedit.gbf: `Icon-Edit <{filename}/file/icon-edit/index.rst>`_
+9.  Iconsend.gbf: `Icon-Send <{filename}/file/icon-send/index.rst>`_
 10. Kissmon.gbf: `Kiss-Mon <{filename}/file/kiss-mon/index.rst>`_
 11. Kissmon2.gbf: `Kiss-Mon 2 <{filename}/file/kiss-mon-2/index.rst>`_
 12. Koura1.gbf: `Koura 1 <{filename}/file/puzzle-game/koura-1.rst>`_

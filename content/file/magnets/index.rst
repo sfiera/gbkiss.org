@@ -19,15 +19,6 @@ Magnets
 * Source: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$66`` (Magnets)
 
-Trivia
-------
-
-Taken together with the required `Magnets Data`_, Magnets consumes more space than any other GBKiss software, at 13778 total bytes. Individually, Magnets is the third largest file, after Binary_ and `Mogutte Nanbo`_.
-
-.. _Magnets Data: {filename}data.rst
-.. _Binary: {filename}../binary/index.rst
-.. _Mogutte Nanbo: {filename}../mogutte-nanbo/index.rst
-
 Images
 ------
 
@@ -46,5 +37,14 @@ Images
       :height: 144
 
       Gameplay
+
+Trivia
+------
+
+Taken together with the required `Magnets Data`_, Magnets consumes more space than any other GBKiss software, at 13778 total bytes. Individually, Magnets is the third largest file, after Binary_ and `Mogutte Nanbo`_.
+
+.. _Magnets Data: {filename}data.rst
+.. _Binary: {filename}../binary/index.rst
+.. _Mogutte Nanbo: {filename}../mogutte-nanbo/index.rst
 
 .. include:: ../../epilog.rsti

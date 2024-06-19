@@ -28,6 +28,7 @@ MENUITEMS = [
     ("Cartridges", "/cart"),
     ("Technology", "/tech"),
     ("GBKiss Link", "/link"),
+    ("Hudson", "/hudson"),
 ]
 
 

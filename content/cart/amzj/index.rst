@@ -7,6 +7,8 @@ Dai-Kaiju Monogatari The Miracle of the Zone
 
 .. figure:: {static}sgb.png
    :alt: Dai-Kaiju Monogatari The Miracle of the Zone title screen
+   :width: 256
+   :height: 224
 
 * Original Title: 大貝獣物語 ザ・ミラクル オブ ザ・ゾーン
 * Release Date: 1998-03-05

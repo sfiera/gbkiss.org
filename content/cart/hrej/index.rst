@@ -7,6 +7,8 @@ Robot Poncots Sun Version
 
 .. figure:: {static}sgb.png
    :alt: Robot Poncots Sun Version title screen
+   :width: 256
+   :height: 224
 
 * Original Title: ロボットポンコッツ サンバージョン
 * Release Date: 1998-12-04

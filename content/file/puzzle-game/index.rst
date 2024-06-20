@@ -81,6 +81,7 @@ The default illustration depicts a grid of numbers from 1 to 15, as is common fo
    ..  figure:: {static}numbers.png
        :alt: Default illustration
        :width: 96
+       :height: 96
 
        Default
 
@@ -88,6 +89,7 @@ The default illustration depicts a grid of numbers from 1 to 15, as is common fo
        :alt: Koura 1 Illustration
        :target: {filename}koura-1.rst
        :width: 96
+       :height: 96
 
        `KOURA1 <{filename}koura-1.rst>`_
 
@@ -95,6 +97,7 @@ The default illustration depicts a grid of numbers from 1 to 15, as is common fo
        :alt: Koura 2 Illustration
        :target: {filename}koura-2.rst
        :width: 96
+       :height: 96
 
        `KOURA2 <{filename}koura-2.rst>`_
 
@@ -102,6 +105,7 @@ The default illustration depicts a grid of numbers from 1 to 15, as is common fo
        :alt: Koura 3 Illustration
        :target: {filename}koura-3.rst
        :width: 96
+       :height: 96
 
        `KOURA3 <{filename}koura-3.rst>`_
 

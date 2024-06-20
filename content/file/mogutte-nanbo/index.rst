@@ -45,33 +45,31 @@ Images
 
    .. figure:: {static}menu.png
       :alt: Mogutte Nanbo main menu
+      :width: 160
+      :height: 144
 
       Main menu
 
    .. figure:: {static}characters.png
       :alt: Character intro
+      :width: 160
+      :height: 144
 
       Character introduction
 
    .. figure:: {static}game.png
       :alt: Mogutte Nanbo gameplay on island
+      :width: 160
+      :height: 144
 
       Gameplay with the built-in island graphics
 
    .. figure:: {static}end.png
       :alt: Mogutte Nanbo game-over screen
+      :width: 160
+      :height: 144
 
       Game-over screen
-
-   .. figure:: {static}island.png
-      :alt: Island graphics
-
-      Island graphics
-
-   .. figure:: {static}sezaki.png
-      :alt: Sezaki graphics
-
-      “Sezaki_” graphics
 
    .. figure:: {static}info.png
       :alt: File info
@@ -79,6 +77,25 @@ Images
       :height: 144
 
       File info
+
+Backgrounds
+-----------
+
+.. container:: gallery
+
+   .. figure:: {static}island.png
+      :alt: Island graphics
+      :width: 136
+      :height: 80
+
+      Island graphics
+
+   .. figure:: {static}sezaki.png
+      :alt: Sezaki graphics
+      :width: 136
+      :height: 80
+
+      “Sezaki_” graphics
 
 .. _Sezaki: {filename}sezaki.rst
 

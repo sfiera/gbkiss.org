@@ -7,6 +7,8 @@ Pocket Family GB
 
 .. figure:: {static}sgb.png
    :alt: Pocket Family title screen
+   :width: 256
+   :height: 224
 
 * Original Title: ポケットファミリーGB
 * Release Date: 1998-08-09
@@ -24,11 +26,15 @@ Images
 
    .. figure:: {static}mgb.png
       :alt: Title screen
+      :width: 160
+      :height: 144
 
       Title screen
 
    .. figure:: {static}main-menu.png
       :alt: Main menu
+      :width: 160
+      :height: 144
 
       Main menu
 

@@ -6,9 +6,9 @@ SameGame
 :tags: game, mini-default
 
 .. figure:: {static}icon.png
-   :alt: SameGame icon
    :width: 160
    :height: 120
+   :alt: SameGame icon
 
 * Download: `samegame.gbf <{static}samegame.gbf>`_
 * Original Title: SAMEGAME

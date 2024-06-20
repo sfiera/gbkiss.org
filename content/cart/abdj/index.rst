@@ -7,6 +7,8 @@ Super B-Daman Fighting Phoenix
 
 .. figure:: {static}sgb.png
    :alt: Super B-Daman Fighting Phoenix title screen
+   :width: 256
+   :height: 224
 
 * Original Title: スーパービーダマン ファイティングフェニックス
 * Release Date: 1997-07-11

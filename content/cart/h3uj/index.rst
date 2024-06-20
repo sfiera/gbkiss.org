@@ -7,6 +7,8 @@ Robot Poncots Moon Version
 
 .. figure:: {static}sgb.png
    :alt: Robot Poncots Moon Version title screen
+   :width: 256
+   :height: 224
 
 * Original Title: ロボットポンコッツ ムーンバージョン
 * Release Date: 1999-12-24

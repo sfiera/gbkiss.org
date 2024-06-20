@@ -7,6 +7,8 @@ Nectaris GB
 
 .. figure:: {static}sgb.png
    :alt: Nectaris GB title screen
+   :width: 256
+   :height: 224
 
 * Original Title: ネクタリスGB
 * Release Date: 1998-02-27
@@ -24,16 +26,22 @@ Images
 
    .. figure:: {static}mgb.png
       :alt: Title screen
+      :width: 160
+      :height: 144
 
       Title screen
 
    .. figure:: {static}main-menu.png
       :alt: Main menu
+      :width: 160
+      :height: 144
 
       Main menu
 
    .. figure:: {static}kiss-menu.png
       :alt: GBKiss menu
+      :width: 160
+      :height: 144
 
       GBKiss menu
 

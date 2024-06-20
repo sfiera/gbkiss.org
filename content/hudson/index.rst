@@ -6,6 +6,8 @@ Hudson Soft
 
 .. figure:: {static}logo.png
    :alt: Hudson logo
+   :width: 160
+   :height: 144
 
 Staff
 -----

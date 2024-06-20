@@ -7,6 +7,8 @@ Pocket Bomberman
 
 .. figure:: {static}sgb.png
    :alt: Pocket Bomberman title screen
+   :width: 256
+   :height: 224
 
 * Original Title: ポケットボンバーマン
 * Release Date: 1997-12-12

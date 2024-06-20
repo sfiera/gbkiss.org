@@ -25,10 +25,20 @@
 .. role:: button
 
 .. |bullseye| image:: {static}/file/menu/bullseye.svg
+   :width: 0.75em
+   :height: 0.75em
 .. |circle| image:: {static}/file/menu/circle.svg
+   :width: 0.75em
+   :height: 0.75em
 .. |diamond| image:: {static}/file/menu/diamond.svg
+   :width: 0.75em
+   :height: 0.75em
 .. |triangle| image:: {static}/file/menu/triangle.svg
+   :width: 0.75em
+   :height: 0.75em
 .. |cross| image:: {static}/file/menu/cross.svg
+   :width: 0.75em
+   :height: 0.75em
 
 .. |author-tobi| replace:: TOBI
 .. _author-tobi: {filename}/hudson/index.rst#tobi

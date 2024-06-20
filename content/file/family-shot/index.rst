@@ -19,10 +19,14 @@ Family Shot
 * `Creator Code`_: ``$00`` (none)
 * `Cartridge Code`_: ``$06`` (`Pocket Family GB`_)
 
-Family Shot connects to the `Game Boy Printer`_ and prints a photo of the current residents of the player’s house in `Pocket Family GB`_. There are two options:
+Description
+-----------
+
+Family Shot connects to the `Game Boy Printer`_ and prints a photo of the current residents of the player’s house in `Pocket Family GB`_. There are three options:
 
 *  A: print the photo with the current date and time in the lower right
 *  B: print the photo with “© 1998 HUDSON SOFT” in the lower right
+*  Select: exit to menu
 
 After printing the photo, the app automatically exits.
 

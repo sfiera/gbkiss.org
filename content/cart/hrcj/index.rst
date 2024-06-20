@@ -7,6 +7,8 @@ Robot Poncots Star Version
 
 .. figure:: {static}sgb.png
    :alt: Robot Poncots Star Version title screen
+   :width: 256
+   :height: 224
 
 * Original Title: ロボットポンコッツ スターバージョン
 * Release Date: 1998-12-04

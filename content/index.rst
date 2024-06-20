@@ -6,6 +6,8 @@ GBKiss
 
 .. figure:: {static}logo.svg
    :alt: GBKiss logo
+   :width: 256
+   :height: 256
 
 What is GBKiss?
 ---------------

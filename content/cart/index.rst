@@ -13,36 +13,48 @@ GBKiss is supported in five games for the original Game Boy, all four Japanese `
 
    .. figure:: {static}abdj/mgb.png
       :alt: Super B-Daman Fighting Phoenix title screen
+      :width: 160
+      :height: 144
       :target: {filename}abdj/index.rst
 
       `Super B-Daman Fighting Phoenix <{filename}abdj/index.rst>`_ (Jul 1997)
 
    .. figure:: {static}apoj/mgb.png
       :alt: Pocket Bomberman title screen
+      :width: 160
+      :height: 144
       :target: {filename}apoj/index.rst
 
       `Pocket Bomberman <{filename}apoj/index.rst>`_ (Dec 1997)
 
    .. figure:: {static}akaj/mgb.png
       :alt: GBKiss Mini Games title screen
+      :width: 160
+      :height: 144
       :target: {filename}akaj/index.rst
 
       `GBKiss Mini Games`_ (Dec 1997)
 
    .. figure:: {static}an5j/mgb.png
       :alt: Nectaris GB title screen
+      :width: 160
+      :height: 144
       :target: {filename}an5j/index.rst
 
       `Nectaris GB <{filename}an5j/index.rst>`_ (Feb 1998)
 
    .. figure:: {static}amzj/mgb.png
       :alt: Dai-Kaiju Monogatari The Miracle of the Zone title screen
+      :width: 160
+      :height: 144
       :target: {filename}amzj/index.rst
 
       `Dai-Kaiju Monogatari The Miracle of the Zone <{filename}amzj/index.rst>`_ (Mar 1998)
 
    .. figure:: {static}hfaj/mgb.png
       :alt: Pocket Family GB title screen
+      :width: 160
+      :height: 144
       :target: {filename}hfaj/index.rst
 
       `Pocket Family GB <{filename}hfaj/index.rst>`_ (Aug 1998)
@@ -54,30 +66,40 @@ Robot Poncots
 
    .. figure:: {static}hrej/gbc.png
       :alt: Robot Poncots Sun Version title screen
+      :width: 160
+      :height: 144
       :target: {filename}hrej/index.rst
 
       `Sun Version <{filename}hrej/index.rst>`_ (Dec 1998)
 
    .. figure:: {static}hrcj/gbc.png
       :alt: Robot Poncots Star Version title screen
+      :width: 160
+      :height: 144
       :target: {filename}hrcj/index.rst
 
       `Star Version <{filename}hrcj/index.rst>`_ (Dec 1998)
 
    .. figure:: {static}h3uj/gbc.png
       :alt: Robot Poncots Moon Version title screen
+      :width: 160
+      :height: 144
       :target: {filename}h3uj/index.rst
 
       `Moon Version <{filename}h3uj/index.rst>`_ (Dec 1999)
 
    .. figure:: {static}h5uj/gbc.png
       :alt: Robot Poncots Comic BomBom Special Version title screen
+      :width: 160
+      :height: 144
       :target: {filename}h5uj/index.rst
 
       `Comic BomBom Special Version <{filename}h5uj/index.rst>`_ (Dec 1999)
 
    .. figure:: {static}akaj/mgb.png
       :alt: Robot Poncots Taikenban title screen
+      :width: 160
+      :height: 144
       :target: {filename}artj/index.rst
 
       `Taikenban <{filename}artj/index.rst>`_ (Demo)

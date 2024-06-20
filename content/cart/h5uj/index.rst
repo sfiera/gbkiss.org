@@ -7,6 +7,8 @@ Robot Poncots Comic BomBom Special Version
 
 .. figure:: {static}sgb.png
    :alt: Robot Poncots Comic BomBom Special Version title screen
+   :width: 256
+   :height: 224
 
 * Original Title: ロボットポンコッツ コミックボンボン スペシャルバージョン
 * Release Date: 1999-12-24

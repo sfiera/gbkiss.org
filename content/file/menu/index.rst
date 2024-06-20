@@ -26,26 +26,36 @@ Images
 
    .. figure:: {static}menu.png
       :alt: GBKiss menu
+      :width: 160
+      :height: 144
 
       GBKiss menu with 2 files
 
    .. figure:: {static}broken.png
       :alt: Broken link
+      :width: 160
+      :height: 144
 
       Broken link: data without app
 
    .. figure:: {static}info.png
       :alt: Software info screen
+      :width: 160
+      :height: 144
 
       Software info screen
 
    .. figure:: {static}send.png
       :alt: Start send screen
+      :width: 160
+      :height: 144
 
       Start send screen
 
    .. figure:: {static}fail.png
       :alt: Send fail screen
+      :width: 160
+      :height: 144
 
       Send fail screen
 

@@ -18,10 +18,10 @@ Puzzle Game
 * Source: |mini-cannon|, |gbkiss-link|
 * `Creator Code`_: ``$64`` (Puzzle Game)
 
-Gameplay
---------
+Description
+-----------
 
-Two gameplay modes are provided: 15 Puzzle and Panel de Pon.
+Puzzle Game is a tile-based game with two modes: 15 Puzzle and Panel de Pon.
 
 15 Puzzle
 ~~~~~~~~~

@@ -7,14 +7,6 @@ Alarms
 
 Pocket Family GB provides an alarm feature through the `HuC-3 mapper`_, with a selection of different alarm tones. It also supports installing additional alarm tones through GBKiss.
 
-The built-in alarm tones are:
-
-* めざましおん: Alarm Tone (2 variants)
-* ピンポンおん: Doorbell (4 variants)
-* ほうかごチャイム: Afterschool chime
-* きゅうきゅうしゃ: Ambulance
-* きよし　このよる: Silent Night
-
 .. _HuC-3 mapper: {filename}mapper.rst#huc-3
 
 Format

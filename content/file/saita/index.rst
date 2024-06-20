@@ -24,7 +24,7 @@ Saita Saita
 Description
 -----------
 
-This is a traditional Japanese folk song. The lyrics are:
+This is a Japanese children’s song. The lyrics are:
 
    | さいた さいた (Saita, saita)
    | チュリップの花が (Tulip no hana ga)

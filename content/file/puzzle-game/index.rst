@@ -74,7 +74,7 @@ Images
 Illustrations
 ~~~~~~~~~~~~~
 
-The default illustration depicts a grid of numbers from 1 to 15, as is common for 15 Puzzle. Three additional illustrations by |author-nonchan| are included in `GBKiss Mini Games`_.
+The default illustration depicts a grid of numbers from 1 to 15, as is common for 15 Puzzle. Three additional illustrations by |author-nonchan|_ are included in `GBKiss Mini Games`_.
 
 .. container:: gallery
 

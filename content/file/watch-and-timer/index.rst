@@ -22,7 +22,7 @@ Watch & Timer
 Description
 -----------
 
-Watch & Timer is a combination stopwatch and timer.
+Watch & Timer is a combination stopwatch_ and timer_.
 
 By default, the clock digits are displayed with blocky numbers. If `Num0 Data`_ is installed, then launching Watch & Timer from that data file will change the digits to a rounded, stenciled appearance.
 

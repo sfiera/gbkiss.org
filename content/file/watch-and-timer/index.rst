@@ -19,24 +19,75 @@ Watch & Timer
 * Source: |mini-kissmon|, |gbkiss-link|
 * `Creator Code`_: ``$6a`` (Watch & Timer)
 
+Description
+-----------
+
+Watch & Timer is a combination stopwatch and timer.
+
+By default, the clock digits are displayed with blocky numbers. If `Num0 Data`_ is installed, then launching Watch & Timer from that data file will change the digits to a rounded, stenciled appearance.
+
+.. _Num0 Data: {filename}num0-data.rst
+
+Stopwatch
+~~~~~~~~~
+
+In Stopwatch mode, the controls are:
+
+*  A: start or pause the stopwatch
+*  B: mark a lap time (while running) or reset the stopwatch (while stopped)
+*  Start: switch to Timer_ mode
+*  Select: exit to menu
+
+Timer
+~~~~~
+
+In timer mode, there are 6 programmable timers. The times are saved to the file, so they will be preserved across runs, and will be included with the software if the file is sent to another player. The controls are:
+
+*  A: start or pause the stopwatch
+*  B: cycle between timers (while stopped) or reset the timer (after started)
+*  D-Pad: edit the selected time or alarm tone
+*  Start: switch to Stopwatch_ mode
+*  Select: exit to menu
+
+In addition to the time, there are four alarm tones which can be selected after the decimal point:
+
+1. A quick, high-pitched pulse
+2. A repeated, lower-pitched pulse
+3. A triple pulse, repeated 4 times
+4. A doorbell sound, repeated 4 times
+
 Images
 ------
 
 .. container:: gallery
 
    .. figure:: {static}title.png
-      :alt: Watch & Timer title screen
+      :alt: Initial state
       :width: 160
       :height: 144
 
-      Title Screen
+      Initial state
 
-   .. figure:: {static}app.png
-      :alt: Watch & Timer usage
+   .. figure:: {static}stopwatch.png
+      :alt: Stopwatch in use
       :width: 160
       :height: 144
 
-      Usage
+      Stopwatch in use
+
+   .. figure:: {static}timer.png
+      :alt: Timer in use
+      :width: 160
+      :height: 144
+
+      Timer in use
+
+   .. figure:: {static}data.png
+      :alt: Appearance with Num0 Data
+      :width: 160
+      :height: 144
+
+      Appearance when launched from `Num0 Data`_
 
    .. figure:: {static}info.png
       :alt: File info

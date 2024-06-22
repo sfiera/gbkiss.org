@@ -77,7 +77,7 @@ The following cartridge codes are known:
 * ``$04``: `Dai-Kaiju Monogatari The Miracle of the Zone <{filename}/cart/amzj/index.rst>`_
 * ``$05``: *unknown*
 * ``$06``: `Pocket Family GB <{filename}/cart/hfaj/index.rst>`_
-* ``$07``: *unknown*
+* ``$07``: `Robot Poncots Taikenban <{filename}/cart/artj/index.rst>`_
 * ``$08``: Robot Poncots `Sun <{filename}/cart/hrej/index.rst>`_, `Star <{filename}/cart/hrcj/index.rst>`_, `Moon <{filename}/cart/h3uj/index.rst>`_, and `Comic BomBom <{filename}/cart/h5uj/index.rst>`_
 * ``$fe``: `GBKiss Mini Games <{filename}/cart/akaj/index.rst>`_
 

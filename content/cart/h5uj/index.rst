@@ -15,7 +15,7 @@ Robot Poncots Comic BomBom Special Version
 * Product Code: DMG-H5UJ-JPN
 * Mapper_: HuC-3
 * ROM Size: 8Mbit (1MiB)
-* RAM Size: 256Mbit (32KiB)
+* RAM Size: 256Kbit (32KiB)
 * Storage_: $21f0 (8688 bytes)
 * `Cartridge Code`_: ``$08``
 

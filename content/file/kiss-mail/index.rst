@@ -20,7 +20,7 @@ Kiss Mail
 Description
 -----------
 
-Kiss Mail composes mail_ messages that can be saved to files and transfered to and from other GBKiss cartridges. Each message may have a title and up to 8 16-characters lines.
+Kiss Mail composes mail_ messages that can be saved to files and transfered to and from other GBKiss cartridges. Each message may have a title and up to 8 17-characters lines.
 
 The menu has six options:
 

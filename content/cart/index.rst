@@ -116,7 +116,7 @@ Several games were released using modified software or hardware that omits GBKis
 
 *  2 Japanese releases with HuC-1 infrared connectivity but no GBKiss support:
 
-   *  Chosoku Spinner [DMG-AYYJ-JPN]
+   *  `Chousoku Spinner <{filename}ayyj/index.rst>`_ [DMG-AYYJ-JPN]
    *  Pokémon Card GB (Japan) [DMG-ACXJ-JPN]
 
 *  1 international release with HuC-3 infrared connectivity but no GBKiss support:

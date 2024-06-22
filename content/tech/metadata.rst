@@ -75,7 +75,7 @@ The following cartridge codes are known:
 * ``$02``: `Pocket Bomberman <{filename}/cart/apoj/index.rst>`_
 * ``$03``: `Nectaris GB <{filename}/cart/an5j/index.rst>`_
 * ``$04``: `Dai-Kaiju Monogatari The Miracle of the Zone <{filename}/cart/amzj/index.rst>`_
-* ``$05``: *unknown*
+* ``$05``: `Chousoku Spinner <{filename}/cart/ayyj/index.rst>`_ (unsupported)
 * ``$06``: `Pocket Family GB <{filename}/cart/hfaj/index.rst>`_
 * ``$07``: `Robot Poncots Taikenban <{filename}/cart/artj/index.rst>`_
 * ``$08``: Robot Poncots `Sun <{filename}/cart/hrej/index.rst>`_, `Star <{filename}/cart/hrcj/index.rst>`_, `Moon <{filename}/cart/h3uj/index.rst>`_, and `Comic BomBom <{filename}/cart/h5uj/index.rst>`_

@@ -133,7 +133,7 @@ If the file’s “has icon” flag is clear, the icon is determined as follows:
    * ``$44``: ``MAP``
    * ``$45``: ``IE2``
 
-*  If file’s ``creator_code & $7f`` matches another installed file, that file’s icon is used.
+*  If the file’s ``creator_code & $7f`` matches another installed file, that file’s icon is used.
 *  Otherwise, the broken file icon ``SIMULA1`` is used.
 
 History

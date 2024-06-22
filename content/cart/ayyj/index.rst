@@ -14,7 +14,7 @@ Chousoku Spinner
 * Storage_: N/A
 * `Cartridge Code`_: ``$05``
 
-Chousoku Spinner is a HuC-1 game, supporting infrared connectivity but not GBKiss. However, there is some evidence in the ROM to suggest that GBKiss support was considered for it. At location ``$0014`` in the ROM, where GBKiss stores cartridge metadata, there are four bytes:
+Chousoku Spinner is a HuC-1 game, supporting infrared connectivity but not GBKiss. However, there is some evidence in the ROM to suggest that GBKiss support was considered for it. At location ``$0014`` in its ROM, where GBKiss stores cartridge metadata, there are four bytes:
 
 .. code-block:: hexdump
 

@@ -8,11 +8,11 @@ Robot Poncots Taikenban
 * Original Title: ロボットポンコッツ 体験版
 * Release Date: Unknown
 * Product Code: DMG-ARTJ-JPN
-* Mapper_: HuC-1 (presumed)
-* ROM Size: Unknown
-* RAM Size: Unknown
-* Storage_: Unknown
-* `Cartridge Code`_: Unknown
+* Mapper_: HuC-1
+* ROM Size: 8Mbit (1MiB)
+* RAM Size: 256Kbit (32KiB)
+* Storage_: $1f80 (8064 bytes)
+* `Cartridge Code`_: ``$07``
 
 This is a demo version of Robot Poncots. 500 copies were distributed as a prize. The cartridge has never been dumped.
 

@@ -8,18 +8,18 @@ GBKiss content is stored in files. Players can run software_ files directly, and
 
 Files are marked with one of five symbols:
 
-*  |bullseye| (bullseye): the special_ built-in `Kiss Mail`_ app
-*  |circle| (circle): executable software_
-*  |diamond| (diamond): executable software_ with slot limitations
-*  |cross| (cross): software_ with unmet cartridge limitations
-*  |triangle| (triangle): data_ files
+*  |bullseye| (bullseye): the special_ built-in `Kiss Mail`_ app. Can be run but not sent.
+*  |circle| (circle): executable software_. Can be run and sent.
+*  |diamond| (diamond): executable software_ with storage limitations. Can be run and sometimes sent.
+*  |cross| (cross): software_ with unmet cartridge limitations. Cannot be run.
+*  |triangle| (triangle): data_ files. Can be opened in associated software, if installed.
 
 .. _menu: {filename}menu/index.rst
 
 Software
 --------
 
-Software files are marked with |bullseye|, |circle|, or |diamond|. |diamond|-type software must be installed in specific slots, so there is a limit on the number of |diamond|-type files installed separate from the space required.
+Software files are marked with |bullseye|, |circle|, or |diamond|. |diamond|-type software can only be sent when the recipient has 31 blocks free.
 
 Special
 ~~~~~~~

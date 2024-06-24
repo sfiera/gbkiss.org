@@ -81,6 +81,11 @@ The following cartridge codes are known:
 * ``$08``: Robot Poncots `Sun <{filename}/cart/hrej/index.rst>`_, `Star <{filename}/cart/hrcj/index.rst>`_, `Moon <{filename}/cart/h3uj/index.rst>`_, and `Comic BomBom <{filename}/cart/h5uj/index.rst>`_
 * ``$fe``: `GBKiss Mini Games <{filename}/cart/akaj/index.rst>`_
 
+In addition, there are two special values of the cartridge code:
+
+* ``$00``: used for software that is universal and can run on any cartridge.
+* ``$ff``: used for `Kiss Mail`_. Also used on files as they are being received, so that they will not be marked as executable until the transfer successfully completes.
+
 Creator Code
 ------------
 

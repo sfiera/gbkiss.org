@@ -7,16 +7,19 @@ Kiss Menu
 In the GBKiss menu, players can select files with the D-Pad and A. There are six options in the menu:
 
 *  実行 (“Run”): execute software, or open data in the associated software
-*  情報 (“Info”): show information about file
-*  整理 (“Organize”): move file to a different position in the menu
-*  送信 (“Send”): initiate sending the file to another cartridge
+*  情報 (“Info”): show information about the selected file
+*  整理 (“Organize”): move the selected file to a different position in the menu
+*  送信 (“Send”): initiate sending the selected file to another cartridge
 *  受信 (“Receive”): initiate receiving a file from another cartridge
-*  削除 (“Delete”): delete the file
+*  削除 (“Delete”): delete the selected file
 
-The Start button immediately goes to the Send screen. B exits GBKiss. Holding down Select while using the D-Pad enables fast scrolling.
+When “Receive” is chosen on a non-empty slot, the selected file will be deleted and replaced with the received file. The Start button immediately enters Receive mode, and selects the next empty slot automaticaly.
 
-The GBKiss menu has slots for 120 files, but due to block_ size limits it is not possible to store that many files on most cartridges_.
+B exits GBKiss. Holding down Select while using the D-Pad enables fast scrolling.
 
+The GBKiss menu has slots for 120 files, but due to storage_ limits it is not possible to store that many files on most cartridges_.
+
+.. _storage: {filename}/tech/storage.rst
 .. _cartridges: {filename}/cart/index.rst
 
 Images

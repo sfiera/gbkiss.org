@@ -109,15 +109,16 @@ Unsupported Cartridges
 
 Several games were released using modified software or hardware that omits GBKiss functionality:
 
-*  2 international releases without infrared connectivity:
-
-   *  Pocket Bomberman (B/W, Europe) [DMG-AKOP-EUR]
-   *  Pocket Bomberman (Color, International) [DMG-AKQE-USA, DMG-AKQP-EUR]
-
-*  2 Japanese releases with HuC-1 infrared connectivity but no GBKiss support:
+*  2 Japanese releases with HuC-1 infrared connectivity but no GBKiss software:
 
    *  `Chousoku Spinner <{filename}ayyj/index.rst>`_ [DMG-AYYJ-JPN]
    *  Pokémon Card GB (Japan) [DMG-ACXJ-JPN]
+
+*  3 international releases without an infrared-capable mapper in the cartridge:
+
+   *  Pocket Bomberman (B/W, Europe) [DMG-AKOP-EUR]
+   *  Pocket Bomberman (Color, International) [DMG-AKQE-USA, DMG-AKQP-EUR]
+   *  Pokémon Trading Card Game (International) [DMG-AXQE-USA, DMG-AXQP-NOE, DMG-AXQX-EUR]
 
 *  1 international release with HuC-3 infrared connectivity but no GBKiss support:
 

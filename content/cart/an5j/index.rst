@@ -57,5 +57,7 @@ Sources
 * https://web.archive.org/web/19990427152551/http://www.hudson.co.jp/new/necgb/index.html
 * https://web.archive.org/web/20000618073336/http://www.hudson.co.jp/SLG/soft/necgb.html
 * https://web.archive.org/web/19990429113503/http://www.hudson.co.jp/SLG/down.html
+* https://archive.org/details/nectaris-gb-manual/nectaris-manual
+* https://archive.org/details/nectaris-gb-manual/nectaris-kiss-link
 
 .. include:: ../../epilog.rsti

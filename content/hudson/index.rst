@@ -68,14 +68,14 @@ Credited as つもり. Likely Masaki Tsumori.
 S.KIMURA
 ~~~~~~~~
 
-Identity unknown.
+Likely Shusaku Kimura.
 
 * `Poker <{filename}/file/poker/index.rst>`_
 
 NONCHAN
 ~~~~~~~
 
-Possibly Kazuhiko Nonaka.
+Likely Junko Koura.
 
 * `Koura 1 <{filename}/file/puzzle-game/koura-1.rst>`_
 * `Koura 2 <{filename}/file/puzzle-game/koura-3.rst>`_
@@ -84,6 +84,6 @@ Possibly Kazuhiko Nonaka.
 SEZAKI
 ~~~~~~
 
-Likely Hidenori Sezaki.
+Likely Reona Sezaki.
 
 * `Sezaki <{filename}/file/mogutte-nanbo/sezaki.rst>`_

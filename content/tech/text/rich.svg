@@ -6,12 +6,12 @@
     path { stroke-width: 2px; stroke-linejoin: round; fill-rule: evenodd }
     text { font: 13px monospace; text-anchor: middle; alignment-baseline: central }
   </style>
-  <path d="M22,22h16v16h-16zM22,62h316v96h-60v20h-16v-20h-24v20h-216v-16h20v-24h-20zM258,118v24h24v-24zM2,352h96v16h-96z" fill="rgba(0, 0, 255, 0.2)" stroke="rgba(0, 0, 255, 0.8)"/>
-  <path d="M322,162h16v16h-16zM2,372h96v16h-96z" fill="rgba(0, 127, 255, 0.2)" stroke="rgba(0, 127, 255, 0.8)"/>
-  <path d="M62,222h276v56h-40v20h-276v-56h40zM122,352h96v16h-96z" fill="rgba(255, 0, 0, 0.2)" stroke="rgba(255, 0, 0, 0.8)"/>
-  <path d="M262,122h16v16h-16zM242,162h16v16h-16zM282,162h36v16h-36zM242,352h96v16h-96z" fill="rgba(0, 127, 0, 0.2)" stroke="rgba(0, 127, 0, 0.8)"/>
-  <path d="M302,282h36v16h-36zM122,372h96v16h-96z" fill="rgba(255, 127, 0, 0.2)" stroke="rgba(255, 127, 0, 0.8)"/>
-  <path d="M42,22h296v16h-160v20h-156v-16h20zM242,372h96v16h-96z" fill="rgba(191, 191, 0, 0.2)" stroke="rgba(191, 191, 0, 0.8)"/>
+  <path d="M22,22h16v16h-16zM22,62h316v96h-60v20h-16v-20h-24v20h-216v-16h20v-24h-20zM258,118v24h24v-24zM2,352h96v16h-96z" fill="rgba(0, 0, 255, 0.2)" stroke="rgb(0, 0, 255)"/>
+  <path d="M322,162h16v16h-16zM2,372h96v16h-96z" fill="rgba(0, 127, 255, 0.2)" stroke="rgb(0, 127, 255)"/>
+  <path d="M62,222h276v56h-40v20h-276v-56h40zM122,352h96v16h-96z" fill="rgba(255, 0, 0, 0.2)" stroke="rgb(255, 0, 0)"/>
+  <path d="M262,122h16v16h-16zM242,162h16v16h-16zM282,162h36v16h-36zM242,352h96v16h-96z" fill="rgba(0, 127, 0, 0.2)" stroke="rgb(0, 127, 0)"/>
+  <path d="M302,282h36v16h-36zM122,372h96v16h-96z" fill="rgba(255, 127, 0, 0.2)" stroke="rgb(255, 127, 0)"/>
+  <path d="M42,22h296v16h-160v20h-156v-16h20zM242,372h96v16h-96z" fill="rgba(191, 191, 0, 0.2)" stroke="rgb(191, 191, 0)"/>
 
   <text x="30" y="10">x0</text>
   <text x="50" y="10">x1</text>

@@ -60,9 +60,11 @@ DrawString ($69)
 
 Parameters:
 
-*  ``hl``: address of ``$00``-terminated string
+*  ``hl``: address of ``$00``-terminated `rich text`_ string
 
 Draws a sequence of tiles at the current pen position.
+
+.. _rich text: {filename}text.rst#rich-text
 
 IRListen ($72)
 ~~~~~~~~~~~~~~

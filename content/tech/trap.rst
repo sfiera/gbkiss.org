@@ -45,7 +45,7 @@ Parameters:
 
 *  ``hl``: address of layout data
 
-Draws a “layout”, a shorthand for a sequence of alternating `MovePen ($B8)`_ and `DrawString ($69)`_ traps. The layout data contains (x, y, str) repeated until a terminating ``$FF``:
+Draws a “layout”, a shorthand for a sequence of alternating `DrawAt ($B8)`_ and `DrawString ($69)`_ traps. The layout data contains (x, y, str) repeated until a terminating ``$FF``:
 
 .. code-block:: ca65
 
@@ -106,8 +106,8 @@ Parameters:
 
 Sends data from this cartridge to another, after a session has been successfully set up with `IROpen ($7C)`_ and `IRListen ($72)`_.
 
-MovePen ($B8)
-~~~~~~~~~~~~~
+DrawAt ($B8)
+~~~~~~~~~~~~
 
 Parameters:
 

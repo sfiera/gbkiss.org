@@ -157,7 +157,7 @@ Parameters:
 
 *  ``a``: tile index
 
-Draws a single tile at the current pen position.
+Draws a single tile at the current pen position. Moves the pen one tile right.
 
 DrawString ($69)
 ~~~~~~~~~~~~~~~~
@@ -166,7 +166,7 @@ Parameters:
 
 *  ``hl``: address of ``$00``-terminated `rich text`_ string
 
-Draws a sequence of tiles at the current pen position.
+Draws a sequence of tiles at the current pen position. Moves the pen to the position following the final tile in the string.
 
 .. _rich text: {filename}text.rst#rich-text
 
@@ -175,6 +175,8 @@ DrawStringList ($6A)
 
 Parameters:
 
+*  ``d``: x position of first line
+*  ``e``: y position of first line
 *  ``hl``: address of string list
 
 Draws a sequence of `rich text`_ strings on consecutive lines. Each string is individually terminated by ``$00``, and the whole list is terminated by an additional ``$00``.
@@ -190,23 +192,31 @@ Draws a “layout”, a shorthand for a sequence of alternating `DrawAt ($B8)`_ 
 
 .. code-block:: ca65
 
-   db $08, $00, "TOP", $00
-   db $07, $11, "BOTTOM", $00
-   db $00, $09, "LEFT", $00
-   db $0f, $09, "RIGHT", $00
+   db $08, $00, "TOP\0"
+   db $07, $11, "BOTTOM\0"
+   db $00, $09, "LEFT\0"
+   db $0f, $09, "RIGHT\0"
    db $ff
+
 
 DrawBox ($58)
 ~~~~~~~~~~~~~
 
 Parameters:
 
-*  ``b``: width of box
-*  ``c``: height of box
-*  ``d``: left origin of box
-*  ``e``: top origin of box
+*  ``b``: width of box (3–32)
+*  ``c``: height of box (3–32)
+*  ``d``: left origin of box (0–45)
+*  ``e``: top origin of box (0–45)
 
-Draws a decorative box.
+Draws a decorative box. Uses tiles ``$75`` through ``$7B`` and ``$7F``:
+
+.. code-block:: text
+
+   $77, $79, $79, $79, $78
+   $75, $7F, $7F, $7F, $76
+   $75, $7F, $7F, $7F, $76
+   $7A, $7C, $7C, $7C, $7B
 
 Audio
 -----

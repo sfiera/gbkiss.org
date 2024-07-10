@@ -32,6 +32,17 @@ Parameters:
 
 Exits the currently-running GBKiss software and returns to the menu.
 
+This trap never returns.
+
+FileSearch ($6B)
+~~~~~~~~~~~~~~~~
+
+FileRead ($E4)
+~~~~~~~~~~~~~~
+
+FileWrite ($E9)
+~~~~~~~~~~~~~~~
+
 Utility
 -------
 
@@ -158,6 +169,15 @@ Parameters:
 *  ``a``: tile index
 
 Draws a single tile at the current pen position. Moves the pen one tile right.
+
+DrawCtrlChar ($B9)
+~~~~~~~~~~~~~~~~~~
+
+Parameters:
+
+*  ``a``: control character value (``$01``-``$17``)
+
+Applies the effect of the given control character.
 
 DrawString ($69)
 ~~~~~~~~~~~~~~~~

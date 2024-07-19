@@ -102,7 +102,7 @@ Some of the built-in tones, such as Alarm 2, demonstrate volume control.
 Notes
 -----
 
-Not all alarm tones appear to be programmed like this. Pocket Family GB has three blocks in its ROM that look like alarm tones. The first is Afterschool chime; the second Silent Night; and the third appears incomplete and unused:
+Not all alarm tones are programmed like this. Pocket Family GB has three programmable alarms in its ROM (Afterschool Chime, Silent Night, and Ambulance). The remainder are built into the mapper.
 
 .. code-block:: text
 

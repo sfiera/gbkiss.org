@@ -39,8 +39,10 @@ Each bank of CRAM used by GBKiss is divided into regions, each with a 6-byte hea
    * ``$53`` (``S``), marking one of the two special regions (the Owner_ region and the `File Table`_ region)
 
 *  1 byte: bitwise complement of the type.
-*  2 bytes: the address of the previous region’s header, in mapped space. For the zero region, this may be garbage.
-*  2 bytes: the address of the next region’s header, in mapped space. For the final region of each bank, this is ``$C000``.
+*  2 bytes: the address of the previous region’s header, in mapped space.
+*  2 bytes: the address of the next region’s header, in mapped space.
+
+In the the first region of the first bank, the pointer to the previous region refers to ``$4000``, where Kiss Mail is located in ROM. In the first region of each other bank, the pointer refers to the previous region’s header as normal, despite the bank mismatch. In the last region of each bank, the pointer to the next region refers to ``$C000``.
 
 The procedure for adding circle (“regular”) files is:
 
@@ -69,6 +71,8 @@ The procedure for removing files is:
 3. If the previous region is also free space, merge the regions together.
 4. If the next region is also free space, merge the regions together.
 5. Remove the file’s address from the `file table`_.
+
+When dividing or merging regions, the previous/next pointers in each region header must be updated to preserve the integrity of the linked list.
 
 Owner
 ~~~~~

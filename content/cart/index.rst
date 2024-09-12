@@ -109,10 +109,11 @@ Unsupported Cartridges
 
 Several games were released using modified software or hardware that omits GBKiss functionality:
 
-*  2 Japanese releases with HuC-1 infrared connectivity but no GBKiss software:
+*  3 Japanese releases with HuC-1 infrared connectivity but no GBKiss software:
 
    *  `Chousoku Spinner <{filename}ayyj/index.rst>`_ [DMG-AYYJ-JPN]
    *  Pokémon Card GB (Japan) [DMG-ACXJ-JPN]
+   *  Dai-Kaiju Monogatari The Miracle of the Zone II (Japan) [DMG-AM6J-JPN]
 
 *  3 international releases without an infrared-capable mapper in the cartridge:
 

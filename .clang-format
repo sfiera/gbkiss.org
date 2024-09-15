@@ -1,0 +1,9 @@
+---
+BasedOnStyle:                                    Chromium
+
+ColumnLimit:                                     99
+AllowShortFunctionsOnASingleLine:                All
+BinPackArguments:                                false
+InsertTrailingCommas:                            Wrapped
+JavaScriptQuotes:                                Double
+SpacesInContainerLiterals:                       false

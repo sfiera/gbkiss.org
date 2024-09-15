@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" href="{{ SITEURL }}/favicon.png">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css" />
+    {% if page.script %}<script src="{{ SITEURL }}{{ page.script }}"></script>{% endif %}
   </head>
 
   <body>

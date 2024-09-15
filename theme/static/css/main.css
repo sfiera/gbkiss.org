@@ -3,7 +3,7 @@ body {
   margin: 1em;
 }
 
-body > * {
+body > *, dialog {
   font-family: sans-serif;
   font-size: 100%;
   background-color: hsl(0, 0%, 100%);
@@ -37,18 +37,30 @@ header h2 {
     margin: 0;
 }
 
-p, ul, ol, table, .gallery, .gallery-small {
+p, ul, ol, table, .gallery, .gallery-small, dialog form {
     margin: 0.5em 0 0 0;
     line-height: 1.25em;
 }
 
 pre, blockquote {
     margin: 0.5em 0 0 2.5em;
+}
+
+.bordered {
+   margin: 0.25em 0;
+}
+
+pre, blockquote, .bordered {
     padding: 1em;
     line-height: 1.25em;
     border: thin solid hsl(0, 0%, 40%);
     border-radius: 0.25em;
     background: hsla(0, 0%, 0%, 5%);
+}
+
+.dropTarget {
+   border-color: hsl(220, 75%, 50%);
+   background: hsla(220, 75%, 50%, 25%);
 }
 
 ul ul, ul ol, ol ul, ol ol {
@@ -81,7 +93,8 @@ footer p {
     font-size: 90%;
 }
 
-img[src$=".png"] {
+img[src$=".png"],
+img[src^="data:image/png"] {
     image-rendering: pixelated;
 }
 
@@ -111,4 +124,26 @@ img[src$=".png"] {
 
 td.stub {
    text-align: right;
+}
+
+button {
+   margin: 0.25em;
+   padding: 0 0.25em;
+}
+
+button:disabled img {
+  opacity: 0.25;
+}
+
+dialog {
+   width: 70%;
+   top: 30%;
+}
+
+dialog form {
+   text-align: center;
+}
+
+::backdrop {
+   background: hsla(0, 0%, 0%, 40%);
 }

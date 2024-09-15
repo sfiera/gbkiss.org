@@ -116,25 +116,33 @@ textImage.src = "/tech/text/font.png"
 
 const fillColors = ["#fff", "#aaa", "#555", "#000"];
 
-const button = (title) => {
-  const el = document.createElement("button")
-  el.innerText = title;
+const makeElement = (tagName, properties = {}) => {
+  const el = document.createElement(tagName);
+  Object.entries(properties).forEach(([key, value]) => {
+    if (key === "children") {
+      el.replaceChildren(...value);
+    } else if (key === "eventListeners") {
+      Object.entries(value).forEach(([type, listener]) => {
+        el.addEventListener(type, listener);
+      });
+    } else {
+      el[key] = value;
+    }
+  });
   return el;
 };
 
-const div = (className, text) => {
-  const el = document.createElement("div");
-  el.className = className;
-  return el;
+makeImage = (width, height, fn) => {
+  const canvas = makeElement("canvas", {
+    width: width,
+    height: height,
+  });
+  fn(canvas.getContext("2d"));
+  return canvas.toDataURL();
 };
 
-decodeImage = (buffer, width, height, bpp) => {
-  const canvas = document.createElement("canvas");
-  canvas.width = width;
-  canvas.height = height;
-
+decodeImage = (buffer, width, height, bpp) => makeImage(width, height, ctx => {
   data = new DataView(buffer);
-  const ctx = canvas.getContext("2d");
   let i = 0;
   for (let col = 0; col < width; col += 8) {
     for (let row = 0; row < height; row++) {
@@ -150,16 +158,9 @@ decodeImage = (buffer, width, height, bpp) => {
       }
     }
   }
+});
 
-  return canvas.toDataURL();
-};
-
-textIcon = string => {
-  const canvas = document.createElement("canvas");
-  canvas.width = 32;
-  canvas.height = 24;
-
-  const ctx = canvas.getContext("2d");
+textIcon = string => makeImage(32, 24, ctx => {
   string.split("").forEach((ch, i) => {
     ch = plainCharSet.indexOf(ch);
     const sx = (ch % 16) * 8;
@@ -168,9 +169,7 @@ textIcon = string => {
     const dy = Math.floor(i / 4) * 8;
     ctx.drawImage(textImage, sx, sy, 8, 8, dx, dy, 8, 8);
   });
-
-  return canvas.toDataURL();
-};
+});
 
 const decodePlainText = buffer =>
     new Uint8Array(buffer).reduce((s, ch) => s + plainCharSet[ch], "");
@@ -189,97 +188,102 @@ const decodeRichText = buffer => new Uint8Array(buffer).reduce((state, ch) => {
   } else if (ch <= 0xDD) {
     return [string + kanaCharSet[ch - 0xA2], kanaCharSet];
   } else if (ch <= 0xDF) {
-    ch = diacritics[ch - 0xDE][string[string.length - 1]];
-    if (ch) {
-      return [string.slice(0, string.length - 1) + ch, kanaCharSet];
-    }
-    return [string, kanaCharSet];
+    const head = string.slice(0, -1), tail = string.slice(-1);
+    return [head + (diacritics[ch - 0xDE][tail] || tail), kanaCharSet];
   }
   return [string, kanaCharSet]
 }, ["", richKatakanaCharSet])[0];
 
-const dataUrl = buffer => {
-  return new Promise(resolve => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(reader.result);
-    reader.readAsDataURL(new Blob([buffer]));
-  });
-};
+const hexByte = byte => "$" + ("0" + byte.toString(16)).slice(-2);
+
+const dataUrl = buffer => new Promise(resolve => {
+  const reader = new FileReader();
+  reader.onload = () => resolve(reader.result);
+  reader.readAsDataURL(new Blob([buffer]));
+});
 
 const downloadUrl = (filename, url) => {
-  const el = document.createElement("a");
-  el.setAttribute("download", filename);
-  el.setAttribute("href", url);
-  el.click();
+  makeElement("a", {download: filename, href: url}).click();
 };
 
-const selectFile = accept => {
-  return new Promise(resolve => {
-    const input = document.createElement("input");
-    input.type = "file";
-    input.accept = accept;
-    input.click();
-    input.addEventListener("change", e => {resolve(input.files[0])});
-    input.addEventListener("cancel", e => {resolve(null)});
+const selectFile = accept => new Promise(resolve => {
+  makeElement("input", {
+    type: "file",
+    accept: accept,
+    eventListeners: {
+      change: e => {resolve(e.target.files[0])},
+      cancel: e => {resolve(null)},
+    },
+  }).click();
+});
+
+const typeIcon = file => {
+  let src = "/file/menu/triangle.svg";
+  if (file.isExecutable) {
+    if (file.ownerId === 1) {
+      src = "/file/menu/bullseye.svg";
+    } else if (file.isZeroFile) {
+      src = "/file/menu/diamond.svg";
+    } else {
+      src = "/file/menu/circle.svg";
+    }
+  }
+  return makeElement("img", {
+    src: src,
+    style: "width: 0.75em; height: 0.75em",
   });
 };
 
-const runModal = async (text, bullets, buttons) => {
-  const dlog = document.createElement("dialog");
-  const p = document.createElement("p");
-  p.innerText = text;
-  dlog.appendChild(p);
-  if (bullets) {
-    const ul = document.createElement("ul");
-    bullets.forEach(item => {
-      const li = document.createElement("li");
-      li.innerText = item;
-      ul.appendChild(li);
-    });
-    dlog.appendChild(ul);
-  }
+const runModal = (children, buttons) => new Promise(resolve => {
+  const dlog = makeElement("dialog", {
+    children: children,
+  });
 
-  const form = document.createElement("form");
-  form.method = "dialog";
-  buttons.forEach(b => {
-    const button = document.createElement("button");
-    button.innerText = b;
-    button.value = b;
-    form.appendChild(button);
+  const form = makeElement("form", {
+    method: "dialog",
+    children: buttons.map(b => makeElement("button", {innerText: b, value: b})),
   });
   form.firstChild.autofocus = true;
   dlog.appendChild(form);
 
+  dlog.addEventListener("close", e => {
+    document.body.removeChild(dlog);
+    resolve(dlog.returnValue);
+  });
   document.body.appendChild(dlog);
   dlog.showModal();
-  const promise = new Promise(resolve => {
-    dlog.addEventListener("close", e => {
-      document.body.removeChild(dlog);
-      resolve(dlog.returnValue);
-    });
-  });
-  return promise;
-};
+});
 
 class KissFile {
   constructor(arrayBuffer) {
     this.data = new DataView(arrayBuffer);
     const size = this.data.getUint16(0, true);
     if (size != arrayBuffer.byteLength) {
-      throw new Error("invalid gbf length: " + size + " != " + arrayBuffer.byteLength);
+      throw new Error(`invalid gbf length: ${size} != ${arrayBuffer.byteLength}`);
     }
   }
 
   get size() { return this.data.byteLength; }
-  get flags() { return this.data.getUint8(2); }
   get cartId() { return this.data.getUint8(3); }
   get ownerId() { return this.data.getUint8(5); }
+
+  get flags() { return this.data.getUint8(2); }
+  get hasIcon() { return this.flags & 0x10; }
+  get hasIcon2bpp() { return this.flags & 0x08; }
+  get isExecutable() { return this.flags & 0x04; }
+  get isZeroFile() { return this.flags & 0x02; }
+  get hasHistory() { return this.flags & 0x01; }
+
+  get author() {
+    const history = 5 + this.data.getUint8(4);
+    return decodePlainText(this.data.buffer.slice(history + 2, history + 12)).trimEnd();
+  }
 
   get title() {
     const headerSize = this.data.getUint8(4);
     let titleEnd = 5 + headerSize;
-    if (this.flags & 0x10) {
-      if (this.flags & 0x08) {
+    if (this.hasIcon) {
+      if (this.hasIcon2bpp) {
         titleEnd -= 0xC0;
       } else {
         titleEnd -= 0x60;
@@ -289,8 +293,8 @@ class KissFile {
   }
 
   get iconUrl() {
-    if (this.flags & 0x10) {
-      const bpp = (this.flags & 0x08) ? 2 : 1;
+    if (this.hasIcon) {
+      const bpp = (this.hasIcon2bpp) ? 2 : 1;
       const iconEnd = 5 + this.data.getUint8(4);
       const iconStart = iconEnd - (0x60 * bpp);
       return decodeImage(this.data.buffer.slice(iconStart, iconEnd), 32, 24, bpp);
@@ -309,7 +313,7 @@ class KissFile {
 class SaveFile {
   constructor(arrayBuffer) {
     if (arrayBuffer.length < 0x8000) {
-      throw new Error("save file too short: " + arrayBuffer.length);
+      throw new Error(`save file too short: ${arrayBuffer.length}`);
     }
     this.data = new DataView(arrayBuffer);
 
@@ -322,11 +326,11 @@ class SaveFile {
       const typeInv = this.data.getUint8(cursor + 1);
       const next = this.data.getUint16(cursor + 4, true);
       if ((type ^ typeInv) != 0xFF) {
-        throw new Error("invalid type: " + type);
+        throw new Error(`invalid type: ${type}`);
       } else if (this.data.getUint16(cursor + 2, true) != prev) {
-        throw new Error("invalid prev pointer: " + prev);
+        throw new Error(`invalid prev pointer: ${prev}`);
       } else if ((next < 0xA002) || (next > 0xC000)) {
-        throw new Error("invalid next pointer: " + next);
+        throw new Error(`invalid next pointer: ${next}`);
       }
       if (type === 0x53) {  // 'S'
         if (index === null) {
@@ -349,9 +353,9 @@ class SaveFile {
       }
     }
     if (profile != (index + 486)) {
-      throw new Error("index is wrong size: " + (profile - index));
+      throw new Error(`index is wrong size: ${profile - index}`);
     } else if ((profile & 0x1FFF) > 0x1F86) {
-      throw new Error("profile is truncated: " + (profile & 0x1FFF));
+      throw new Error(`profile is truncated: ${profile & 0x1FFF}`);
     }
 
     this.indexPos = index;
@@ -383,7 +387,7 @@ class SaveFile {
 class Editor {
   constructor(parent) {
     this.saveFile = null;
-    this.panel = document.createElement("div");
+    this.panel = makeElement("div");
 
     this.buttons = {
       load: {
@@ -424,53 +428,107 @@ class Editor {
       },
     };
 
-    const buttons = document.createElement("div");
+    const buttons = makeElement("div");
     Object.values(this.buttons).forEach(button => {
-      button.init(document.createElement("button"));
+      button.init(makeElement("button"));
       buttons.appendChild(button.element);
     });
 
     parent.replaceChildren(buttons, this.panel);
   }
 
-  figureFor(file) {
-    const figure = div("figure");
-    figure.draggable = true;
+  figureFor(index, file) {
+    const figure = makeElement("div", {
+      className: "figure",
+      draggable: true,
+    });
 
-    const img = document.createElement("img");
-    img.draggable = false;
-    img.style = "width: 64px; height: 48px";
-    if (file) {
-      img.src = file.iconUrl || brokenIcon;
-      const title = document.createElement("p");
-      title.innerText = file.title;
-      const actions = document.createElement("p");
-
-      const download = document.createElement("button");
-      const downloadIcon = document.createElement("img");
-      downloadIcon.src = "/edit/download.svg";
-      downloadIcon.style = "width: 0.75em; height: 0.75em";
-      downloadIcon.draggable = false;
-      download.appendChild(downloadIcon);
-      download.addEventListener("click", async e => {
-        e.preventDefault();
-        downloadUrl(file.title + ".gbf", await file.dataUrl);
-      });
-
-      const remove = document.createElement("button");
-      const removeIcon = document.createElement("img");
-      removeIcon.src = "/edit/remove.svg";
-      removeIcon.style = "width: 0.75em; height: 0.75em";
-      removeIcon.draggable = false;
-      remove.appendChild(removeIcon);
-      remove.disabled = true;
-
-      actions.replaceChildren(download, remove);
-      figure.replaceChildren(img, title, actions);
-    } else {
+    const img = makeElement("img", {
+      draggable: false,
+      style: "width: 64px; height: 48px",
+    });
+    figure.appendChild(img);
+    if (!file) {
       img.src = emptyIcon;
-      figure.replaceChildren(img);
+      return figure;
     }
+
+    img.src = file.iconUrl || brokenIcon;
+
+    const actions = makeElement("form");
+
+    const info = makeElement("button", {
+      children: [makeElement("img", {
+        src: "/edit/info.svg",
+        style: "width: 0.75em; height: 0.75em",
+        draggable: false,
+      })],
+      eventListeners: {
+        click: async e => {
+          e.preventDefault();
+          runModal(
+              [
+                makeElement("h3", {innerText: file.title}),
+                makeElement("ul", {
+                  children: [
+                    makeElement("li", {
+                      innerText: `Size: ${Math.floor((file.size + 255) / 256)} blocks (${
+                          file.size} bytes)`,
+                    }),
+                    makeElement("li", {children: ["Type: ", typeIcon(file)]}),
+                    file.hasHistory ? makeElement("li", {innerText: `Author: ${file.author}`}) :
+                                      "",
+                    makeElement("li", {
+                      children: [
+                        "Owner Code: ",
+                        makeElement("tt", {innerText: hexByte(file.ownerId)}),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+              ["Close"]);
+        },
+      },
+    });
+    actions.appendChild(info);
+
+    const download = makeElement("button", {
+      disabled: (file.ownerId === 1),
+      children: [makeElement("img", {
+        src: "/edit/download.svg",
+        style: "width: 0.75em; height: 0.75em",
+        draggable: false,
+      })],
+      eventListeners: {
+        click: async e => {
+          e.preventDefault();
+          downloadUrl(file.title + ".gbf", await file.dataUrl);
+        },
+      },
+    });
+    actions.appendChild(download);
+
+    const remove = makeElement("button", {
+      disabled: true,
+      children: [makeElement("img", {
+        src: "/edit/remove.svg",
+        style: "width: 0.75em; height: 0.75em",
+        draggable: false,
+      })],
+      eventListeners: {
+        "click": async e => {
+          e.preventDefault();
+        },
+      },
+    });
+    actions.appendChild(remove);
+
+    figure.appendChild(actions);
+
+    const title = makeElement("p", {innerText: file.title});
+    figure.appendChild(title);
+
     return figure;
   }
 
@@ -480,15 +538,20 @@ class Editor {
       this.saveFile = new SaveFile(buffer);
     } catch {
       runModal(
-          "GBKiss save data not found",
-          ["Is this file a Game Boy save file?",
-           "Is the associated game GBKiss-enabled?",
-           "Has the owner info been initialized?"],
+          [
+            makeElement("p", {innerText: "GBKiss save data not found"}),
+            makeElement("ul", {
+              children: [
+                makeElement("li", {innerText: "Is this file a Game Boy save file?"}),
+                makeElement("li", {innerText: "Is the associated game GBKiss-enabled?"}),
+                makeElement("li", {innerText: "Has the owner info been initialized?"}),
+              ],
+            }),
+          ],
           ["OK"]);
       return;
     }
-    const contents = document.createElement("div");
-    contents.className = "gallery-small";
+    const contents = makeElement("div", {className: "gallery-small"});
     let emptyCount = 0;
     this.saveFile.files.forEach((file, i) => {
       if (!file) {
@@ -496,10 +559,10 @@ class Editor {
         return;
       }
       for (let j = 0; j < emptyCount; ++j) {
-        contents.appendChild(this.figureFor(null));
+        contents.appendChild(this.figureFor(i - emptyCount + j, null));
       }
       emptyCount = 0;
-      contents.appendChild(this.figureFor(file));
+      contents.appendChild(this.figureFor(i, file));
     });
     this.buttons.close.element.disabled = false;
     this.buttons.load.element.disabled = true;
@@ -507,9 +570,10 @@ class Editor {
   }
 
   async close() {
-    const dropbox = document.createElement("div");
-    dropbox.className = "bordered";
-    dropbox.innerText = "Load file or drop here to edit";
+    const dropbox = makeElement("div", {
+      className: "bordered",
+      innerText: "Load file or drop here to edit",
+    });
 
     dropbox.addEventListener("dragenter", e => {dropbox.classList.add("dropTarget")});
     dropbox.addEventListener("dragleave", e => {dropbox.classList.remove("dropTarget")});

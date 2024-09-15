@@ -33,7 +33,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header h1,
-header h2 {
+header h2,
+dialog h3 {
     margin: 0;
 }
 
@@ -128,7 +129,6 @@ td.stub {
 
 button {
    margin: 0.25em;
-   padding: 0 0.25em;
 }
 
 button:disabled img {
@@ -142,6 +142,16 @@ dialog {
 
 dialog form {
    text-align: center;
+}
+
+.gallery-small form {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-small button {
+   padding: 0;
+   margin: 0 0.125em;
 }
 
 ::backdrop {

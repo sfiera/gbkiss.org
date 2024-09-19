@@ -1,3 +1,11 @@
+const RGN_HEADER_SIZE = 6;
+const RGN = {
+  FREE: 0x46,
+  REGULAR: 0x52,
+  INITIAL: 0x5A,
+  SPECIAL: 0x53,
+};
+
 const kissMailStub =
     new Uint8Array(
         [0x0F, 0x00, 0x06, 0x00, 0x0A, 0x01, 0x4B, 0x49, 0x53, 0x53, 0x20, 0x4D, 0x41, 0x49, 0x4C])
@@ -196,7 +204,7 @@ const decodeRichText = buffer => new Uint8Array(buffer).reduce((state, ch) => {
 
 const hexByte = byte => "$" + ("0" + byte.toString(16)).slice(-2);
 
-const dataUrl = buffer => new Promise(resolve => {
+const toDataUrl = buffer => new Promise(resolve => {
   const reader = new FileReader();
   reader.onload = () => resolve(reader.result);
   reader.readAsDataURL(new Blob([buffer]));
@@ -254,11 +262,63 @@ const runModal = (children, buttons) => new Promise(resolve => {
   dlog.showModal();
 });
 
+class Addr {
+  constructor({bank, gb, sram}) {
+    if (typeof gb !== "undefined") {
+      if (typeof sram !== "undefined") {
+        throw new Error("passed both gb and sram");
+      } else if ((bank < 0) || (4 <= bank)) {
+        throw new Error(`invalid addr bank: ${bank}`);
+      } else if ((gb < 0xA000) || (0xC000 < gb)) {
+        throw new Error(`invalid mapped addr: ${gb}`);
+      }
+      [this.bank, this.gb] = [bank, gb];
+    } else if (typeof sram !== "undefined") {
+      if ((sram < 0) || (0x8000 <= sram)) {
+        throw new Error(`invalid sram addr: ${sram}`);
+      }
+      [this.bank, this.gb] = [sram >> 13, (sram & 0x1FFF) + 0xA000];
+    } else {
+      throw new Error("invalid arguments")
+    }
+  }
+
+  get sram() { return (this.bank << 13) + (this.gb - 0xA000) }
+  get adjusted() { return this.gb === 0xC000 ? this.add(2) : this }
+
+  add(offset) { return new Addr({sram: this.sram + offset}) }
+  sub(offset) { return new Addr({sram: this.sram - offset}) }
+};
+
+class RegionHeader {
+  constructor(type, addr, prev, next) {
+    [this.type, this.addr, this.prev, this.next] = [type, addr, prev, next];
+  }
+
+  static read(dataView, addr) {
+    const type = dataView.getUint8(addr.sram);
+    const typeCpl = dataView.getUint8(addr.sram + 1)
+    if ((type ^ typeCpl) !== 0xFF) {
+      throw new Error(`invalid region header at ${addr.sram}: ${type} ^ ${typeCpl}`);
+    }
+    const prevGb = dataView.getUint16(addr.sram + 2, true);
+    const prev = (addr.gb !== 0xA002) ? new Addr({bank: addr.bank, gb: prevGb}) :
+        (addr.bank > 0)               ? new Addr({bank: addr.bank - 1, gb: prevGb}) :
+                                        null;
+    const nextGb = dataView.getUint16(addr.sram + 4, true);
+    const next = new Addr({bank: addr.bank, gb: nextGb});
+    return new RegionHeader(type, addr, prev, next);
+  }
+
+  get size() { return this.next.sram - this.addr.sram - RGN_HEADER_SIZE }
+  get body() { return this.addr.add(RGN_HEADER_SIZE) }
+};
+
 class KissFile {
   constructor(arrayBuffer) {
     this.data = new DataView(arrayBuffer);
     const size = this.data.getUint16(0, true);
-    if (size != arrayBuffer.byteLength) {
+    if (size !== arrayBuffer.byteLength) {
       throw new Error(`invalid gbf length: ${size} != ${arrayBuffer.byteLength}`);
     }
   }
@@ -307,7 +367,7 @@ class KissFile {
     }
   }
 
-  get dataUrl() { return dataUrl(this.data.buffer); }
+  toDataUrl() { return toDataUrl(this.data.buffer); }
 };
 
 class SaveFile {
@@ -315,47 +375,39 @@ class SaveFile {
     if (arrayBuffer.length < 0x8000) {
       throw new Error(`save file too short: ${arrayBuffer.length}`);
     }
-    this.data = new DataView(arrayBuffer);
+    const copy = new ArrayBuffer(arrayBuffer.byteLength);
+    new Uint8Array(copy).set(new Uint8Array(arrayBuffer));
+    this.data = new DataView(copy);
 
-    let cursor = 2;
-    let prev = 0x4000;
+    let cursor = new Addr({sram: 0x0002});
+    let prev = null;
     let index = null;
     let profile = null;
     while (true) {
-      const type = this.data.getUint8(cursor);
-      const typeInv = this.data.getUint8(cursor + 1);
-      const next = this.data.getUint16(cursor + 4, true);
-      if ((type ^ typeInv) != 0xFF) {
-        throw new Error(`invalid type: ${type}`);
-      } else if (this.data.getUint16(cursor + 2, true) != prev) {
+      let rgn = RegionHeader.read(this.data, cursor);
+      if ((rgn.prev !== null) && (rgn.prev.sram !== prev)) {
         throw new Error(`invalid prev pointer: ${prev}`);
-      } else if ((next < 0xA002) || (next > 0xC000)) {
-        throw new Error(`invalid next pointer: ${next}`);
       }
-      if (type === 0x53) {  // 'S'
+      if (rgn.type === RGN.SPECIAL) {  // 'S'
         if (index === null) {
-          index = cursor + 6;
+          index = cursor.add(6);
         } else if (profile === null) {
-          profile = cursor + 6;
-          if (next != 0xC000) {
-            throw new Error("profile is not last");
+          profile = cursor.add(6);
+          if (rgn.next.gb !== 0xC000) {
+            throw new Error("profile region is not last");
           }
           break;
         }
       } else if (index !== null) {
-        throw new Error("index should be immediately followed by profile");
+        throw new Error("index region should be immediately followed by profile");
       }
-      prev = 0xA000 | (cursor & 0x1FFF);
-      if (next == 0xC000) {
-        cursor = (cursor & 0xE000) + 0x2002;
-      } else {
-        cursor = (cursor & 0xE000) + (next & 0x1FFF);
-      }
+      prev = cursor.sram;
+      cursor = rgn.next.adjusted
     }
-    if (profile != (index + 486)) {
-      throw new Error(`index is wrong size: ${profile - index}`);
-    } else if ((profile & 0x1FFF) > 0x1F86) {
-      throw new Error(`profile is truncated: ${profile & 0x1FFF}`);
+    if (profile.sram !== index.add(486).sram) {
+      throw new Error(`index is wrong size: ${profile.sram - index.sram}`);
+    } else if (profile.gb > 0xBF86) {
+      throw new Error(`profile is truncated: ${profile.sram}`);
     }
 
     this.indexPos = index;
@@ -370,18 +422,139 @@ class SaveFile {
     return list;
   }
 
+  getRegions() {
+    let cursor = new Addr({sram: 0x0002});
+    const rgns = [];
+    while (true) {
+      let rgn = RegionHeader.read(this.data, cursor);
+      if ((rgn.type == RGN.SPECIAL) && (rgn.next.gb == 0xC000)) {
+        break;
+      }
+      rgns.push(rgn);
+      cursor = rgn.next.adjusted
+    }
+    return rgns;
+  }
+
+  getUint8(addr) { return this.data.getUint8(addr.sram) }
+  setUint8(addr, value) { return this.data.setUint8(addr.sram, value) }
+  getUint16(addr) { return this.data.getUint16(addr.sram, true) }
+  setUint16(addr, value) { return this.data.setUint16(addr.sram, value, true) }
+  getUint32(addr) { return this.data.getUint32(addr.sram, true) }
+  setUint32(addr, value) { return this.data.setUint32(addr.sram, value, true) }
+
   fileAt(index) {
-    const addr = this.data.getUint16(this.indexPos + (index * 4), true);
-    if (addr === 0) {
+    const addr = new Addr({sram: this.getUint16(this.indexPos.add(index * 4))});
+    if (addr.sram === 0) {
       return null;
     }
-    const owner = this.data.getUint8(this.indexPos + (index * 4) + 3);
+    const owner = this.getUint8(this.indexPos.add(index * 4 + 3));
     if (owner === 1) {
       return new KissFile(kissMailStub);
     }
-    const size = this.data.getUint16(addr, true);
-    return new KissFile(this.data.buffer.slice(addr, addr + size));
+    const size = this.getUint16(addr);
+    return new KissFile(this.data.buffer.slice(addr.sram, addr.add(size).sram));
   }
+
+  delFileAt(index) {
+    const indexAddr = this.indexPos.add(index * 4);
+    const rgnAddr = new Addr({sram: this.getUint16(indexAddr)}).sub(RGN_HEADER_SIZE);
+    let rgn = RegionHeader.read(this.data, rgnAddr);
+
+    // Set the region type to $46 (free space).
+    this.setUint8(rgn.addr, RGN.FREE);
+    this.setUint8(rgn.addr.add(1), RGN.FREE ^ 0xFF);
+
+    // Merge this region into previous, if previous region is free too.
+    if (rgn.addr.bank === rgn.prev.bank) {
+      const prev = RegionHeader.read(this.data, rgn.prev);
+      if (prev.type === RGN.FREE) {
+        rgn = new RegionHeader(RGN.FREE, prev.addr, prev.prev, rgn.next);
+        this.setUint16(rgn.addr.add(4), rgn.next.gb);
+      }
+    }
+
+    // Merge next region into this, if next region is free too.
+    if (rgn.next.gb !== 0xC000) {
+      const next = RegionHeader.read(this.data, rgn.next)
+      if (next.type === RGN.FREE) {
+        rgn = new RegionHeader(RGN.FREE, rgn.addr, rgn.prev, next.next);
+        this.setUint16(rgn.addr.add(4), rgn.next.gb);
+      }
+    }
+
+    // Ensure next region points to this.
+    // There is always a next region, because only special regions are final.
+    this.setUint16(rgn.next.adjusted.add(2), rgn.addr.gb);
+
+    // Zero out the entry in the index.
+    this.setUint32(indexAddr, 0);
+  }
+
+  addFileAt(index, kissFile) {
+    const diamond = (kissFile.flags & 0x06) === 0x06;
+
+    let regions = this.getRegions()
+                      .filter(rgn => rgn.type === RGN.FREE)
+                      .filter(rgn => rgn.size >= kissFile.size);
+    if (!regions.length) {
+      throw new Error("no space in SRAM");
+    }
+    if (diamond) {
+      regions = regions.filter(r => r.addr.gb == 0xA002);
+      if (!regions.length) {
+        throw new Error("no valid diamond space in SRAM");
+      }
+    }
+    let rgn = regions.reduce((a, b) => (a.addr.sram > b.addr.sram) ? a : b, regions[0])
+
+    // Split region if large enough: if it has space for another header
+    // even if there would be zero space remaining for a region body.
+    // Even though that region would not itself be useful,
+    // if would be possible to merge into the following region,
+    // if the file in the following region were to be deleted.
+    if (rgn.size >= (kissFile.size + RGN_HEADER_SIZE)) {
+      let addr2 = null;
+      if (diamond) {
+        addr2 = rgn.body.add(kissFile.size);
+      } else {
+        addr2 = rgn.next.sub(kissFile.size + RGN_HEADER_SIZE);
+      }
+
+      const region1 = new RegionHeader(RGN.FREE, rgn.addr, rgn.prev, addr2);
+      this.setUint16(region1.addr.add(4), region1.next.gb);
+
+      const region2 = new RegionHeader(RGN.FREE, addr2, rgn.addr, rgn.next);
+      this.setUint8(region2.addr, region2.type);
+      this.setUint8(region2.addr.add(1), region2.type ^ 0xFF);
+      this.setUint16(region2.addr.add(2), region2.prev.gb);
+      this.setUint16(region2.addr.add(4), region2.next.gb);
+
+      this.setUint16(region2.next.adjusted.add(2), region2.addr.gb);
+
+      if (diamond) {
+        rgn = region1;
+      } else {
+        rgn = region2;
+      }
+    }
+
+    if (diamond) {
+      this.setUint8(rgn.addr, RGN.INITIAL);
+      this.setUint8(rgn.addr.add(1), RGN.INITIAL ^ 0xFF);
+    } else {
+      this.setUint8(rgn.addr, RGN.REGULAR);
+      this.setUint8(rgn.addr.add(1), RGN.REGULAR ^ 0xFF);
+    }
+    new Uint8Array(this.data.buffer).set(new Uint8Array(kissFile.data.buffer), rgn.body.sram);
+
+    const indexAddr = this.indexPos.add(index * 4);
+    this.setUint16(indexAddr, rgn.body.sram);
+    this.setUint8(indexAddr.add(2), kissFile.cartId);
+    this.setUint8(indexAddr.add(3), kissFile.ownerId);
+  }
+
+  toDataUrl() { return toDataUrl(this.data.buffer); }
 };
 
 class Editor {
@@ -392,45 +565,46 @@ class Editor {
     this.buttons = {
       load: {
         init: el => {
-          this.buttons.load.element = el;
-          el.innerText = "Load";
-          el.addEventListener("click", async e => {
-            const file = await selectFile(".sav");
-            if (file) {
-              await this.openFile(file, this.panel);
-            }
+          return makeElement("button", {
+            innerText: "Load",
+            eventListeners: {
+              "click": async e => {
+                const file = await selectFile(".sav");
+                if (file) {
+                  await this.openFile(file, this.panel);
+                }
+              },
+            },
           });
         },
       },
       save: {
         init: el => {
-          this.buttons.save.element = el;
-          el.innerText = "Save";
-          el.disabled = true;
+          return makeElement("button", {
+            innerText: "Save",
+            eventListeners: {
+              "click": async e => {
+                downloadUrl("gbkiss.sav", await this.saveFile.toDataUrl());
+              },
+            },
+          });
         },
       },
       close: {
         init: el => {
-          this.buttons.close.element = el;
-          el.innerText = "Close";
-          el.disabled = true;
-          el.addEventListener("click", e => {
-            this.close();
+          return makeElement("button", {
+            innerText: "Close",
+            eventListeners: {
+              "click": e => {this.close()},
+            },
           });
-        },
-      },
-      install: {
-        init: el => {
-          this.buttons.install.element = el;
-          el.innerText = "Install";
-          el.disabled = true;
         },
       },
     };
 
     const buttons = makeElement("div");
     Object.values(this.buttons).forEach(button => {
-      button.init(makeElement("button"));
+      button.element = button.init();
       buttons.appendChild(button.element);
     });
 
@@ -447,19 +621,37 @@ class Editor {
       draggable: false,
       style: "width: 64px; height: 48px",
     });
-    figure.appendChild(img);
-    if (!file) {
+    if (file) {
+      img.src = file.iconUrl || brokenIcon;
+    } else {
       img.src = emptyIcon;
-      return figure;
     }
-
-    img.src = file.iconUrl || brokenIcon;
+    figure.appendChild(img);
 
     const actions = makeElement("form");
+    if (file) {
+      actions.appendChild(this.infoButton(index, file));
+      actions.appendChild(this.downloadButton(index, file));
+      actions.appendChild(this.removeButton(index, file));
+    } else {
+      actions.appendChild(this.installButton(index));
+      actions.appendChild(this.uploadButton(index));
+    }
+    figure.appendChild(actions);
 
-    const info = makeElement("button", {
+    if (file) {
+      const title = makeElement("p", {innerText: file.title});
+      figure.appendChild(title);
+    }
+
+    return figure;
+  }
+
+  infoButton(index, file) {
+    return makeElement("button", {
       children: [makeElement("img", {
         src: "/edit/info.svg",
+        alt: "Get file info",
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],
@@ -491,28 +683,51 @@ class Editor {
         },
       },
     });
-    actions.appendChild(info);
+  }
 
-    const download = makeElement("button", {
-      disabled: (file.ownerId === 1),
+  downloadButton(index, file) {
+    return makeElement("button", {
+      disabled: file.ownerId === 1,
       children: [makeElement("img", {
         src: "/edit/download.svg",
+        alt: `Download file`,
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],
       eventListeners: {
         click: async e => {
           e.preventDefault();
-          downloadUrl(file.title + ".gbf", await file.dataUrl);
+          downloadUrl(file.title + ".gbf", await file.toDataUrl());
         },
       },
     });
-    actions.appendChild(download);
+  }
 
-    const remove = makeElement("button", {
-      disabled: true,
+  removeButton(index, file) {
+    return makeElement("button", {
+      disabled: file.ownerId === 1,
       children: [makeElement("img", {
         src: "/edit/remove.svg",
+        alt: "Remove file",
+        style: "width: 0.75em; height: 0.75em",
+        draggable: false,
+      })],
+      eventListeners: {
+        "click": async e => {
+          e.preventDefault();
+          this.saveFile.delFileAt(index);
+          this.listFiles();
+        },
+      },
+    });
+  }
+
+  installButton(index) {
+    return makeElement("button", {
+      disabled: true,
+      children: [makeElement("img", {
+        src: "/edit/install.svg",
+        alt: "Install known file",
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],
@@ -522,21 +737,45 @@ class Editor {
         },
       },
     });
-    actions.appendChild(remove);
+  }
 
-    figure.appendChild(actions);
-
-    const title = makeElement("p", {innerText: file.title});
-    figure.appendChild(title);
-
-    return figure;
+  uploadButton(index) {
+    return makeElement("button", {
+      children: [makeElement("img", {
+        src: "/edit/upload.svg",
+        alt: "Upload file",
+        style: "width: 0.75em; height: 0.75em",
+        draggable: false,
+      })],
+      eventListeners: {
+        "click": async e => {
+          e.preventDefault();
+          const file = await selectFile(".gbf");
+          if (file === null) {
+            return;
+          }
+          const buffer = await file.arrayBuffer();
+          let kissFile = null;
+          try {
+            kissFile = new KissFile(buffer);
+          } catch (e) {
+            console.log(e);
+            runModal([makeElement("p", {innerText: "Malformed GBKiss file"})], ["OK"]);
+            return;
+          }
+          this.saveFile.addFileAt(index, kissFile);
+          this.listFiles();
+        },
+      },
+    });
   }
 
   async openFile(file) {
     const buffer = await file.arrayBuffer();
     try {
       this.saveFile = new SaveFile(buffer);
-    } catch {
+    } catch (e) {
+      console.log(e);
       runModal(
           [
             makeElement("p", {innerText: "GBKiss save data not found"}),
@@ -551,25 +790,33 @@ class Editor {
           ["OK"]);
       return;
     }
+    this.listFiles();
+    this.fixButtons();
+  }
+
+  listFiles() {
     const contents = makeElement("div", {className: "gallery-small"});
     let emptyCount = 0;
     this.saveFile.files.forEach((file, i) => {
       if (!file) {
         ++emptyCount;
+        if (emptyCount === 1) {
+          contents.appendChild(this.figureFor(i, null));
+        }
         return;
       }
-      for (let j = 0; j < emptyCount; ++j) {
+      for (let j = 1; j < emptyCount; ++j) {
         contents.appendChild(this.figureFor(i - emptyCount + j, null));
       }
       emptyCount = 0;
       contents.appendChild(this.figureFor(i, file));
     });
-    this.buttons.close.element.disabled = false;
-    this.buttons.load.element.disabled = true;
     this.panel.replaceChildren(contents);
   }
 
   async close() {
+    this.saveFile = null;
+
     const dropbox = makeElement("div", {
       className: "bordered",
       innerText: "Load file or drop here to edit",
@@ -590,9 +837,14 @@ class Editor {
         await showModal("No file was dropped");
       }
     });
-    this.buttons.close.element.disabled = true;
-    this.buttons.load.element.disabled = false;
+    this.fixButtons();
     this.panel.replaceChildren(dropbox);
+  }
+
+  fixButtons() {
+    this.buttons.load.element.disabled = (this.saveFile !== null);
+    this.buttons.save.element.disabled = (this.saveFile === null);
+    this.buttons.close.element.disabled = (this.saveFile === null);
   }
 };
 

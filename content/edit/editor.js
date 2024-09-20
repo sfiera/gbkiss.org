@@ -29,14 +29,6 @@ const plainCharSet =
      "グゲゴザジズゼゾダヂヅデドバビブ" +
      "ベボパピプペポァィゥェォャュョッ");
 
-const richAsciiCharSet =
-    (" !\"#$%&'()*+,-./" +
-     "0123456789:;<=>?" +
-     "@ABCDEFGHIJKLMNO" +
-     "PQRSTUVWXYZ[¥]^_" +
-     "\u0000abcdefghijklmno" +
-     "pqrstuvwxyz｢|｣¯\\");
-
 const richKatakanaCharSet =
     ("「」、。ヲァィゥェォャュョッ" +
      "ーアイウエオカキクケコサシスセソ" +
@@ -49,61 +41,14 @@ const richHiraganaCharSet =
      "たちつてとなにぬねのはひふへほま" +
      "みむめもやゆよらりるれろわん");
 
+const DIA_PARTS = [
+  "ハヒフヘホはひふへほカキクケコかきくけこサシスセソさしすせそタチツテトたちつてと",
+  "バビブベボばびぶべぼガギグゲゴがぎぐげごザジズゼゾざじずぜぞダヂヅデドだぢづでど",
+  "パピプペポぱぴぷぺぽ",
+];
 const diacritics = [
-  {
-    "カ": "ガ",
-    "キ": "ギ",
-    "ク": "グ",
-    "ケ": "ゲ",
-    "コ": "ゴ",
-    "サ": "ザ",
-    "シ": "ジ",
-    "ス": "ズ",
-    "セ": "ゼ",
-    "ソ": "ゾ",
-    "タ": "ダ",
-    "チ": "ヂ",
-    "ツ": "ヅ",
-    "テ": "デ",
-    "ト": "ド",
-    "ハ": "バ",
-    "ヒ": "ビ",
-    "フ": "ブ",
-    "ヘ": "ベ",
-    "ホ": "ボ",
-    "か": "が",
-    "き": "ぎ",
-    "く": "ぐ",
-    "け": "げ",
-    "こ": "ご",
-    "さ": "ざ",
-    "し": "じ",
-    "す": "ず",
-    "せ": "ぜ",
-    "そ": "ぞ",
-    "た": "だ",
-    "ち": "ぢ",
-    "つ": "づ",
-    "て": "で",
-    "と": "ど",
-    "は": "ば",
-    "ひ": "び",
-    "ふ": "ぶ",
-    "へ": "べ",
-    "ほ": "ぼ",
-  },
-  {
-    "ハ": "パ",
-    "ヒ": "ピ",
-    "フ": "プ",
-    "ヘ": "ペ",
-    "ホ": "ポ",
-    "は": "ぱ",
-    "ひ": "ぴ",
-    "ふ": "ぷ",
-    "へ": "ぺ",
-    "ほ": "ぽ",
-  },
+  Object.fromEntries(DIA_PARTS[1].split("").map((x, i) => [DIA_PARTS[0][i], x])),
+  Object.fromEntries(DIA_PARTS[2].split("").map((x, i) => [DIA_PARTS[0][i], x])),
 ];
 
 
@@ -182,16 +127,16 @@ textIcon = string => makeImage(32, 24, ctx => {
 const decodePlainText = buffer =>
     new Uint8Array(buffer).reduce((s, ch) => s + plainCharSet[ch], "");
 
-const decodeRichText = buffer => new Uint8Array(buffer).reduce((state, ch) => {
-  const [string, kanaCharSet] = state;
+const decodeRichText = buffer => new Uint8Array(buffer).reduce(([string, kanaCharSet], ch) => {
   if (ch === 0x0E) {
     return [string, richKatakanaCharSet];
   } else if (ch === 0x0F) {
     return [string, richHiraganaCharSet];
   } else if (ch <= 0x1F) {
-    return [string + String.fromCharCode(ch), kanaCharSet];
+  } else if (ch <= 0x5F) {
+    return [string + plainCharSet[ch], kanaCharSet];
   } else if (ch <= 0x7F) {
-    return [string + richAsciiCharSet[ch - 0x20], kanaCharSet];
+    return [string + plainCharSet[ch - 0x60], kanaCharSet];
   } else if (ch < 0xA1) {
   } else if (ch <= 0xDD) {
     return [string + kanaCharSet[ch - 0xA2], kanaCharSet];
@@ -199,7 +144,7 @@ const decodeRichText = buffer => new Uint8Array(buffer).reduce((state, ch) => {
     const head = string.slice(0, -1), tail = string.slice(-1);
     return [head + (diacritics[ch - 0xDE][tail] || tail), kanaCharSet];
   }
-  return [string, kanaCharSet]
+  return [string + String.fromCharCode(ch), kanaCharSet];
 }, ["", richKatakanaCharSet])[0];
 
 const hexByte = byte => "$" + ("0" + byte.toString(16)).slice(-2);

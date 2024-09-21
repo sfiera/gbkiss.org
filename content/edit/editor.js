@@ -11,6 +11,43 @@ const kissMailStub =
         [0x0F, 0x00, 0x06, 0x00, 0x0A, 0x01, 0x4B, 0x49, 0x53, 0x53, 0x20, 0x4D, 0x41, 0x49, 0x4C])
         .buffer;
 
+const files = {
+  baketu: "/file/bakechu-relay/baketu.gbf",
+  biorythm: "/file/biorhythm/biorythm.gbf",
+  bj: "/file/blackjack/bj.gbf",
+  bland: "/file/binary/bland.gbf",
+  cannon: "/file/cannon-ball/cannon.gbf",
+  chardump: "/file/char-dump/chardump.gbf",
+  del_all: "/file/delete-all/del_all.gbf",
+  dentaku: "/file/calculator/dentaku.gbf",
+  drive: "/file/drive/drive.gbf",
+  family_s: "/file/family-shot/family_s.gbf",
+  iconedit: "/file/icon-edit/iconedit.gbf",
+  iconsend: "/file/icon-send/iconsend.gbf",
+  kissmon2: "/file/kiss-mon-2/kissmon2.gbf",
+  kissmon: "/file/kiss-mon/kissmon.gbf",
+  koura1: "/file/puzzle-game/koura1.gbf",
+  koura2: "/file/puzzle-game/koura2.gbf",
+  koura3: "/file/puzzle-game/koura3.gbf",
+  mag_data: "/file/magnets/mag_data.gbf",
+  magnets: "/file/magnets/magnets.gbf",
+  mogura: "/file/mogutte-nanbo/mogura.gbf",
+  passwords: "/file/mail/passwords.gbf",
+  poker: "/file/poker/poker.gbf",
+  puzzle: "/file/puzzle-game/puzzle.gbf",
+  roulette: "/file/roulette/roulette.gbf",
+  saita: "/file/saita/saita.gbf",
+  samegame: "/file/samegame/samegame.gbf",
+  sezaki: "/file/mogutte-nanbo/sezaki.gbf",
+  shot: "/file/shot/shot.gbf",
+  slot: "/file/slot/slot.gbf",
+  soundtst: "/file/sound-test/soundtst.gbf",
+  sramtool: "/file/sram-get-and-clear/sramtool.gbf",
+  sw_data: "/file/watch-and-timer/sw_data.gbf",
+  sw_timer: "/file/watch-and-timer/sw_timer.gbf",
+  worm: "/file/worm/worm.gbf",
+};
+
 const plainCharSet =
     ("\u0000abcdefghijklmno" +
      "pqrstuvwxyz｢|｣¯\\" +
@@ -77,6 +114,15 @@ const makeElement = (tagName, properties = {}) => {
     } else if (key === "eventListeners") {
       Object.entries(value).forEach(([type, listener]) => {
         el.addEventListener(type, listener);
+      });
+    } else if (key === "drop") {
+      el.addEventListener("dragenter", e => {el.classList.add("dropTarget")});
+      el.addEventListener("dragleave", e => {el.classList.remove("dropTarget")});
+      el.addEventListener("dragover", e => {e.preventDefault()});
+      el.addEventListener("drop", (e, ...args) => {
+        e.preventDefault();
+        el.classList.remove("dropTarget");
+        value(e, ...args);
       });
     } else {
       el[key] = value;
@@ -401,6 +447,15 @@ class SaveFile {
     return new KissFile(this.data.buffer.slice(addr.sram, addr.add(size).sram));
   }
 
+  swapFilesAt(index1, index2) {
+    const index1Addr = this.indexPos.add(index1 * 4);
+    const index2Addr = this.indexPos.add(index2 * 4);
+    const index1Entry = this.getUint32(index1Addr);
+    const index2Entry = this.getUint32(index2Addr);
+    this.setUint32(index1Addr, index2Entry);
+    this.setUint32(index2Addr, index1Entry);
+  }
+
   delFileAt(index) {
     const indexAddr = this.indexPos.add(index * 4);
     const rgnAddr = new Addr({sram: this.getUint16(indexAddr)}).sub(RGN_HEADER_SIZE);
@@ -557,39 +612,52 @@ class Editor {
   }
 
   figureFor(index, file) {
-    const figure = makeElement("div", {
+    return makeElement("div", {
       className: "figure",
       draggable: true,
+      eventListeners: {
+        dragstart: async e => {
+          e.dataTransfer.setData("application/x-gbkiss-index", index);
+          e.dataTransfer.setData("text/plain", `GBKiss file at index ${index}`);
+        },
+      },
+      drop: async e => {
+        if (e.dataTransfer.getData("application/x-gbkiss-index")) {
+          const fromIndex = parseInt(e.dataTransfer.getData("application/x-gbkiss-index"));
+          if (index == fromIndex) {
+            return;
+          }
+          this.saveFile.swapFilesAt(index, fromIndex);
+          this.listFiles();
+        } else if (e.dataTransfer.items.length) {
+          await this.addFile(index, await e.dataTransfer.items[0].getAsFile());
+        } else if (e.dataTransfer.files.length) {
+          await this.addFile(index, await e.dataTransfer.files[0]);
+        } else {
+          await runModal(["No file was dropped"], ["OK"]);
+        }
+      },
+      children: [
+        makeElement("img", {
+          draggable: false,
+          style: "width: 64px; height: 48px",
+          src: (file ? file.iconUrl : emptyIcon) || brokenIcon,
+        }),
+        makeElement("form", {
+          children: file ?
+              [
+                this.infoButton(index, file),
+                this.downloadButton(index, file),
+                this.removeButton(index, file),
+              ] :
+              [
+                this.installButton(index),
+                this.uploadButton(index),
+              ],
+        }),
+        file ? makeElement("p", {innerText: file.title}) : "",
+      ],
     });
-
-    const img = makeElement("img", {
-      draggable: false,
-      style: "width: 64px; height: 48px",
-    });
-    if (file) {
-      img.src = file.iconUrl || brokenIcon;
-    } else {
-      img.src = emptyIcon;
-    }
-    figure.appendChild(img);
-
-    const actions = makeElement("form");
-    if (file) {
-      actions.appendChild(this.infoButton(index, file));
-      actions.appendChild(this.downloadButton(index, file));
-      actions.appendChild(this.removeButton(index, file));
-    } else {
-      actions.appendChild(this.installButton(index));
-      actions.appendChild(this.uploadButton(index));
-    }
-    figure.appendChild(actions);
-
-    if (file) {
-      const title = makeElement("p", {innerText: file.title});
-      figure.appendChild(title);
-    }
-
-    return figure;
   }
 
   infoButton(index, file) {
@@ -669,7 +737,6 @@ class Editor {
 
   installButton(index) {
     return makeElement("button", {
-      disabled: true,
       children: [makeElement("img", {
         src: "/edit/install.svg",
         alt: "Install known file",
@@ -679,6 +746,21 @@ class Editor {
       eventListeners: {
         "click": async e => {
           e.preventDefault();
+          const h3 = makeElement("h3", {innerText: "Install GBKiss file"});
+          const select = makeElement("select", {
+            children: Object.entries(files).map(
+                ([k, v]) => makeElement("option", {value: v, innerText: k})),
+          });
+          if (await runModal([h3, select], ["Install", "Cancel"]) == "Cancel") {
+            return;
+          }
+          const url = select.value;
+          const resp = await window.fetch(url);
+          if (!resp.ok) {
+            runModal([makeElement("h3", {innerText: `Failed to load ${url}`})], ["OK"]);
+            return;
+          }
+          await this.addFile(index, await resp.blob());
         },
       },
     });
@@ -699,20 +781,27 @@ class Editor {
           if (file === null) {
             return;
           }
-          const buffer = await file.arrayBuffer();
-          let kissFile = null;
-          try {
-            kissFile = new KissFile(buffer);
-          } catch (e) {
-            console.log(e);
-            runModal([makeElement("p", {innerText: "Malformed GBKiss file"})], ["OK"]);
-            return;
-          }
-          this.saveFile.addFileAt(index, kissFile);
-          this.listFiles();
+          await this.addFile(index, file);
         },
       },
     });
+  }
+
+  async addFile(index, blob) {
+    let kissFile = null;
+    const buffer = await blob.arrayBuffer();
+    try {
+      kissFile = new KissFile(buffer);
+    } catch (e) {
+      console.log(e);
+      runModal([makeElement("h3", {innerText: "Malformed GBKiss file"})], ["OK"]);
+      return;
+    }
+    if (this.saveFile.fileAt(index) !== null) {
+      this.saveFile.delFileAt(index);
+    }
+    this.saveFile.addFileAt(index, kissFile);
+    this.listFiles();
   }
 
   async openFile(file) {
@@ -723,7 +812,7 @@ class Editor {
       console.log(e);
       runModal(
           [
-            makeElement("p", {innerText: "GBKiss save data not found"}),
+            makeElement("h3", {innerText: "GBKiss save data not found"}),
             makeElement("ul", {
               children: [
                 makeElement("li", {innerText: "Is this file a Game Boy save file?"}),
@@ -765,22 +854,15 @@ class Editor {
     const dropbox = makeElement("div", {
       className: "bordered",
       innerText: "Load file or drop here to edit",
-    });
-
-    dropbox.addEventListener("dragenter", e => {dropbox.classList.add("dropTarget")});
-    dropbox.addEventListener("dragleave", e => {dropbox.classList.remove("dropTarget")});
-    dropbox.addEventListener("dragover", e => {e.preventDefault()});
-
-    dropbox.addEventListener("drop", async e => {
-      e.preventDefault();
-      dropbox.classList.remove("dropTarget");
-      if (e.dataTransfer.items) {
-        await this.openFile(e.dataTransfer.items[0].getAsFile());
-      } else if (e.dataTransfer.files) {
-        await this.openFile(e.dataTransfer.files[0]);
-      } else {
-        await showModal("No file was dropped");
-      }
+      drop: async e => {
+        if (e.dataTransfer.items.length) {
+          await this.openFile(e.dataTransfer.items[0].getAsFile());
+        } else if (e.dataTransfer.files.length) {
+          await this.openFile(e.dataTransfer.files[0]);
+        } else {
+          await runModal(["No file was dropped"], ["OK"]);
+        }
+      },
     });
     this.fixButtons();
     this.panel.replaceChildren(dropbox);

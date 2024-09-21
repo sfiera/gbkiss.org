@@ -64,6 +64,10 @@ pre, blockquote, .bordered {
    background: hsla(220, 75%, 50%, 25%);
 }
 
+.dropTarget * {
+  pointer-events: none;
+}
+
 ul ul, ul ol, ol ul, ol ol {
     margin: 0;
 }

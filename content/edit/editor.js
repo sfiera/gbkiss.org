@@ -739,11 +739,16 @@ class Editor {
         "click": async e => {
           e.preventDefault();
           const h3 = makeElement("h3", {innerText: "Install GBKiss file"});
+          const largest = this.saveFile.getRegions()
+                              .filter(rgn => rgn.type === RGN.FREE)
+                              .map(rgn => rgn.size)
+                              .reduce((a, b) => (a > b) ? a : b, 0)
+          const p = makeElement("p", {innerText: `Largest available block: ${largest} bytes`});
           const select = makeElement("select", {
             children: Object.entries(files).map(
                 ([k, v]) => makeElement("option", {value: v, innerText: k})),
           });
-          if (await runModal([h3, select], ["Install", "Cancel"]) == "Cancel") {
+          if (await runModal([h3, p, select], ["Install", "Cancel"]) == "Cancel") {
             return;
           }
           const url = select.value;

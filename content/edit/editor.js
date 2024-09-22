@@ -466,7 +466,7 @@ class SaveFile {
     this.setUint8(rgn.addr.add(1), RGN.FREE ^ 0xFF);
 
     // Merge this region into previous, if previous region is free too.
-    if (rgn.addr.bank === rgn.prev.bank) {
+    if ((rgn.prev !== null) && (rgn.addr.bank === rgn.prev.bank)) {
       const prev = RegionHeader.read(this.data, rgn.prev);
       if (prev.type === RGN.FREE) {
         rgn = new RegionHeader(RGN.FREE, prev.addr, prev.prev, rgn.next);
@@ -498,12 +498,12 @@ class SaveFile {
                       .filter(rgn => rgn.type === RGN.FREE)
                       .filter(rgn => rgn.size >= kissFile.size);
     if (!regions.length) {
-      throw new Error("no space in SRAM");
+      throw new Error(`Insufficient SRAM space: no block of size ${kissFile.size} available`);
     }
     if (diamond) {
       regions = regions.filter(r => r.addr.gb == 0xA002);
       if (!regions.length) {
-        throw new Error("no valid diamond space in SRAM");
+        throw new Error("Insufficient SRAM space: no unused bank available for diamond-type file");
       }
     }
     let rgn = regions.reduce((a, b) => (a.addr.sram > b.addr.sram) ? a : b, regions[0])
@@ -532,20 +532,12 @@ class SaveFile {
 
       this.setUint16(region2.next.adjusted.add(2), region2.addr.gb);
 
-      if (diamond) {
-        rgn = region1;
-      } else {
-        rgn = region2;
-      }
+      rgn = diamond ? region1 : region2;
     }
 
-    if (diamond) {
-      this.setUint8(rgn.addr, RGN.INITIAL);
-      this.setUint8(rgn.addr.add(1), RGN.INITIAL ^ 0xFF);
-    } else {
-      this.setUint8(rgn.addr, RGN.REGULAR);
-      this.setUint8(rgn.addr.add(1), RGN.REGULAR ^ 0xFF);
-    }
+    const type = diamond ? RGN.INITIAL : RGN.REGULAR;
+    this.setUint8(rgn.addr, type);
+    this.setUint8(rgn.addr.add(1), type ^ 0xFF);
     new Uint8Array(this.data.buffer).set(new Uint8Array(kissFile.data.buffer), rgn.body.sram);
 
     const indexAddr = this.indexPos.add(index * 4);
@@ -794,13 +786,21 @@ class Editor {
       kissFile = new KissFile(buffer);
     } catch (e) {
       console.log(e);
-      runModal([makeElement("h3", {innerText: "Malformed GBKiss file"})], ["OK"]);
+      await runModal([makeElement("h3", {innerText: "Malformed GBKiss file"})], ["OK"]);
       return;
     }
     if (this.saveFile.fileAt(index) !== null) {
       this.saveFile.delFileAt(index);
     }
-    this.saveFile.addFileAt(index, kissFile);
+    try {
+      this.saveFile.addFileAt(index, kissFile);
+    } catch (e) {
+      console.log(e);
+      await runModal(
+          [makeElement("h3", {innerText: e.name}), makeElement("p", {innerText: e.message})],
+          ["OK"]);
+      return;
+    }
     this.listFiles();
   }
 

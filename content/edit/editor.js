@@ -1,17 +1,13 @@
+const u8 = x => new Uint8Array(x);
+const cc = x => x.charCodeAt(0);
+const obj = Object.fromEntries;
+
 const RGN_HEADER_SIZE = 6;
-const RGN = {
-  FREE: 0x46,
-  REGULAR: 0x52,
-  INITIAL: 0x5A,
-  SPECIAL: 0x53,
-};
+const RGN = obj(["FREE", "REGULAR", "ZERO", "SPECIAL"].map(x => [x, cc(x)]));
 
-const kissMailStub =
-    new Uint8Array(
-        [0x0F, 0x00, 0x06, 0x00, 0x0A, 0x01, 0x4B, 0x49, 0x53, 0x53, 0x20, 0x4D, 0x41, 0x49, 0x4C])
-        .buffer;
+const KISS_MAIL_STUB = u8("\17\0\6\0\12\1KISS MAIL".split("").map(cc)).buffer;
 
-const files = {
+const FILES = {
   baketu: "/file/bakechu-relay/baketu.gbf",
   biorythm: "/file/biorhythm/biorythm.gbf",
   bj: "/file/blackjack/bj.gbf",
@@ -48,7 +44,7 @@ const files = {
   worm: "/file/worm/worm.gbf",
 };
 
-const plainCharSet =
+const PLAIN_CHARS =
     ("\u0000abcdefghijklmno" +
      "pqrstuvwxyz｢|｣¯\\" +
      " !\"#$%&'()*+,-./" +
@@ -66,13 +62,13 @@ const plainCharSet =
      "グゲゴザジズゼゾダヂヅデドバビブ" +
      "ベボパピプペポァィゥェォャュョッ");
 
-const richKatakanaCharSet =
+const KATAKANA =
     ("「」、。ヲァィゥェォャュョッ" +
      "ーアイウエオカキクケコサシスセソ" +
      "タチツテトナニヌネノハヒフヘホマ" +
      "ミムメモヤユヨラリルレロワン");
 
-const richHiraganaCharSet =
+const HIRAGANA =
     ("「」、。をぁぃぅぇぉゃゅょっ" +
      "ーあいうえおかきくけこさしすせそ" +
      "たちつてとなにぬねのはひふへほま" +
@@ -84,27 +80,27 @@ const DIA_PARTS = [
   "パピプペポぱぴぷぺぽ",
 ];
 const diacritics = [
-  Object.fromEntries(DIA_PARTS[1].split("").map((x, i) => [DIA_PARTS[0][i], x])),
-  Object.fromEntries(DIA_PARTS[2].split("").map((x, i) => [DIA_PARTS[0][i], x])),
+  obj(DIA_PARTS[1].split("").map((x, i) => [DIA_PARTS[0][i], x])),
+  obj(DIA_PARTS[2].split("").map((x, i) => [DIA_PARTS[0][i], x])),
 ];
 
 
-const builtinIcons = {};
-builtinIcons[0x01] = "/file/icon/letter.png";
-builtinIcons[0x81] = "/file/icon/mail.png";
-builtinIcons[0x40] = "/file/icon/hikou0.png";
-builtinIcons[0x41] = "/file/icon/puzzle0.png";
-builtinIcons[0x42] = "/file/icon/ken0.png";
-builtinIcons[0x43] = "/file/icon/card0.png";
-builtinIcons[0x44] = "/file/icon/map.png";
-builtinIcons[0x45] = "/file/icon/ie2.png";
-const emptyIcon = "/file/menu/empty.png";
-const brokenIcon = "/file/icon/simula1.png";
+const BUILTIN_ICONS = {};
+BUILTIN_ICONS[0x01] = "/file/icon/letter.png";
+BUILTIN_ICONS[0x81] = "/file/icon/mail.png";
+BUILTIN_ICONS[0x40] = "/file/icon/hikou0.png";
+BUILTIN_ICONS[0x41] = "/file/icon/puzzle0.png";
+BUILTIN_ICONS[0x42] = "/file/icon/ken0.png";
+BUILTIN_ICONS[0x43] = "/file/icon/card0.png";
+BUILTIN_ICONS[0x44] = "/file/icon/map.png";
+BUILTIN_ICONS[0x45] = "/file/icon/ie2.png";
+const EMPTY_ICON = "/file/menu/empty.png";
+const BROKEN_ICON = "/file/icon/simula1.png";
 
-const textImage = new Image();
-textImage.src = "/tech/text/font.png"
+const TEXT_IMAGE = new Image();
+TEXT_IMAGE.src = "/tech/text/font.png"
 
-const fillColors = ["#fff", "#aaa", "#555", "#000"];
+const FILL_COLORS = ["#fff", "#aaa", "#555", "#000"];
 
 const makeElement = (tagName, properties = {}) => {
   const el = document.createElement(tagName);
@@ -152,7 +148,7 @@ decodeImage = (buffer, width, height, bpp) => makeImage(width, height, ctx => {
       for (let bit = 0; bit < 8; ++bit) {
         let color = ((byte1 & mask) ? 1 : 0) + ((byte2 & mask) ? 2 : 0);
         mask >>= 1;
-        ctx.fillStyle = fillColors[color];
+        ctx.fillStyle = FILL_COLORS[color];
         ctx.fillRect(col + bit, row, 1, 1);
       }
     }
@@ -161,37 +157,36 @@ decodeImage = (buffer, width, height, bpp) => makeImage(width, height, ctx => {
 
 textIcon = string => makeImage(32, 24, ctx => {
   string.split("").forEach((ch, i) => {
-    ch = plainCharSet.indexOf(ch);
+    ch = PLAIN_CHARS.indexOf(ch);
     const sx = (ch % 16) * 8;
     const sy = Math.floor(ch / 16) * 8;
     const dx = (i % 4) * 8;
     const dy = Math.floor(i / 4) * 8;
-    ctx.drawImage(textImage, sx, sy, 8, 8, dx, dy, 8, 8);
+    ctx.drawImage(TEXT_IMAGE, sx, sy, 8, 8, dx, dy, 8, 8);
   });
 });
 
-const decodePlainText = buffer =>
-    new Uint8Array(buffer).reduce((s, ch) => s + plainCharSet[ch], "");
+const decodePlainText = buffer => u8(buffer).reduce((s, ch) => s + PLAIN_CHARS[ch], "");
 
-const decodeRichText = buffer => new Uint8Array(buffer).reduce(([string, kanaCharSet], ch) => {
+const decodeRichText = buffer => u8(buffer).reduce(([string, kana], ch) => {
   if (ch === 0x0E) {
-    return [string, richKatakanaCharSet];
+    return [string, KATAKANA];
   } else if (ch === 0x0F) {
-    return [string, richHiraganaCharSet];
+    return [string, HIRAGANA];
   } else if (ch <= 0x1F) {
   } else if (ch <= 0x5F) {
-    return [string + plainCharSet[ch], kanaCharSet];
+    return [string + PLAIN_CHARS[ch], kana];
   } else if (ch <= 0x7F) {
-    return [string + plainCharSet[ch - 0x60], kanaCharSet];
+    return [string + PLAIN_CHARS[ch - 0x60], kana];
   } else if (ch < 0xA1) {
   } else if (ch <= 0xDD) {
-    return [string + kanaCharSet[ch - 0xA2], kanaCharSet];
+    return [string + kana[ch - 0xA2], kana];
   } else if (ch <= 0xDF) {
     const head = string.slice(0, -1), tail = string.slice(-1);
-    return [head + (diacritics[ch - 0xDE][tail] || tail), kanaCharSet];
+    return [head + (diacritics[ch - 0xDE][tail] || tail), kana];
   }
-  return [string + String.fromCharCode(ch), kanaCharSet];
-}, ["", richKatakanaCharSet])[0];
+  return [string + String.fromCharCode(ch), kana];
+}, ["", KATAKANA])[0];
 
 const hexByte = byte => "$" + ("0" + byte.toString(16)).slice(-2);
 
@@ -217,18 +212,18 @@ const selectFile = accept => new Promise(resolve => {
 });
 
 const typeIcon = file => {
-  let src = "/file/menu/triangle.svg";
+  let shape = "triangle";
   if (file.isExecutable) {
     if (file.ownerId === 1) {
-      src = "/file/menu/bullseye.svg";
+      shape = "bullseye";
     } else if (file.isZeroFile) {
-      src = "/file/menu/diamond.svg";
+      shape = "diamond";
     } else {
-      src = "/file/menu/circle.svg";
+      shape = "circle";
     }
   }
   return makeElement("img", {
-    src: src,
+    src: `/file/menu/${shape}.svg`,
     style: "width: 0.75em; height: 0.75em",
   });
 };
@@ -321,6 +316,7 @@ class KissFile {
   get flags() { return this.data.getUint8(2); }
   get hasIcon() { return this.flags & 0x10; }
   get hasIcon2bpp() { return this.flags & 0x08; }
+  get iconBpp() { return this.hasIcon ? (this.hasIcon2bpp ? 2 : 1) : 0; }
   get isExecutable() { return this.flags & 0x04; }
   get isZeroFile() { return this.flags & 0x02; }
   get hasHistory() { return this.flags & 0x01; }
@@ -332,27 +328,19 @@ class KissFile {
 
   get title() {
     const headerSize = this.data.getUint8(4);
-    let titleEnd = 5 + headerSize;
-    if (this.hasIcon) {
-      if (this.hasIcon2bpp) {
-        titleEnd -= 0xC0;
-      } else {
-        titleEnd -= 0x60;
-      }
-    }
+    let titleEnd = 5 + headerSize - (0x60 * this.iconBpp);
     return decodeRichText(this.data.buffer.slice(6, titleEnd));
   }
 
   get iconUrl() {
     if (this.hasIcon) {
-      const bpp = (this.hasIcon2bpp) ? 2 : 1;
       const iconEnd = 5 + this.data.getUint8(4);
-      const iconStart = iconEnd - (0x60 * bpp);
-      return decodeImage(this.data.buffer.slice(iconStart, iconEnd), 32, 24, bpp);
+      const iconStart = iconEnd - (0x60 * this.iconBpp);
+      return decodeImage(this.data.buffer.slice(iconStart, iconEnd), 32, 24, this.iconBpp);
     } else if (this.ownerId === 0) {
       return textIcon(this.title);
-    } else if (builtinIcons[this.ownerId]) {
-      return builtinIcons[this.ownerId];
+    } else if (BUILTIN_ICONS[this.ownerId]) {
+      return BUILTIN_ICONS[this.ownerId];
     } else {
       return null;
     }
@@ -367,7 +355,7 @@ class SaveFile {
       throw new Error(`save file too short: ${arrayBuffer.length}`);
     }
     const copy = new ArrayBuffer(arrayBuffer.byteLength);
-    new Uint8Array(copy).set(new Uint8Array(arrayBuffer));
+    u8(copy).set(u8(arrayBuffer));
     this.data = new DataView(copy);
 
     let cursor = new Addr({sram: 0x0002});
@@ -441,7 +429,7 @@ class SaveFile {
     }
     const owner = this.getUint8(this.indexPos.add(index * 4 + 3));
     if (owner === 1) {
-      return new KissFile(kissMailStub);
+      return new KissFile(KISS_MAIL_STUB);
     }
     const size = this.getUint16(addr);
     return new KissFile(this.data.buffer.slice(addr.sram, addr.add(size).sram));
@@ -535,10 +523,10 @@ class SaveFile {
       rgn = diamond ? region1 : region2;
     }
 
-    const type = diamond ? RGN.INITIAL : RGN.REGULAR;
+    const type = diamond ? RGN.ZERO : RGN.REGULAR;
     this.setUint8(rgn.addr, type);
     this.setUint8(rgn.addr.add(1), type ^ 0xFF);
-    new Uint8Array(this.data.buffer).set(new Uint8Array(kissFile.data.buffer), rgn.body.sram);
+    u8(this.data.buffer).set(u8(kissFile.data.buffer), rgn.body.sram);
 
     const indexAddr = this.indexPos.add(index * 4);
     this.setUint16(indexAddr, rgn.body.sram);
@@ -633,7 +621,7 @@ class Editor {
         makeElement("img", {
           draggable: false,
           style: "width: 64px; height: 48px",
-          src: (file ? file.iconUrl : emptyIcon) || brokenIcon,
+          src: (file ? file.iconUrl : EMPTY_ICON) || BROKEN_ICON,
         }),
         makeElement("form", {
           children: file ?
@@ -745,7 +733,7 @@ class Editor {
                               .reduce((a, b) => (a > b) ? a : b, 0)
           const p = makeElement("p", {innerText: `Largest available block: ${largest} bytes`});
           const select = makeElement("select", {
-            children: Object.entries(files).map(
+            children: Object.entries(FILES).map(
                 ([k, v]) => makeElement("option", {value: v, innerText: k})),
           });
           if (await runModal([h3, p, select], ["Install", "Cancel"]) == "Cancel") {

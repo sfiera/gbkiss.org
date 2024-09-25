@@ -122,6 +122,8 @@ const makeElement = (tagName, properties = {}) => {
   });
   return el;
 };
+const [h3, p, ul, li, tt] = ["h3", "p", "ul", "li", "tt"].map(
+    tag => ((...children) => makeElement(tag, {children: children})));
 
 makeImage = (width, height, fn) => {
   const canvas = makeElement("canvas", {
@@ -223,9 +225,7 @@ const typeIcon = file => {
 };
 
 const runModal = (children, buttons) => new Promise(resolve => {
-  const dlog = makeElement("dialog", {
-    children: children,
-  });
+  const dlog = makeElement("dialog", {children: children});
 
   const form = makeElement("form", {
     method: "dialog",
@@ -621,7 +621,7 @@ class Editor {
                 this.uploadButton(index),
               ],
         }),
-        file ? makeElement("p", {innerText: file.title}) : "",
+        file ? p(file.title) : "",
       ],
     });
   }
@@ -638,23 +638,11 @@ class Editor {
         e.preventDefault();
         runModal(
             [
-              makeElement("h3", {innerText: file.title}),
-              makeElement("ul", {
-                children: [
-                  makeElement("li", {
-                    innerText:
-                        `Size: ${Math.floor((file.size + 255) / 256)} blocks (${file.size} bytes)`,
-                  }),
-                  makeElement("li", {children: ["Type: ", typeIcon(file)]}),
-                  file.hasHistory ? makeElement("li", {innerText: `Author: ${file.author}`}) : "",
-                  makeElement("li", {
-                    children: [
-                      "Owner Code: ",
-                      makeElement("tt", {innerText: hexByte(file.ownerId)}),
-                    ],
-                  }),
-                ],
-              }),
+              h3(file.title),
+              ul(li(`Size: ${Math.floor((file.size + 255) / 256)} blocks (${file.size} bytes)`),
+                 li("Type: ", typeIcon(file)),
+                 file.hasHistory ? li(`Author: ${file.author}`) : "",
+                 li("Owner Code: ", tt(hexByte(file.ownerId)))),
             ],
             ["Close"]);
       },
@@ -704,22 +692,22 @@ class Editor {
       })],
       onclick: async e => {
         e.preventDefault();
-        const h3 = makeElement("h3", {innerText: "Install GBKiss file"});
+        const title = h3("Install GBKiss file");
         const largest = this.saveFile.getRegions()
                             .filter(rgn => rgn.type === RGN.FREE)
                             .map(rgn => rgn.size)
                             .reduce((a, b) => (a > b) ? a : b, 0)
-        const p = makeElement("p", {innerText: `Largest available block: ${largest} bytes`});
+        const avail = p(`Largest available block: ${largest} bytes`);
         const select = makeElement("select", {
           children: FILES.map(f => makeElement("option", {value: f, innerText: f})),
         });
-        if (await runModal([h3, p, select], ["Install", "Cancel"]) == "Cancel") {
+        if (await runModal([title, avail, select], ["Install", "Cancel"]) == "Cancel") {
           return;
         }
         const url = "/file/" + select.value;
         const resp = await window.fetch(url);
         if (!resp.ok) {
-          runModal([makeElement("h3", {innerText: `Failed to load ${url}`})], ["OK"]);
+          runModal([h3(`Failed to load ${url}`)], ["OK"]);
           return;
         }
         await this.addFile(index, await resp.blob());
@@ -753,7 +741,7 @@ class Editor {
       kissFile = new KissFile(buffer);
     } catch (e) {
       console.log(e);
-      await runModal([makeElement("h3", {innerText: "Malformed GBKiss file"})], ["OK"]);
+      await runModal([h3("Malformed GBKiss file")], ["OK"]);
       return;
     }
     if (this.saveFile.fileAt(index) !== null) {
@@ -763,9 +751,7 @@ class Editor {
       this.saveFile.addFileAt(index, kissFile);
     } catch (e) {
       console.log(e);
-      await runModal(
-          [makeElement("h3", {innerText: e.name}), makeElement("p", {innerText: e.message})],
-          ["OK"]);
+      await runModal([h3(e.name), p(e.message)], ["OK"]);
       return;
     }
     this.listFiles();
@@ -779,14 +765,10 @@ class Editor {
       console.log(e);
       runModal(
           [
-            makeElement("h3", {innerText: "GBKiss save data not found"}),
-            makeElement("ul", {
-              children: [
-                makeElement("li", {innerText: "Is this file a Game Boy save file?"}),
-                makeElement("li", {innerText: "Is the associated game GBKiss-enabled?"}),
-                makeElement("li", {innerText: "Has the owner info been initialized?"}),
-              ],
-            }),
+            h3("GBKiss save data not found"),
+            ul(li("Is this file a Game Boy save file?"),
+               li("Is the associated game GBKiss-enabled?"),
+               li("Has the owner info been initialized?")),
           ],
           ["OK"]);
       return;

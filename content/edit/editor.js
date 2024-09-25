@@ -548,7 +548,7 @@ class Editor {
           return makeElement("button", {
             innerText: "Load",
             eventListeners: {
-              "click": async e => {
+              click: async e => {
                 const file = await selectFile(".sav");
                 if (file) {
                   await this.openFile(file, this.panel);
@@ -563,7 +563,7 @@ class Editor {
           return makeElement("button", {
             innerText: "Save",
             eventListeners: {
-              "click": async e => {
+              click: async e => {
                 downloadUrl("gbkiss.sav", await this.saveFile.toDataUrl());
               },
             },
@@ -575,7 +575,7 @@ class Editor {
           return makeElement("button", {
             innerText: "Close",
             eventListeners: {
-              "click": e => {this.close()},
+              click: e => {this.close()},
             },
           });
         },
@@ -706,7 +706,7 @@ class Editor {
         draggable: false,
       })],
       eventListeners: {
-        "click": e => {
+        click: e => {
           e.preventDefault();
           this.saveFile.delFileAt(index);
           this.listFiles();
@@ -724,7 +724,7 @@ class Editor {
         draggable: false,
       })],
       eventListeners: {
-        "click": async e => {
+        click: async e => {
           e.preventDefault();
           const h3 = makeElement("h3", {innerText: "Install GBKiss file"});
           const largest = this.saveFile.getRegions()
@@ -760,7 +760,7 @@ class Editor {
         draggable: false,
       })],
       eventListeners: {
-        "click": async e => {
+        click: async e => {
           e.preventDefault();
           const file = await selectFile(".gbf");
           if (file === null) {

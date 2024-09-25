@@ -107,11 +107,7 @@ const makeElement = (tagName, properties = {}) => {
   Object.entries(properties).forEach(([key, value]) => {
     if (key === "children") {
       el.replaceChildren(...value);
-    } else if (key === "eventListeners") {
-      Object.entries(value).forEach(([type, listener]) => {
-        el.addEventListener(type, listener);
-      });
-    } else if (key === "drop") {
+    } else if (key === "ondrop") {
       el.addEventListener("dragenter", e => {el.classList.add("dropTarget")});
       el.addEventListener("dragleave", e => {el.classList.remove("dropTarget")});
       el.addEventListener("dragover", e => {e.preventDefault()});
@@ -204,10 +200,8 @@ const selectFile = accept => new Promise(resolve => {
   makeElement("input", {
     type: "file",
     accept: accept,
-    eventListeners: {
-      change: e => {resolve(e.target.files[0])},
-      cancel: e => {resolve(null)},
-    },
+    onchange: e => {resolve(e.target.files[0])},
+    oncancel: e => {resolve(null)},
   }).click();
 });
 
@@ -547,13 +541,11 @@ class Editor {
         init: el => {
           return makeElement("button", {
             innerText: "Load",
-            eventListeners: {
-              click: async e => {
-                const file = await selectFile(".sav");
-                if (file) {
-                  await this.openFile(file, this.panel);
-                }
-              },
+            onclick: async e => {
+              const file = await selectFile(".sav");
+              if (file) {
+                await this.openFile(file, this.panel);
+              }
             },
           });
         },
@@ -562,10 +554,8 @@ class Editor {
         init: el => {
           return makeElement("button", {
             innerText: "Save",
-            eventListeners: {
-              click: async e => {
-                downloadUrl("gbkiss.sav", await this.saveFile.toDataUrl());
-              },
+            onclick: async e => {
+              downloadUrl("gbkiss.sav", await this.saveFile.toDataUrl());
             },
           });
         },
@@ -574,9 +564,7 @@ class Editor {
         init: el => {
           return makeElement("button", {
             innerText: "Close",
-            eventListeners: {
-              click: e => {this.close()},
-            },
+            onclick: e => {this.close()},
           });
         },
       },
@@ -595,13 +583,11 @@ class Editor {
     return makeElement("div", {
       className: "figure",
       draggable: true,
-      eventListeners: {
-        dragstart: e => {
-          e.dataTransfer.setData("application/x-gbkiss-index", index);
-          e.dataTransfer.setData("text/plain", `GBKiss file at index ${index}`);
-        },
+      ondragstart: e => {
+        e.dataTransfer.setData("application/x-gbkiss-index", index);
+        e.dataTransfer.setData("text/plain", `GBKiss file at index ${index}`);
       },
-      drop: async e => {
+      ondrop: async e => {
         if (e.dataTransfer.getData("application/x-gbkiss-index")) {
           const fromIndex = parseInt(e.dataTransfer.getData("application/x-gbkiss-index"));
           if (index == fromIndex) {
@@ -648,32 +634,29 @@ class Editor {
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],
-      eventListeners: {
-        click: e => {
-          e.preventDefault();
-          runModal(
-              [
-                makeElement("h3", {innerText: file.title}),
-                makeElement("ul", {
-                  children: [
-                    makeElement("li", {
-                      innerText: `Size: ${Math.floor((file.size + 255) / 256)} blocks (${
-                          file.size} bytes)`,
-                    }),
-                    makeElement("li", {children: ["Type: ", typeIcon(file)]}),
-                    file.hasHistory ? makeElement("li", {innerText: `Author: ${file.author}`}) :
-                                      "",
-                    makeElement("li", {
-                      children: [
-                        "Owner Code: ",
-                        makeElement("tt", {innerText: hexByte(file.ownerId)}),
-                      ],
-                    }),
-                  ],
-                }),
-              ],
-              ["Close"]);
-        },
+      onclick: e => {
+        e.preventDefault();
+        runModal(
+            [
+              makeElement("h3", {innerText: file.title}),
+              makeElement("ul", {
+                children: [
+                  makeElement("li", {
+                    innerText:
+                        `Size: ${Math.floor((file.size + 255) / 256)} blocks (${file.size} bytes)`,
+                  }),
+                  makeElement("li", {children: ["Type: ", typeIcon(file)]}),
+                  file.hasHistory ? makeElement("li", {innerText: `Author: ${file.author}`}) : "",
+                  makeElement("li", {
+                    children: [
+                      "Owner Code: ",
+                      makeElement("tt", {innerText: hexByte(file.ownerId)}),
+                    ],
+                  }),
+                ],
+              }),
+            ],
+            ["Close"]);
       },
     });
   }
@@ -687,11 +670,9 @@ class Editor {
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],
-      eventListeners: {
-        click: async e => {
-          e.preventDefault();
-          downloadUrl(file.title + ".gbf", await file.toDataUrl());
-        },
+      onclick: async e => {
+        e.preventDefault();
+        downloadUrl(file.title + ".gbf", await file.toDataUrl());
       },
     });
   }
@@ -705,12 +686,10 @@ class Editor {
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],
-      eventListeners: {
-        click: e => {
-          e.preventDefault();
-          this.saveFile.delFileAt(index);
-          this.listFiles();
-        },
+      onclick: e => {
+        e.preventDefault();
+        this.saveFile.delFileAt(index);
+        this.listFiles();
       },
     });
   }
@@ -723,29 +702,27 @@ class Editor {
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],
-      eventListeners: {
-        click: async e => {
-          e.preventDefault();
-          const h3 = makeElement("h3", {innerText: "Install GBKiss file"});
-          const largest = this.saveFile.getRegions()
-                              .filter(rgn => rgn.type === RGN.FREE)
-                              .map(rgn => rgn.size)
-                              .reduce((a, b) => (a > b) ? a : b, 0)
-          const p = makeElement("p", {innerText: `Largest available block: ${largest} bytes`});
-          const select = makeElement("select", {
-            children: FILES.map(f => makeElement("option", {value: f, innerText: f})),
-          });
-          if (await runModal([h3, p, select], ["Install", "Cancel"]) == "Cancel") {
-            return;
-          }
-          const url = "/file/" + select.value;
-          const resp = await window.fetch(url);
-          if (!resp.ok) {
-            runModal([makeElement("h3", {innerText: `Failed to load ${url}`})], ["OK"]);
-            return;
-          }
-          await this.addFile(index, await resp.blob());
-        },
+      onclick: async e => {
+        e.preventDefault();
+        const h3 = makeElement("h3", {innerText: "Install GBKiss file"});
+        const largest = this.saveFile.getRegions()
+                            .filter(rgn => rgn.type === RGN.FREE)
+                            .map(rgn => rgn.size)
+                            .reduce((a, b) => (a > b) ? a : b, 0)
+        const p = makeElement("p", {innerText: `Largest available block: ${largest} bytes`});
+        const select = makeElement("select", {
+          children: FILES.map(f => makeElement("option", {value: f, innerText: f})),
+        });
+        if (await runModal([h3, p, select], ["Install", "Cancel"]) == "Cancel") {
+          return;
+        }
+        const url = "/file/" + select.value;
+        const resp = await window.fetch(url);
+        if (!resp.ok) {
+          runModal([makeElement("h3", {innerText: `Failed to load ${url}`})], ["OK"]);
+          return;
+        }
+        await this.addFile(index, await resp.blob());
       },
     });
   }
@@ -758,15 +735,13 @@ class Editor {
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],
-      eventListeners: {
-        click: async e => {
-          e.preventDefault();
-          const file = await selectFile(".gbf");
-          if (file === null) {
-            return;
-          }
-          await this.addFile(index, file);
-        },
+      onclick: async e => {
+        e.preventDefault();
+        const file = await selectFile(".gbf");
+        if (file === null) {
+          return;
+        }
+        await this.addFile(index, file);
       },
     });
   }
@@ -846,7 +821,7 @@ class Editor {
     const dropbox = makeElement("div", {
       className: "bordered",
       innerText: "Load file or drop here to edit",
-      drop: async e => {
+      ondrop: async e => {
         if (e.dataTransfer.items.length) {
           await this.openFile(e.dataTransfer.items[0].getAsFile());
         } else if (e.dataTransfer.files.length) {

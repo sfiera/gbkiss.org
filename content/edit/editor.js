@@ -7,42 +7,42 @@ const RGN = obj(["FREE", "REGULAR", "ZERO", "SPECIAL"].map(x => [x, cc(x)]));
 
 const KISS_MAIL_STUB = u8("\17\0\6\0\12\1KISS MAIL".split("").map(cc)).buffer;
 
-const FILES = {
-  baketu: "/file/bakechu-relay/baketu.gbf",
-  biorythm: "/file/biorhythm/biorythm.gbf",
-  bj: "/file/blackjack/bj.gbf",
-  bland: "/file/binary/bland.gbf",
-  cannon: "/file/cannon-ball/cannon.gbf",
-  chardump: "/file/char-dump/chardump.gbf",
-  del_all: "/file/delete-all/del_all.gbf",
-  dentaku: "/file/calculator/dentaku.gbf",
-  drive: "/file/drive/drive.gbf",
-  family_s: "/file/family-shot/family_s.gbf",
-  iconedit: "/file/icon-edit/iconedit.gbf",
-  iconsend: "/file/icon-send/iconsend.gbf",
-  kissmon2: "/file/kiss-mon-2/kissmon2.gbf",
-  kissmon: "/file/kiss-mon/kissmon.gbf",
-  koura1: "/file/puzzle-game/koura1.gbf",
-  koura2: "/file/puzzle-game/koura2.gbf",
-  koura3: "/file/puzzle-game/koura3.gbf",
-  mag_data: "/file/magnets/mag_data.gbf",
-  magnets: "/file/magnets/magnets.gbf",
-  mogura: "/file/mogutte-nanbo/mogura.gbf",
-  passwords: "/file/mail/passwords.gbf",
-  poker: "/file/poker/poker.gbf",
-  puzzle: "/file/puzzle-game/puzzle.gbf",
-  roulette: "/file/roulette/roulette.gbf",
-  saita: "/file/saita/saita.gbf",
-  samegame: "/file/samegame/samegame.gbf",
-  sezaki: "/file/mogutte-nanbo/sezaki.gbf",
-  shot: "/file/shot/shot.gbf",
-  slot: "/file/slot/slot.gbf",
-  soundtst: "/file/sound-test/soundtst.gbf",
-  sramtool: "/file/sram-get-and-clear/sramtool.gbf",
-  sw_data: "/file/watch-and-timer/sw_data.gbf",
-  sw_timer: "/file/watch-and-timer/sw_timer.gbf",
-  worm: "/file/worm/worm.gbf",
-};
+const FILES = [
+  "bakechu-relay/baketu.gbf",
+  "biorhythm/biorythm.gbf",
+  "blackjack/bj.gbf",
+  "binary/bland.gbf",
+  "cannon-ball/cannon.gbf",
+  "char-dump/chardump.gbf",
+  "delete-all/del_all.gbf",
+  "calculator/dentaku.gbf",
+  "drive/drive.gbf",
+  "family-shot/family_s.gbf",
+  "icon-edit/iconedit.gbf",
+  "icon-send/iconsend.gbf",
+  "kiss-mon-2/kissmon2.gbf",
+  "kiss-mon/kissmon.gbf",
+  "puzzle-game/koura1.gbf",
+  "puzzle-game/koura2.gbf",
+  "puzzle-game/koura3.gbf",
+  "magnets/mag_data.gbf",
+  "magnets/magnets.gbf",
+  "mogutte-nanbo/mogura.gbf",
+  "mail/passwords.gbf",
+  "poker/poker.gbf",
+  "puzzle-game/puzzle.gbf",
+  "roulette/roulette.gbf",
+  "saita/saita.gbf",
+  "samegame/samegame.gbf",
+  "mogutte-nanbo/sezaki.gbf",
+  "shot/shot.gbf",
+  "slot/slot.gbf",
+  "sound-test/soundtst.gbf",
+  "sram-get-and-clear/sramtool.gbf",
+  "watch-and-timer/sw_data.gbf",
+  "watch-and-timer/sw_timer.gbf",
+  "worm/worm.gbf",
+];
 
 const PLAIN_CHARS =
     ("\u0000abcdefghijklmno" +
@@ -733,13 +733,12 @@ class Editor {
                               .reduce((a, b) => (a > b) ? a : b, 0)
           const p = makeElement("p", {innerText: `Largest available block: ${largest} bytes`});
           const select = makeElement("select", {
-            children: Object.entries(FILES).map(
-                ([k, v]) => makeElement("option", {value: v, innerText: k})),
+            children: FILES.map(f => makeElement("option", {value: f, innerText: f})),
           });
           if (await runModal([h3, p, select], ["Install", "Cancel"]) == "Cancel") {
             return;
           }
-          const url = select.value;
+          const url = "/file/" + select.value;
           const resp = await window.fetch(url);
           if (!resp.ok) {
             runModal([makeElement("h3", {innerText: `Failed to load ${url}`})], ["OK"]);

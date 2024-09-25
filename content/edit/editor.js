@@ -608,7 +608,7 @@ class Editor {
       className: "figure",
       draggable: true,
       eventListeners: {
-        dragstart: async e => {
+        dragstart: e => {
           e.dataTransfer.setData("application/x-gbkiss-index", index);
           e.dataTransfer.setData("text/plain", `GBKiss file at index ${index}`);
         },
@@ -661,7 +661,7 @@ class Editor {
         draggable: false,
       })],
       eventListeners: {
-        click: async e => {
+        click: e => {
           e.preventDefault();
           runModal(
               [
@@ -718,7 +718,7 @@ class Editor {
         draggable: false,
       })],
       eventListeners: {
-        "click": async e => {
+        "click": e => {
           e.preventDefault();
           this.saveFile.delFileAt(index);
           this.listFiles();

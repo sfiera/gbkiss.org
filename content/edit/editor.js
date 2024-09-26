@@ -242,6 +242,11 @@ const runModal = (children, buttons) => new Promise(resolve => {
   dlog.showModal();
 });
 
+const showErr = e => {
+  console.log(e);
+  runModal([h3(e.name), p(e.message)], ["OK"]);
+};
+
 class Addr {
   constructor(value) {
     if (value < 0 || 0x8000 < value) {
@@ -735,20 +740,12 @@ class Editor {
     try {
       kissFile = new KissFile(buffer);
     } catch (e) {
-      console.log(e);
-      await runModal([h3("Malformed GBKiss file")], ["OK"]);
-      return;
+      throw new Error("Malformed GBKiss file", e);
     }
     if (this.saveFile.getFileAt(index) !== null) {
       this.saveFile.delFileAt(index);
     }
-    try {
-      this.saveFile.addFileAt(index, kissFile);
-    } catch (e) {
-      console.log(e);
-      await runModal([h3(e.name), p(e.message)], ["OK"]);
-      return;
-    }
+    this.saveFile.addFileAt(index, kissFile);
     this.listFiles();
   }
 
@@ -820,5 +817,7 @@ class Editor {
 };
 
 document.addEventListener("DOMContentLoaded", e => {
+  window.addEventListener("error", e => {showErr(e.error)});
+  window.addEventListener("unhandledrejection", e => {showErr(e.reason)});
   new Editor(document.getElementById("editor")).close();
 });

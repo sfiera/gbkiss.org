@@ -288,6 +288,15 @@ class RegionHeader {
     return new RegionHeader(type, addr, prev, next);
   }
 
+  write(dataView) {
+    dataView.setUint8(this.addr.sram, this.type);
+    dataView.setUint8(this.addr.sram + 1, this.type ^ 0xFF);
+    if (this.prev !== null) {
+      dataView.setUint16(this.addr.sram + 2, this.prev.gb, true);
+    }
+    dataView.setUint16(this.addr.sram + 4, this.next.gb, true);
+  }
+
   get size() { return this.next.sram - this.addr.sram - RGN_HEADER_SIZE }
   get body() { return this.addr.add(RGN_HEADER_SIZE) }
 };
@@ -350,45 +359,39 @@ class SaveFile {
     u8(copy).set(u8(arrayBuffer));
     this.data = new DataView(copy);
 
-    let cursor = Addr.fromSRAM(0x0002);
-    let prev = null;
-    let index = null;
-    let profile = null;
-    while (true) {
-      let rgn = RegionHeader.read(this.data, cursor);
-      if ((rgn.prev !== null) && (rgn.prev.sram !== prev)) {
-        throw new Error(`invalid prev pointer: ${prev}`);
-      }
-      if (rgn.type === RGN.SPECIAL) {  // 'S'
-        if (index === null) {
-          index = cursor.add(6);
-        } else if (profile === null) {
-          profile = cursor.add(6);
-          if (rgn.next.gb !== 0xC000) {
-            throw new Error("profile region is not last");
-          }
-          break;
-        }
-      } else if (index !== null) {
-        throw new Error("index region should be immediately followed by profile");
-      }
-      prev = cursor.sram;
-      cursor = rgn.next.adjusted
+    const regions = this.getRegions();
+    if (regions.filter(rgn => rgn.type == RGN.SPECIAL).length !== 2) {
+      throw new Error(`missing special regions`);
     }
-    if (profile.sram !== index.add(486).sram) {
-      throw new Error(`index is wrong size: ${profile.sram - index.sram}`);
-    } else if (profile.gb > 0xBF86) {
-      throw new Error(`profile is truncated: ${profile.sram}`);
+    regions.slice(1).reduce((prev, curr) => {
+      if (prev.addr.sram !== curr.prev.sram) {
+        throw new Error(`invalid prev pointer: ${prev.addr.sram} != ${curr.prev.sram}`);
+      } else if (
+          (prev.addr.bank === curr.addr.bank) && (prev.type === RGN.FREE) &&
+          (curr.type === RGN.FREE)) {
+        throw new Error(`consecutive free regions: ${prev.addr.sram}, ${curr.addr.sram}`);
+      }
+      return curr;
+    }, regions[0]);
+
+    const indexRgn = regions[regions.length - 2];
+    const profileRgn = regions[regions.length - 1];
+    if ((indexRgn.type !== RGN.SPECIAL) || (indexRgn.type !== RGN.SPECIAL)) {
+      throw new Error("last 2 regions must be special");
+    } else if (indexRgn.size !== 480) {
+      throw new Error(`index is wrong size: ${indexRgn.size}`);
+    } else if (profileRgn.size < 122) {
+      throw new Error(`profile is truncated: ${profileRgn.size}`);
     }
 
-    this.indexPos = index;
-    this.profilePos = profile;
+    this.indexAddr = indexRgn.body;
+    this.profileAddr = profileRgn.body;
   }
 
-  get files() {
+  getFiles() {
     const list = [];
     for (let i = 0; i < 120; ++i) {
-      list.push(this.fileAt(i));
+      list.push(this.getFileAt(i));
     }
     return list;
   }
@@ -398,10 +401,10 @@ class SaveFile {
     const rgns = [];
     while (true) {
       let rgn = RegionHeader.read(this.data, cursor);
-      if ((rgn.type == RGN.SPECIAL) && (rgn.next.gb == 0xC000)) {
+      rgns.push(rgn);
+      if ((rgn.type === RGN.SPECIAL) && (rgn.next.gb === 0xC000)) {
         break;
       }
-      rgns.push(rgn);
       cursor = rgn.next.adjusted
     }
     return rgns;
@@ -414,12 +417,12 @@ class SaveFile {
   getUint32(addr) { return this.data.getUint32(addr.sram, true) }
   setUint32(addr, value) { return this.data.setUint32(addr.sram, value, true) }
 
-  fileAt(index) {
-    const addr = Addr.fromSRAM(this.getUint16(this.indexPos.add(index * 4)));
+  getFileAt(index) {
+    const addr = Addr.fromSRAM(this.getUint16(this.indexAddr.add(index * 4)));
     if (!addr.sram) {
       return null;
     }
-    const owner = this.getUint8(this.indexPos.add(index * 4 + 3));
+    const owner = this.getUint8(this.indexAddr.add(index * 4 + 3));
     if (owner === 1) {
       return new KissFile(KISS_MAIL_STUB);
     }
@@ -428,8 +431,8 @@ class SaveFile {
   }
 
   swapFilesAt(index1, index2) {
-    const index1Addr = this.indexPos.add(index1 * 4);
-    const index2Addr = this.indexPos.add(index2 * 4);
+    const index1Addr = this.indexAddr.add(index1 * 4);
+    const index2Addr = this.indexAddr.add(index2 * 4);
     const index1Entry = this.getUint32(index1Addr);
     const index2Entry = this.getUint32(index2Addr);
     this.setUint32(index1Addr, index2Entry);
@@ -437,20 +440,18 @@ class SaveFile {
   }
 
   delFileAt(index) {
-    const indexAddr = this.indexPos.add(index * 4);
-    const rgnAddr = Addr.fromSRAM(this.getUint16(indexAddr)).sub(RGN_HEADER_SIZE);
-    let rgn = RegionHeader.read(this.data, rgnAddr);
-
-    // Set the region type to $46 (free space).
-    this.setUint8(rgn.addr, RGN.FREE);
-    this.setUint8(rgn.addr.add(1), RGN.FREE ^ 0xFF);
+    const indexAddr = this.indexAddr.add(index * 4);
+    let rgn = RegionHeader.read(
+        this.data, Addr.fromSRAM(this.getUint16(indexAddr)).sub(RGN_HEADER_SIZE));
+    rgn.type = RGN.FREE;
 
     // Merge this region into previous, if previous region is free too.
     if ((rgn.prev !== null) && (rgn.addr.bank === rgn.prev.bank)) {
       const prev = RegionHeader.read(this.data, rgn.prev);
       if (prev.type === RGN.FREE) {
-        rgn = new RegionHeader(RGN.FREE, prev.addr, prev.prev, rgn.next);
-        this.setUint16(rgn.addr.add(4), rgn.next.gb);
+        prev.next = rgn.next;
+        rgn = prev;
+        rgn.write(this.data);
       }
     }
 
@@ -459,13 +460,17 @@ class SaveFile {
       const next = RegionHeader.read(this.data, rgn.next)
       if (next.type === RGN.FREE) {
         rgn = new RegionHeader(RGN.FREE, rgn.addr, rgn.prev, next.next);
-        this.setUint16(rgn.addr.add(4), rgn.next.gb);
+        rgn.next = next.next;
       }
     }
 
     // Ensure next region points to this.
     // There is always a next region, because only special regions are final.
-    this.setUint16(rgn.next.adjusted.add(2), rgn.addr.gb);
+    const next = RegionHeader.read(this.data, rgn.next.adjusted);
+    next.prev = rgn.addr;
+
+    rgn.write(this.data);
+    next.write(this.data);
 
     // Zero out the entry in the index.
     this.setUint32(indexAddr, 0);
@@ -494,33 +499,25 @@ class SaveFile {
     // if would be possible to merge into the following region,
     // if the file in the following region were to be deleted.
     if (rgn.size >= (kissFile.size + RGN_HEADER_SIZE)) {
-      let addr2 = null;
-      if (diamond) {
-        addr2 = rgn.body.add(kissFile.size);
-      } else {
-        addr2 = rgn.next.sub(kissFile.size + RGN_HEADER_SIZE);
-      }
+      const addr2 =
+          diamond ? rgn.body.add(kissFile.size) : rgn.next.sub(kissFile.size + RGN_HEADER_SIZE);
+      const rgn1 = new RegionHeader(RGN.FREE, rgn.addr, rgn.prev, addr2);
+      const rgn2 = new RegionHeader(RGN.FREE, addr2, rgn.addr, rgn.next);
+      const next = RegionHeader.read(this.data, rgn2.next.adjusted);
+      next.prev = rgn2.addr;
 
-      const region1 = new RegionHeader(RGN.FREE, rgn.addr, rgn.prev, addr2);
-      this.setUint16(region1.addr.add(4), region1.next.gb);
+      rgn1.write(this.data);
+      rgn2.write(this.data);
+      next.write(this.data);
 
-      const region2 = new RegionHeader(RGN.FREE, addr2, rgn.addr, rgn.next);
-      this.setUint8(region2.addr, region2.type);
-      this.setUint8(region2.addr.add(1), region2.type ^ 0xFF);
-      this.setUint16(region2.addr.add(2), region2.prev.gb);
-      this.setUint16(region2.addr.add(4), region2.next.gb);
-
-      this.setUint16(region2.next.adjusted.add(2), region2.addr.gb);
-
-      rgn = diamond ? region1 : region2;
+      rgn = diamond ? rgn1 : rgn2;
     }
 
-    const type = diamond ? RGN.ZERO : RGN.REGULAR;
-    this.setUint8(rgn.addr, type);
-    this.setUint8(rgn.addr.add(1), type ^ 0xFF);
+    rgn.type = diamond ? RGN.ZERO : RGN.REGULAR;
+    rgn.write(this.data);
     u8(this.data.buffer).set(u8(kissFile.data.buffer), rgn.body.sram);
 
-    const indexAddr = this.indexPos.add(index * 4);
+    const indexAddr = this.indexAddr.add(index * 4);
     this.setUint16(indexAddr, rgn.body.sram);
     this.setUint8(indexAddr.add(2), kissFile.cartId);
     this.setUint8(indexAddr.add(3), kissFile.ownerId);
@@ -742,7 +739,7 @@ class Editor {
       await runModal([h3("Malformed GBKiss file")], ["OK"]);
       return;
     }
-    if (this.saveFile.fileAt(index) !== null) {
+    if (this.saveFile.getFileAt(index) !== null) {
       this.saveFile.delFileAt(index);
     }
     try {
@@ -778,7 +775,7 @@ class Editor {
   listFiles() {
     const contents = makeElement("div", {className: "gallery-small"});
     let emptyCount = 0;
-    this.saveFile.files.forEach((file, i) => {
+    this.saveFile.getFiles().forEach((file, i) => {
       if (!file) {
         ++emptyCount;
         if (emptyCount === 1) {

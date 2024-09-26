@@ -243,31 +243,29 @@ const runModal = (children, buttons) => new Promise(resolve => {
 });
 
 class Addr {
-  constructor({bank, gb, sram}) {
-    if (typeof gb !== "undefined") {
-      if (typeof sram !== "undefined") {
-        throw new Error("passed both gb and sram");
-      } else if ((bank < 0) || (4 <= bank)) {
-        throw new Error(`invalid addr bank: ${bank}`);
-      } else if ((gb < 0xA000) || (0xC000 < gb)) {
-        throw new Error(`invalid mapped addr: ${gb}`);
-      }
-      [this.bank, this.gb] = [bank, gb];
-    } else if (typeof sram !== "undefined") {
-      if ((sram < 0) || (0x8000 <= sram)) {
-        throw new Error(`invalid sram addr: ${sram}`);
-      }
-      [this.bank, this.gb] = [sram >> 13, (sram & 0x1FFF) + 0xA000];
-    } else {
-      throw new Error("invalid arguments")
+  constructor(value) {
+    if (value < 0 || 0x8000 < value) {
+      throw new Error(`invalid addr: ${value}`);
     }
+    this.sram = value;
   }
 
-  get sram() { return (this.bank << 13) + (this.gb - 0xA000) }
+  static fromGB(bank, gb) {
+    if ((bank < 0) || (4 <= bank)) {
+      throw new Error(`invalid addr bank: ${bank}`);
+    } else if ((gb <= 0xA000) || (0xC000 < gb)) {
+      throw new Error(`invalid mapped addr: ${gb}`);
+    }
+    return new Addr((bank << 13) + (gb - 0xA000));
+  }
+  static fromSRAM(value) { return new Addr(value) }
+
+  get bank() { return (this.sram - 1) >> 13 }
+  get gb() { return ((this.sram - 1) & 0x1FFF) + 0xA001 }
   get adjusted() { return this.gb === 0xC000 ? this.add(2) : this }
 
-  add(offset) { return new Addr({sram: this.sram + offset}) }
-  sub(offset) { return new Addr({sram: this.sram - offset}) }
+  add(offset) { return new Addr(this.sram + offset) }
+  sub(offset) { return new Addr(this.sram - offset) }
 };
 
 class RegionHeader {
@@ -282,11 +280,11 @@ class RegionHeader {
       throw new Error(`invalid region header at ${addr.sram}: ${type} ^ ${typeCpl}`);
     }
     const prevGb = dataView.getUint16(addr.sram + 2, true);
-    const prev = (addr.gb !== 0xA002) ? new Addr({bank: addr.bank, gb: prevGb}) :
-        (addr.bank > 0)               ? new Addr({bank: addr.bank - 1, gb: prevGb}) :
+    const prev = (addr.gb !== 0xA002) ? Addr.fromGB(addr.bank, prevGb) :
+        (addr.bank > 0)               ? Addr.fromGB(addr.bank - 1, prevGb) :
                                         null;
     const nextGb = dataView.getUint16(addr.sram + 4, true);
-    const next = new Addr({bank: addr.bank, gb: nextGb});
+    const next = Addr.fromGB(addr.bank, nextGb);
     return new RegionHeader(type, addr, prev, next);
   }
 
@@ -352,7 +350,7 @@ class SaveFile {
     u8(copy).set(u8(arrayBuffer));
     this.data = new DataView(copy);
 
-    let cursor = new Addr({sram: 0x0002});
+    let cursor = Addr.fromSRAM(0x0002);
     let prev = null;
     let index = null;
     let profile = null;
@@ -396,7 +394,7 @@ class SaveFile {
   }
 
   getRegions() {
-    let cursor = new Addr({sram: 0x0002});
+    let cursor = Addr.fromSRAM(0x0002);
     const rgns = [];
     while (true) {
       let rgn = RegionHeader.read(this.data, cursor);
@@ -417,8 +415,8 @@ class SaveFile {
   setUint32(addr, value) { return this.data.setUint32(addr.sram, value, true) }
 
   fileAt(index) {
-    const addr = new Addr({sram: this.getUint16(this.indexPos.add(index * 4))});
-    if (addr.sram === 0) {
+    const addr = Addr.fromSRAM(this.getUint16(this.indexPos.add(index * 4)));
+    if (!addr.sram) {
       return null;
     }
     const owner = this.getUint8(this.indexPos.add(index * 4 + 3));
@@ -440,7 +438,7 @@ class SaveFile {
 
   delFileAt(index) {
     const indexAddr = this.indexPos.add(index * 4);
-    const rgnAddr = new Addr({sram: this.getUint16(indexAddr)}).sub(RGN_HEADER_SIZE);
+    const rgnAddr = Addr.fromSRAM(this.getUint16(indexAddr)).sub(RGN_HEADER_SIZE);
     let rgn = RegionHeader.read(this.data, rgnAddr);
 
     // Set the region type to $46 (free space).

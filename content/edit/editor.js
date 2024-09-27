@@ -628,9 +628,9 @@ class Editor {
 
   infoButton(index, file) {
     return makeElement("button", {
+      title: "Get file info",
       children: [makeElement("img", {
         src: "/edit/info.svg",
-        alt: "Get file info",
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],
@@ -651,10 +651,10 @@ class Editor {
 
   downloadButton(index, file) {
     return makeElement("button", {
+      title: `Download file`,
       disabled: file.ownerId === 1,
       children: [makeElement("img", {
         src: "/edit/download.svg",
-        alt: `Download file`,
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],
@@ -667,10 +667,10 @@ class Editor {
 
   removeButton(index, file) {
     return makeElement("button", {
+      title: "Remove file",
       disabled: file.ownerId === 1,
       children: [makeElement("img", {
         src: "/edit/remove.svg",
-        alt: "Remove file",
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],
@@ -684,9 +684,9 @@ class Editor {
 
   installButton(index) {
     return makeElement("button", {
+      title: "Install known file",
       children: [makeElement("img", {
         src: "/edit/install.svg",
-        alt: "Install known file",
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],
@@ -717,9 +717,9 @@ class Editor {
 
   uploadButton(index) {
     return makeElement("button", {
+      title: "Upload file",
       children: [makeElement("img", {
         src: "/edit/upload.svg",
-        alt: "Upload file",
         style: "width: 0.75em; height: 0.75em",
         draggable: false,
       })],

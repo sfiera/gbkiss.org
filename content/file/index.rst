@@ -352,4 +352,25 @@ Data files are marked with |triangle|. If the associated software_ is installed,
 
       `Sezaki <{filename}mogutte-nanbo/sezaki.rst>`_
 
+Homebrew
+--------
+
+.. container:: gallery-small
+
+   .. figure:: {static}hello-world/icon.png
+      :alt: Hello World icon
+      :width: 64
+      :height: 48
+      :target: {filename}hello-world/index.rst
+
+      `Hello World <{filename}hello-world/index.rst>`_
+
+   .. figure:: {static}cksum/icon.png
+      :alt: Cksum icon
+      :width: 64
+      :height: 48
+      :target: {filename}cksum/index.rst
+
+      `Cksum <{filename}cksum/index.rst>`_
+
 .. include:: ../epilog.rsti

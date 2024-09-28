@@ -29,6 +29,7 @@ MENUITEMS = [
     ("Technology", "/tech"),
     ("GBKiss Link", "/link"),
     ("Hudson", "/hudson"),
+    ("Save Editor", "/edit"),
 ]
 
 

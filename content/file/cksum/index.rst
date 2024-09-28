@@ -16,6 +16,16 @@ Cksum
 * Type: |circle|
 * Author: |author-sfiera|_
 * `Creator Code`_: ``$00``
+* Source code: `cksum.asm <https://github.com/sfiera/gbkasm/blob/main/src/file/cksum.asm>`_
+
+Description
+-----------
+
+This program lists files and calculates their CRC-32_ checksums.
+
+It demonstrates various traps related to drawing and file interaction.
+
+.. _CRC-32: https://en.wikipedia.org/wiki/Cyclic_redundancy_check
 
 Images
 ------

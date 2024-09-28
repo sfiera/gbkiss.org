@@ -16,6 +16,14 @@ Hello World
 * Type: |circle|
 * Author: |author-sfiera|_
 * `Creator Code`_: ``$00``
+* Source code: `hello_w.asm <https://github.com/sfiera/gbkasm/blob/main/src/file/hello_w.asm>`_
+
+Description
+-----------
+
+This is a `“Hello, World!” program`_ for GBKiss. It displays the string “Hello, World!” in the middle of the screen, then exits when the player presses the Select button.
+
+.. _“Hello, World!” program: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
 
 Images
 ------

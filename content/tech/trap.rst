@@ -328,9 +328,11 @@ IRListen ($72)
 
 Parameters:
 
-*  Unknown
+*  None
 
-Begins listening for an infrared_ connection from another cartridge. Takes two identifying bytes, which are sent to any cartridge that opens a connection by calling `IROpen ($7C)`_.
+Begins listening for an infrared_ connection from another cartridge. By convention, callers should first set up a 2-byte identifying code in a fixed memory location. The remote device can then initiate the connection with `IRRead ($7C)`_ and verify that the local and remote devices are running the same software.
+
+Returns after the remote device calls `IRClose ($73)`_. If it fails or is cancelled with B, sets the carry flag.
 
 .. _infrared: {filename}infrared.rst
 
@@ -339,28 +341,34 @@ IRClose ($73)
 
 Parameters:
 
-*  Unknown
+*  None
 
-Ends an infrared_ session started with `IROpen ($7C)`_.
+Tells a remote device that is listening with `IRListen ($72)`_ that the session is complete and that it can stop listening. If it fails or is cancelled with B, sets the carry flag.
 
-IROpen ($7C)
+IRRead ($7C)
 ~~~~~~~~~~~~
 
 Parameters:
 
-*  Unknown
+*  ``hl``: source address on remote device
+*  ``de``: target address on local device
+*  ``c``: transfer size
 
-Attempts to open an infrared_ connection to another cartridge that has called `IRListen ($72)`_. If the connection is successfully opened, provides the two identifying bytes that were set in the other cartridge. If successful, the caller should follow up with `IRSend ($7F)`_ and then `IRClose ($73)`_.
+Attempts to read data from another device that has called `IRListen ($72)`_.
 
-IRSend ($7F)
-~~~~~~~~~~~~
+If successful, the caller should follow up with additional IRRead and `IRWrite ($7F)`_ calls, and then `IRClose ($73)`_. If it fails or is cancelled with B, sets the carry flag.
+
+IRWrite ($7F)
+~~~~~~~~~~~~~
 
 Parameters:
 
-*  ``hl``: source address on this cartridge?
-*  ``de``: target address on other cartridge?
-*  ``c``: transfer size?
+*  ``hl``: source address on local device
+*  ``de``: target address on remote device
+*  ``c``: transfer size
 
-Sends data from this cartridge to another, after a session has been successfully set up with `IROpen ($7C)`_ and `IRListen ($72)`_.
+Attempts to write data to another device that has called `IRListen ($72)`_.
+
+If successful, the caller should follow up with additional `IRRead ($7C)`_ and IRWrite calls, and then `IRClose ($73)`_. If it fails or is cancelled with B, sets the carry flag.
 
 .. include:: ../epilog.rsti

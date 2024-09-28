@@ -357,6 +357,14 @@ Homebrew
 
 .. container:: gallery-small
 
+   .. figure:: {static}cksum/icon.png
+      :alt: Cksum icon
+      :width: 64
+      :height: 48
+      :target: {filename}cksum/index.rst
+
+      `Cksum <{filename}cksum/index.rst>`_
+
    .. figure:: {static}hello-world/icon.png
       :alt: Hello World icon
       :width: 64
@@ -365,12 +373,12 @@ Homebrew
 
       `Hello World <{filename}hello-world/index.rst>`_
 
-   .. figure:: {static}cksum/icon.png
-      :alt: Cksum icon
+   .. figure:: {static}irtest/icon.png
+      :alt: IR Test icon
       :width: 64
       :height: 48
-      :target: {filename}cksum/index.rst
+      :target: {filename}irtest/index.rst
 
-      `Cksum <{filename}cksum/index.rst>`_
+      `IR Test <{filename}irtest/index.rst>`_
 
 .. include:: ../epilog.rsti

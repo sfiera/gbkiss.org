@@ -22,6 +22,7 @@ const FILES = [
   "hello-world/hello_w.gbf",
   "icon-edit/iconedit.gbf",
   "icon-send/iconsend.gbf",
+  "irtest/irtest.gbf",
   "kiss-mon-2/kissmon2.gbf",
   "kiss-mon/kissmon.gbf",
   "magnets/mag_data.gbf",

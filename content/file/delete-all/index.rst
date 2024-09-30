@@ -15,7 +15,7 @@ Delete All
 * Size: 1 Block_ (31 bytes)
 * Type: |circle|
 * Author: *Anonymous*
-* Source: |mini-kisstool|
+* Origin: |mini-kisstool|
 * `Creator Code`_: ``$43`` (Cards)
 
 Description

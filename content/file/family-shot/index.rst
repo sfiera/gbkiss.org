@@ -15,7 +15,7 @@ Family Shot
 * Size: 7 Blocks_ (1769 bytes)
 * Type: |circle|
 * Author: HORI&KUMA
-* Source: `Hudson website <https://web.archive.org/web/20021020134646/http://www.hudson.co.jp/gamenavi/gamedb/softinfo/family/date.html>`_
+* Origin: `Hudson website <https://web.archive.org/web/20021020134646/http://www.hudson.co.jp/gamenavi/gamedb/softinfo/family/date.html>`_
 * `Creator Code`_: ``$00`` (none)
 * `Cartridge Code`_: ``$06`` (`Pocket Family GB`_)
 

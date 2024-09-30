@@ -16,7 +16,7 @@ SameGame
 * Size: 9 Blocks_ (2242 bytes)
 * Type: |circle|
 * Author: |author-tobi|_
-* Source: |mini-default|, |gbkiss-link|
+* Origin: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$67`` (SameGame)
 
 Images

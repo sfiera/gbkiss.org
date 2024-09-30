@@ -16,7 +16,7 @@ Binary
 * Size: 32 Blocks_ (8179 bytes)
 * Type: |diamond|
 * Author: |author-t-ohnishi|_
-* Source: |mini-binary|, |gbkiss-link|
+* Origin: |mini-binary|, |gbkiss-link|
 * `Creator Code`_: ``$71`` (Binary)
 
 Images

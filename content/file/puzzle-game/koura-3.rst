@@ -16,7 +16,7 @@ Koura 3
 * Size: 6 Blocks_ (1469 bytes)
 * Type: |triangle|
 * Author: |author-nonchan|_
-* Source: |mini-gamedata|, |gbkiss-link|
+* Origin: |mini-gamedata|, |gbkiss-link|
 * `Creator Code`_: ``$64`` (`Puzzle Game`_)
 
 .. _Puzzle Game: {filename}index.rst

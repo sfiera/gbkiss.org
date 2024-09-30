@@ -16,7 +16,7 @@ Sound Test
 * Size: 4 Blocks_ (876 bytes)
 * Type: |circle|
 * Author: *Anonymous*
-* Source: |mini-kissmon|, |gbkiss-link|
+* Origin: |mini-kissmon|, |gbkiss-link|
 * `Creator Code`_: ``$05`` (Sound Test)
 
 Description

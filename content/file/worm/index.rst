@@ -15,7 +15,7 @@ Worm
 * Size: 8 Blocks_ (1816 bytes)
 * Type: |diamond|
 * Author: |author-kei-kondoh|_
-* Source: |mini-binary|, |gbkiss-link|
+* Origin: |mini-binary|, |gbkiss-link|
 * `Creator Code`_: ``$00`` (none)
 
 Description

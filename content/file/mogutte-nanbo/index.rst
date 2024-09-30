@@ -15,7 +15,7 @@ Mogutte Nanbo
 * Size: 31 Blocks_ (7894 bytes)
 * Type: |diamond|
 * Author: TEAMMOGURA
-* Source: |mini-default|, |gbkiss-link|
+* Origin: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$65`` (Mogutte Nanbo)
 
 Description

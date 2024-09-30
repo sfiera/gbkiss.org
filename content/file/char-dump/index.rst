@@ -15,7 +15,7 @@ Char-Dump
 * Size: 2 Blocks_ (281 bytes)
 * Type: |circle|
 * Author: *Anonymous*
-* Source: |mini-kisstool|
+* Origin: |mini-kisstool|
 * `Creator Code`_: ``$43`` (Cards)
 
 Images

@@ -16,7 +16,7 @@ Icon-Send
 * Size: 23 Blocks_ (5776 bytes)
 * Type: |circle|
 * Author: *Anonymous*
-* Source: |mini-cannon|, |gbkiss-link|
+* Origin: |mini-cannon|, |gbkiss-link|
 * `Creator Code`_: ``$00`` (none)
 
 Description

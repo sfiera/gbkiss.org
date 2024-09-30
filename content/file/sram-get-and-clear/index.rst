@@ -15,7 +15,7 @@ SRAM Get & Clear
 * Size: 5 Blocks_ (1075 bytes)
 * Type: |circle|
 * Author: |author-y-motosako|_
-* Source: |mini-kisstool|
+* Origin: |mini-kisstool|
 * `Creator Code`_: ``$00`` (none)
 
 Images

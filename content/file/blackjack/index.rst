@@ -16,7 +16,7 @@ Blackjack
 * Size: 13 Blocks_ (3119 bytes)
 * Type: |circle|
 * Author: |author-tarkun|_
-* Source: |mini-binary|, |gbkiss-link|
+* Origin: |mini-binary|, |gbkiss-link|
 * `Creator Code`_: ``$43`` (Cards)
 
 Images

@@ -16,7 +16,7 @@ Icon-Edit
 * Size: 9 Blocks_ (2186 bytes)
 * Type: |circle|
 * Author: |author-tobi|_
-* Source: |mini-cannon|, |gbkiss-link|
+* Origin: |mini-cannon|, |gbkiss-link|
 * `Creator Code`_: ``$03`` (Icon-Edit)
 
 Description

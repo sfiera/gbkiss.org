@@ -16,7 +16,7 @@ Drive
 * Size: 20 Blocks_ (5072 bytes)
 * Type: |circle|
 * Author: |author-t-ohnishi|_
-* Source: |mini-default|, |gbkiss-link|
+* Origin: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$69`` (Drive)
 
 Images

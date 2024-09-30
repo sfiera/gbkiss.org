@@ -16,7 +16,7 @@ Poker
 * Size: 21 Blocks_ (5151 bytes)
 * Type: |circle|
 * Author: |author-s-kimura|_
-* Source: |mini-cannon|, |gbkiss-link|
+* Origin: |mini-cannon|, |gbkiss-link|
 * `Creator Code`_: ``$43`` (Cards)
 
 Images

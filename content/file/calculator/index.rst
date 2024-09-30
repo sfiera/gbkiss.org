@@ -16,7 +16,7 @@ Calculator
 * Size: 5 Blocks_ (1148 bytes)
 * Type: |circle|
 * Author: |author-y-motosako|_
-* Source: |mini-kissmon|, |gbkiss-link|
+* Origin: |mini-kissmon|, |gbkiss-link|
 * `Creator Code`_: ``$04`` (Calculator)
 
 Images

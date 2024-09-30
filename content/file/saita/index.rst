@@ -15,7 +15,7 @@ Saita Saita
 * Size: 1 Block_ (77 bytes)
 * Type: |triangle|
 * Author: (anonymous)
-* Source: `Hudson website`_
+* Origin: `Hudson website`_
 * `Creator Code`_: ``$76`` (`alarm tone`_)
 
 .. _alarm tone: {filename}/tech/alarm.rst

@@ -16,7 +16,7 @@ Shot
 * Size: 2 Blocks_ (507 bytes)
 * Type: |circle|
 * Author: |author-tobi|_
-* Source: |mini-default|, |gbkiss-link|
+* Origin: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$68`` (Shot)
 
 Images

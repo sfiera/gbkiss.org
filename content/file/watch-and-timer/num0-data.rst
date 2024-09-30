@@ -16,7 +16,7 @@ Num0 Data
 * Size: 4 Blocks_ (770 bytes)
 * Type: |triangle|
 * Author: *Anonymous*
-* Source: |mini-gamedata|, |gbkiss-link|
+* Origin: |mini-gamedata|, |gbkiss-link|
 * `Creator Code`_: ``$6a`` (`Watch & Timer`_)
 
 .. _Watch & Timer: {filename}index.rst

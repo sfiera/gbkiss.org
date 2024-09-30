@@ -14,7 +14,7 @@ Kiss Mail
 * Size: 1 Block_ (0 bytes)
 * Type: |bullseye|
 * Author: *Anonymous*
-* Source: built-in
+* Origin: built-in
 * `Creator Code`_: ``$01`` (Kiss Mail)
 
 Description

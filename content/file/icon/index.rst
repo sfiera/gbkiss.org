@@ -13,7 +13,7 @@ Icon
 * Size: 1+ Blocks_ (245+ bytes)
 * Type: |triangle|
 * Author: *GBKiss user*
-* Source: Icon-Edit_, Icon-Send_
+* Origin: Icon-Edit_, Icon-Send_
 * `Creator Code`_: ``$83`` (Icon-Edit_)
 
 Trivia

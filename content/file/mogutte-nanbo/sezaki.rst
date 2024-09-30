@@ -16,7 +16,7 @@ Sezaki
 * Size: 7 Blocks_ (1641 bytes)
 * Type: |triangle|
 * Author: |author-sezaki|_
-* Source: |mini-gamedata|, |gbkiss-link|
+* Origin: |mini-gamedata|, |gbkiss-link|
 * `Creator Code`_: ``$65`` (`Mogutte Nanbo`_)
 
 .. _Mogutte Nanbo: {filename}index.rst

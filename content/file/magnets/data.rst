@@ -16,7 +16,7 @@ Magnets Data
 * Size: 25 Blocks_ (6215 bytes)
 * Type: |triangle|
 * Author: <TEAM MAG>
-* Source: |mini-default|, |gbkiss-link|
+* Origin: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$66`` (Magnets_)
 
 .. _Magnets: {filename}index.rst

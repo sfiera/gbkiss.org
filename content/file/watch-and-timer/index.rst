@@ -16,7 +16,7 @@ Watch & Timer
 * Size: 9 Blocks_ (2055 bytes)
 * Type: |circle|
 * Author: |author-y-motosako|_
-* Source: |mini-kissmon|, |gbkiss-link|
+* Origin: |mini-kissmon|, |gbkiss-link|
 * `Creator Code`_: ``$6a`` (Watch & Timer)
 
 Description

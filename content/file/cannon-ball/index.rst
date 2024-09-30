@@ -16,7 +16,7 @@ Cannon Ball
 * Size: 27 Blocks_ (6732 bytes)
 * Type: |circle|
 * Author: GBKISS LAB
-* Source: |mini-cannon|, |gbkiss-link|
+* Origin: |mini-cannon|, |gbkiss-link|
 * `Creator Code`_: ``$6d`` (Cannon Ball)
 
 Images

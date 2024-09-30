@@ -16,7 +16,7 @@ Magnets
 * Size: 30 Blocks_ (7563 bytes)
 * Type: |diamond|
 * Author: <TEAM MAG>
-* Source: |mini-default|, |gbkiss-link|
+* Origin: |mini-default|, |gbkiss-link|
 * `Creator Code`_: ``$66`` (Magnets)
 
 Images

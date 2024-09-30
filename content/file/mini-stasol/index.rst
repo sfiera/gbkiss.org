@@ -12,7 +12,7 @@ Mini Stasol
 
 * Size: Unknown
 * Type: Unknown
-* Author: Unknown
+* Author: |author-kei-kondoh|_
 * Source: |gbkiss-link|
 * `Creator Code`_: Unknown
 

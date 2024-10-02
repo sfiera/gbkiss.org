@@ -9,31 +9,56 @@ All GBKiss cartridges_ are capable of wireless communication over infrared.
 
 .. _cartridges: {filename}/cart/index.rst
 
-Application Level
+Physical Layer
+--------------
+
+At the physical layer, infrared communication is handled by turning the infrared LED in each cartridge on and off for a fixed period of time. There seem to be three different pulse lengths:
+
+* 10 units: zero bit
+* 18 units: one bit
+* 35 units: stop bit
+
+Data Link Layer
+---------------
+
+There seem to be two different protocols for framing bytes.
+
+The first protocol is used for handshaking. In this protocol, the following are sent in succession:
+
+* 8 zero or one bits
+* 1 stop bit
+* 1 additional zero bit
+
+After handshaking is complete, a different framing protocol is used:
+
+* Some synchronization between devices (TBD)
+* 8 zero or one bits
+* 1 additional zero bit
+
+Network Layer
+-------------
+
+Each time a sending device communicates with a receiving device, it initiates a handshake, then sends a packet with the following data:
+
+* The literal bytes ``Hu`` (``$72``, ``$15``).
+* The contents of its eight registers in the order ``falhedcb``.
+
+Transport Layer
+---------------
+
+On the receiving side, a listening device runs a loop, accepting register packets. Each time it receives a packet, it checks the sent ``a`` register and executes the numbered command from the IR op table with the sent registers.
+
+The most useful operations are:
+
+* ``$00``: close connection successfully
+* ``$08``: read from remote WRAM
+* ``$0B``: write to remote WRAM
+
+Application Layer
 -----------------
 
-At the application level, infrared communication is managed through four traps_:
+By convention, before software begins listening for infrared communication, it first writes 2 identifier bytes to a fixed location in memory, then calls IRListen.
 
-*  `IRListen ($72) <{filename}trap.rst#irlisten-72>`_
-*  `IRRead ($7C) <{filename}trap.rst#irread-7c>`_
-*  `IRWrite ($7F) <{filename}trap.rst#irwrite-7f>`_
-*  `IRClose ($73) <{filename}trap.rst#irclose-73>`_
-
-.. _traps: {filename}trap.rst
-
-First, the receiver writes 2 identifier bytes to a fixed location in memory. Four values are known:
-
-*  ``Hu`` (``$CE00``): `GBKiss menu <{filename}/file/menu/index.rst>`_
-*  ``BK`` (``$CCC1``): `Bakechu Relay <{filename}/file/bakechu-relay/index.rst>`_
-*  ``MT`` (``$CC9C``): `Kiss-Mon <{filename}/file/kiss-mon/index.rst>`_
-*  ``k2`` (``$C860``): `Kiss-Mon 2 <{filename}/file/kiss-mon-2/index.rst>`_
-
-Then, the receiver calls IRListen to start handling incoming connections.
-
-Next, the sender calls the other three traps:
-
-1. An initial IRRead call, to initiate the connection and receive the 2 identifier bytes. If these match the intended receiver, it proceeds.
-2. Additional IRRead and IRWrite calls, with the source and destination address ranges.
-3. A final IRClose, to terminate the connection and return control to the receiver on the remote side.
+When the sender initiates communication, it first issues an IRRead call for the identifier address and checks if the identifier bytes are expected. If not, it terminates the connection.
 
 .. include:: ../epilog.rsti

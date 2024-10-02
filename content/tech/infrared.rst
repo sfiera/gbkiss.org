@@ -14,9 +14,9 @@ Physical Layer
 
 At the physical layer, infrared communication is handled by turning the infrared LED in each cartridge on and off for a fixed period of time. There seem to be three different pulse lengths:
 
-* 10 units: zero bit
-* 18 units: one bit
-* 35 units: stop bit
+* 10 units (~75μs?): zero bit
+* 18 units (~150μs?): one bit
+* 35 units (~300μs?): stop bit
 
 Data Link Layer
 ---------------
@@ -29,6 +29,13 @@ The first protocol is used for handshaking. In this protocol, the following are 
 * 1 stop bit
 * 1 additional zero bit
 
+A successful handshake consists of:
+
+* ``$AA`` (``%10101010``) from sender to receiver
+* ``$55`` (``%01010101``; ``~$AA``) from receiver to sender
+* ``$C3`` (``%11000011``) from sender to receiver
+* ``$3C`` (``%00111100``; ``~$C3``) from receiver to sender
+
 After handshaking is complete, a different framing protocol is used:
 
 * Some synchronization between devices (TBD)
@@ -38,7 +45,7 @@ After handshaking is complete, a different framing protocol is used:
 Network Layer
 -------------
 
-Each time a sending device communicates with a receiving device, it initiates a handshake, then sends a packet with the following data:
+Each time a sender communicates with a receiver, it initiates a handshake, then sends a packet with the following data:
 
 * The literal bytes ``Hu`` (``$72``, ``$15``).
 * The contents of its eight registers in the order ``falhedcb``.

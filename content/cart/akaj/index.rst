@@ -5,7 +5,7 @@ GBKiss Mini Games
 :slug: cart/akaj
 :tags: cart
 
-* Release Date: 1997-12-??
+* Release Date: 1997-11-01
 * Product Code: DMG-AKAJ-JPN
 * Mapper_: HuC-1
 * ROM Size: 2Mbit (256KiB)

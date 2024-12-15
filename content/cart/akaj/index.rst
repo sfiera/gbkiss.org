@@ -13,16 +13,77 @@ GBKiss Mini Games
 * Storage_: $7f00 (32512 bytes)
 * `Cartridge Code`_: ``$fe``
 
-The table of contents for the “Famitsu Bros” 1997/12 issue says:
-
-    いますぐゲームショップでミニゲームゲット
-    
-    GBキッス・・・・・・・64
-
-Working theory: this cartridge was distributed to game shops, who were supposed to provide a mini-game to visitors on proof of subscription. The actual text of the article would probably explain.
-
 Description
 -----------
+
+The 1997/12 issue of `Famitsu Bros`_ introduced a promotional campaign for distributing GB Kiss minigame software. Subscribers could go to one of a list of participating stores and request software by name and number:
+
+   | **GB Kiss MINI GAME**
+   | ジービー キッス　ミニゲーム
+
+   協力店に行くまえに、これだけは確認してね!!
+
+   1. ミニゲームを送信できるのは、GB Kiss対応のゲームボーイソフト(「スーパービーダマン ファイティング フェニックス」など、今後も続々発売される予定)だけだぞ。ほかのゲームボーイソフトを持って行っても、送信できないから注意してね。
+
+   2. GB Kissメニューに十分な空き容量がないと、ミニゲームは送信できないぞ。65~68ページにそれぞれのゲームが使用する容量を明記したので、参考にしよう。
+
+   3. 協力店へは、GB Kiss対応ソフトとゲームボーイ本体も忘れずに持っていくこと。送受信するときは電池が消耗するので、電池は新しいものを用意しよう。
+
+   4. 協力店に行ったら、「ファミ通ブロスみました。〇番の〇〇のゲームを送信してください」とお店の人にはっきり言おう。
+
+   5. 送信してもらうときは、GB Kissメニューを立ち上げ、ミニゲームを保存したいエリアを指定しておくこと。
+
+   6. さあ、お店の人から赤外線通信でミニゲームが送信されるぞ。“受信”のコマンドを洗濯して、Ａボタンを押そう。
+
+   7. 受信完了。キミのソフトに新しいミニゲームが保存されたぞ。このゲームをキミから友達に送信してあげてもいいのだ。
+
+Translation:
+
+   | **GB Kiss MINI GAME**
+
+   Before going to a participating store, please take note!!
+
+   1. Only GB Kiss-compatible software (such as “Super B-Daman Fighting Phoenix”; others are planned for release) can receive minigames. If you bring other software, please be aware that it cannot receive minigames.
+
+   2. If there are not enough available storage blocks in the GB Kiss menu, you cannot receive minigames. Storage sizes are written on pages 65-68, so please keep it in mind.
+
+   3. Please don’t forget to bring your GB Kiss-compatible software and Game Boy to the participating store. Communication consumes batteries, so please use new batteries.
+
+   4. When you go to a participating store, please clearly say “I saw Famitsu Bros. Please send me software #__, ______” to the store staff.
+
+   5. When you are ready to receive, open the GB Kiss menu and select the space where you want to save the minigame.
+
+   6. The store staff will send the minigame with infrared communication. Select the “Receive” command and press A.
+
+   7. Transmission complete. The new minigame is saved to your software. You can also send this minigame to your friends.
+
+11 different minigames were presented in the December issue (for distribution in November). More software was also promised for distribution in the following months.
+
+*  November 1997: Default_ and KISSMON_ groups
+
+   1.  Kiss-Mon_
+   2.  `Mogutte Nanbo`_
+   3.  Drive_
+   4.  `Bakechu Relay`_
+   5.  Biorhythm_
+   6.  SameGame_
+   7.  Shot_
+   8.  `Watch & Timer`_
+   9.  Calculator_
+   10. Magnets_
+   11. `Sound Test`_
+
+*  December 1997: Unknown
+*  January 1998: Unknown
+
+Although the article makes no explicit mention of the GBKiss Mini Games cartridge, it is likely that this was the mechanism for distribution, given:
+
+*  The cartridge has a printed Famitsu Bros logo.
+*  The distribution lists line up with the passwords.
+
+In particular, the password system would have been an effective way to distribute physical media to participating stores once and later expand distribution to additional minigames.
+
+.. _Famitsu Bros: https://en.wikipedia.org/wiki/Famitsu#Former_special_topics
 
 Groups
 ------

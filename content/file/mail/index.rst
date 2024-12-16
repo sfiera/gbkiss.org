@@ -23,6 +23,9 @@ Mail
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}passwords.png

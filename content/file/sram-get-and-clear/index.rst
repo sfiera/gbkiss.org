@@ -21,6 +21,9 @@ SRAM Get & Clear
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}info.png

@@ -24,6 +24,9 @@ Koura 2
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}koura-2-info.png

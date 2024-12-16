@@ -36,6 +36,9 @@ After printing the photo, the app automatically exits.
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}print.png

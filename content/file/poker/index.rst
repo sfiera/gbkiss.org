@@ -22,6 +22,9 @@ Poker
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}menu.png

@@ -28,6 +28,9 @@ Dangerous! Don’t install this unless you plan to use it.
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}info.png

@@ -29,6 +29,9 @@ Biorhythm is a calculator for `biorhythm theory`_, a pseudoscientific theory tha
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}title.png
@@ -51,6 +54,11 @@ Images
       :height: 144
 
       File info
+
+Media
+~~~~~
+
+.. container:: gallery
 
    .. figure:: {static}profile.jpg
       :target: {static}profile.jpg

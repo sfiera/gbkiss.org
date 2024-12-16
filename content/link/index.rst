@@ -148,6 +148,9 @@ Manual
 Images
 ------
 
+Media
+~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}contents.jpg

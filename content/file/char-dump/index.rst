@@ -21,6 +21,9 @@ Char-Dump
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}info.png

@@ -24,6 +24,9 @@ Koura 1
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}koura-1-info.png

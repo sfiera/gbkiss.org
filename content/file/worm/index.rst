@@ -26,6 +26,9 @@ A simple snake game. It uses text characters to represent the snake and playing 
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}title.png

@@ -24,6 +24,9 @@ Magnets Data
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}data-info.png

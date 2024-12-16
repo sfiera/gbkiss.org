@@ -41,6 +41,9 @@ The “Sezaki_” replacement graphics package changes the location from the def
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}menu.png
@@ -78,14 +81,8 @@ Images
 
       File info
 
-   .. figure:: {static}profile.jpg
-      :target: {static}profile.jpg
-      :alt: Mogutte Nanbo profile
-
-      Mogutte Nanbo profile (Famitsu Bros. 1997/12, p.65)
-
-Backgrounds
------------
+Graphics
+~~~~~~~~
 
 .. container:: gallery
 
@@ -104,5 +101,16 @@ Backgrounds
       “Sezaki_” graphics
 
 .. _Sezaki: {filename}sezaki.rst
+
+Media
+~~~~~
+
+.. container:: gallery
+
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Mogutte Nanbo profile
+
+      Mogutte Nanbo profile (Famitsu Bros. 1997/12, p.65)
 
 .. include:: ../../epilog.rsti

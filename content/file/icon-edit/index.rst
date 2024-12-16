@@ -48,6 +48,9 @@ The editor controls are:
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}menu.png

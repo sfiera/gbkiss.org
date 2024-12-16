@@ -49,8 +49,23 @@ Others may represent planned software, draft graphics, or simply be intended as 
 .. _Delete All: {filename}../delete-all/index.rst
 .. _Shot: {filename}../shot/index.rst
 
-Contents
---------
+Images
+------
+
+Screenshots
+~~~~~~~~~~~
+
+.. container:: gallery
+
+   .. figure:: {static}info.png
+      :alt: File info
+      :width: 160
+      :height: 144
+
+      File info
+
+Graphics
+~~~~~~~~
 
 .. container:: gallery-small
 
@@ -347,17 +362,5 @@ Contents
        :height: 48
 
        CURSORS
-
-Images
-------
-
-.. container:: gallery
-
-   .. figure:: {static}info.png
-      :alt: File info
-      :width: 160
-      :height: 144
-
-      File info
 
 .. include:: ../../epilog.rsti

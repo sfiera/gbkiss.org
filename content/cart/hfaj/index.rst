@@ -56,6 +56,9 @@ Additional alarm tones can be loaded into the game as GBKiss data files. Hudson 
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}mgb.png

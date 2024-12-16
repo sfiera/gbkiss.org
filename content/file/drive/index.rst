@@ -22,6 +22,9 @@ Drive
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}menu.png
@@ -44,6 +47,11 @@ Images
       :height: 144
 
       File info
+
+Media
+~~~~~
+
+.. container:: gallery
 
    .. figure:: {static}profile.jpg
       :target: {static}profile.jpg

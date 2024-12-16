@@ -21,6 +21,9 @@ Roulette
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}game.png

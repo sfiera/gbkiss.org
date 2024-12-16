@@ -41,6 +41,9 @@ Panel de Pon is a “Lights-Out_”-type game unrelated to the Tetris Attack/Puz
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}menu.png
@@ -71,8 +74,8 @@ Images
 
       File info
 
-Illustrations
-~~~~~~~~~~~~~
+Graphics
+~~~~~~~~
 
 The default illustration depicts a grid of numbers from 1 to 15, as is common for 15 Puzzle. Three additional illustrations by |author-nonchan|_ are included in `GBKiss Mini Games`_.
 

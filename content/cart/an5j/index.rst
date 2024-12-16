@@ -22,6 +22,9 @@ Nectaris GB
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}mgb.png

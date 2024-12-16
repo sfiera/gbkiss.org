@@ -59,6 +59,9 @@ In addition to the time, there are four alarm tones which can be selected after 
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}title.png
@@ -95,6 +98,11 @@ Images
       :height: 144
 
       File info
+
+Media
+~~~~~
+
+.. container:: gallery
 
    .. figure:: {static}profile.jpg
       :target: {static}profile.jpg

@@ -22,6 +22,9 @@ Cannon Ball
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}title.png

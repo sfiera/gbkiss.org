@@ -30,6 +30,9 @@ If the sending device detects that the receiving device is running software othe
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}menu.png

@@ -38,6 +38,9 @@ Saving the message requires that it have a title. If mail with the same title al
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}menu.png

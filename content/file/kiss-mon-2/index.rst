@@ -21,6 +21,9 @@ Kiss-Mon 2
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}create.png

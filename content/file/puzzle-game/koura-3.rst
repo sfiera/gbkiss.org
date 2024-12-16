@@ -24,6 +24,9 @@ Koura 3
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}koura-3-info.png

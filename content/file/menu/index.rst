@@ -53,6 +53,9 @@ To abort an in-progress or failed transfer, press B. The receiving player may ha
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}menu.png

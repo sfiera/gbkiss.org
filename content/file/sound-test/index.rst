@@ -66,6 +66,9 @@ If music is playing when Sound Test exits, it will continue playing in the menu 
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}title.png
@@ -88,6 +91,11 @@ Images
       :height: 144
 
       File info
+
+Media
+~~~~~
+
+.. container:: gallery
 
    .. figure:: {static}profile.jpg
       :target: {static}profile.jpg

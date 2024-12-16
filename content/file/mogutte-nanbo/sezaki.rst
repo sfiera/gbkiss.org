@@ -24,6 +24,9 @@ Sezaki
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}sezaki-info.png

@@ -28,6 +28,9 @@ This is a `“Hello, World!” program`_ for GBKiss. It displays the string “H
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}screen.png

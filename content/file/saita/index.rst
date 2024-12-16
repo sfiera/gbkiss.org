@@ -54,6 +54,9 @@ The file content decodes to the following in `ABC notation`_:
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}info.png

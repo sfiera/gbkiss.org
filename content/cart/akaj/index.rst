@@ -207,6 +207,9 @@ The KISSTOOL group contains development tools related to the GBKiss menu itself.
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}menu.png
@@ -222,6 +225,11 @@ Images
       :height: 144
 
       Sending files to memory
+
+Media
+~~~~~
+
+.. container:: gallery
 
    .. figure:: {static}p64.jpg
       :target: {static}p64.jpg

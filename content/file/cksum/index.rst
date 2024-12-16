@@ -30,6 +30,9 @@ It demonstrates various traps related to drawing and file interaction.
 Images
 ------
 
+Screenshots
+~~~~~~~~~~~
+
 .. container:: gallery
 
    .. figure:: {static}list.png

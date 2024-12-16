@@ -96,4 +96,10 @@ Images
 
       File info
 
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Watch & Timer profile
+
+      Watch & Timer profile (Famitsu Bros. 1997/12, p.67)
+
 .. include:: ../../epilog.rsti

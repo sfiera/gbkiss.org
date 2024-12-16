@@ -45,4 +45,10 @@ Images
 
       File info
 
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Drive profile
+
+      Drive profile (Famitsu Bros. 1997/12, p.66)
+
 .. include:: ../../epilog.rsti

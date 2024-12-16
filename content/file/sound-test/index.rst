@@ -89,4 +89,10 @@ Images
 
       File info
 
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Sound Test profile
+
+      Sound Test profile (Famitsu Bros. 1997/12, p.68)
+
 .. include:: ../../epilog.rsti

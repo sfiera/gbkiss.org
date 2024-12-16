@@ -45,4 +45,10 @@ Images
 
       File info
 
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Kiss-Mon profile
+
+      Kiss-Mon profile (Famitsu Bros. 1997/12, p.65)
+
 .. include:: ../../epilog.rsti

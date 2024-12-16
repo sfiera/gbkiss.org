@@ -78,6 +78,12 @@ Images
 
       File info
 
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Mogutte Nanbo profile
+
+      Mogutte Nanbo profile (Famitsu Bros. 1997/12, p.65)
+
 Backgrounds
 -----------
 

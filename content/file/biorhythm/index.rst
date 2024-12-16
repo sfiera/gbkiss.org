@@ -52,4 +52,10 @@ Images
 
       File info
 
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Biorhythm profile
+
+      Biorhythm profile (Famitsu Bros. 1997/12, p.66)
+
 .. include:: ../../epilog.rsti

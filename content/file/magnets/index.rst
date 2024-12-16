@@ -45,6 +45,12 @@ Images
 
       File info
 
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Magnets profile
+
+      Magnets profile (Famitsu Bros. 1997/12, p.68)
+
 Trivia
 ------
 

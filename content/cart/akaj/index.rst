@@ -223,6 +223,18 @@ Images
 
       Sending files to memory
 
+   .. figure:: {static}p64.jpg
+      :target: {static}p64.jpg
+      :alt: GB Kiss promotion introduction
+
+      GB Kiss promotion introduction (Famitsu Bros. 1997/12, p.64)
+
+   .. figure:: {static}p69.jpg
+      :target: {static}p69.jpg
+      :alt: GB Kiss promotion instructions
+
+      GB Kiss promotion instructions (Famitsu Bros. 1997/12, p.69)
+
 Sources
 -------
 

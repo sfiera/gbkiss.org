@@ -45,6 +45,12 @@ Images
 
       File info
 
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Shot profile
+
+      Shot profile (Famitsu Bros. 1997/12, p.67)
+
 Trivia
 ------
 

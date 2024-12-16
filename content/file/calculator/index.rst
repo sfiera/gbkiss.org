@@ -45,4 +45,10 @@ Images
 
       File info
 
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Calculator profile
+
+      Calculator profile (Famitsu Bros. 1997/12, p.67)
+
 .. include:: ../../epilog.rsti

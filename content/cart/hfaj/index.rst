@@ -75,6 +75,29 @@ Screenshots
 
       Main menu
 
+Media
+~~~~~
+
+.. container:: gallery
+
+   .. figure:: {static}guidebook.jpg
+      :target: {static}guidebook.jpg
+      :alt: Pocket Family guidebook cover
+
+      Pocket Family guidebook cover
+
+   .. figure:: {static}kiss-info.jpg
+      :target: {static}kiss-info.jpg
+      :alt: Kiss downloadable content in the guidebook
+
+      Kiss downloadable content in the guidebook (p.47)
+
+   .. figure:: {static}special-char.jpg
+      :target: {static}special-char.jpg
+      :alt: Kiss special characters in the guidebook
+
+      Kiss special characters in the guidebook (p.65)
+
 Sources
 -------
 

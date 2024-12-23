@@ -27,6 +27,7 @@ Watch & Timer is a combination stopwatch_ and timer_.
 By default, the clock digits are displayed with blocky numbers. If `Num0 Data`_ is installed, then launching Watch & Timer from that data file will change the digits to a rounded, stenciled appearance.
 
 .. _Num0 Data: {filename}num0-data.rst
+.. _Num0 LCD: {filename}num0-lcd.rst
 
 Stopwatch
 ~~~~~~~~~
@@ -91,6 +92,13 @@ Screenshots
       :height: 144
 
       Appearance when launched from `Num0 Data`_
+
+   .. figure:: {static}lcd.png
+      :alt: Appearance with Num0 LCD
+      :width: 160
+      :height: 144
+
+      Appearance when launched from `Num0 LCD`_
 
    .. figure:: {static}info.png
       :alt: File info

@@ -381,4 +381,12 @@ Homebrew
 
       `IR Test <{filename}irtest/index.rst>`_
 
+   .. figure:: {static}icon/tokei.png
+      :alt: Num0 LCD icon
+      :width: 64
+      :height: 48
+      :target: {filename}watch-and-timer/num0-lcd.rst
+
+      `Num0 LCD <{filename}watch-and-timer/num0-lcd.rst>`_
+
 .. include:: ../epilog.rsti

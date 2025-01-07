@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+                     "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="270" viewBox="0 0 500 270">
+  <style>
+    path, rect { stroke-width: 2px; stroke-linejoin: round; fill-rule: evenodd }
+    text { font: 13px monospace; text-anchor: middle; alignment-baseline: central; stroke: none }
+    .label { text-anchor: start; alignment-baseline: hanging }
+    .red { fill: rgba(255, 0, 0, 0.2); stroke: rgb(255, 0, 0) }
+    .blue { fill: rgba(0, 0, 255, 0.2); stroke: rgb(0, 0, 255) }
+    .green { fill: rgba(0, 127, 0, 0.2); stroke: rgb(0, 127, 0) }
+    .orange { fill: rgba(255, 127, 0, 0.2); stroke: rgb(255, 127, 0) }
+    .black { fill: black; stroke: black }
+    .fill { stroke: none }
+    .stroke { fill: none }
+    .black text { fill: white }
+    .dotted { stroke-dasharray: 2 }
+  </style>
+  <path d="M74,50h354v110h-58v86h-120v-56h-176z" class="blue fill"/>
+  <path d="M66,10h180v20h-176v220h176v4h-180z" class="red fill"/>
+  <path d="M254,10h238v244h-238v-4h178v-220h-178z" class="orange fill"/>
+  <path d="M70,30h362v220h-362z M74,50h354v110h-58v86h-120v-56h-176z" class="green fill"/>
+  <path d="M74,50h354v110h-58v86h-120v-56h-176z" class="blue stroke"/>
+  <path d="M66,10h180v244h-180z" class="red stroke"/>
+  <path d="M254,10h238v244h-238z" class="orange stroke"/>
+  <path d="M70,30h362v220h-362z" class="green stroke"/>
+
+  <path d="M40,160v-60h60 M340,205h60 M40,220h60 M260,262h20" class="black stroke"/>
+  <path d="M220,160h60 M280,100v105h60v-90h-60 M400,115h60 M160,160v60 M380,262h20" class="dotted black stroke"/>
+
+  <text class="label" x="70" y="14">HuC-1</text>
+  <text class="label" x="258" y="14">HuC-3</text>
+  <text class="label" x="74" y="34">Cart IR</text>
+  <text class="label" x="78" y="54">GBKiss</text>
+
+  <a href="/cart/apoj" target="_top" class="black" transform="translate(40, 100)">
+    <path d="M-20,-22h36v4h4v40h-40z"/>
+    <text>AKOP</text>
+  </a>
+  <a href="/cart/apoj" target="_top" class="black" transform="translate(100, 100)">
+    <path d="M-20,-22h36v4h4v40h-40z"/>
+    <text>APOJ</text>
+  </a>
+  <a href="/cart/abdj" target="_top" class="black" transform="translate(160, 100)">
+    <path d="M-20,-22h36v4h4v40h-40z"/>
+    <text>ABDJ</text>
+  </a>
+  <a href="/cart/akaj" target="_top" class="black" transform="translate(220, 100)">
+    <path d="M-20,-22h36v4h4v40h-40z"/>
+    <text>AKAJ</text>
+  </a>
+  <a href="/cart/h3uj" target="_top" class="black" transform="translate(280, 115)">
+    <path d="M-20,-30h40v60h-40z"/>
+    <text>H3UJ</text>
+  </a>
+  <a href="/cart/h5uj" target="_top" class="black" transform="translate(340, 115)">
+    <path d="M-20,-30h40v60h-40z"/>
+    <text>H5UJ</text>
+  </a>
+  <a href="/cart/hfaj" target="_top" class="black" transform="translate(400, 115)">
+    <path d="M-20,-30h40v60h-40z"/>
+    <text>HFAJ</text>
+  </a>
+  <a href="/cart/hfaj" target="_top" class="black" transform="translate(460, 115)">
+    <path d="M-20,-30h40v60h-40z"/>
+    <text>HF2J</text>
+  </a>
+  <a href="/cart/apoj" target="_top" class="black" transform="translate(40, 160)">
+    <path d="M-20,-22h36v4h4v40h-40z"/>
+    <text>AKQE</text>
+  </a>
+  <a href="/cart/an5j" target="_top" class="black" transform="translate(100, 160)">
+    <path d="M-20,-22h36v4h4v40h-40z"/>
+    <text>AN5J</text>
+  </a>
+  <a href="/cart/amzj" target="_top" class="black" transform="translate(160, 160)">
+    <path d="M-20,-22h36v4h4v40h-40z"/>
+    <text>AMZJ</text>
+  </a>
+  <a href="/cart/artj" target="_top" class="black" transform="translate(220, 160)">
+    <path d="M-20,-22h36v4h4v40h-40z"/>
+    <text>ARTJ</text>
+  </a>
+  <a href="/cart/hrcj" target="_top" class="black" transform="translate(280, 205)">
+    <path d="M-20,-30h40v60h-40z"/>
+    <text>HRCJ</text>
+  </a>
+  <a href="/cart/hrej" target="_top" class="black" transform="translate(340, 205)">
+    <path d="M-20,-30h40v60h-40z"/>
+    <text>HREJ</text>
+  </a>
+  <a href="/cart/hrej" target="_top" class="black" transform="translate(400, 205)">
+    <path d="M-20,-30h40v60h-40z"/>
+    <text>HREE</text>
+  </a>
+  <a href="/cart/acxj" target="_top" class="black" transform="translate(40, 220)">
+    <path d="M-20,-22h36v4h4v40h-40z"/>
+    <text>AXQE</text>
+  </a>
+  <a href="/cart/acxj" target="_top" class="black" transform="translate(100, 220)">
+    <path d="M-20,-22h36v4h4v40h-40z"/>
+    <text>ACXJ</text>
+  </a>
+  <a href="/cart/amzj" target="_top" class="black" transform="translate(160, 220)">
+    <path d="M-20,-22h36v4h4v40h-40z"/>
+    <text>AM6J</text>
+  </a>
+  <a href="/cart/ayyj" target="_top" class="black" transform="translate(220, 220)">
+    <path d="M-20,-22h36v4h4v40h-40z"/>
+    <text>AYYJ</text>
+  </a>
+
+  <text class="label" x="284" y="258">Same Game</text>
+  <text class="label" x="404" y="258">Same Series</text>
+
+</svg>

@@ -4,6 +4,11 @@ Cartridges
 :lang: en
 :slug: cart
 
+.. figure:: {static}diagram.svg
+   :alt: GBKiss and related cartridges
+   :width: 500
+   :height: 270
+
 GBKiss Cartridges
 -----------------
 

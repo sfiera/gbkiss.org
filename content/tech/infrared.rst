@@ -12,11 +12,18 @@ All GBKiss cartridges_ are capable of wireless communication over infrared.
 Physical Layer
 --------------
 
-At the physical layer, infrared communication is handled by turning the infrared LED in each cartridge on and off for a fixed period of time. There seem to be three different pulse lengths:
+At the physical layer, the sender sends data by turning the infrared LED in its cartridge on and off for a fixed period of time. There seem to be three different pulse lengths:
 
 * 10 units (~75μs?): zero bit
 * 18 units (~150μs?): one bit
 * 35 units (~300μs?): stop bit
+
+In addition, the sender and receiver can match their timing with a sync bit. To send a sync bit, both the sender and receiver:
+
+1. Turn on their IR LEDs
+2. Wait to detect the other’s IR LED is on
+3. Turn off their IR LEDs
+4. Wait to detect the other’s IR LED is off
 
 Data Link Layer
 ---------------
@@ -25,11 +32,11 @@ There seem to be two different protocols for framing bytes.
 
 The first protocol is used for handshaking. In this protocol, the following are sent in succession:
 
-* 8 zero or one bits
+* 8 zero or one bits (payload)
 * 1 stop bit
 * 1 additional zero bit
 
-A successful handshake consists of:
+A successful handshake consists of the following payloads:
 
 * ``$AA`` (``%10101010``) from sender to receiver
 * ``$55`` (``%01010101``; ``~$AA``) from receiver to sender
@@ -38,8 +45,8 @@ A successful handshake consists of:
 
 After handshaking is complete, a different framing protocol is used:
 
-* Some synchronization between devices (TBD)
-* 8 zero or one bits
+* 1 sync bit
+* 8 zero or one bits (payload)
 * 1 additional zero bit
 
 Network Layer

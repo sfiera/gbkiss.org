@@ -60,13 +60,66 @@ Each time a sender communicates with a receiver, it initiates a handshake, then 
 Transport Layer
 ---------------
 
-On the receiving side, a listening device runs a loop, accepting register packets. Each time it receives a packet, it checks the sent ``a`` register and executes the numbered command from the IR op table with the sent registers.
+On the receiving side, a listening device runs a loop, accepting register packets. Each time it receives a packet, it checks the sent ``a`` register and executes the numbered command from the IR op table with the sent registers:
 
-The most useful operations are:
+.. list-table::
+   :widths: auto
+   :header-rows: 1
 
-* ``$00``: close connection successfully
-* ``$08``: read from remote WRAM
-* ``$0B``: write to remote WRAM
+   * * ID
+     * IR command
+     * Description
+   * * ``$01``
+     * IRCmdClose
+     * Close connection successfully
+   * * ``$02``
+     * IRCmd01
+     * Invoke trap_ ``$e6``
+   * * ``$03``
+     * IRCmdFileSearch
+     * Invoke `FileSearch trap`_
+   * * ``$04``
+     * IRCmdFileWrite
+     * Invoke `FileWrite trap`_
+   * * ``$05``
+     * IRCmd04
+     * Invoke trap_ ``$ea``
+   * * ``$06``
+     * IRCmdFileNext
+     * Invoke FileNext trap_
+   * * ``$07``
+     * IRCmdFileDelete
+     * Invoke FileDelete trap_
+   * * ``$08``
+     * IRCmd07
+     * Invoke trap_ $eb
+   * * ``$09``
+     * IRCmdRead
+     * Read from remote cartridge memory
+   * * ``$0A``
+     * IRCmdReadSRAM
+     * Read from remote cartridge SRAM
+   * * ``$0B``
+     * IRCmd0A
+     * Invoke trap_ ``$ec``
+   * * ``$0C``
+     * IRCmdWrite
+     * Write to remote cartridge memory
+   * * ``$0D``
+     * IRCmdWriteSRAM
+     * Write to remote cartridge SRAM
+
+.. _trap: {filename}trap.rst
+.. _FileSearch trap: {filename}trap.rst#filesearch-6b
+.. _FileWrite trap: {filename}trap.rst#filewrite-e9
+
+The ``IRCmdRead`` and ``IRCmdWrite`` comands can read and write from anywhere in the remote Game Boy’s memory map, but:
+
+*  Writes to ROM (the mapper) are not safe, as the active ROM bank should not be changed.
+*  Reads and writes to VRAM may or may not be safe (needs verification).
+*  Reads and writes to cartridge SRAM are not possible because the IR hardware cannot be mapped at the same time as cartridge SRAM.
+
+The ``IRCmdReadSRAM`` and ``IRCmdWriteSRAM`` command variants work around the latter restriction.
 
 Application Layer
 -----------------

@@ -124,8 +124,56 @@ The ``IRCmdReadSRAM`` and ``IRCmdWriteSRAM`` command variants work around the la
 Application Layer
 -----------------
 
-By convention, before software begins listening for infrared communication, it first writes 2 identifier bytes to a fixed location in memory, then calls IRListen.
+By convention, before software begins listening for infrared communication, it first writes 2 identifier bytes to a fixed location in memory, then calls IRListen_.
 
 When the sender initiates communication, it first issues an IRRead call for the identifier address and checks if the identifier bytes are expected. If not, it terminates the connection.
+
+.. _IRListen: {filename}trap.rst#irlisten-72
+
+Nectaris GB
+~~~~~~~~~~~
+
+Nectaris supports four IR transfer options which are not shared with other games:
+
+1. Send map to Game Boy
+2. Receive map from Game Boy
+3. Send map to PC
+4. Receive map from PC
+
+The PC options require the use of a `GB Kiss Link`_ modem. Both the send and receive modes are fully driven by the PC.
+
+Send Map to Game Boy
+''''''''''''''''''''
+
+The sending Game Boy copies the map data to ``$d000`` and calls IRListen_. If IRListen terminates successfully, the transfer is considered successful.
+
+Receive Map from Game Boy
+'''''''''''''''''''''''''
+
+The receiving Game Boy reads 512 bytes from the remote Game Boy at ``$d000``.
+
+Send Map to PC
+''''''''''''''
+
+The sending Game Boy:
+
+1. Writes the string ``TRANCE`` to ``$d000``.
+2. Calls IRListen_.
+3. Waits for the GB Kiss Link to end the connection.
+
+Somehow, the GB Kiss Link finds the appropriate data and reads it from the sender.
+
+Receive Map from PC
+'''''''''''''''''''
+
+The receiving Game Boy:
+
+1. Writes the string ``RECEIVE`` to ``$d000``.
+2. Calls IRListen_.
+3. Waits for the GB Kiss Link to end the connection.
+4. Checks that ``$d000`` now contains the string ``NECTAR``.
+5. Performs some validation on the received bytes (sum the first 511 and compare to the 512th?).
+
+.. _GB Kiss Link: {filename}/link/index.rst
 
 .. include:: ../epilog.rsti

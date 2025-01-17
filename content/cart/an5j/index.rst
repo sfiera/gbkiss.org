@@ -19,6 +19,36 @@ Nectaris GB
 * Storage_: $3f80 (16256 bytes)
 * `Cartridge Code`_: ``$03``
 
+Description
+-----------
+
+Quick Start
+~~~~~~~~~~~
+
+The main menu has a Quick Start option which is locked by default. There are three Quick Start options, all of which support selecting any level from the Story and Legend campaigns:
+
+* 1PLAY MODE (Union Human vs. Guicy Computer)
+* 2PLAY MODE (Union Human vs. Guicy Human)
+* GUICY MODE (Union Computer vs. Human Guicy)
+
+The menu is unlocked by beating both the Story and Legend campaigns (on either difficulty). In addition, there are a few ways to access it without beating them:
+
+* With `Game Genie`_ codes: use the “enable Quick Start” code (``00F-DDE-111``) to access it temporarily. Alternately, use the “forfeit to win” code (``0FB-3ED-21B``), then start the final missions of each campaign by password (``ZONECT`` and ``NECTOR``) and forfeit to gain permanent acces.
+* With the N5UNLOCK_ software: receive the software from a friend or add it with the GBKiss `Save Editor`_, then launch N5UNLOCK and unlock Quick Start.
+
+.. _N5UNLOCK: {filename}/file/n5unlock/index.rst
+.. _Save Editor: {filename}/edit/index.rst
+
+Game Genie
+----------
+
+The following Game Genie codes work in Nectaris:
+
+* ``0FB-3ED-21B``: forfeit to win. Choosing “Give Up” from the pause menu ends in victory, not defeat.
+* ``00F-DDE-111``: enable Quick Start. This is normally unlocked after beating both campaigns.
+* ``355-EDD-B1E``: change 2PLAY to 0PLAY. The game supports CPU vs. CPU but it is normally unavailable.
+* ``302-C0B-212``: say 0PLAY in menu. The previous code changes the behavior; this changes the text.
+
 Images
 ------
 

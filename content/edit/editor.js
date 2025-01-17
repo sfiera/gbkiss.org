@@ -30,6 +30,7 @@ const FILES = [
   "mail/passwords.gbf",
   "mogutte-nanbo/mogura.gbf",
   "mogutte-nanbo/sezaki.gbf",
+  "n5unlock/n5unlock.gbf",
   "poker/poker.gbf",
   "puzzle-game/koura1.gbf",
   "puzzle-game/koura2.gbf",
@@ -43,6 +44,7 @@ const FILES = [
   "sound-test/soundtst.gbf",
   "sram-get-and-clear/sramtool.gbf",
   "watch-and-timer/sw_data.gbf",
+  "watch-and-timer/sw_lcd.gbf",
   "watch-and-timer/sw_timer.gbf",
   "worm/worm.gbf",
 ];

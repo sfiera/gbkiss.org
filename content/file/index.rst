@@ -381,6 +381,14 @@ Homebrew
 
       `IR Test <{filename}irtest/index.rst>`_
 
+   .. figure:: {static}n5unlock/icon.png
+      :alt: N5Unlock icon
+      :width: 64
+      :height: 48
+      :target: {filename}n5unlock/index.rst
+
+      `N5Unlock <{filename}n5unlock/index.rst>`_
+
    .. figure:: {static}icon/tokei.png
       :alt: Num0 LCD icon
       :width: 64

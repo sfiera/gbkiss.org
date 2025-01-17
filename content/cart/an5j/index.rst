@@ -33,7 +33,7 @@ The main menu has a Quick Start option which is locked by default. There are thr
 
 The menu is unlocked by beating both the Story and Legend campaigns (on either difficulty). In addition, there are a few ways to access it without beating them:
 
-* With `Game Genie`_ codes: use the “enable Quick Start” code (``00F-DDE-111``) to access it temporarily. Alternately, use the “forfeit to win” code (``0FB-3ED-21B``), then start the final missions of each campaign by password (``ZONECT`` and ``NECTOR``) and forfeit to gain permanent acces.
+* With `Game Genie`_ codes: use the “enable Quick Start” code (``00F-DDE-111``) to access it temporarily. Alternately, use the “forfeit to win” code (``0FB-3ED-21B``), then start the final missions of each campaign by password (``ZONECT`` and ``NECTOR``) and forfeit to gain permanent access.
 * With the N5UNLOCK_ software: receive the software from a friend or add it with the GBKiss `Save Editor`_, then launch N5UNLOCK and unlock Quick Start.
 
 .. _N5UNLOCK: {filename}/file/n5unlock/index.rst

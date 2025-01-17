@@ -78,10 +78,45 @@ Screenshots
 
       GBKiss menu
 
+   .. figure:: {static}quick-start.png
+      :alt: Quick Start menu
+      :width: 160
+      :height: 144
+
+      Quick Start menu
+
+   .. figure:: {static}world-map.png
+      :alt: World map
+      :width: 160
+      :height: 144
+
+      World map
+
+   .. figure:: {static}level-map.png
+      :alt: In-game map
+      :width: 160
+      :height: 144
+
+      In-game map
+
+   .. figure:: {static}lose.png
+      :alt: Game Over screen
+      :width: 160
+      :height: 144
+
+      Game Over screen
+
+   .. figure:: {static}win.png
+      :alt: Victory epilogue screen
+      :width: 160
+      :height: 144
+
+      Victory epilogue screen
+
 Trivia
 ------
 
-Hudson released the original version of Nectaris in 1989 for TurboGrafx-16. It was subsequently ported to other systems, sometimes titled Military Madness.
+Hudson released the original version of Nectaris in 1989 for PC-Engine and translated it to English for the TurboGrafx-16 as Military Madness. It received several ports (including Windows and PlayStation ports around the same time as the Game Boy release) and one sequel.
 
 Sources
 -------

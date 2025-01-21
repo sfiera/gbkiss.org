@@ -17,7 +17,7 @@ N5Unlock
 * Author: |author-sfiera|_
 * `Creator Code`_: ``$00``
 * `Cartridge Code`_: ``$03`` (`Nectaris GB`_)
-* Source code: `n5unlock.asm <https://github.com/sfiera/gbkasm/blob/main/src/file/n5unlock.asm>`_
+* Source code: `n5unlock.asm <https://github.com/sfiera/gbkasm/blob/main/src/n5unlock/n5unlock.asm>`_
 
 Description
 -----------

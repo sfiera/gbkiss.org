@@ -16,7 +16,7 @@ Cksum
 * Type: |circle|
 * Author: |author-sfiera|_
 * `Creator Code`_: ``$00``
-* Source code: `cksum.asm <https://github.com/sfiera/gbkasm/blob/main/src/file/cksum.asm>`_
+* Source code: `cksum.asm <https://github.com/sfiera/gbkasm/blob/main/src/cksum/cksum.asm>`_
 
 Description
 -----------

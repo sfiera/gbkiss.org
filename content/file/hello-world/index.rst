@@ -16,7 +16,7 @@ Hello World
 * Type: |circle|
 * Author: |author-sfiera|_
 * `Creator Code`_: ``$00``
-* Source code: `hello_w.asm <https://github.com/sfiera/gbkasm/blob/main/src/file/hello_w.asm>`_
+* Source code: `hello_w.asm <https://github.com/sfiera/gbkasm/blob/main/src/hello_w/hello_w.asm>`_
 
 Description
 -----------

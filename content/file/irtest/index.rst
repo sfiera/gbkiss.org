@@ -16,7 +16,7 @@ IR Test
 * Type: |circle|
 * Author: |author-sfiera|_
 * `Creator Code`_: ``$00``
-* Source code: `irtest.asm <https://github.com/sfiera/gbkasm/blob/main/src/file/irtest.asm>`_
+* Source code: `irtest.asm <https://github.com/sfiera/gbkasm/blob/main/src/irtest/irtest.asm>`_
 
 Description
 -----------

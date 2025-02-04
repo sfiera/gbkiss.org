@@ -57,7 +57,7 @@ Translation:
 
    7. Transmission complete. The new minigame is saved to your software. You can also send this minigame to your friends.
 
-11 different minigames were presented in the December issue (for distribution in November). More software was also promised for distribution in the following months.
+11 different minigames were presented in the December issue (for distribution in November), with more software in the following months.
 
 *  November 1997: Default_ and KISSMON_ groups
 
@@ -73,10 +73,15 @@ Translation:
    10. Magnets_
    11. `Sound Test`_
 
-*  December 1997: Unknown
-*  January 1998: Unknown
+*  December 1997: Unknown (likely CANNON_ group)
+*  January 1998: BINARY_ group
 
-Although the article makes no explicit mention of the GBKiss Mini Games cartridge, it is likely that this was the mechanism for distribution, given:
+   1. Binary_
+   2. Roulette_
+   3. Blackjack_
+   4. Worm_
+
+Although the articles make no explicit mention of the GBKiss Mini Games cartridge, it is likely that this was the mechanism for distribution, given:
 
 *  The cartridge has a printed Famitsu Bros logo.
 *  The distribution lists line up with the passwords.

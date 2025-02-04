@@ -52,4 +52,15 @@ Screenshots
 
       File info
 
+Media
+~~~~~
+
+.. container:: gallery
+
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Worm profile
+
+      Worm profile (Famitsu Bros. 1998/02, p.91)
+
 .. include:: ../../epilog.rsti

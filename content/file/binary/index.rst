@@ -48,6 +48,17 @@ Screenshots
 
       File info
 
+Media
+~~~~~
+
+.. container:: gallery
+
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Binary Land profile
+
+      Binary Land profile (Famitsu Bros. 1998/02, p.90)
+
 Trivia
 ------
 

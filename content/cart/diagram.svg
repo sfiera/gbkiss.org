@@ -33,81 +33,62 @@
   <text class="label" x="74" y="34">Cart IR</text>
   <text class="label" x="78" y="54">GBKiss</text>
 
-  <a href="/cart/apoj" target="_top" class="black" transform="translate(40, 100)">
-    <path d="M-20,-22h36v4h4v40h-40z"/>
-    <text>AKOP</text>
+  <a href="/cart/apoj" target="_top" class="black" transform="translate(19, 76)">
+    <image href="apoj/cart-akop.png" width="42" height="48"/>
   </a>
-  <a href="/cart/apoj" target="_top" class="black" transform="translate(100, 100)">
-    <path d="M-20,-22h36v4h4v40h-40z"/>
-    <text>APOJ</text>
+  <a href="/cart/apoj" target="_top" class="black" transform="translate(79, 76)">
+    <image href="apoj/cart-apoj.png" width="42" height="48"/>
   </a>
-  <a href="/cart/abdj" target="_top" class="black" transform="translate(160, 100)">
-    <path d="M-20,-22h36v4h4v40h-40z"/>
-    <text>ABDJ</text>
+  <a href="/cart/abdj" target="_top" class="black" transform="translate(139, 76)">
+    <image href="abdj/cart-abdj.png" width="42" height="48"/>
   </a>
-  <a href="/cart/akaj" target="_top" class="black" transform="translate(220, 100)">
-    <path d="M-20,-22h36v4h4v40h-40z"/>
-    <text>AKAJ</text>
+  <a href="/cart/akaj" target="_top" class="black" transform="translate(199, 76)">
+    <image href="akaj/cart-akaj.png" width="42" height="48"/>
   </a>
-  <a href="/cart/h3uj" target="_top" class="black" transform="translate(280, 115)">
-    <path d="M-20,-30h40v60h-40z"/>
-    <text>H3UJ</text>
+  <a href="/cart/h3uj" target="_top" class="black" transform="translate(259, 85)">
+    <image href="h3uj/cart-h3uj.png" width="42" height="60"/>
   </a>
-  <a href="/cart/h5uj" target="_top" class="black" transform="translate(340, 115)">
-    <path d="M-20,-30h40v60h-40z"/>
-    <text>H5UJ</text>
+  <a href="/cart/h5uj" target="_top" class="black" transform="translate(319, 85)">
+    <image href="h5uj/cart-h5uj.png" width="42" height="60"/>
   </a>
-  <a href="/cart/hfaj" target="_top" class="black" transform="translate(400, 115)">
-    <path d="M-20,-30h40v60h-40z"/>
-    <text>HFAJ</text>
+  <a href="/cart/hfaj" target="_top" class="black" transform="translate(379, 85)">
+    <image href="hfaj/cart-hfaj.png" width="42" height="60"/>
   </a>
-  <a href="/cart/hfaj" target="_top" class="black" transform="translate(460, 115)">
-    <path d="M-20,-30h40v60h-40z"/>
-    <text>HF2J</text>
+  <a href="/cart/hfaj" target="_top" class="black" transform="translate(439, 85)">
+    <image href="hfaj/cart-hf2j.png" width="42" height="60"/>
   </a>
-  <a href="/cart/apoj" target="_top" class="black" transform="translate(40, 160)">
-    <path d="M-20,-22h36v4h4v40h-40z"/>
-    <text>AKQE</text>
+  <a href="/cart/apoj" target="_top" class="black" transform="translate(19, 136)">
+    <image href="apoj/cart-akqp.png" width="42" height="48"/>
   </a>
-  <a href="/cart/an5j" target="_top" class="black" transform="translate(100, 160)">
-    <path d="M-20,-22h36v4h4v40h-40z"/>
-    <text>AN5J</text>
+  <a href="/cart/an5j" target="_top" class="black" transform="translate(79, 136)">
+    <image href="an5j/cart-an5j.png" width="42" height="48"/>
   </a>
-  <a href="/cart/amzj" target="_top" class="black" transform="translate(160, 160)">
-    <path d="M-20,-22h36v4h4v40h-40z"/>
-    <text>AMZJ</text>
+  <a href="/cart/amzj" target="_top" class="black" transform="translate(139, 136)">
+    <image href="amzj/cart-amzj.png" width="42" height="48"/>
   </a>
-  <a href="/cart/artj" target="_top" class="black" transform="translate(220, 160)">
-    <path d="M-20,-22h36v4h4v40h-40z"/>
-    <text>ARTJ</text>
+  <a href="/cart/artj" target="_top" class="black" transform="translate(199, 136)">
+    <image href="artj/cart-artj.png" width="42" height="48"/>
   </a>
-  <a href="/cart/hrcj" target="_top" class="black" transform="translate(280, 205)">
-    <path d="M-20,-30h40v60h-40z"/>
-    <text>HRCJ</text>
+  <a href="/cart/hrcj" target="_top" class="black" transform="translate(259, 175)">
+    <image href="hrcj/cart-hrcj.png" width="42" height="60"/>
   </a>
-  <a href="/cart/hrej" target="_top" class="black" transform="translate(340, 205)">
-    <path d="M-20,-30h40v60h-40z"/>
-    <text>HREJ</text>
+  <a href="/cart/hrej" target="_top" class="black" transform="translate(319, 175)">
+    <image href="hrej/cart-hrej.png" width="42" height="60"/>
   </a>
-  <a href="/cart/hrej" target="_top" class="black" transform="translate(400, 205)">
-    <path d="M-20,-30h40v60h-40z"/>
-    <text>HREE</text>
+  <a href="/cart/hrej" target="_top" class="black" transform="translate(379, 175)">
+    <image href="hrej/cart-hree.png" width="42" height="60"/>
   </a>
-  <a href="/cart/acxj" target="_top" class="black" transform="translate(40, 220)">
-    <path d="M-20,-22h36v4h4v40h-40z"/>
-    <text>AXQE</text>
+  <a href="/cart/acxj" target="_top" class="black" transform="translate(19, 196)">
+    <image href="acxj/cart-axqp.png" width="42" height="48"/>
   </a>
-  <a href="/cart/acxj" target="_top" class="black" transform="translate(100, 220)">
-    <path d="M-20,-22h36v4h4v40h-40z"/>
-    <text>ACXJ</text>
+  <a href="/cart/acxj" target="_top" class="black" transform="translate(79, 196)">
+    <image href="acxj/cart-acxj.png" width="42" height="48"/>
   </a>
-  <a href="/cart/amzj" target="_top" class="black" transform="translate(160, 220)">
-    <path d="M-20,-22h36v4h4v40h-40z"/>
-    <text>AM6J</text>
+  <a href="/cart/amzj" target="_top" class="black" transform="translate(139, 196)">
+    <image href="amzj/cart-am6j.png" width="42" height="48"/>
   </a>
-  <a href="/cart/ayyj" target="_top" class="black" transform="translate(220, 220)">
-    <path d="M-20,-22h36v4h4v40h-40z"/>
-    <text>AYYJ</text>
+  <a href="/cart/ayyj" target="_top" class="black" transform="translate(199, 196)">
+    <image href="ayyj/cart-ayyj.png" width="42" height="48"/>
   </a>
 
   <text class="label" x="284" y="258">Same Game</text>

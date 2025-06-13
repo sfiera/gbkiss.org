@@ -19,6 +19,11 @@ Binary
 * Origin: |mini-binary|, |gbkiss-link|
 * `Creator Code`_: ``$71`` (Binary)
 
+Description
+-----------
+
+In Binary Land, the player controls two characters, Left-kun and Right-chan, whose movements are mirrored. The goal of the game is to navigate the maze and enemies, and bring both characters to the heart at the top of the screen at the same time.
+
 Images
 ------
 
@@ -62,7 +67,7 @@ Media
 Trivia
 ------
 
-Hudson released the original game `Binary Land`_ in 1983 and ported it to several platforms including the Famicom_.
+Hudson released the original game `Binary Land`_ in 1983 and ported it to several platforms including the Famicom_. In the original, the characters are penguins named “Gurin-kun” (グリンくん) and “Maron-chan” (マロンちゃん), but in the GBKiss version, they are simply named “Left-kun” (レフト君) and “Right-chan” (ライトちゃん), according to Famitsu Bros.
 
 At 8179 bytes, BINARY is the largest GBKiss file, and is just 5 bytes short of the maximum size. GBKiss files must fit into a single 8KiB (8192B) CRAM bank, and a minimum of 8 bytes of each CRAM bank are reserved for bookkeeping, so the maximum size is 8184 bytes.
 

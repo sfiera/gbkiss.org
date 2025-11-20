@@ -73,13 +73,22 @@ Translation:
    10. Magnets_
    11. `Sound Test`_
 
-*  December 1997: Unknown (likely CANNON_ group)
+*  December 1997: CANNON_ group, excluding Icon-Send_. Even though Famitsu Bros makes no mention of Icon-Send, it is possible that stores had instructions on how to provide extra icons.
+
+   1. `Cannon Ball`_
+   2. Slot_
+   3. `Puzzle Game`_
+   4. Poker_
+   5. Icon-Edit_
+
 *  January 1998: BINARY_ group
 
    1. Binary_
    2. Roulette_
    3. Blackjack_
    4. Worm_
+
+There is no documentation of any distribution of files from the GAMEDATA_ or KISSTOOL_ groups.
 
 Although the articles make no explicit mention of the GBKiss Mini Games cartridge, it is likely that this was the mechanism for distribution, given:
 

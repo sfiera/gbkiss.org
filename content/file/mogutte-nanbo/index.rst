@@ -38,6 +38,18 @@ In-game, there are six pipes, one each for A, B, and the four D-Pad directions. 
 
 The “Sezaki_” replacement graphics package changes the location from the default (an island with pipes) to a lunar surface with craters.
 
+Secrets
+-------
+
+At the game-over screen, pressing B+Right will bring up a credits screen:
+
+* Game Design: Akira Nakazaki
+* Graphics: `Junko Koura <{filename}/hudson/index.rst#nonchan>`_, `Reona Sezaki <{filename}/hudson/index.rst#sezaki>`_
+* Programming: `Shusaku Kimura <{filename}/hudson/index.rst#s-kimura>`_, Yoshitaka Shibata
+* Direction: Koichi Takeshita
+* Producer: `Yoshio Motosako <{filename}/hudson/index.rst#y-motosako>`_
+* Special Thanks: `cartridge owner <{filename}/tech/storage.rst#owner>`_
+
 Images
 ------
 
@@ -73,6 +85,13 @@ Screenshots
       :height: 144
 
       Game-over screen
+
+   .. figure:: {static}credits.png
+      :alt: Credits
+      :width: 160
+      :height: 144
+
+      Credits
 
    .. figure:: {static}info.png
       :alt: File info

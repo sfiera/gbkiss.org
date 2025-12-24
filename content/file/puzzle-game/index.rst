@@ -112,4 +112,15 @@ The default illustration depicts a grid of numbers from 1 to 15, as is common fo
 
        `KOURA3 <{filename}koura-3.rst>`_
 
+Media
+~~~~~
+
+.. container:: gallery
+
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Puzzle Game profile
+
+      Puzzle Game profile (Famitsu Bros. 1998/01, p.45)
+
 .. include:: ../../epilog.rsti

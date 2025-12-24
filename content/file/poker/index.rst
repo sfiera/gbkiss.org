@@ -48,4 +48,15 @@ Screenshots
 
       File info
 
+Media
+~~~~~
+
+.. container:: gallery
+
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Poker profile
+
+      Poker profile (Famitsu Bros. 1998/01, p.45)
+
 .. include:: ../../epilog.rsti

@@ -55,6 +55,17 @@ Screenshots
 
       File info
 
+Media
+~~~~~
+
+.. container:: gallery
+
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Cannon Ball profile
+
+      Cannon Ball profile (Famitsu Bros. 1998/11, p.44)
+
 Trivia
 ------
 

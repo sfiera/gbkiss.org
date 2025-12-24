@@ -74,4 +74,15 @@ Screenshots
 
       File info
 
+Media
+~~~~~
+
+.. container:: gallery
+
+   .. figure:: {static}profile.jpg
+      :target: {static}profile.jpg
+      :alt: Icon-Edit profile
+
+      Icon-Edit profile (Famitsu Bros. 1998/01, p.45)
+
 .. include:: ../../epilog.rsti

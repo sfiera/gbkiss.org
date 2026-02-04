@@ -48,7 +48,19 @@
   <text x="10" y="330">Fx</text>
 
   <text x="30" y="30">␀</text>
-
+  <text x="50" y="30">→</text>
+  <text x="70" y="30">←</text>
+  <text x="90" y="30">↓</text>
+  <text x="110" y="30">↑</text>
+  <text x="130" y="30">\5</text>
+  <text x="150" y="30">\6</text>
+  <text x="170" y="30">\7</text>
+  <text x="190" y="30">⌫</text>
+  <text x="210" y="30">⇥</text>
+  <text x="230" y="30">␀</text>
+  <text x="250" y="30">↖︎</text>
+  <text x="270" y="30">⌧</text>
+  <text x="290" y="30">⌦</text>
   <text x="310" y="30">カ</text>
   <text x="330" y="30">ひ</text>
 

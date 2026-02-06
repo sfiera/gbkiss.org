@@ -21,7 +21,9 @@ Worm
 Description
 -----------
 
-A simple snake game. It uses text characters to represent the snake and playing field. This presumably saves storage space compared to including its own graphics.
+A simple snake game. It uses text characters to represent the worm and playing field. This presumably saves storage space compared to including its own graphics.
+
+Initially, the worm is 4 segments long. Each piece of food increases the length of the snake, up to a maximum of 80. The initial point value of food is 1, and eating food also increases the point value of food by 1, up to a maximum of 5. If the player takes more than 10 seconds to eat food, then the value is reset to 0. The maximum high score is thus 370 (1+2+3+4+5×72).
 
 Images
 ------

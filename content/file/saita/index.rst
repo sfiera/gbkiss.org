@@ -18,7 +18,7 @@ Saita Saita
 * Origin: `Hudson website`_
 * `Creator Code`_: ``$76`` (`alarm tone`_)
 
-.. _alarm tone: {filename}/tech/alarm.rst
+.. _alarm tone: {filename}/tech/alarm/index.rst
 .. _Hudson website: https://web.archive.org/web/20021020134646/http://www.hudson.co.jp/gamenavi/gamedb/softinfo/family/date.html
 
 Description
@@ -35,6 +35,13 @@ This is a Japanese children’s song. The lyrics are:
 
 Content
 -------
+
+.. raw:: html
+
+   <audio controls>
+     <source src="{static}saita-saita.wav" type="audio/wav">
+     <a href="{static}saita-saita.wav">Audio Recording</a>
+   </audio>
 
 The file content decodes to the following in `ABC notation`_:
 

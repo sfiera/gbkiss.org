@@ -397,4 +397,12 @@ Homebrew
 
       `Num0 LCD <{filename}watch-and-timer/num0-lcd.rst>`_
 
+   .. figure:: {static}icon/simula1.png
+      :alt: Paprika icon
+      :width: 64
+      :height: 48
+      :target: {filename}paprika/index.rst
+
+      `Paprika <{filename}paprika/index.rst>`_
+
 .. include:: ../epilog.rsti

@@ -4,7 +4,7 @@ Technology
 :lang: en
 :slug: tech
 
-* `Alarm <{filename}alarm.rst>`_
+* `Alarm <{filename}alarm/index.rst>`_
 * `Compression <{filename}compression.rst>`_
 * `Infrared Communication <{filename}infrared.rst>`_
 * `Mapper <{filename}mapper.rst>`_

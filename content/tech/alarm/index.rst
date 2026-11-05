@@ -20,47 +20,117 @@ There are 16 (?) built-in alarm tones:
 
    *  *  Nibble
       *  Alarm tone
+      *
    *  *  ``$0``
       *  Phone ring
+      *
    *  *  ``$1``
       *  Unknown
+      *
    *  *  ``$2``
       *  Alarm 1 (めざましおん1)
+      *  .. raw:: html
+
+            <audio controls>
+              <source src="{static}mezamashion1.wav" type="audio/wav">
+              <a href="{static}mezamashion1.wav">Audio Recording</a>
+            </audio>
    *  *  ``$3``
       *  Doorbell 1 (ピンポン1)
+      *  .. raw:: html
+
+            <audio controls>
+              <source src="{static}pinpon1.wav" type="audio/wav">
+              <a href="{static}pinpon1.wav">Audio Recording</a>
+            </audio>
    *  *  ``$4``
       *  Unknown
+      *
    *  *  ``$5``
       *  Unknown
+      *
    *  *  ``$6``
       *  Alarm 2 (めざましおん2)
+      *  .. raw:: html
+
+            <audio controls>
+              <source src="{static}mezamashion2.wav" type="audio/wav">
+              <a href="{static}mezamashion2.wav">Audio Recording</a>
+            </audio>
    *  *  ``$7``
       *  Unknown
+      *
    *  *  ``$8``
       *  Unknown
+      *
    *  *  ``$9``
       *  Unknown
+      *
    *  *  ``$A``
       *  Unknown
+      *
    *  *  ``$B``
       *  Doorbell 3 (ピンポン3)
+      *  .. raw:: html
+
+            <audio controls>
+              <source src="{static}pinpon3.wav" type="audio/wav">
+              <a href="{static}pinpon3.wav">Audio Recording</a>
+            </audio>
    *  *  ``$C``
       *  Unknown
+      *
    *  *  ``$D``
       *  Unknown
+      *
    *  *  ``$E``
       *  Doorbell 2 (ピンポン2)
+      *  .. raw:: html
+
+            <audio controls>
+              <source src="{static}pinpon2.wav" type="audio/wav">
+              <a href="{static}pinpon2.wav">Audio Recording</a>
+            </audio>
    *  *  ``$F``
       *  Doorbell 4 (ピンポン4)
+      *  .. raw:: html
+
+            <audio controls>
+              <source src="{static}pinpon4.wav" type="audio/wav">
+              <a href="{static}pinpon4.wav">Audio Recording</a>
+            </audio>
 
 Programmable
 ------------
 
 Three of the default alarms in `Pocket Family GB`_ are programmable:
 
-*  Afterschool Chime
-*  Silent Night
-*  Ambulance
+.. list-table::
+   :widths: auto
+
+   *  *  Alarm tone
+      *
+   *  *  Afterschool Chime (ほうかごチャイム)
+      *  .. raw:: html
+
+            <audio controls>
+              <source src="{static}houkago-chime.wav" type="audio/wav">
+              <a href="{static}houkago-chime.wav">Audio Recording</a>
+            </audio>
+   *  *  Ambulance (きゅうきゅうしゃ)
+      *  .. raw:: html
+
+            <audio controls>
+              <source src="{static}kyuukyuusha.wav" type="audio/wav">
+              <a href="{static}kyuukyuusha.wav">Audio Recording</a>
+            </audio>
+   *  *  Silent Night (きよしこのよる)
+      *  .. raw:: html
+
+            <audio controls>
+              <source src="{static}kiyoshi-kono-yoru.wav" type="audio/wav">
+              <a href="{static}kiyoshi-kono-yoru.wav">Audio Recording</a>
+            </audio>
 
 Hudson also distributed a single downloadable_ alarm, `Saita Saita <{filename}/file/saita/index.rst>`_, as a GBKiss file.
 
@@ -168,6 +238,15 @@ The following commands are hypothesized:
 
 The pitch of each note is determined by adding the note’s pitch offset to twice the current transposition and interpreting it as a number of semitones. In the common transposition ``$A7``, pitch ``$1`` is C4. Thus, the total pitch range is A2 (0) to F♯6 (45). Alternately, to map to a MIDI pitch number, add 47 (A2).
 
+The following audio clip demonstrates the full range of pitches available:
+
+.. raw:: html
+
+   <audio controls>
+     <source src="{static}pitch.wav" type="audio/wav">
+     <a href="{static}pitch.wav">Audio Recording</a>
+   </audio>
+
 Some of the built-in tones, such as Alarm 2, demonstrate volume control.
 
-.. include:: ../epilog.rsti
+.. include:: ../../epilog.rsti

@@ -50,7 +50,7 @@ Pocket Family has an alarm clock feature in the settings menu. The player can se
 
 Additional alarm tones can be loaded into the game as GBKiss data files. Hudson distributed one such file through their website, `Saita Saita`_.
 
-.. _alarm tone: {filename}/tech/alarm.rst
+.. _alarm tone: {filename}/tech/alarm/index.rst
 .. _Saita Saita: {filename}/file/saita/index.rst
 
 Images

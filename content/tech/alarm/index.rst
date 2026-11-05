@@ -23,7 +23,12 @@ There are 16 (?) built-in alarm tones:
       *
    *  *  ``$0``
       *  Phone ring
-      *
+      *  .. raw:: html
+
+            <audio controls>
+              <source src="{static}telephone.wav" type="audio/wav">
+              <a href="{static}telephone.wav">Audio Recording</a>
+            </audio>
    *  *  ``$1``
       *  Unknown
       *

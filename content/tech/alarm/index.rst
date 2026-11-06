@@ -22,7 +22,7 @@ There are 16 (?) built-in alarm tones:
       *  Alarm tone
       *
    *  *  ``$0``
-      *  Phone ring
+      *  Phone 1 (でんわ1)
       *  .. raw:: html
 
             <audio controls>
@@ -30,7 +30,7 @@ There are 16 (?) built-in alarm tones:
               <a href="{static}telephone.wav">Audio Recording</a>
             </audio>
    *  *  ``$1``
-      *  Unknown
+      *  Buzzer 1 (ブザー1)
       *
    *  *  ``$2``
       *  Alarm 1 (めざましおん1)
@@ -49,10 +49,10 @@ There are 16 (?) built-in alarm tones:
               <a href="{static}pinpon1.wav">Audio Recording</a>
             </audio>
    *  *  ``$4``
-      *  Unknown
+      *  Phone 2 (でんわ2)
       *
    *  *  ``$5``
-      *  Unknown
+      *  Buzzer 2 (ブザー2)
       *
    *  *  ``$6``
       *  Alarm 2 (めざましおん2)
@@ -63,16 +63,21 @@ There are 16 (?) built-in alarm tones:
               <a href="{static}mezamashion2.wav">Audio Recording</a>
             </audio>
    *  *  ``$7``
-      *  Unknown
-      *
+      *  Doorbell 2 (ピンポン2)
+      *  .. raw:: html
+
+            <audio controls>
+              <source src="{static}pinpon2.wav" type="audio/wav">
+              <a href="{static}pinpon2.wav">Audio Recording</a>
+            </audio>
    *  *  ``$8``
-      *  Unknown
+      *  Phone 3 (でんわ3)
       *
    *  *  ``$9``
-      *  Unknown
+      *  Buzzer 3 (ブザー3)
       *
    *  *  ``$A``
-      *  Unknown
+      *  Alarm 3 (めざましおん3)
       *
    *  *  ``$B``
       *  Doorbell 3 (ピンポン3)
@@ -83,19 +88,14 @@ There are 16 (?) built-in alarm tones:
               <a href="{static}pinpon3.wav">Audio Recording</a>
             </audio>
    *  *  ``$C``
-      *  Unknown
+      *  Phone 4 (でんわ4)
       *
    *  *  ``$D``
-      *  Unknown
+      *  Buzzer 4 (ブザー4)
       *
    *  *  ``$E``
-      *  Doorbell 2 (ピンポン2)
-      *  .. raw:: html
-
-            <audio controls>
-              <source src="{static}pinpon2.wav" type="audio/wav">
-              <a href="{static}pinpon2.wav">Audio Recording</a>
-            </audio>
+      *  Alarm 4 (めざましおん4)
+      *
    *  *  ``$F``
       *  Doorbell 4 (ピンポン4)
       *  .. raw:: html

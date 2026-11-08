@@ -7,7 +7,7 @@ Alarms
 
 The `HuC-3 mapper`_ can play alarms at set times, with a selection of different programmable_ and built-in_ alarm tones. `Pocket Family GB`_ also supports a user-configured alarm and supports installing additional alarm tones through GBKiss.
 
-.. _HuC-3 mapper: {filename}mapper.rst#huc-3
+.. _HuC-3 mapper: {filename}/tech/mapper.rst#huc-3
 .. _Pocket Family GB: {filename}/cart/hfaj/index.rst
 
 Built-in
@@ -186,7 +186,7 @@ Need verification:
 *  What happens on invalid patterns?
 
 .. _data files: {filename}/file/index.rst#data
-.. _metadata: {filename}metadata.rst
+.. _metadata: {filename}/tech/metadata.rst
 
 Pattern
 ~~~~~~~
